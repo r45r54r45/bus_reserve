@@ -16,7 +16,6 @@ $(function(){
   setInterval(function(){
       $("#time").text(new Date());
   },1000);
-  nonstop();
 });
 
 function nonstop(){
