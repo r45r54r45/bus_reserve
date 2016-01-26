@@ -1,4 +1,14 @@
-<div style="height:300px;"></div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="">노동자 1호</h1>
+    </div>
+  </div>
+
+</div>
+
+
+
 <button onclick="login()">로그인</button>
 <button onclick="logout()">로그아웃</button>
 <button onclick="reserve()">예약</button>
