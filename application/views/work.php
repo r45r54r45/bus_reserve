@@ -12,6 +12,10 @@ var reserve_count=0;
 var cancel_count=0;
 var time_start;
 var time_end;
+// ---
+var date="20160127";
+
+
 $(function(){
   setInterval(function(){
       $("#time").text(new Date());
@@ -38,8 +42,9 @@ function login(){
 }
 function reserve(){
   reserve_count=0;
-  var data="<iframe style='display:none' id='reserve' src='/work/reserve'>";
-  $("body").append(data);
+  var d="?date="+date;
+  var f="<iframe style='display:none' id='reserve' src='/work/reserve"+d+"'>";
+  $("body").append(f);
   $("#reserve").on("load",function(event){
       reserve_count++;
       if(reserve_count==1)$("#reserve").contents().find("#reserve").submit();
