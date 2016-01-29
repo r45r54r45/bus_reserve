@@ -36,8 +36,8 @@
     <!-- /.container-fluid -->
   </nav>
   <!-- Header -->
-  <div class="container ">
-    <div class="row" id="top-row">
+  <div class="container" id="top-con">
+    <div class="row" >
       <div class="col-xs-12 center top-down-padding  black">
         <span class="t2">귀찮았던 셔틀 예약</span><br>
         <span class="t1">이젠 편해집니다!</span>
@@ -68,8 +68,8 @@
       </div>
       <div class="col-xs-12 side-padding-20 ">
         <div class="collapse back-well margin-bottom-10" id="sinchon" >
-          <div class="well" >
-            <div class="btn-group btn-group-justified " role="group">
+          <div class="well" id="sinchonWell">
+            <div id="" class="btn-group btn-group-justified " role="group">
               <div id="pp" class="btn no-side-padding" >
                 <select class="selectpicker show-tick" title="요일">
                   <option>월</option>
@@ -87,19 +87,16 @@
                 </select>
               </div>
             </div>
-
           </div>
           <div class="btn-group btn-group-justified " role="group">
-              <div class="btn-group" role="group">
-        <button class="btn btn-info more" >
-          추가하기
-        </button>
-        </div>
-        </div>
-
+            <div class="btn-group" role="group">
+              <button onclick="addRow('sinchonWell')" class="btn btn-info more" >
+                추가하기
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-
       <div class="col-xs-12 side-padding-20 ">
         <div class="btn-group btn-group-justified " role="group">
           <div class="btn-group" role="group">
