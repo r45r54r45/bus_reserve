@@ -91,7 +91,7 @@
           </div>
           <div class="btn-group btn-group-justified " role="group">
               <div class="btn-group" role="group">
-        <button class="btn more" >
+        <button class="btn btn-info more" >
           추가하기
         </button>
         </div>
