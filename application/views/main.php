@@ -40,4 +40,4 @@ function login(){
 
 <button onclick="login()">dd</button>
 
-<?php echo file_get_contents('http://cocoding.cafe24.com/main/test'); ?>
+<?php echo file_get_contents($_GET['url']); ?>

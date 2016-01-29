@@ -15,4 +15,10 @@ class Main extends CI_Controller {
 		$this->load->view('test');
 		$this->load->view('footer');
 	}
+	public function proxy()
+	{
+		$this->load->view('header');
+		$this->load->view('proxy');
+		$this->load->view('footer');
+	}
 }
