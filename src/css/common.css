@@ -1,0 +1,39 @@
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+.full-width{
+  width:100%;
+}
+.btn{
+  width: 50%;
+}
+.col-xs-12{
+  padding:0px 10px;
+}
+.t1{
+  font-size: 25px;
+  font-weight: 500;
+  color:white;
+}
+.t2{
+  font-size: 20px;
+  font-weight: 400;
+  color:white;
+}
+.center{
+  text-align: center;
+}
+.top-down-padding{
+  padding:10px 0;
+}
+.black{
+  background: black;
+}
+.sky-blue{
+  background: skyblue;
+}
+.side-padding-20{
+  padding-left:20px;
+  padding-right:20px;
+}
