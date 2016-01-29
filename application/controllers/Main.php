@@ -9,4 +9,10 @@ class Main extends CI_Controller {
 		$this->load->view('main');
 		$this->load->view('footer');
 	}
+	public function test()
+	{
+		$this->load->view('header');
+		$this->load->view('test');
+		$this->load->view('footer');
+	}
 }
