@@ -1,5 +1,8 @@
 $(function(){
   $("#top-row").css("margin-top",$("nav").height()+"px");
+  $("#pp").on("change",function(event){
+    console.log(event);
+  });
 });
 function input_range(event){
   var n=event.keyCode;

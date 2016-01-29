@@ -37,3 +37,22 @@ body{
   padding-left:20px;
   padding-right:20px;
 }
+.well{
+  padding-bottom: 0;
+}
+.more{
+
+}
+.bootstrap-select{
+  width:100% !important;
+}
+.no-side-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+.back-well{
+  background: #ecf0f1;
+}
+.margin-bottom-10{
+  margin-bottom:10px;
+}

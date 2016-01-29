@@ -67,40 +67,38 @@
         </div>
       </div>
       <div class="col-xs-12 side-padding-20 ">
-        <div class="collapse" id="sinchon">
-          <div class="well">
+        <div class="collapse back-well margin-bottom-10" id="sinchon" >
+          <div class="well" >
             <div class="btn-group btn-group-justified " role="group">
-              <div class="btn-group" role="group">
+              <div id="pp" class="btn no-side-padding" >
+                <select class="selectpicker show-tick" title="요일">
+                  <option>월</option>
+                  <option>화</option>
+                  <option>수</option>
+                  <option>목</option>
+                  <option>금</option>
+                </select>
+              </div>
+              <div class="btn no-side-padding" >
+                <select class="selectpicker show-tick" title="시간">
+                  <option>07:50 ~ 08:50</option>
+                  <option>07:50 ~ 08:50</option>
+                  <option>07:50 ~ 08:50</option>
+                </select>
+              </div>
+            </div>
 
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                요일
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </div>
-            <div class="btn-group" role="group">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                시간
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </div>
           </div>
+          <div class="btn-group btn-group-justified " role="group">
+              <div class="btn-group" role="group">
+        <button class="btn more" >
+          추가하기
+        </button>
         </div>
-          </div>
         </div>
+
+        </div>
+      </div>
 
       <div class="col-xs-12 side-padding-20 ">
         <div class="btn-group btn-group-justified " role="group">
