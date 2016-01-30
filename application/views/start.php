@@ -54,7 +54,7 @@
       </div>
       <div class="col-xs-12 center  side-padding-20 form-group">
         <div class="input-group">
-          <div id="pwg" class="input-group-addon">SHA-3 암호화 적용중</div>
+          <div id="pwg" class="input-group-addon" style="color:white">SHA-3 암호화 적용중</div>
           <input id="spw" name="pw" class="full-width form-control" type="password" onkeydown=" input_range(event)" onkeyup="len_ch(7,'spw','pwgl');"  placeholder="연세포털 비밀번호" maxlength="7">
           <span id="pwgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
         </div>
