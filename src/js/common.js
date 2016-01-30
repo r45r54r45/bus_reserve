@@ -1,10 +1,10 @@
 $(window).on("load",function(){
   $("#top-con").css("padding-top",$("nav").height()+"px");
   var h=$(window).height();
-  $(".height-300").css("height",v*0.8+"px");
-  $(".t1").css("line-height",v*0.4+"px");
-  $(".t2").css("line-height",v*0.4+"px");
-  $(".t3").css("line-height",v*0.8+"px");
+  $(".height-300").css("height",h*0.8+"px");
+  $(".t1").css("line-height",h*0.4+"px");
+  $(".t2").css("line-height",h*0.4+"px");
+  $(".t3").css("line-height",h*0.8+"px");
   for (var i = 0; i < background.length; i++) {
     $(".color_"+(i+1)).css("background","#"+background[i]);
     console.log(".color_"+(i+1));
