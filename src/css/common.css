@@ -100,9 +100,14 @@ body{
 }
 .submit_btn:hover>span{
   color:white;
-  font-size:20px;
-  font-weight: 500;
 }
+.submit_btn:active{
+  background: white;
+}
+.submit_btn:active>span{
+  color:skyblue;
+}
+
 a:hover{
   text-decoration: none;
 }
