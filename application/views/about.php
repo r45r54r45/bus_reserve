@@ -43,11 +43,11 @@
         <span class="t1">M6724타니?</span>
       </div>
       <div class="col-xs-12 center height-300 top-down-padding-30 color_2">
-        <span class="t3">매일 2시 정각에 자동예약을 써보렴</span><br>
+        <span class="t3">대세는 [자동예약]</span><br>
       </div>
       <div class="col-xs-12 center height-300 top-down-padding-30 color_3">
-        <span class="t2">급하게 예약할 땐</span><br>
-        <span class="t1">간편하게 원클릭!</span>
+        <span class="t2">2시 신경쓰지 말고</span><br>
+        <span class="t1">마음놓고 살자</span>
       </div>
       <a href="/main/start">
       <div class="col-xs-12 center height-300 top-down-padding-50  color_4">

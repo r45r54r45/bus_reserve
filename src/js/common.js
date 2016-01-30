@@ -1,20 +1,19 @@
 $(window).on("load",function(){
   $("#top-con").css("padding-top",$("nav").height()+"px");
   var h=$(window).height();
-  $(".height-300").css("height",h*0.8+"px");
-  $(".t1").css("line-height",h*0.4+"px");
-  $(".t2").css("line-height",h*0.4+"px");
-  $(".t3").css("line-height",h*0.8+"px");
+  $(".height-300").css("height",h*0.6+"px");
+  $(".t1").css("line-height",h*0.25+"px");
+  $(".t2").css("line-height",h*0.25+"px");
+  $(".t3").css("line-height",h*0.55+"px");
   for (var i = 0; i < background.length; i++) {
     $(".color_"+(i+1)).css("background","#"+background[i]);
-    console.log(".color_"+(i+1));
   }
   $("#form").on("submit",function(event){
     event.preventDefault();
     console.log($(this).serialize());
   });
 });
-var background=["6290C3","C2E7DA","F5E8FF","1A1B41"];
+var background=["9B3FB5","5EA59C","E56B86","1A1B41"];
 function input_range(event){
   var n=event.keyCode;
   if((n>47&&n<58)||n==8||n==37||n==39){}
