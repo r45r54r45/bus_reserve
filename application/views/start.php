@@ -117,6 +117,9 @@
       <div class="col-xs-12" style="margin-top:20px; background:#EF99A7; height:200px; text-align:center;display:table;">
         <span style=" display:table-cell;vertical-align:middle;font-size:20px; color:white">지금은 베타 버전...<br>하지만 작동은 문제없다!</span>
       </div>
+      <div class="col-xs-12" style=" background:#EAC488; height:200px; text-align:center;display:table;">
+        <span style=" display:table-cell;vertical-align:middle;font-size:20px; color:white">예약내역은 <b>내정보</b>에서<br>확인/수정이 가능하지 훗.</span>
+      </div>
     </div>
   </div>
 </form>
