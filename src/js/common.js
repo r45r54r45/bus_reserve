@@ -4,7 +4,7 @@ $(window).on("load",function(){
   $(".height-300").css("height",h*0.6+"px");
   $(".t1").css("line-height",h*0.25+"px");
   $(".t2").css("line-height",h*0.25+"px");
-  $(".t3").css("line-height",h*0.55+"px");
+  $(".t3").css("line-height",h*0.45+"px");
   for (var i = 0; i < background.length; i++) {
     $(".color_"+(i+1)).css("background","#"+background[i]);
   }
