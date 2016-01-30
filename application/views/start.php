@@ -44,7 +44,7 @@
         <span class="t1">이젠 편해집니다!</span>
       </div> -->
       <div class="col-xs-12 center top-down-padding sky-blue">
-        <span class="t2">[누구보다 빠르게]</span>
+        <span class="t2"><b>[누구보다 빠르게]</b></span>
       </div>
       <div class="col-xs-12 center side-padding-20 form-group" style="padding-top:10px;">
         <div class="full-width input-group">
@@ -124,6 +124,11 @@
         </div>
       </a>
         </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12" style="margin-top:20px; background:#EF99A7; height:200px; text-align:center;display:table;">
+        <span style=" display:table-cell;vertical-align:middle;font-size:20px; color:white">지금은 베타 버전...<br>하지만 작동은 문제없다!</span>
+      </div>
     </div>
   </div>
 </form>
