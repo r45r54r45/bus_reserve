@@ -1,9 +1,6 @@
 <body id="page-top" class="index">
-
-  <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -13,8 +10,6 @@
         </button>
         <a class="navbar-brand" href="#page-top">Fast & Easy Yonsei Shuttle</a>
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="hidden">
@@ -31,18 +26,11 @@
           </li>
         </ul>
       </div>
-      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
   </nav>
-  <!-- Header -->
   <form action="#" method="post" id="form">
   <div class="container-fluid" id="top-con">
     <div class="row" >
-      <!-- <div class="col-xs-12 center top-down-padding  black">
-        <span class="t2">귀찮았던 셔틀 예약</span><br>
-        <span class="t1">이젠 편해집니다!</span>
-      </div> -->
       <div class="col-xs-12 center top-down-padding sky-blue">
         <span class="t2"><b>[누구보다 빠르게]</b></span>
       </div>
