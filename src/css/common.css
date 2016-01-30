@@ -101,10 +101,10 @@ body{
 .submit_btn:hover>span{
   color:white;
 }
-.submit_btn:active{
+.submit_btn:visited{
   background: white;
 }
-.submit_btn:active>span{
+.submit_btn:visited>span{
   color:skyblue;
 }
 
