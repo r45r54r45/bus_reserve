@@ -55,8 +55,8 @@ function addRow(t){
   strVar += "              <div class=\"btn no-side-padding\" >";
   strVar += "                <select id='s_r_"+t+"_"+num+"_2' class=\"selectpicker show-tick\" title=\"시간\" name='time_"+t+"_"+num+"'>";
   strVar += "                  <option value='1'>07:50 ~ 08:50<\/option>";
-  strVar += "                  <option value='2'>07:50 ~ 08:50<\/option>";
-  strVar += "                  <option value='3'>07:50 ~ 08:50<\/option>";
+  strVar += "                  <option value='2'>13:30 ~ 14:30<\/option>";
+  strVar += "                  <option value='3'>18:00 ~ 19:00<\/option>";
   strVar += "                <\/select>";
   strVar += "              <\/div>";
   strVar += "            <\/div>";
