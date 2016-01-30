@@ -38,20 +38,20 @@
   <!-- Header -->
   <div class="container-fluid" id="top-con">
     <div class="row" >
-      <div class="col-xs-12 center top-down-padding-30  color_1">
+      <div class="col-xs-12 center height-300 top-down-padding-30  color_1">
         <span class="t2">아직도 셔틀 예약 깜박하고</span><br>
         <span class="t1">M6724타니?</span>
       </div>
-      <div class="col-xs-12 center top-down-padding-30 color_2">
-        <span class="t2">매일 2시 정각에 자동예약을 써보렴</span><br>
+      <div class="col-xs-12 center height-300 top-down-padding-30 color_2">
+        <span class="t3">매일 2시 정각에 자동예약을 써보렴</span><br>
       </div>
-      <div class="col-xs-12 center top-down-padding-30 color_3">
+      <div class="col-xs-12 center height-300 top-down-padding-30 color_3">
         <span class="t2">급하게 예약할 땐</span><br>
         <span class="t1">간편하게 원클릭!</span>
       </div>
-      <a href="#">
-      <div class="col-xs-12 center top-down-padding-50  color_4">
-          <span class="t1">시작하기</span>
+      <a href="/main/start">
+      <div class="col-xs-12 center height-300 top-down-padding-50  color_4">
+          <span class="t3">시작하기</span>
       </div>
     </a>
     </div>

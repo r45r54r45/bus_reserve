@@ -36,6 +36,7 @@
     <!-- /.container-fluid -->
   </nav>
   <!-- Header -->
+  <form action="#" method="post" id="form">
   <div class="container-fluid" id="top-con">
     <div class="row" >
       <div class="col-xs-12 center top-down-padding  black">
@@ -47,20 +48,20 @@
       </div>
       <div class="col-xs-12 center side-padding-20 form-group" style="padding-top:10px;">
         <div class="full-width input-group">
-          <input id="sid" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl')"  maxlength="10">
+          <input id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl')"  maxlength="10">
           <span id="idgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
         </div>
       </div>
       <div class="col-xs-12 center  side-padding-20 form-group">
         <div class="input-group">
           <div id="pwg" class="input-group-addon">SHA-3 암호화 적용중</div>
-          <input id="spw" class="full-width form-control" type="password" onkeydown=" input_range(event)" onkeyup="len_ch(7,'spw','pwgl');"  placeholder="비밀번호" maxlength="7">
+          <input id="spw" name="pw" class="full-width form-control" type="password" onkeydown=" input_range(event)" onkeyup="len_ch(7,'spw','pwgl');"  placeholder="비밀번호" maxlength="7">
           <span id="pwgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
         </div>
       </div>
-      <div class="col-xs-12 center side-padding-20 form-group" style="padding-top:10px;">
+      <div class="col-xs-12 center side-padding-20 form-group" style="">
         <div class="full-width input-group">
-          <input id="phone" class="form-control" type="text" placeholder="핸드폰" onkeydown=" input_range(event)" onkeyup="len_ch(11,'phone','phonegl')"  maxlength="11">
+          <input id="phone" name="phone" class="form-control" type="text" placeholder="핸드폰" onkeydown=" input_range(event)" onkeyup="len_ch(11,'phone','phonegl')"  maxlength="11">
           <span id="phonegl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
         </div>
       </div>
@@ -74,29 +75,17 @@
       <div class="col-xs-12 side-padding-20 ">
         <div class="collapse back-well margin-bottom-10" id="sinchon" >
           <div class="well" id="sinchonWell">
-            <div id="" class="btn-group btn-group-justified " role="group">
-              <div id="pp" class="btn no-side-padding" >
-                <select class="selectpicker show-tick" title="요일">
-                  <option>월</option>
-                  <option>화</option>
-                  <option>수</option>
-                  <option>목</option>
-                  <option>금</option>
-                </select>
-              </div>
-              <div class="btn no-side-padding" >
-                <select class="selectpicker show-tick" title="시간">
-                  <option>07:50 ~ 08:50</option>
-                  <option>07:50 ~ 08:50</option>
-                  <option>07:50 ~ 08:50</option>
-                </select>
-              </div>
-            </div>
+            <!-- 옵션이 추가되는 부분 -->
           </div>
           <div class="btn-group btn-group-justified " role="group">
             <div class="btn-group" role="group">
-              <button onclick="addRow('sinchonWell')" class="btn btn-info more" >
+              <button onclick="addRow('sinchon')" class="btn btn-info more" type="button">
                 추가하기
+              </button>
+            </div>
+            <div class="btn-group" role="group">
+              <button onclick="deleteRow('sinchon')" class="btn btn-info more" type="button">
+                삭제하기
               </button>
             </div>
           </div>
@@ -110,11 +99,32 @@
         </div>
       </div>
       <div class="col-xs-12 side-padding-20 ">
-        <div class="collapse" id="songdo">
-          <div class="well">
-            ff
+        <div class="collapse back-well" id="songdo">
+          <div class="well" id="songdoWell">
+            <!-- 옵션이 추가되는 부분 -->
+          </div>
+          <div class="btn-group btn-group-justified " role="group">
+            <div class="btn-group" role="group">
+              <button onclick="addRow('songdo')" class="btn btn-info more" type="button">
+                추가하기
+              </button>
+            </div>
+            <div class="btn-group" role="group">
+              <button onclick="deleteRow('songdo')" class="btn btn-info more" type="button">
+                삭제하기
+              </button>
+            </div>
           </div>
         </div>
       </div>
+        <div class="col-xs-12 side-padding-20">
+          <a onclick="submitCheck()">
+          <div class=" submit_btn">
+          <span>자동 예약 신청하기</span>
+        </div>
+      </a>
+        </div>
     </div>
+  </div>
+</form>
   </body>
