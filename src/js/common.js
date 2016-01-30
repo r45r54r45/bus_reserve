@@ -3,7 +3,12 @@ $(window).on("load",function(){
   $("#pp").on("change",function(event){
     console.log(event);
   });
+  for (var i = 0; i < background.length; i++) {
+    $(".color_"+(i+1)).css("background","#"+background[i]);
+    console.log(".color_"+(i+1));
+  }
 });
+var background=["6290C3","C2E7DA","F1FFE7","1A1B41"];
 function input_range(event){
   var n=event.keyCode;
   if((n>47&&n<58)||n==8||n==37||n==39){}
