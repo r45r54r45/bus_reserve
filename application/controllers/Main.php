@@ -21,10 +21,22 @@ class Main extends CI_Controller {
 		$this->load->view('proxy');
 		$this->load->view('footer');
 	}
-	public function customer()
+	public function start()
 	{
 		$this->load->view('header');
-		$this->load->view('customer');
+		$this->load->view('start');
+		$this->load->view('footer');
+	}
+	public function about()
+	{
+		$this->load->view('header');
+		$this->load->view('about');
+		$this->load->view('footer');
+	}
+	public function mypage()
+	{
+		$this->load->view('header');
+		$this->load->view('mypage');
 		$this->load->view('footer');
 	}
 }

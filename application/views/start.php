@@ -11,7 +11,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#page-top">Easy Yonsei Shuttle</a>
+        <a class="navbar-brand" href="#page-top">Fast & Easy Yonsei Shuttle</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,13 +21,13 @@
             <a href="#page-top"></a>
           </li>
           <li class="page-scroll">
-            <a href="#portfolio">Portfolio</a>
+            <a href="/main/about">FEYS는?</a>
           </li>
           <li class="page-scroll">
-            <a href="#about">About</a>
+            <a href="/main/start">시작하기</a>
           </li>
           <li class="page-scroll">
-            <a href="#contact">Contact</a>
+            <a href="/main/myinfo">내정보</a>
           </li>
         </ul>
       </div>
@@ -36,7 +36,7 @@
     <!-- /.container-fluid -->
   </nav>
   <!-- Header -->
-  <div class="container" id="top-con">
+  <div class="container-fluid" id="top-con">
     <div class="row" >
       <div class="col-xs-12 center top-down-padding  black">
         <span class="t2">귀찮았던 셔틀 예약</span><br>
@@ -58,7 +58,12 @@
           <span id="pwgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
         </div>
       </div>
-
+      <div class="col-xs-12 center side-padding-20 form-group" style="padding-top:10px;">
+        <div class="full-width input-group">
+          <input id="phone" class="form-control" type="text" placeholder="핸드폰" onkeydown=" input_range(event)" onkeyup="len_ch(11,'phone','phonegl')"  maxlength="11">
+          <span id="phonegl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
+        </div>
+      </div>
       <div class="col-xs-12 side-padding-20 ">
         <div class="btn-group btn-group-justified " role="group">
           <div class="btn-group" role="group">

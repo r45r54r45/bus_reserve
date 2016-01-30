@@ -24,7 +24,7 @@ function addRow(t){
   }
   sinchon_row++;
   var strVar="";
-  strVar += "<div id=\"\" class=\"btn-group btn-group-justified \" role=\"group\">";
+  strVar += "<div style='display:none;' id=\"\" class=\"btn-group btn-group-justified \" role=\"group\">";
   strVar += "              <div id=\"pp\" class=\"btn no-side-padding\" >";
   strVar += "                <select id='s_r_"+sinchon_row+"_1' class=\"selectpicker show-tick\" title=\"요일\">";
   strVar += "                  <option>월<\/option>";
@@ -42,7 +42,7 @@ function addRow(t){
   strVar += "                <\/select>";
   strVar += "              <\/div>";
   strVar += "            <\/div>";
-  $("#"+t).append(strVar);
+  $(strVar).appendTo($("#"+t)).fadeIn('normal');
   $("#s_r_"+sinchon_row+"_1").selectpicker();
   $("#s_r_"+sinchon_row+"_2").selectpicker();
 
