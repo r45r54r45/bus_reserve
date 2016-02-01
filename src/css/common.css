@@ -32,6 +32,15 @@ body{
 .center{
   text-align: center;
 }
+.thecenter{
+  text-align:center;display:table;
+}
+.thecenter>span{
+  display:table-cell;
+  vertical-align:middle;
+  font-size:20px;
+  color:white;
+}
 .top-down-padding{
   padding:10px 0;
 }

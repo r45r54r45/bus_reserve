@@ -2,12 +2,20 @@ $(window).on("load",function(){
   $("#top-con").css("padding-top",$("nav").height()+"px");
   var h=$(window).height();
   $(".height-300").css("height",h*0.6+"px");
+  $(".height-200").css("height",h*0.4+"px");
+  $(".height-100").css("height",h*0.2+"px");
   $(".t1").css("line-height",h*0.25+"px");
   $(".t2").css("line-height",h*0.25+"px");
   $(".t3").css("line-height",h*0.45+"px");
   for (var i = 0; i < background.length; i++) {
     $(".color_"+(i+1)).css("background","#"+background[i]);
   }
+  var color=$("body").find(".color");
+  for (var i = 0; i < color.length; i++) {
+    $(color[i]).css("background",
+'#'+Math.floor(Math.random()*16777215).toString(16));
+  }
+
   $("#form").on("submit",function(event){
     event.preventDefault();
     console.log($(this).serialize());
