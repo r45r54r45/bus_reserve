@@ -10,7 +10,7 @@
 		<div class="row">
 			<!-- 학식 메뉴 시작 -->
 
-			<div class="col-xs-6 height-300 thecenter color border-all">
+			<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
 				<div>
 					<span class="big-font">오늘 점심은<br>모먹지?</span>
 					<div class="col-xs-12" style="margin-top:20px;">
@@ -59,7 +59,7 @@
 			</div>
 				<!-- 학식 메뉴 끝 -->
 				<!-- 셔틀 시간 시작-->
-				<div class="col-xs-6 height-300 thecenter color border-all">
+				<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
 					<div>
 						<div class="big-font">
 							해경가서 술이나?
@@ -88,14 +88,14 @@
 				<!-- 셔틀 시간 끝-->
 				<!-- 익명 질문 시작 -->
 				<a href="">
-					<div class="col-xs-6 height-300 thecenter color border-all">
+					<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
 						<span class="big-font">익명으로<br>물어보장!</span>
 					</div>
 				</a>
 				<!-- 익명 질문 끝 -->
 				<!-- 셔틀예약 시작 -->
 				<a href="">
-					<div class="col-xs-6 height-300 thecenter color border-all">
+					<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
 						<span class="big-font">셔틀예약<br>쉽게하장!</span>
 					</div>
 				</a>
