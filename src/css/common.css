@@ -34,9 +34,15 @@ body{
   text-align: center;
 }
 .thecenter{
-  text-align:center;display:table;
+  text-align:center;
+  display:table;
 }
 .thecenter>span{
+  display:table-cell;
+  vertical-align:middle;
+  color:white;
+}
+.thecenter>div{
   display:table-cell;
   vertical-align:middle;
   color:white;
