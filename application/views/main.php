@@ -1,24 +1,24 @@
 <body id="page-top" class="index">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12 height-100 thecenter color">
-				<span>안뇽</span>
+			<div class="col-xs-12 height-100 thecenter color border-all">
+				<span class="extra-font">FRESHMAN YONSEI</span>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 height-300 thecenter color">
-				<span>안뇽</span>
+			<div class="col-xs-6 height-300 thecenter color border-all">
+				<span class="big-font">익명으로<br>물어보장!</span>
 			</div>
-			<div class="col-xs-6 height-300 thecenter color">
-				<span>히히</span>
+			<div class="col-xs-6 height-300 thecenter color border-all">
+				<span class="big-font">셔틀예약<br>쉽게하장!</span>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6 height-300 thecenter color">
-				<span>호호</span>
+			<div class="col-xs-6 height-300 thecenter color border-all">
+				<span class="big-font">오늘 점심은<br>모먹지?</span>
 			</div>
-			<div class="col-xs-6 height-300 thecenter color">
-				<span>^오^</span>
+			<div class="col-xs-6 height-300 thecenter color border-all">
+				<span class="big-font">^오^</span>
 			</div>
 		</div>
 	</div>

@@ -1,7 +1,8 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 body{
   font-family: 'Noto Sans KR', sans-serif;
 }
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 .full-width{
   width:100%;
 }
@@ -38,9 +39,22 @@ body{
 .thecenter>span{
   display:table-cell;
   vertical-align:middle;
-  font-size:20px;
   color:white;
 }
+/*폰트 사이즈*/
+.extra-font{
+  font-size: 30px;
+  font-weight:500;
+}
+.big-font{
+  font-size: 25px;
+    font-weight:500;
+}
+.normal-font{
+  font-size: 20px;
+    font-weight:500;
+}
+/*패딩*/
 .top-down-padding{
   padding:10px 0;
 }
@@ -119,4 +133,7 @@ body{
 
 a:hover{
   text-decoration: none;
+}
+.border-all{
+  /*border:1px solid #D3D3D3;*/
 }
