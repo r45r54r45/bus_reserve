@@ -27,8 +27,8 @@ class Data extends CI_Controller {
         $a= $row->data_1;
         $b= $row->data_2;
 		}
-		$aa=explode($a,"|"); //6개
-		$bb=explode($b,"|");
+		$aa=explode("|",$a); //6개
+		$bb=explode("|",$b);
 
 		$f1=array();
 		$f2=array();
