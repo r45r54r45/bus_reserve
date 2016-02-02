@@ -4,7 +4,7 @@
 <textarea name="data1">
 
 </textarea>
-<textarea name="dataw">
+<textarea name="data2">
 
 </textarea>
 <button type="submit"></form>
