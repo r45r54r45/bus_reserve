@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#page-top">Fast & Easy Yonsei Shuttle</a>
+        <a class="navbar-brand" href="#page-top">너의 셔틀이 되겠어</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
@@ -16,7 +16,7 @@
             <a href="#page-top"></a>
           </li>
           <li class="page-scroll">
-            <a href="/main/about">FEYS는?</a>
+            <a href="/main/about">'너의 셔틀이 되겠어'는?</a>
           </li>
           <li class="page-scroll">
             <a href="/main/start">시작하기</a>
@@ -42,7 +42,7 @@
       </div>
       <div class="col-xs-12 center  side-padding-20 form-group">
         <div class="input-group">
-          <div id="pwg" class="input-group-addon" style="color:#D3D3D3">SHA-3 암호화 적용중</div>
+          <div id="pwg" class="input-group-addon" style="color: darkgray">SHA-3 암호화 적용중</div>
           <input id="spw" name="pw" class="full-width form-control" type="password" onkeydown=" input_range(event)" onkeyup="len_ch(7,'spw','pwgl');"  placeholder="연세포털 비밀번호" maxlength="7">
           <span id="pwgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
         </div>

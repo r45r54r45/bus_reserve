@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#page-top">Fast & Easy Yonsei Shuttle</a>
+        <a class="navbar-brand" href="#page-top">너의 셔틀이 되겠어</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
@@ -16,7 +16,7 @@
             <a href="#page-top"></a>
           </li>
           <li class="page-scroll">
-            <a href="/main/about">FEYS는?</a>
+            <a href="/main/about">'너의 셔틀이 되겠어'는?</a>
           </li>
           <li class="page-scroll">
             <a href="/main/start">시작하기</a>
