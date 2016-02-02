@@ -12,8 +12,10 @@ $(window).on("load",function(){
   }
   var color=$("body").find(".color");
   for (var i = 0; i < color.length; i++) {
-    $(color[i]).css("background",
-'#'+Math.floor(Math.random()*16777215).toString(16));
+    var col='#'+Math.floor(Math.random()*16777215).toString(16);
+    if(col!="#ffffff"&&col.length==7)$(color[i]).css("background",col);
+    else{ $(color[i]).css("background","#000000");
+  }
   }
 
   $("#form").on("submit",function(event){

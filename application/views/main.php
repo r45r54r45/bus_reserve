@@ -62,7 +62,7 @@
 				<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
 					<div>
 						<div class="big-font">
-							해경가서 술이나?
+							해경가서 술이나?<br> <span style="font-size:12px;">송도 안 셔틀버스</span>
 						</div>
 						<div class="normal-font" style="margin-top:30px;">
 							<span>해경으로 가요~!</span>
@@ -100,11 +100,14 @@
 					</div>
 				</a>
 				<!-- 셔틀예약 끝 -->
-
+				<div id="trash" class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
+					<span class="big-font">디자인 구린거 알아요..쳇</span>
+				</div>
 			</div>
 		</div>
 	</body>
 	<script>
+
 	// 셔틀 시간정보
 	var h_time_s=[0820,0900,0940,1020,1200,1240,1320,1400,1500,1700,1820,1940,2100];
 	var h_time_w=[];
@@ -118,6 +121,9 @@
 	}
 	$(window).on("load",function(){
 		songdo_shuttle();
+		$("#trash").on("swipe", function(event) {
+			alert("It's a swipe!");
+		});
 	});
 	function findPos(arr,data){
 		for (var i = 0; i < arr.length; i++) {
