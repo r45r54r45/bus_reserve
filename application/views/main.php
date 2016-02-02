@@ -10,7 +10,7 @@
 		<div class="row">
 			<!-- 학식 메뉴 시작 -->
 
-			<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
+			<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all" style="padding-bottom: 10px;">
 				<div>
 					<span class="big-font">오늘 점심은<br>모먹지?</span>
 					<div class="col-xs-12" style="margin-top:20px;">
