@@ -27,20 +27,23 @@ class Data extends CI_Controller {
         $a= $row->data_1;
         $b= $row->data_2;
 		}
-		$f1=array($a,$b);
-		$f2=array("뚝)뼈없는감자탕
-[돈육:미국산,돈잡뼈:국
-내산]
-쌀밥
-새우완자전
-진미채무침
-깍두기","");
-		$f3=array("새우튀김우동
-김가루양념밥
-순대찜
-단무지
-배추김치","");
+		$aa=explode($a,"|"); //6개
+		$bb=explode($b,"|");
+
+		$f1=array();
+		$f2=array();
+		$f3=array();
+		for ($i=0; $i < 6; $i++) {
+			if($i==0||$i==1)array_push($f1,$aa[i]);
+			if($i==2||$i==3)array_push($f2,$aa[i]);
+			if($i==4||$i==5)array_push($f3,$aa[i]);
+		}
 		$one=array($f1,$f2,$f3);
+		for ($i=0; $i < 6; $i++) {
+			if($i==0||$i==1)array_push($f1,$bb[i]);
+			if($i==2||$i==3)array_push($f2,$bb[i]);
+			if($i==4||$i==5)array_push($f3,$bb[i]);
+		}
 		$two=array($f1,$f2,$f3);
 		$arr = array ($one,$two);
 		echo json_encode($arr);
