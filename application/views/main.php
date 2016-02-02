@@ -184,7 +184,8 @@
 	<div>
 		<div class="big-font">
 			<span class="normal-font">버스앱보다 정확한</span><br> <span class="big-font">M6724 시간 볼래?</span><br>
-			<span class="small-font" style="margin-top:10px;">&plusmn;3분은 예의상 알지?</span>
+			<span class="small-font" style="margin-top:10px;">&plusmn;3분은 예의상 알지?</span><br>
+			<span id="mbus" class="big-font" style="margin-top:20px;"></span>
 		</div>
 	</div>
 </div>
@@ -262,6 +263,7 @@ for (var i = 0; i < d_time_s.length; i++) {
 $(window).on("load",function(){
 	songdo_shuttle();
 	getFood();
+	m_bus();
 });
 function findPos(arr,data){
 	for (var i = 0; i < arr.length; i++) {
@@ -271,6 +273,16 @@ function findPos(arr,data){
 	}
 	return false;
 }
+function m_bus(){
+	console.log(mbus());
+	setInterval(function(){
+		var now=new Date().format("HHmm");
+		var time=findPos(mbus(),parseInt(now))+20;
+		var diff=timediff(time,now);
+		$("#mbus").text(time_format(time)+" ("+time_format(diff)+" 남음)");
+	},1000);
+}
+
 function songdo_shuttle(){
 	setInterval(function(){
 		var now=new Date().format("HHmm");
@@ -284,6 +296,7 @@ function time_format(data){
 	if(data==false)return "정보 없음";
 	var h=data.toString().substring(0,2);
 	var m=data.toString().substring(2,4);
+	if(h=="00")return m+"분";
 	return h+"시 "+m+"분";
 }
 </script>

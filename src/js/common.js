@@ -178,3 +178,19 @@ Date.prototype.format = function(f) {
 String.prototype.string = function(len){var s = '', i = 0; while (i++ < len) { s += this; } return s;};
 String.prototype.zf = function(len){return "0".string(len - this.length) + this;};
 Number.prototype.zf = function(len){return this.toString().zf(len);};
+
+function mbus(){
+  var arr=[0500,0520,0545,0605,0620,0635,0655,0710,0725,0750,0810,0840,0910,0940,1010,1040,1110,1135,1200,1220,1240,1300,1320,1340,1405,1430,1455,1520,1550,1610,1625,1640,1700,1720,1740,1800,1825,1855,1920,1945,2015,2040,2100,2120,2140,2200,2215,2230,2250,2310];
+  return arr;
+}
+function timediff(a,b){
+  var ah=parseInt(a.toString().substring(0,2));
+  var am=parseInt(a.toString().substring(2,4));
+  var bh=parseInt(b.toString().substring(0,2));
+  var bm=parseInt(b.toString().substring(2,4));
+  if(am-bm>0)return (ah-bh).toString()+(am-bm).toString();
+  else{
+    if(ah-bh-1<10)return '0'+(ah-bh-1).toString()+(am+60-bm).toString();
+    else return (ah-bh-1).toString()+(am+60-bm).toString();
+    }
+  }
