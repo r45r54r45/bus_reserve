@@ -12,6 +12,6 @@ class Data_model extends CI_Model{
 		return $this->db->query("insert into food values ('$date','$data1','$data2')");
 	}
 	public function food_get($date){
-		return $this->db->query("select from food where week_date='$date'");
+		return $this->db->query("select * from food where week_date='$date'");
 	}
 }
