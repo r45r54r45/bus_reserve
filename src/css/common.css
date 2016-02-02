@@ -149,3 +149,7 @@ a:hover{
 .border-all{
   /*border:1px solid #D3D3D3;*/
 }
+pre{
+  color:black;
+  border:none;
+}
