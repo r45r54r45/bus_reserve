@@ -261,7 +261,7 @@ for (var i = 0; i < d_time_s.length; i++) {
 }
 $(window).on("load",function(){
 	songdo_shuttle();
-	// getFood();
+	getFood();
 });
 function findPos(arr,data){
 	for (var i = 0; i < arr.length; i++) {
