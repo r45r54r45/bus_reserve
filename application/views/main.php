@@ -265,9 +265,10 @@ $(window).on("load",function(){
 function findPos(arr,data){
 	for (var i = 0; i < arr.length; i++) {
 		if(arr[i]>data){
-			return arr[i+1];
+			return arr[i];
 		}
 	}
+	return false;
 }
 function songdo_shuttle(){
 	setInterval(function(){
@@ -279,6 +280,8 @@ function songdo_shuttle(){
 	},1000);
 }
 function time_format(data){
+	console.log(data);
+	if(data==false)return "정보 없음";
 	var h=data.toString().substring(0,2);
 	var m=data.toString().substring(2,4);
 	return h+"시 "+m+"분";
