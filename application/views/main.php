@@ -100,8 +100,8 @@
 					</div>
 				</a>
 				<!-- 셔틀예약 끝 -->
-				<div id="trash" class=" col-xs-12 col-sm-6 height-300 thecenter color border-all">
-					<span class="big-font">디자인 구린거 알아요..쳇</span>
+				<div id="trash" class=" col-xs-12 col-sm-6 height-100 thecenter color border-all">
+					<span class="normal-font">디자인 구린거 알아요..쳇<br>도와주려면 연락 좀.. <a style="color:white;" href="tel:01071097327">전화걸기</a></span>
 				</div>
 			</div>
 		</div>
@@ -121,9 +121,6 @@
 	}
 	$(window).on("load",function(){
 		songdo_shuttle();
-		$("#trash").on("swipe",function(){
-  $(this).hide();
-});
 	});
 	function findPos(arr,data){
 		for (var i = 0; i < arr.length; i++) {
