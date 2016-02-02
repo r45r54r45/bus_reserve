@@ -131,17 +131,22 @@
 				</div>
 			</a>
 			<!-- 셔틀예약 끝 -->
-			<div id="help" style="position:fixed;bottom:0;" class="col-xs-12 col-sm-6 height-100 thecenter color border-all">
+			<div class="hidden-xs col-sm-6 height-300 thecenter color border-all">
+				<span class="big-font">^오^</span>
+			</div>
+			<!-- 의견 받기 시작 -->
+			<div id="help"  class="col-xs-12  height-100 thecenter color border-all">
 				<div>
-				<div style="margin-top:10px;color:white;" class="small-font">디자인 구린거 알아요..쳇<br>도와주려면 연락 좀.. <a style="color:white;" href="tel:01071097327">전화걸기</a></div>
+				<div style="margin-top:10px;color:white;" class="normal-font">디자인 구린거 알아요..쳇<br>도와주려면 연락 좀.. <a style="color:white;" href="tel:01071097327">전화걸기</a></div>
 				<div style="display:table;margin:10px 0;" class="input-group">
 					<input id="helpval" maxlength="45" class="form-control" placeholder="필요한거,조언할거는 여기에">
 					<span class="input-group-btn">
 						<button class="btn btn-default" type="button" onclick="help()">보내기</button>
 					</span>
-				</div><!-- /input-group -->
+				</div>
 			</div>
 		</div>
+		<!-- 의견받기 끝 -->
 		</div>
 	</div>
 </body>
