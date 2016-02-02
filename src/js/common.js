@@ -188,7 +188,10 @@ function timediff(a,b){
   var am=parseInt(a.toString().substring(2,4));
   var bh=parseInt(b.toString().substring(0,2));
   var bm=parseInt(b.toString().substring(2,4));
-  if(am-bm>0)return (ah-bh).toString()+(am-bm).toString();
+  if(am-bm>0){
+    if(ah-bh-1<10)return '0'+(ah-bh).toString()+(am-bm).toString();
+    else return (ah-bh).toString()+(am-bm).toString();
+  }
   else{
     if(ah-bh-1<10)return '0'+(ah-bh-1).toString()+(am+60-bm).toString();
     else return (ah-bh-1).toString()+(am+60-bm).toString();

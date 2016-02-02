@@ -198,7 +198,7 @@
 </a>
 <!-- 익명 질문 끝 -->
 <!-- 셔틀예약 시작 -->
-<a href="">
+<a href="/main/about">
 	<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
 		<span class="big-font">셔틀예약<br>편하게하장!</span>
 	</div>
@@ -274,7 +274,6 @@ function findPos(arr,data){
 	return false;
 }
 function m_bus(){
-	console.log(mbus());
 	setInterval(function(){
 		var now=new Date().format("HHmm");
 		var time=findPos(mbus(),parseInt(now))+20;

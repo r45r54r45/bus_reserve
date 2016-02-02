@@ -16,5 +16,5 @@
 
 </textarea>
 </div>
-<button type="submit" value="전송"></form>
+<button type="submit" >전송</button></form>
 </body>
