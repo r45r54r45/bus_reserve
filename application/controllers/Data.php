@@ -22,8 +22,8 @@ class Data extends CI_Controller {
 		$this->load->model("data_model");
 		$result=$this->data_model->food_get("2016-02-29");
 		$r= $result->result();
-			echo $r['data1'];
-				echo $r['data2'];
+			echo $r['data_1'];
+				echo $r['data_2'];
 		$f1=array("","");
 		$f2=array("뚝)뼈없는감자탕
 [돈육:미국산,돈잡뼈:국
