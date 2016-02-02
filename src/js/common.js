@@ -180,16 +180,23 @@ String.prototype.zf = function(len){return "0".string(len - this.length) + this;
 Number.prototype.zf = function(len){return this.toString().zf(len);};
 
 function mbus(){
-  var arr=[0500,0520,0545,0605,0620,0635,0655,0710,0725,0750,0810,0840,0910,0940,1010,1040,1110,1135,1200,1220,1240,1300,1320,1340,1405,1430,1455,1520,1550,1610,1625,1640,1700,1720,1740,1800,1825,1855,1920,1945,2015,2040,2100,2120,2140,2200,2215,2230,2250,2310];
+  var arr=["0500","0520","0545","0605","0620","0635","0655","0710","0725","0750","0810","0840","0910","0940","1010","1040","1110","1135","1200","1220","1240","1300","1320","1340","1405","1430","1455","1520","1550","1610","1625","1640","1700","1720","1740","1800","1825","1855","1920","1945","2015","2040","2100","2120","2140","2200","2215","2230","2250","2310"];
   return arr;
 }
 function timeadd(a,b){
   var bm=parseInt(b);
-  var ah=parseInt(a.toString().substring(0,2));
-  var am=parseInt(a.toString().substring(2,4));
-  if(am+bm<60)return (ah).toString()+(am+bm).toString();
-  else return (ah+1).toString()+(am+bm-60).toString();
+  var arr=[];
+  for (var i = 0; i < a.length; i++) {
+    var ah=parseInt(a[i].substring(0,2));
+    var am=parseInt(a[i].substring(2,4));
+    if(am+bm<60)arr.push( (ah).toString()+(am+bm).toString());
+    else arr.push((ah+1).toString()+(am+bm-60).toString());
+  }
+  console.log();
+  return arr;
+
 }
+
 function timediff(a,b){
   var ah=parseInt(a.toString().substring(0,2));
   var am=parseInt(a.toString().substring(2,4));

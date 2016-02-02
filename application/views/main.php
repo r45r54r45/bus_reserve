@@ -184,7 +184,7 @@
 	<div>
 		<div class="big-font">
 			<span class="normal-font">버스앱보다 정확한</span><br> <span class="big-font">M6724 시간 볼래?</span><br>
-			<span class="small-font" style="margin-top:10px;">&plusmn;3분은 예의상 알지?</span><br>
+			<span class="small-font" style="margin-top:10px;">&plusmn;1분은 예의상 알지?</span><br>
 			<span id="mbus" class="big-font" style="margin-top:20px;"></span>
 		</div>
 	</div>
@@ -276,7 +276,7 @@ function findPos(arr,data){
 function m_bus(){
 	setInterval(function(){
 		var now=new Date().format("HHmm");
-		var time=findPos(mbus(),parseInt(now))+20;
+		var time=findPos(timeadd(mbus(),20),parseInt(now));
 		var diff=timediff(time,now);
 		$("#mbus").text(time_format(time)+" ("+time_format(diff)+" 남음)");
 	},1000);
