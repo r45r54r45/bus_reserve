@@ -22,8 +22,28 @@
 					</div>
 					<div class="col-xs-12">
 						<div class="collapse "  id="1dorm">
-							<div class="well" >
-								fff
+							<div class="well color-black" >
+								<div class="row">
+									<div class="col-xs-4">
+										<div class="row">
+											<div class="col-xs-12">
+												아침
+											</div>
+											<div class="col-xs-6">
+												메뉴1
+											</div>
+											<div class="col-xs-6">
+												메뉴2
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-4">
+										점심
+									</div>
+									<div class="col-xs-4">
+										저녁
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -55,6 +75,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 			<!-- 학식 메뉴 끝 -->
@@ -86,6 +107,16 @@
 				</div>
 			</div>
 			<!-- 셔틀 시간 끝-->
+			<!-- 6724 시간 시작-->
+			<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
+				<div>
+					<div class="big-font">
+						<span class="normal-font">버스앱보다 정확한</span><br> <span class="big-font">M6724 시간 볼래?</span><br>
+						<span class="small-font" style="margin-top:10px;">&plusmn;3분은 예의상 알지?</span>
+					</div>
+				</div>
+			</div>
+			<!-- 6724 시간 끝-->
 			<!-- 익명 질문 시작 -->
 			<a href="">
 				<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
@@ -96,11 +127,12 @@
 			<!-- 셔틀예약 시작 -->
 			<a href="">
 				<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
-					<span class="big-font">셔틀예약<br>쉽게하장!</span>
+					<span class="big-font">셔틀예약<br>편하게하장!</span>
 				</div>
 			</a>
 			<!-- 셔틀예약 끝 -->
 			<div id="help" class="col-xs-12 col-sm-6 height-100 thecenter color border-all">
+				<div>
 				<div style="margin-top:10px;color:white;" class="normal-font">디자인 구린거 알아요..쳇<br>도와주려면 연락 좀.. <a style="color:white;" href="tel:01071097327">전화걸기</a></div>
 				<div style="display:table;margin:10px 0;" class="input-group">
 					<input id="helpval" maxlength="45" class="form-control" placeholder="필요한거,조언할거는 여기에">
@@ -109,6 +141,7 @@
 					</span>
 				</div><!-- /input-group -->
 			</div>
+		</div>
 		</div>
 	</div>
 </body>

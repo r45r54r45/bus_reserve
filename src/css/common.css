@@ -42,7 +42,7 @@ body{
   vertical-align:middle;
   color:white;
 }
-.thecenter+div{
+.thecenter>div{
   display:table-cell;
   vertical-align:middle;
   color:white;
@@ -58,6 +58,10 @@ body{
 }
 .normal-font{
   font-size: 20px;
+  font-weight:500;
+}
+.small-font{
+  font-size: 16px;
   font-weight:500;
 }
 /*패딩*/
@@ -136,7 +140,9 @@ body{
 .submit_btn:visited>span{
   color:skyblue;
 }
-
+.color-black{
+  color:black;
+}
 a:hover{
   text-decoration: none;
 }
