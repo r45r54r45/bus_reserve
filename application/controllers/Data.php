@@ -37,4 +37,11 @@ class Data extends CI_Controller {
 		$arr = array ($one,$two);
 		echo json_encode($arr);
 	}
+	public function food_add()
+	{
+		$this->load->model("data_model");
+		$this->data_model->food_add($_POST['date'],$_POST['data1'],$_POST['data2']);
+
+	}
+
 }
