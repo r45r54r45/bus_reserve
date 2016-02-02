@@ -185,7 +185,8 @@
 		<div class="big-font">
 			<span class="normal-font">버스앱보다 정확한</span><br> <span class="big-font">M6724 시간 볼래?</span><br>
 			<span class="small-font" style="margin-top:10px;">&plusmn;1분은 예의상 알지?</span><br>
-			<span id="mbus" class="big-font" style="margin-top:20px;"></span>
+			<span id="mbus" class="big-font" style="margin-top:20px;"></span><br>
+			<span class="small-font">현재시간: </span><span id="time" class="small-font"></span>
 		</div>
 	</div>
 </div>
@@ -230,7 +231,6 @@
 <script>
 function getFood(){
 	$.get("/data/food", function( data ) {
-		console.log(data);
 		var one=data[0];
 		var two=data[1];
 		for (var i = 0; i < one.length; i++) {
@@ -268,6 +268,9 @@ $(window).on("load",function(){
 	songdo_shuttle();
 	getFood();
 	m_bus();
+	setInterval(function(){
+			$("#time").text(new Date().format("yyyy년 MM월 dd일 hh시 mm분 ss초"));
+	},1000);
 });
 function findPos(arr,data){
 	for (var i = 0; i < arr.length; i++) {
