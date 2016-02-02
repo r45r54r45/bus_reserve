@@ -200,7 +200,11 @@
 <!-- 셔틀예약 시작 -->
 <a href="/main/about">
 	<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
-		<span class="big-font">셔틀예약<br>편하게하장!</span>
+		<div>
+		<span class="normal-font">셔틀예약<br>편하게하장!</span>
+		<br>
+		<span class="big-font" style="font-weight:500;">[너의 셔틀이 되겠어]</span>
+	</div>
 	</div>
 </a>
 <!-- 셔틀예약 끝 -->
