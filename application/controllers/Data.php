@@ -39,6 +39,9 @@ class Data extends CI_Controller {
 			if($i==4||$i==5)array_push($f3,$aa[$i]);
 		}
 		$one=array($f1,$f2,$f3);
+		$f1=array();
+		$f2=array();
+		$f3=array();
 		for ($i=0; $i < 6; $i++) {
 			if($i==0||$i==1)array_push($f1,$bb[$i]);
 			if($i==2||$i==3)array_push($f2,$bb[$i]);
