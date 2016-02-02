@@ -6,9 +6,9 @@ body{
 .full-width{
   width:100%;
 }
-.btn{
+/*.btn{
   width: 50%;
-}
+}*/
 .col-xs-12{
   padding:0px 10px;
 }
@@ -42,7 +42,7 @@ body{
   vertical-align:middle;
   color:white;
 }
-.thecenter>div{
+.thecenter+div{
   display:table-cell;
   vertical-align:middle;
   color:white;
@@ -58,7 +58,7 @@ body{
 }
 .normal-font{
   font-size: 20px;
-    font-weight:500;
+  font-weight:500;
 }
 /*패딩*/
 .top-down-padding{
