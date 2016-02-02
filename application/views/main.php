@@ -16,7 +16,7 @@
 					<div class="col-xs-12" style="margin-top:20px;">
 						<div class="btn-group btn-group-justified " role="group">
 							<div class="btn-group" role="group">
-								<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#1dorm" aria-expanded="false" aria-controls="collapse">2긱 학식</button>
+								<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#1dorm" aria-expanded="false" aria-controls="collapse">1긱 학식</button>
 							</div>
 						</div>
 					</div>
@@ -76,7 +76,7 @@
 					<div class="col-xs-12" style="margin-top:20px;">
 						<div class="btn-group btn-group-justified " role="group">
 							<div class="btn-group" role="group">
-								<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#2dorm" aria-expanded="false" aria-controls="collapse">제 2 기숙사</button>
+								<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#2dorm" aria-expanded="false" aria-controls="collapse">2긱 학식</button>
 							</div>
 						</div>
 					</div>
