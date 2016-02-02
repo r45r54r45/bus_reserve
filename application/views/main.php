@@ -225,6 +225,7 @@
 <script>
 function getFood(){
 	$.get("/data/food", function( data ) {
+		console.log(data);
 		var one=data[0];
 		var two=data[1];
 		for (var i = 0; i < one.length; i++) {
@@ -260,7 +261,7 @@ for (var i = 0; i < d_time_s.length; i++) {
 }
 $(window).on("load",function(){
 	songdo_shuttle();
-	getFood();
+	// getFood();
 });
 function findPos(arr,data){
 	for (var i = 0; i < arr.length; i++) {
@@ -280,7 +281,6 @@ function songdo_shuttle(){
 	},1000);
 }
 function time_format(data){
-	console.log(data);
 	if(data==false)return "정보 없음";
 	var h=data.toString().substring(0,2);
 	var m=data.toString().substring(2,4);
