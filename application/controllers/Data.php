@@ -27,13 +27,12 @@ class Data extends CI_Controller {
         $a= $row->data_1;
         $b= $row->data_2;
 		}
-		$aa=explode("|",$a); //6개
-		$bb=explode("|",$b);
+		$aa=explode('|',$a); //6개
+		$bb=explode('|',$b);
 
 		$f1=array();
 		$f2=array();
 		$f3=array();
-		$i;
 		for ($i=0; $i < 6; $i++) {
 			if($i==0||$i==1)array_push($f1,$aa[i]);
 			if($i==2||$i==3)array_push($f2,$aa[i]);
