@@ -131,7 +131,7 @@
 				</div>
 			</a>
 			<!-- 셔틀예약 끝 -->
-			<div id="help" class="col-xs-12 col-sm-6 height-100 thecenter color border-all">
+			<div id="help" style="position:fixed;bottom:0;" class="col-xs-12 col-sm-6 height-100 thecenter color border-all">
 				<div>
 				<div style="margin-top:10px;color:white;" class="normal-font">디자인 구린거 알아요..쳇<br>도와주려면 연락 좀.. <a style="color:white;" href="tel:01071097327">전화걸기</a></div>
 				<div style="display:table;margin:10px 0;" class="input-group">
