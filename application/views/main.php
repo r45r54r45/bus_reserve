@@ -24,7 +24,7 @@
 						<div class="collapse "  id="1dorm">
 							<div class="well color-black" >
 								<div class="row">
-									<div class="col-xs-4">
+									<div class="col-xs-12 col-sm-4">
 										<div class="row">
 											<div class="col-xs-12">
 												아침
@@ -37,10 +37,10 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-xs-4">
+									<div class="col-xs-12 col-sm-4">
 										점심
 									</div>
-									<div class="col-xs-4">
+									<div class="col-xs-12 col-sm-4">
 										저녁
 									</div>
 								</div>
