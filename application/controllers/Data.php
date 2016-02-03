@@ -57,5 +57,8 @@ class Data extends CI_Controller {
 		$this->data_model->food_add($_POST['date'],$_POST['data1'],$_POST['data2']);
 
 	}
-
+	public function bus91()
+	{
+		$this->load->view("bus91");
+	}
 }

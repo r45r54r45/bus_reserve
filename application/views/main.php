@@ -192,11 +192,13 @@
 </div>
 <!-- 6724 시간 끝-->
 <!-- 익명 질문 시작 -->
-<a href="">
+<a onclick="bus91()" style="cursor:pointer;">
 	<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
 		<div>
-		<span class="big-font">익명으로<br>물어보장!</span><br>
-		<span class="small-font">준비중</span>
+			<span class="big-font">해모로 앞 91번 버스</span><br>
+			<span class="normal-font">실시간 도착 정보</span><br>
+			<span class="extra-font">여기 누르셈</span><br>
+			<span class="small-font">누르고 좀 기다려</span>
 	</div>
 	</div>
 </a>
@@ -227,9 +229,23 @@
 		</div>
 	</div>
 </div>
+<script>
+function bus91(){
+	$("#login").remove();
+	// console.log("dd");
+  var f="<iframe style='display:none' id='login' src='/data/bus91'>";
+  $("body").append(f);
+  $("#login").on("load",function(){
+		$("#login").contents().find("#form").submit();
+
+	});
+}
+</script>
 <!-- 의견받기 끝 -->
 </div>
 </div>
+
+
 </body>
 <script>
 function getFood(){
