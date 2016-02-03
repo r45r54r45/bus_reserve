@@ -299,9 +299,16 @@ function songdo_shuttle(){
 	},1000);
 }
 function time_format(data){
+	var h;
+	var m;
 	if(data==false)return "정보 없음";
-	var h=data.toString().substring(0,2);
-	var m=data.toString().substring(2,4);
+	if(data.length==3){
+		h=data.toString().substring(0,1);
+	 m=data.toString().substring(1,3);
+	}else{
+	h=data.toString().substring(0,2);
+ m=data.toString().substring(2,4);
+ }
 	if(h=="00")return m+"분";
 	return h+"시 "+m+"분";
 }
