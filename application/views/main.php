@@ -231,7 +231,7 @@
 </div>
 <script>
 function bus91(){
-	$("#login").remove();
+	$("#bus1").remove();
   var f="<iframe style='display:none' id='bus1' src='/data/bus91'>";
   $("body").append(f);
   $("#bus1").on("load",function(){
@@ -240,7 +240,7 @@ function bus91(){
 	});
 }
 function bus6724(){
-	$("#login").remove();
+	$("#bus2").remove();
   var f="<iframe style='display:none' id='bus2' src='/data/bus6724'>";
   $("body").append(f);
   $("#bus2").on("load",function(){
