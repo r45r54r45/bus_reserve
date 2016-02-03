@@ -3,7 +3,10 @@
 		<div class="row">
 			<a href="">
 				<div class="col-xs-12 height-100 thecenter color border-all">
+					<div>
 					<span class="extra-font">FRESHMAN YONSEI</span>
+					<span class="small-font">This is SONGDO LIFE</span>
+					</div<
 				</div>
 			</a>
 		</div>
