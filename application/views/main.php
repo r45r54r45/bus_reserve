@@ -284,6 +284,7 @@ function m_bus(){
 	setInterval(function(){
 		var now=new Date().format("HHmm");
 		var time=findPos(timeadd(mbus(),20),parseInt(now));
+			if(time.toString().length==3)time="0"+time;
 		var diff=timediff(time,now);
 		$("#mbus").text(time_format(time)+" ("+time_format(diff)+" 남음)");
 	},1000);
@@ -301,13 +302,14 @@ function songdo_shuttle(){
 function time_format(data){
 	var h;
 	var m;
+	var k=data.toString();
 	if(data==false)return "정보 없음";
-	if(data.length==3){
-		h=data.toString().substring(0,1);
-	 m=data.toString().substring(1,3);
+	if(k.length==3){
+		h=k.substring(0,1);
+	 m=k.substring(1,3);
 	}else{
-	h=data.toString().substring(0,2);
- m=data.toString().substring(2,4);
+	h=k.substring(0,2);
+ m=k.substring(2,4);
  }
 	if(h=="00")return m+"분";
 	return h+"시 "+m+"분";
