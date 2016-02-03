@@ -59,10 +59,14 @@ class Data extends CI_Controller {
 	}
 	public function bus91()
 	{
+				$this->load->view('header');
 		$this->load->view("bus91");
+				$this->load->view('footer');
 	}
 	public function bus6724()
 	{
+				$this->load->view('header');
 		$this->load->view("bus6724");
+			$this->load->view('footer');
 	}
 }
