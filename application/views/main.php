@@ -194,7 +194,8 @@
 <!-- 익명 질문 시작 -->
 <a href="">
 	<div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
-		<span class="big-font">익명으로<br>물어보장!</span>
+		<span class="big-font">익명으로<br>물어보장!</span><br>
+		<span class="small-font">준비중</span>
 	</div>
 </a>
 <!-- 익명 질문 끝 -->
