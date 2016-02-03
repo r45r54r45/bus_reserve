@@ -61,7 +61,7 @@ class Data extends CI_Controller {
 	{
 		$this->load->view("bus91");
 	}
-	public function bus91()
+	public function bus6724()
 	{
 		$this->load->view("bus6724");
 	}
