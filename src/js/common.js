@@ -211,20 +211,3 @@ function timediff(a,b){
     else return (ah-bh-1).toString()+(am+60-bm).toString();
     }
   }
-
-  function searchBusTime(bstopid,routeid,Dir,pathseq){
-    var frm = document.pform;
-    frm.routeid.value = routeid;
-    frm.bstopid.value = bstopid;
-    frm.pathseq.value = pathseq;
-
-
-    if(Dir == 0){
-    frm.action = "http://bus.incheon.go.kr/iw/pda/01/retrievePdaOfferBusSystem2892273231.laf";
-    } else if(Dir == 1){
-    frm.action = "http://bus.incheon.go.kr/iw/pda/01/retrievePdaOfferBusSystem2892273232.laf";
-    }else if(Dir == 2){
-    frm.action = "http://bus.incheon.go.kr/iw/pda/01/retrievePdaOfferBusSystem2892273233.laf";
-    }
-    frm.submit();
-}

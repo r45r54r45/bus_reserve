@@ -180,16 +180,16 @@
 </div>
 <!-- 셔틀 시간 끝-->
 <!-- 6724 시간 시작-->
+<a onclick="bus6724()" style="cursor:pointer;">
 <div class="col-xs-12 col-sm-6 height-300 thecenter color border-all">
 	<div>
-		<div class="big-font">
-			<span class="normal-font">버스앱보다 정확한</span><br> <span class="big-font">M6724 시간 볼래?</span><br>
-			<span class="small-font" style="margin-top:10px;">&plusmn;1분은 예의상 알지?</span><br>
-			<span id="mbus" class="big-font" style="margin-top:20px;"></span><br>
-			<span class="small-font">현재시간: </span><span id="time" class="small-font"></span>
-		</div>
+		<span class="big-font">1긱 앞 6724번 버스</span><br>
+		<span class="normal-font">실시간 도착 정보</span><br>
+		<span class="extra-font">여기 누르셈</span><br>
+		<span class="small-font">누르고 좀 기다려</span>
 	</div>
 </div>
+</a>
 <!-- 6724 시간 끝-->
 <!-- 익명 질문 시작 -->
 <a onclick="bus91()" style="cursor:pointer;">
@@ -232,11 +232,19 @@
 <script>
 function bus91(){
 	$("#login").remove();
-	// console.log("dd");
-  var f="<iframe style='display:none' id='login' src='/data/bus91'>";
+  var f="<iframe style='display:none' id='bus1' src='/data/bus91'>";
   $("body").append(f);
-  $("#login").on("load",function(){
-		$("#login").contents().find("#form").submit();
+  $("#bus1").on("load",function(){
+		$("#bus1").contents().find("#form").submit();
+
+	});
+}
+function bus6724(){
+	$("#login").remove();
+  var f="<iframe style='display:none' id='bus2' src='/data/bus6724'>";
+  $("body").append(f);
+  $("#bus2").on("load",function(){
+		$("#bus2").contents().find("#form").submit();
 
 	});
 }
