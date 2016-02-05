@@ -106,9 +106,10 @@
         </div>
       </div>
         <div class="col-xs-12 side-padding-20">
-          <a onclick="submitCheck()">
+          <a onclick="alert('안된다니까')">
+            <!-- submitCheck() -->
           <div class=" submit_btn">
-          <span>자동 예약 신청하기</span>
+          <span>아직 안해 돌아가</span>
         </div>
       </a>
         </div>
