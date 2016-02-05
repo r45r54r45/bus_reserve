@@ -21,7 +21,7 @@ class Data extends CI_Controller {
 	{
 		$a; $b;
 		$this->load->model("data_model");
-		$result=$this->data_model->food_get("2016-02-29");
+		$result=$this->data_model->food_get(date("Y-m-d"));
 		foreach ($result->result() as $row)
 		{
         $a= $row->data_1;
