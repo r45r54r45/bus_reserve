@@ -35,14 +35,14 @@ $(function(){
               한 파일당 최대 15mb까지 업로드 가능합니다.
             </span>
           </div>
-          <div class="col-xs-12 side-padding-20">
+          <!-- <div class="col-xs-12 side-padding-20">
             <a onclick="$('#form3').submit()">
-              <!-- submitCheck() -->
+
               <div class=" submit_btn">
                 <span>업로드 하기</span>
               </div>
             </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
