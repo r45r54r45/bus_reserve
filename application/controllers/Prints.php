@@ -24,7 +24,8 @@ class Prints extends CI_Controller {
 	public function login_func()
 	{
 		$this->load->helper('url');
+		$this->input->post("id");
 		// 로그인 성공하면
-		redirect("/prints/vault","refresh");
+		redirect(site_url("prints/vault"));
 	}
 }
