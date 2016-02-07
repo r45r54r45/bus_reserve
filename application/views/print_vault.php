@@ -18,8 +18,8 @@ function submit_form(){
         <div class="col-xs-12">
           <div class="col-xs-12 center side-padding-20 form-group" style="padding-top:10px;">
             <div class="full-width input-group">
-              <form method="post" enctype="multipart/form-data">
-              <input name="file" class="form-control" type="file" >
+              <form id="form3" method="post" action="/prints/file" enctype="multipart/form-data">
+              <input name="userfile" class="form-control" type="file" >
             </form>
             </div>
           </div>
@@ -30,7 +30,7 @@ function submit_form(){
             </span>
           </div>
           <div class="col-xs-12 side-padding-20">
-            <a onclick="alert('안된다니까')">
+            <a onclick="$('#form3').submit()">
               <!-- submitCheck() -->
               <div class=" submit_btn">
                 <span>업로드 하기</span>
