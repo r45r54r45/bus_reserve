@@ -6,6 +6,10 @@ function submit_form(){
   }
   $("#form").submit();
 }
+Dropzone.autoDiscover = false;
+$(function(){
+  var myDropzone1 = new Dropzone("#upload", { url:'/prints/file' , paramName: "userfile",addRemoveLinks:true,dictRemoveFile:"파일 삭제"});
+});
 </script>
 <body>
   <div class="container-fluid alert alert-success" style="margin-top:20px;">
@@ -19,14 +23,16 @@ function submit_form(){
           <div class="col-xs-12 center side-padding-20 form-group" style="padding-top:10px;">
             <div class="full-width input-group">
               <form id="form3" method="post" action="/prints/file" enctype="multipart/form-data">
-              <input name="userfile" class="form-control" type="file" >
+              <div id="upload" class="dropzone">
+                  <div class="dz-default dz-message"><span>프로필 사진은 한 개만 업로드 할 수 있습니다<br>( 클릭 또는 파일을 드래그 해주세요! )</span></div>
+                </div>
             </form>
             </div>
           </div>
           <div class="col-xs-12" role="alert">
             <span class="glyphicon glyphicon-info-sign" style="margin-left:10px;vertical-align: middle"></span>
             <span class="small-font" style="font-size:12px;">
-              최대 15mb까지 업로드 가능합니다.
+              한 파일당 최대 15mb까지 업로드 가능합니다.
             </span>
           </div>
           <div class="col-xs-12 side-padding-20">
