@@ -1,3 +1,12 @@
+<script>
+function submit_form(){
+  if($("input[name='id']").val()==''){
+    alert("아이디를 입력해주세요");
+    return;
+  }
+  $("#form").submit();
+}
+</script>
 <body>
   <div class="container-fluid alert alert-success" style="margin-top:20px;">
     <div class="row ">
@@ -9,7 +18,10 @@
         <div class="col-xs-12">
           <div class="col-xs-12 center side-padding-20 form-group" style="padding-top:10px;">
             <div class="full-width input-group">
-              <input id="sid" name="id" class="form-control" type="text" placeholder="학번" >
+              <form id="form" action="/print/login_func" method="post">
+              <input name="id" class="form-control" type="text" placeholder="아이디는 한글도 가능합니다"
+              onkeydown="javascript: if (event.keyCode == 13) {submit_form();}" autofocus>
+            </form>
             </div>
           </div>
           <div class="col-xs-12" role="alert">
