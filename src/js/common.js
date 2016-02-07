@@ -18,10 +18,10 @@ $(window).on("load",function(){
   }
   }
 
-  $("#form").on("submit",function(event){
-    event.preventDefault();
-    console.log($(this).serialize());
-  });
+  // $("#form").on("submit",function(event){
+  //   event.preventDefault();
+  //   console.log($(this).serialize());
+  // });
 });
 var background=["9B3FB5","5EA59C","E56B86","1A1B41"];
 function input_range(event){
