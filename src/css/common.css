@@ -123,6 +123,9 @@ body{
   border:2px solid skyblue;
   cursor:pointer;
 }
+.span-center{
+  text-align: center;
+}
 .submit_btn>span{
   color:skyblue;
   font-size:20px;
