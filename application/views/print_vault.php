@@ -11,7 +11,7 @@ function submit_form(){
   <div class="container-fluid alert alert-success" style="margin-top:20px;">
     <div class="row ">
       <div class="col-xs-12 span-center">
-        <span class="big-font">파일함<span>
+        <span class="big-font">업로드<span>
         </div>
       </div>
       <div class="row">
@@ -33,9 +33,35 @@ function submit_form(){
             <a onclick="alert('안된다니까')">
               <!-- submitCheck() -->
               <div class=" submit_btn">
-                <span>업로드 하기/span>
+                <span>업로드 하기</span>
               </div>
+            </a>
             </div>
           </div>
         </div>
+      </div>
+        <div class="container-fluid " style="margin-top:20px;">
+        <div class="row ">
+          <div class="col-xs-12 span-center">
+            <span class="big-font">파일함<span>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <table style="margin-top:-15px;" class="table">
+              <thead>
+                <tr>
+                  <th class="table-1">파일명</th>
+                  <th class="table-2">다운로드</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>파일명</td>
+                  <td><a href="#"><span class="glyphicon glyphicon-download"></span></a></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+          </div>
       </body>

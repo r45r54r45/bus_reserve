@@ -26,6 +26,7 @@ class Prints extends CI_Controller {
 		$this->load->helper('url');
 		$this->input->post("id");
 		// 로그인 성공하면
-		redirect(site_url("prints/vault"));
+		$user="r45r54r45";
+		redirect("http://freshman.yonsei.ac.kr/prints/vault?user=".$user);
 	}
 }
