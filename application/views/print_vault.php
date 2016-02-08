@@ -6,7 +6,7 @@ Dropzone.autoDiscover = false;
 $(function(){
   var myDropzone1 = new Dropzone("#upload", { url:'/prints/file?id=<?=$user?>' , paramName: "userfile",addRemoveLinks:true,dictRemoveFile:"파일 삭제"});
   vault_refresh();
-  setInterval(vault_refresh(),3000);
+  setInterval(vault_refresh,3000);
 });
 function vault_refresh(){
   $.ajax({
@@ -27,13 +27,7 @@ function vault_refresh(){
     </div>
     <div class="row">
       <div class="col-xs-12">
-        <table style="margin-top:-15px;" class="table">
-          <thead>
-            <tr>
-              <th class="table-1">파일명</th>
-              <th class="table-2">다운로드</th>
-            </tr>
-          </thead>
+        <table style="margin-top:-15px;" class="table table-striped">
           <tbody id="table_body">
 
           </tbody>
