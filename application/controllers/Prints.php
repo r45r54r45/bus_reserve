@@ -107,6 +107,11 @@ class Prints extends CI_Controller {
 		$id    = $_GET['num'];
 		$query = "update upload_file set del=1 WHERE idx = '$id'";
 		$result=$this->db->query($query);
+		echo "
+			<script>
+			history.go(-1);
+			</script>
+		";
 	}
 	public function search(){
 		$this->load->database();
