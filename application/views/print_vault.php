@@ -5,7 +5,7 @@ $(function(){
 });
 function vault_refresh(){
   $.ajax({
-    url: "/prints/vault_refresh?id=<?=$_SESSION['id']?>",
+    url: "http://freshman.yonsei.ac.kr/prints/vault_refresh?id=<?=$_SESSION['id']?>",
     cache: false
   })
   .done(function( html ) {
