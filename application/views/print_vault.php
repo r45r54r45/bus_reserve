@@ -6,6 +6,7 @@ Dropzone.autoDiscover = false;
 $(function(){
   var myDropzone1 = new Dropzone("#upload", { url:'/prints/file?id=<?=$user?>' , paramName: "userfile",addRemoveLinks:true,dictRemoveFile:"파일 삭제"});
   vault_refresh();
+  setInterval(vault_refresh(),3000);
 });
 function vault_refresh(){
   $.ajax({
