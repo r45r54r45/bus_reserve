@@ -1,3 +1,6 @@
+<?
+$user=$_SESSION['id'];
+?>
 <script>
 Dropzone.autoDiscover = false;
 $(function(){
@@ -5,7 +8,7 @@ $(function(){
 });
 function vault_refresh(){
   $.ajax({
-    url: "http://freshman.yonsei.ac.kr/prints/vault_refresh?id=<?=$_SESSION['id']?>",
+    url: "http://freshman.yonsei.ac.kr/prints/vault_refresh?id=<?=$user?>",
     cache: false
   })
   .done(function( html ) {
