@@ -105,7 +105,7 @@ class Prints extends CI_Controller {
 	public function search(){
 		$this->load->database();
 		$word= $_GET['word'];
-		if($word="")return;
+		if($word=="")return;
 		$query = "select * from upload_file where name like '%".$word."%' order by idx desc";
 		$result=$this->db->query($query);
 		$cnt=0;
