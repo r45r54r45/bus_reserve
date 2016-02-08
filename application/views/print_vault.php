@@ -34,7 +34,10 @@ function delete1(data){
         <span class="big-font">파일함<span> <span style="color: rgb(88, 68, 199); cursor:pointer" class="glyphicon glyphicon-refresh" onclick="vault_refresh()"></span>
       </div>
     </div>
-    <div class="row">
+    <div class="row" style="position:relative;z-index:1;">
+      <div class="loading">
+        <img src="http://sierrafire.cr.usgs.gov/images/loading.gif">
+      </div>
       <div class="col-xs-12">
         <table class="table table-striped">
           <tbody id="table_body">
