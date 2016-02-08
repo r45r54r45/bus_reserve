@@ -79,7 +79,7 @@ iframe{
 function search_func(){
     $.ajax({
       url: "http://freshman.yonsei.ac.kr/prints/search?word="+$("input[name='search']").val(),
-      cache: true
+      cache: false
     })
     .done(function( html ) {
       $( "#table_body" ).html( html );
