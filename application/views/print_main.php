@@ -84,6 +84,7 @@ function search_func(){
     .done(function( html ) {
       $( "#table_body" ).html( html );
     });
+    console.log("http://freshman.yonsei.ac.kr/prints/search?word="+$("input[name='search']").val());
 }
 </script>
 <body>
