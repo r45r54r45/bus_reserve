@@ -13,7 +13,7 @@ function vault_refresh(){
     cache: false
   })
   .done(function( html ) {
-    $( "#table_body" ).text( html );
+    $( "#table_body" ).html( html );
   });
 }
 </script>
