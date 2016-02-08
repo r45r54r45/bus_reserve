@@ -69,7 +69,7 @@ function delete1(data){
           <div class="col-xs-12" role="alert">
             <span class="glyphicon glyphicon-info-sign" style="margin-left:10px;vertical-align: middle"></span>
             <span class="small-font" style="font-size:12px;">
-              한 파일당 최대 15mb까지 업로드 가능합니다.
+              한 파일당 최대 10mb까지 업로드 가능합니다.
             </span>
           </div>
         </div>
