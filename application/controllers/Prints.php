@@ -28,7 +28,6 @@ class Prints extends CI_Controller {
 		$this->load->helper('url');
 		$user=$_POST['id'];
 		// 로그인 성공하면
-		$_SESSION['id']=$user;
 		// freshman.yonsei.ac.kr
 		redirect("http://freshman.yonsei.ac.kr/prints/vault?id=$user");
 	}
@@ -76,7 +75,7 @@ class Prints extends CI_Controller {
 			echo '
 			<tr>
 			<td>'.$f_name.'</td>
-			<td><a href="prints/download/'.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
+			<td><a href="prints/download?num='.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
 			</tr>
 			';
 		}
@@ -88,5 +87,19 @@ class Prints extends CI_Controller {
 		';
 
 
+	}
+	public function download(){
+		$this->load->database();
+		$id    = $_GET['num'];
+		$query = "SELECT name, type, size, content " .
+		"FROM upload WHERE idx = '$id'";
+		$result=$this->db->query($query);
+		foreach ($result->result() as $row)
+		{
+			header("Content-length: $row->size");
+			header("Content-type: $row->type");
+			header("Content-Disposition: attachment; filename=$row->name");
+			echo $row->content;
+		}
 	}
 }
