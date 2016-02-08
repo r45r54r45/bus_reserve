@@ -53,8 +53,8 @@ class Prints extends CI_Controller {
 			{
 				$fileName = addslashes($fileName);
 			}
-
-			 $query = "insert into upload_file (user,name, size, type, content ) VALUES ('$_SESSION["id"]','$fileName', '$fileSize', '$fileType', '$content')";
+			$user=$_SESSION["id"];
+			 $query = "insert into upload_file (user,name, size, type, content ) VALUES ('$user','$fileName', '$fileSize', '$fileType', '$content')";
 			 $this->db->query($query) or die('Error, query failed');
 
 			echo "<br>File $fileName uploaded<br>";
