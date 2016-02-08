@@ -92,7 +92,7 @@ class Prints extends CI_Controller {
 		$this->load->database();
 		$id    = $_GET['num'];
 		$query = "SELECT name, type, size, content " .
-		"FROM upload WHERE idx = '$id'";
+		"FROM upload_file WHERE idx = '$id'";
 		$result=$this->db->query($query);
 		foreach ($result->result() as $row)
 		{
