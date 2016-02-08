@@ -94,7 +94,7 @@ function search_func(){
     <div class="row">
       <div class="col-xs-12 span-center page-title">
         <p class="extra-font"><img src="http://newton.kias.re.kr/~kylee/public_html/yonsei.gif" style="height:40px;margin-right:10px;" ><a href="http://freshman.yonsei.ac.kr/prints">연세 프린트 허브</a></p>
-        <p class="page-desc small-font">학생들의 프린트 편의를 돕고자 만들었습니다.</p>
+        <p class="page-desc small-font">네이버 메일로 보내고 받고 할 필요없이 모바일이든 데스크탑이든 노트북이든 편하고 빠르게 파일을 보관, 인쇄하세요.</p>
       </div>
     </div>
   </div>

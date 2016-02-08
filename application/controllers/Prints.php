@@ -62,7 +62,7 @@ class Prints extends CI_Controller {
 	public function vault_refresh(){
 		$this->load->database();
 		$id=$_GET['id'];
-		$query = "select * from upload_file where user ='$id' order by idx desc";
+		$query = "select * from upload_file where user ='$id' and del=0 order by idx desc";
 		$result=$this->db->query($query);
 		$cnt=0;
 		$f_name;
@@ -101,6 +101,12 @@ class Prints extends CI_Controller {
 			header("Content-Disposition: attachment; filename=$row->name");
 			echo $row->content;
 		}
+	}
+	public function delete(){
+		$this->load->database();
+		$id    = $_GET['num'];
+		$query = "update upload_file set del=1 WHERE idx = '$id'";
+		$result=$this->db->query($query);
 	}
 	public function search(){
 		$this->load->database();
