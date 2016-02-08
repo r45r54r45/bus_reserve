@@ -1,11 +1,4 @@
 <script>
-function submit_form(){
-  if($("input[name='id']").val()==''){
-    alert("아이디를 입력해주세요");
-    return;
-  }
-  $("#form").submit();
-}
 Dropzone.autoDiscover = false;
 $(function(){
   var myDropzone1 = new Dropzone("#upload", { url:'/prints/file' , paramName: "userfile",addRemoveLinks:true,dictRemoveFile:"파일 삭제"});

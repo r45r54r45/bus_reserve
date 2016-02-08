@@ -17,6 +17,7 @@ class Prints extends CI_Controller {
 	}
 	public function vault()
 	{
+		if(!isset($_SESSION['id']))redirect("http://freshman.yonsei.ac.kr/prints/";
 		$this->load->view('header');
 		$this->load->view('print_vault');
 		$this->load->view('footer');
@@ -24,11 +25,11 @@ class Prints extends CI_Controller {
 	public function login_func()
 	{
 		$this->load->helper('url');
-		$this->input->post("id");
+		$user=$this->input->post("id");
 		// 로그인 성공하면
-		$user="r45r54r45";
+		$_SESSION['id']=$user;
 		// freshman.yonsei.ac.kr
-		redirect("http://freshman.yonsei.ac.kr/prints/vault?user=".$user);
+		redirect("http://freshman.yonsei.ac.kr/prints/vault");
 	}
 	public function file()
 	{
