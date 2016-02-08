@@ -61,7 +61,7 @@ function delete1(data){
             <div class="full-width input-group">
               <form id="form3" method="post" action="/prints/file" enctype="multipart/form-data">
                 <div id="upload" class="dropzone">
-                  <div class="dz-default dz-message"><span>프로필 사진은 한 개만 업로드 할 수 있습니다<br>( 클릭 또는 파일을 드래그 해주세요! )</span></div>
+                  <div class="dz-default dz-message"><span style="color:#D3D3D3;">Drag/Drop도 가능</span></div>
                 </div>
               </form>
             </div>
