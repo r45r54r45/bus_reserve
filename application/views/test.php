@@ -1,3 +1,4 @@
-
-<iframe src="http://ysweb.yonsei.ac.kr/busTest/reserveinfo2.jsp">
-</iframe>
+<form action="/prints/file" method="post">
+<input type="file" name="userfile">
+<button type="submit">ddd</button>
+</form>
