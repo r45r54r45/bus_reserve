@@ -75,6 +75,17 @@ iframe{
   height:500px;
 }
 </style>
+<script>
+function search_func(){
+    $.ajax({
+      url: "http://freshman.yonsei.ac.kr/prints/search?word="+$("input[name='search']").val(),
+      cache: true
+    })
+    .done(function( html ) {
+      $( "#table_body" ).html( html );
+    });
+}
+</script>
 <body>
 
   <div class="container">
@@ -82,7 +93,7 @@ iframe{
     <!-- 다른 사람들의 실시간 파일 정보 -->
     <div class="row">
       <div class="col-xs-12 span-center page-title">
-        <p class="extra-font"><img src="http://newton.kias.re.kr/~kylee/public_html/yonsei.gif" style="height:40px;margin-right:10px;" >연세 프린트 허브</p>
+        <p class="extra-font"><img src="http://newton.kias.re.kr/~kylee/public_html/yonsei.gif" style="height:40px;margin-right:10px;" ><a href="http://freshman.yonsei.ac.kr/prints">연세 프린트 허브</a></p>
         <p class="page-desc small-font">학생들의 프린트 편의를 돕고자 만들었습니다.</p>
       </div>
     </div>
@@ -113,11 +124,8 @@ iframe{
                 <th class="table-2">다운로드</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>파일명</td>
-                <td><a href="#"><span class="glyphicon glyphicon-download"></span></a></td>
-              </tr>
+            <tbody id="table_body">
+
             </tbody>
           </table>
         </div>
@@ -127,7 +135,7 @@ iframe{
           </div>
           <div style="margin-top:30px;" class="center side-padding-20 form-group" style="padding-top:10px;">
             <div class="full-width input-group">
-              <input id="sid" name="id" class="form-control" type="text" placeholder="검색어" onkeydown=" " onkeyup=""  maxlength="100">
+              <input name="search" class="form-control" type="text" placeholder="검색어" onkeydown=" " onkeyup="search_func()"  maxlength="100">
             </div>
           </div>
           <table style="margin-top:-15px;" class="table">

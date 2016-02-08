@@ -102,4 +102,32 @@ class Prints extends CI_Controller {
 			echo $row->content;
 		}
 	}
+	public function search(){
+		$this->load->database();
+		$word= $_GET['word'];
+		if($word="")return;
+		$query = "select * from upload_file where name like '%$word%' order by idx desc";
+		$result=$this->db->query($query);
+		$cnt=0;
+		$f_name;
+		$f_idx;
+		foreach ($result->result() as $row)
+		{
+			$cnt++;
+			$f_name=$row->name;
+			$f_idx=$row->idx;
+			echo '
+			<tr>
+			<td>'.$f_name.'</td>
+			<td><a href="download?num='.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
+			</tr>
+			';
+		}
+		if($cnt==0)
+		echo '
+		<tr>
+		<td colspan="2">검색 결과가 없습니다.</td>
+		</tr>
+		';
+	}
 }
