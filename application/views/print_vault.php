@@ -27,7 +27,7 @@ function vault_refresh(){
     </div>
     <div class="row">
       <div class="col-xs-12">
-        <table style="margin-top:-15px;" class="table table-striped">
+        <table class="table table-striped">
           <tbody id="table_body">
 
           </tbody>
