@@ -5,6 +5,7 @@ $user=$_GET['id'];
 Dropzone.autoDiscover = false;
 $(function(){
   var myDropzone1 = new Dropzone("#upload", { url:'/prints/file' , paramName: "userfile",addRemoveLinks:true,dictRemoveFile:"파일 삭제"});
+  vault_refresh();
 });
 function vault_refresh(){
   $.ajax({
