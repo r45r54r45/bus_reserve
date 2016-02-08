@@ -18,12 +18,14 @@ function vault_refresh(){
   });
 }
 function delete1(data){
+  $(".loading").css("display","");
   $.ajax({
     url: "http://freshman.yonsei.ac.kr/prints/delete1?num="+data,
     cache: false
   })
   .done(function( html ) {
     $("#row_"+data).remove();
+    $(".loading").css("display","none");
   });
 }
 </script>
@@ -35,8 +37,8 @@ function delete1(data){
       </div>
     </div>
     <div class="row" style="position:relative;z-index:1;">
-      <div class="loading">
-        <img src="http://sierrafire.cr.usgs.gov/images/loading.gif">
+      <div class="loading" style="display:none;">
+        <img src="http://sierrafire.cr.usgs.gov/images/loading.gif" style="width:100%">
       </div>
       <div class="col-xs-12">
         <table class="table table-striped">
