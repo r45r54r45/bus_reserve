@@ -58,4 +58,32 @@ class Prints extends CI_Controller {
 		}
 
 	}
+	public function vault_refresh(){
+		$id=$_GET['id'];
+		$query = "select * from upload_file where user ='$id'";
+		$result=$this->db->query($query);
+		$cnt=0;
+		$f_name;
+		$f_idx;
+		foreach ($result->result() as $row)
+		{
+			$cnt++;
+			$f_name=$row->name;
+			$f_idx=$row->idx;
+			echo '
+			<tr>
+				<td>'.$f_name.'</td>
+				<td><a href="prints/download/'.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
+			</tr>
+			';
+		}
+		if($cnt==0)
+		echo '
+		<tr>
+			<td colspan="2">파일함이 비어있습니다.</td>
+		</tr>
+		';
+
+
+	}
 }
