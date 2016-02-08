@@ -17,6 +17,7 @@ class Prints extends CI_Controller {
 	}
 	public function vault()
 	{
+		$this->load->helper('url');
 		if(!isset($_SESSION['id']))redirect("http://freshman.yonsei.ac.kr/prints/");
 		$this->load->view('header');
 		$this->load->view('print_vault');
