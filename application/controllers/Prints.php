@@ -75,7 +75,7 @@ class Prints extends CI_Controller {
 			echo '
 			<tr>
 			<td>'.$f_name.'</td>
-			<td><a href="download?num='.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a><a href="delete1?num='.$f_idx.'"><span style="margin-left:5px" class="glyphicon glyphicon-remove"></span></a></td>
+			<td><a href="download?num='.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a><a onclick="delete1('.$f_idx.')"><span style="margin-left:5px" class="glyphicon glyphicon-remove"></span></a></td>
 			</tr>
 			';
 		}
@@ -107,11 +107,6 @@ class Prints extends CI_Controller {
 		$id    = $_GET['num'];
 		$query = "update upload_file set del=1 WHERE idx = '$id'";
 		$result=$this->db->query($query);
-		echo "
-			<script>
-			history.go(-1);
-			</script>
-		";
 	}
 	public function search(){
 		$this->load->database();

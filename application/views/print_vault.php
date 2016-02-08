@@ -17,6 +17,15 @@ function vault_refresh(){
     $( "#table_body" ).html( html );
   });
 }
+function delete1(data){
+  $.ajax({
+    url: "http://freshman.yonsei.ac.kr/prints/delete1?num="+data,
+    cache: false
+  })
+  .done(function( html ) {
+    $("#row_"+data).remove();
+  });
+}
 </script>
 <body>
   <div class="container-fluid " style="margin-top:20px;">
