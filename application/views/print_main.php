@@ -124,7 +124,7 @@ function search_func(){
                 <th class="table-2">다운로드</th>
               </tr>
             </thead>
-            <tbody id="table_body">
+            <tbody>
 
             </tbody>
           </table>
@@ -145,11 +145,8 @@ function search_func(){
                 <th class="table-2">다운로드</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>파일명</td>
-                <td><a href="#"><span class="glyphicon glyphicon-download"></span></a></td>
-              </tr>
+            <tbody  id="table_body">
+
             </tbody>
           </table>
         </div>
