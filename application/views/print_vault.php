@@ -1,5 +1,5 @@
 <?
-$user=$_SESSION['id'];
+$user=$_GET['id'];
 ?>
 <script>
 Dropzone.autoDiscover = false;

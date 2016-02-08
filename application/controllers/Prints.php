@@ -31,7 +31,7 @@ class Prints extends CI_Controller {
 		session_start();
 		$_SESSION['id']=$user;
 		// freshman.yonsei.ac.kr
-		redirect("http://freshman.yonsei.ac.kr/prints/vault");
+		redirect("http://freshman.yonsei.ac.kr/prints/vault?id=$user");
 	}
 	public function file()
 	{
