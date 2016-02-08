@@ -28,7 +28,6 @@ class Prints extends CI_Controller {
 		$this->load->helper('url');
 		$user=$_POST['id'];
 		// 로그인 성공하면
-		session_start();
 		$_SESSION['id']=$user;
 		// freshman.yonsei.ac.kr
 		redirect("http://freshman.yonsei.ac.kr/prints/vault?id=$user");
@@ -53,9 +52,9 @@ class Prints extends CI_Controller {
 			{
 				$fileName = addslashes($fileName);
 			}
-			$user=$_SESSION["id"];
-			 $query = "insert into upload_file (user,name, size, type, content ) VALUES ('$user','$fileName', '$fileSize', '$fileType', '$content')";
-			 $this->db->query($query) or die('Error, query failed');
+			$user=$_GET["id"];
+			$query = "insert into upload_file (user,name, size, type, content ) VALUES ('$user','$fileName', '$fileSize', '$fileType', '$content')";
+			$this->db->query($query) or die('Error, query failed');
 
 			echo "<br>File $fileName uploaded<br>";
 		}
@@ -76,15 +75,15 @@ class Prints extends CI_Controller {
 			$f_idx=$row->idx;
 			echo '
 			<tr>
-				<td>'.$f_name.'</td>
-				<td><a href="prints/download/'.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
+			<td>'.$f_name.'</td>
+			<td><a href="prints/download/'.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
 			</tr>
 			';
 		}
 		if($cnt==0)
 		echo '
 		<tr>
-			<td colspan="2">파일함이 비어있습니다.</td>
+		<td colspan="2">파일함이 비어있습니다.</td>
 		</tr>
 		';
 
