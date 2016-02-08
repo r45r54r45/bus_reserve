@@ -62,6 +62,7 @@ class Prints extends CI_Controller {
 
 	}
 	public function vault_refresh(){
+		$this->load->database();
 		$id=$_GET['id'];
 		$query = "select * from upload_file where user ='$id'";
 		$result=$this->db->query($query);
