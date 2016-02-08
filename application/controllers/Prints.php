@@ -18,7 +18,7 @@ class Prints extends CI_Controller {
 	public function vault()
 	{
 		$this->load->helper('url');
-		if(!isset($_SESSION['id']))redirect("http://freshman.yonsei.ac.kr/prints/");
+		// if(!isset($_SESSION['id']))redirect("http://freshman.yonsei.ac.kr/prints/");
 		$this->load->view('header');
 		$this->load->view('print_vault');
 		$this->load->view('footer');
@@ -26,7 +26,7 @@ class Prints extends CI_Controller {
 	public function login_func()
 	{
 		$this->load->helper('url');
-		$user=$this->input->post("id");
+		$user=$_POST['id'];
 		// 로그인 성공하면
 		session_start();
 		$_SESSION['id']=$user;
@@ -54,7 +54,7 @@ class Prints extends CI_Controller {
 				$fileName = addslashes($fileName);
 			}
 
-			 $query = "insert into upload_file (user,name, size, type, content ) VALUES ('1','$fileName', '$fileSize', '$fileType', '$content')";
+			 $query = "insert into upload_file (user,name, size, type, content ) VALUES ('$_SESSION["id"]','$fileName', '$fileSize', '$fileType', '$content')";
 			 $this->db->query($query) or die('Error, query failed');
 
 			echo "<br>File $fileName uploaded<br>";
