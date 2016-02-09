@@ -56,7 +56,7 @@ class Prints extends CI_Controller {
 		}
 		$user=$_GET["id"];
 		$encode_name=$fileName;
-		$query = "insert into upload_file (user,name,translate(encode_name), size, type, content ) VALUES ('$user','$fileName','$encode_name', '$fileSize', '$fileType', '$content')";
+		$query = "insert into upload_file (user,name,encode_name, size, type, content ) VALUES ('$user','$fileName','$encode_name', '$fileSize', '$fileType', '$content')";
 		$this->db->query($query) or die('Error, query failed');
 
 
