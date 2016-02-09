@@ -37,7 +37,9 @@ class Prints extends CI_Controller {
 		* These constants are needed to access the API.
 		*/
 		$tmpName  = $_FILES['userfile']['tmp_name'];
-				$fileName = $_FILES['userfile']['name'];
+		$fileName = $_FILES['userfile']['name'];
+		$fileSize = $_FILES['userfile']['size'];
+		$fileType = $_FILES['userfile']['type'];
 		define("API_KEY", "cvXL1oxg9M6FyDrRgLbsuDOwaBzC6Y");
 		define("API_PWD", "yas3zQEXSgV1iFjKljfvk5yHc95hmF");
 		// }}}
@@ -48,7 +50,14 @@ class Prints extends CI_Controller {
 		$response = $client->post("/path/data/", array($fileName => $rh));
 		echo"<pre>";var_dump( $response);
 		fclose($rh);
-
+		if(!get_magic_quotes_gpc())
+		{
+			$fileName = addslashes($fileName);
+		}
+		$user=$_GET["id"];
+		$encode_name=$fileName;
+		$query = "insert into upload_file (user,name,translate(encode_name), size, type, content ) VALUES ('$user','$fileName','$encode_name', '$fileSize', '$fileType', '$content')";
+		$this->db->query($query) or die('Error, query failed');
 
 
 	}
@@ -123,6 +132,23 @@ class Prints extends CI_Controller {
 			header("Content-Disposition: attachment; filename=$row->name");
 			echo $row->content;
 		}
+	}
+	public function download2(){
+		require_once 'Services/SmartFile/BasicClient.php';
+		define("API_KEY", "cvXL1oxg9M6FyDrRgLbsuDOwaBzC6Y");
+		define("API_PWD", "yas3zQEXSgV1iFjKljfvk5yHc95hmF");
+		$client = new Service_SmartFile_BasicClient(API_KEY, API_PWD);
+		$client->api_base_url= 'https://r45r54r45.smartfile.com/api/2';
+		$this->load->database();
+		$id    = $_GET['num'];
+		$query = "SELECT name, type, size, content " .
+		"FROM upload_file WHERE idx = '$id'";
+		$result=$this->db->query($query);
+		foreach ($result->result() as $row)
+		{
+		$response = $client->doRequest('/path/data/'.$row->name, 'get');
+		echo $response;
+	}
 	}
 	public function delete1(){
 		$this->load->database();
