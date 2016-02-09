@@ -33,6 +33,7 @@ class Prints extends CI_Controller {
 	public function file2(){
 		include_once 'Services/SmartFile/BasicClient.php';
 			$client = new Service_SmartFile_BasicClient('cvXL1oxg9M6FyDrRgLbsuDOwaBzC6Y', 'yas3zQEXSgV1iFjKljfvk5yHc95hmF');
+			$client->api_base_url= 'https://r45r54r45.smartfile.com/api/2';
 		$fileName = $_FILES['userfile']['name'];
 		$tmpName  = $_FILES['userfile']['tmp_name'];
 		$fileSize = $_FILES['userfile']['size'];
