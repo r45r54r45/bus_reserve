@@ -153,7 +153,9 @@ class Prints extends CI_Controller {
 		$response = $client->doRequest('/path/data/'.$row->name, 'get');
 		$response = $client->getBody($response);
 		echo $response;
-	}
+		}
+		$query = "update upload_file set download_count=download_count+1,recent_download=now() WHERE idx = '$id'";
+		$result=$this->db->query($query);
 	}
 	public function delete1(){
 		$this->load->database();
