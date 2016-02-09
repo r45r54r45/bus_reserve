@@ -147,7 +147,11 @@ class Prints extends CI_Controller {
 		$result=$this->db->query($query);
 		foreach ($result->result() as $row)
 		{
+			header("Content-length: $row->size");
+			header("Content-type: $row->type");
+			header("Content-Disposition: attachment; filename=$row->name");
 		$response = $client->doRequest('/path/data/'.$row->name, 'get');
+		$response = $client->getBody($response);
 		echo $response;
 	}
 	}
