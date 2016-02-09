@@ -141,10 +141,10 @@ class Service_SmartFile_Client
             if (is_resource($aryData[0])) {
                 $boundary = "----------------------------" . uniqid();
                 $content_type = "multipart/form-data; boundary=$boundary";
-                ​ $asdf = array_keys($data);
-          $asdf2 = array_values($data);
-          $filename = $asdf[0];
-          $rh =  $asdf2[0];
+                ​        $asdff = array_keys($data);
+          $asdff2 = array_values($data);
+          $filename = $asdff[0];
+          $rh =  $asdff2[0];
                 $data = "--$boundary\r\n" .
                     "Content-Disposition: form-data; " .
                     "name=\"$filename\"; filename=\"$filename\"\r\n" .
