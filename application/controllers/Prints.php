@@ -2,7 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Prints extends CI_Controller {
-
 	public function index()
 	{
 		$this->load->view('header');
@@ -52,7 +51,7 @@ class Prints extends CI_Controller {
 				$fileName = addslashes($fileName);
 			}
 			$user=$_GET["id"];
-			$encode_name=iconv("EUC-KR","UTF-8",urlencode($fileName));
+			$encode_name=$fileName;
 			$query = "insert into upload_file (user,name,encode_name, size, type, content ) VALUES ('$user','$fileName','$encode_name', '$fileSize', '$fileType', '$content')";
 			$this->db->query($query) or die('Error, query failed');
 
@@ -111,7 +110,8 @@ class Prints extends CI_Controller {
 	}
 	public function search(){
 		$this->load->database();
-		$word=  iconv("EUC-KR","UTF-8", urlencode($_GET['word']));
+		$this->db->query("SET NAMES 'utf8'");
+		$word= $_GET['word'];
 		if($word=="")return;
 		$query = "select * from upload_file where encode_name like '%".$word."%' order by idx desc";
 		$result=$this->db->query($query);
