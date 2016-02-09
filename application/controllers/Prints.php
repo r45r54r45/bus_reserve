@@ -171,7 +171,7 @@ class Prints extends CI_Controller {
 			$f_idx=$row->idx;
 			echo '
 			<tr>
-			<td>'.$f_name.'</td>
+			<td>'.$f_name.' ['.$row->download_count.'회 다운로드]</td>
 			<td><a href="prints/download2?num='.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
 			</tr>
 			';

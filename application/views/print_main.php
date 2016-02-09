@@ -130,6 +130,12 @@ function recent_refresh(){
             <span class="normal-font">실시간 파일 이용</span>
           </div>
           <table class="table">
+            <thead>
+              <tr>
+                <th class="table-1">파일명</th>
+                <th class="table-2">다운로드</th>
+              </tr>
+            </thead>
             <tbody id="recent_body">
 
             </tbody>
