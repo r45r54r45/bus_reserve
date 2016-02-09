@@ -141,8 +141,10 @@ class Service_SmartFile_Client
             if (is_resource($aryData[0])) {
                 $boundary = "----------------------------" . uniqid();
                 $content_type = "multipart/form-data; boundary=$boundary";
-                $filename = array_keys($data)[0];
-                $rh = array_values($data)[0];
+                ​ $asdf = array_keys($data);
+          $asdf2 = array_values($data);
+          $filename = $asdf[0];
+          $rh =  $asdf2[0];
                 $data = "--$boundary\r\n" .
                     "Content-Disposition: form-data; " .
                     "name=\"$filename\"; filename=\"$filename\"\r\n" .
@@ -152,7 +154,7 @@ class Service_SmartFile_Client
             } else {
                 $data = http_build_query($data);
                 // SmartFile API does not use the [0], [1], [2] style parameters
-                $data = preg_replace('/%5B[0-9]+%5D/simU', '', $data); 
+                $data = preg_replace('/%5B[0-9]+%5D/simU', '', $data);
             }
         }
 
