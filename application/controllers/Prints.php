@@ -179,7 +179,7 @@ class Prints extends CI_Controller {
 			echo '
 			<tr>
 			<td>'.$f_name.'</td>
-			<td><a href="prints/download?num='.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
+			<td><a href="prints/download2?num='.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
 			</tr>
 			';
 		}
