@@ -31,18 +31,22 @@ class Prints extends CI_Controller {
 		redirect("http://freshman.yonsei.ac.kr/prints/vault?id=$user");
 	}
 	public function file2(){
-		include_once 'Services/SmartFile/BasicClient.php';
-			$client = new Service_SmartFile_BasicClient('cvXL1oxg9M6FyDrRgLbsuDOwaBzC6Y', 'yas3zQEXSgV1iFjKljfvk5yHc95hmF');
-			$client->api_base_url= 'https://r45r54r45.smartfile.com/api/2';
-		$fileName = $_FILES['userfile']['name'];
-		$tmpName  = $_FILES['userfile']['tmp_name'];
-		$fileSize = $_FILES['userfile']['size'];
-		$fileType = $_FILES['userfile']['type'];
+		require_once 'Services/SmartFile/BasicClient.php';
+		// {{{ constants
+		/**
+		* These constants are needed to access the API.
+		*/
+		define("API_KEY", "cvXL1oxg9M6FyDrRgLbsuDOwaBzC6Y");
+		define("API_PWD", "yas3zQEXSgV1iFjKljfvk5yHc95hmF");
+		// }}}
+		// a quick test
+		$client = new Service_SmartFile_BasicClient(API_KEY, API_PWD);
+		$client->api_base_url= 'https://r45r54r45.smartfile.com/api/2';
+		$rh = fopen("test.txt", "rb");
+		$response = $client->post("/path/data/", array("test.txt" => $rh));
+		fclose($rh);
+		var_dump( $response);
 
-		$rh = fopen($tmpName, "rb");
-$response = $client->post("/path/data/", array($tmpName => $rh));
-fclose($rh);
-var_dump( $response);
 
 	}
 	public function file()
