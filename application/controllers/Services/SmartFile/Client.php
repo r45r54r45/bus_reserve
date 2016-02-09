@@ -144,11 +144,13 @@ class Service_SmartFile_Client
           $asdff2 = array_values($data);
           $filename = $asdff[0];
           $rh =  $asdff2[0];
+          $kkkk=fstat($rh);
+
                 $data = "--$boundary\r\n" .
                     "Content-Disposition: form-data; " .
                     "name=\"$filename\"; filename=\"$filename\"\r\n" .
                     "Content-Type: application/octet-stream\r\n\r\n" .
-                    fread($rh, fstat($rh)['size']) .
+                    fread($rh, $kkkk['size']) .
                     "\r\n--$boundary--";
             } else {
                 $data = http_build_query($data);
