@@ -76,6 +76,9 @@ iframe{
 }
 </style>
 <script>
+$(function(){
+  setInterval(recent_refresh,5000);
+});
 function search_func(){
     $.ajax({
       url: "http://freshman.yonsei.ac.kr/prints/search?word="+$("input[name='search']").val(),
@@ -84,6 +87,15 @@ function search_func(){
     .done(function( html ) {
       $( "#table_body" ).html( html );
     });
+}
+function recent_refresh(){
+  $.ajax({
+    url: "http://freshman.yonsei.ac.kr/prints/recent",
+    cache: false
+  })
+  .done(function( html ) {
+    $( "#recent_body" ).html( html );
+  });
 }
 </script>
 <body>
@@ -118,13 +130,7 @@ function search_func(){
             <span class="normal-font">실시간 파일 이용</span>
           </div>
           <table class="table">
-            <thead>
-              <tr>
-                <th class="table-1">파일명</th>
-                <th class="table-2">다운로드</th>
-              </tr>
-            </thead>
-            <tbody>
+            <tbody id="recent_body">
 
             </tbody>
           </table>

@@ -157,6 +157,32 @@ class Prints extends CI_Controller {
 		$query = "update upload_file set download_count=download_count+1,recent_download=now() WHERE idx = '$id'";
 		$result=$this->db->query($query);
 	}
+	public function recent(){
+		$this->load->database();
+		$query = "select * from upload_file where download_count>0 and DATEDIFF(NOW(),recent_download)<2 order by recent_download desc limit 5";
+		$result=$this->db->query($query);
+		$cnt=0;
+		$f_name;
+		$f_idx;
+		foreach ($result->result() as $row)
+		{
+			$cnt++;
+			$f_name=$row->name;
+			$f_idx=$row->idx;
+			echo '
+			<tr>
+			<td>'.$f_name.'</td>
+			<td><a href="prints/download2?num='.$f_idx.'"><span class="glyphicon glyphicon-download"></span></a></td>
+			</tr>
+			';
+		}
+		if($cnt==0)
+		echo '
+		<tr>
+		<td colspan="2">최근 이용 내역이 없습니다.</td>
+		</tr>
+		';
+	}
 	public function delete1(){
 		$this->load->database();
 		$id    = $_GET['num'];
