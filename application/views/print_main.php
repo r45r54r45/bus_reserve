@@ -77,6 +77,7 @@ iframe{
 </style>
 <script>
 $(function(){
+  recent_refresh();
   setInterval(recent_refresh,5000);
 });
 function search_func(){
