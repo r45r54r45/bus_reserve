@@ -70,7 +70,7 @@ class Service_SmartFile_Client
      *
      * @return string
      */
-    protected function getBody($response)
+    public function getBody($response)
     {
         // strip the HTTP headers:
         $sep = strpos($response, "\r\n\r\n");
