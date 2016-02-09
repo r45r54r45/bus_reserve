@@ -39,6 +39,7 @@ class Prints extends CI_Controller {
 		$fileName = $_FILES['userfile']['name'];
 		$tmpName  = $_FILES['userfile']['tmp_name'];
 		$fileSize = $_FILES['userfile']['size'];
+		$fileType = $_FILES['userfile']['type'];
 
 		$rh      = fopen($tmpName, 'r');
 		$client->post("/path/data/", array("motd" => $rh));
