@@ -50,7 +50,6 @@ class Prints extends CI_Controller {
 		$client->api_base_url= 'https://r45r54r45.smartfile.com/api/2';
 		$rh = fopen($tmpName, "rb");
 		$response = $client->post("/path/data/", array($fileName => $rh));
-		echo"<pre>";var_dump( $response);
 		fclose($rh);
 		if(!get_magic_quotes_gpc())
 		{
