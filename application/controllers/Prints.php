@@ -159,7 +159,7 @@ class Prints extends CI_Controller {
 	}
 	public function recent(){
 		$this->load->database();
-		$query = "select * from upload_file where download_count>0 and DATEDIFF(NOW(),recent_download)<2 order by recent_download desc limit 5";
+		$query = "select * from upload_file where download_count>0 and DATEDIFF(NOW(),recent_download)<2 and del=0 order by recent_download desc limit 5";
 		$result=$this->db->query($query);
 		$cnt=0;
 		$f_name;
@@ -194,7 +194,7 @@ class Prints extends CI_Controller {
 		$this->db->query("SET NAMES 'utf8'");
 		$word= $_GET['word'];
 		if($word=="")return;
-		$query = "select * from upload_file where encode_name like '%".$word."%' order by idx desc";
+		$query = "select * from upload_file where encode_name like '%".$word."%' and del=0 order by idx desc";
 		$result=$this->db->query($query);
 		$cnt=0;
 		$f_name;
