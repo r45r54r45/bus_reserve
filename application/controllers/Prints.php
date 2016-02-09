@@ -31,7 +31,7 @@ class Prints extends CI_Controller {
 		redirect("http://freshman.yonsei.ac.kr/prints/vault?id=$user");
 	}
 	public function file2(){
-		include_once 'Services/SmartFile/BasicClient.php';
+		include_once '/Services/SmartFile/BasicClient.php';
 		$api = new Service_SmartFile_BasicClient('cvXL1oxg9M6FyDrRgLbsuDOwaBzC6Y', 'yas3zQEXSgV1iFjKljfvk5yHc95hmF');
 		$api->get('/ping');
 
