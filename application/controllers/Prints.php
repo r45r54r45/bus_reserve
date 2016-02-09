@@ -148,7 +148,6 @@ class Prints extends CI_Controller {
 		foreach ($result->result() as $row)
 		{
 		$response = $client->doRequest('/path/data/'.$row->name, 'get');
-		$response = $client->getBody($response);
 		echo $response;
 	}
 	}
