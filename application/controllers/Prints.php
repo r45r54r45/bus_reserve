@@ -32,10 +32,7 @@ class Prints extends CI_Controller {
 	}
 	public function file2(){
 		include_once 'Services/SmartFile/BasicClient.php';
-		$api = new Service_SmartFile_BasicClient('cvXL1oxg9M6FyDrRgLbsuDOwaBzC6Y', 'yas3zQEXSgV1iFjKljfvk5yHc95hmF');
-		$api->get('/ping');
-
-		$client = new Service_SmartFile_BasicClient(API_KEY, API_PWD);
+			$client = new Service_SmartFile_BasicClient('cvXL1oxg9M6FyDrRgLbsuDOwaBzC6Y', 'yas3zQEXSgV1iFjKljfvk5yHc95hmF');
 		$fileName = $_FILES['userfile']['name'];
 		$tmpName  = $_FILES['userfile']['tmp_name'];
 		$fileSize = $_FILES['userfile']['size'];
