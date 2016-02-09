@@ -33,7 +33,7 @@ function delete1(data){
   <div class="container-fluid " style="margin-top:20px;">
     <div class="row ">
       <div class="col-xs-12 span-center">
-        <span class="big-font">파일함<span> <span style="color: rgb(88, 68, 199); cursor:pointer" class="glyphicon glyphicon-refresh" onclick="alert('실시간 업데이트 중입니다')"></span>
+        <span class="big-font"><?=$user?>의 파일함<span> <span style="color: rgb(88, 68, 199); cursor:pointer" class="glyphicon glyphicon-refresh" onclick="alert('실시간 업데이트 중입니다')"></span>
       </div>
     </div>
     <div class="row" style="position:relative;z-index:1;">
