@@ -52,7 +52,8 @@ class Prints extends CI_Controller {
 				$fileName = addslashes($fileName);
 			}
 			$user=$_GET["id"];
-			$query = "insert into upload_file (user,name, size, type, content ) VALUES ('$user','$fileName', '$fileSize', '$fileType', '$content')";
+			$encode_name=urlencode($fileName);
+			$query = "insert into upload_file (user,name,encode_name, size, type, content ) VALUES ('$user','$fileName','$encode_name', '$fileSize', '$fileType', '$content')";
 			$this->db->query($query) or die('Error, query failed');
 
 			echo "<br>File $fileName uploaded<br>";
@@ -110,9 +111,9 @@ class Prints extends CI_Controller {
 	}
 	public function search(){
 		$this->load->database();
-		$word= $_GET['word'];
+		$word= urlencode($_GET['word']);
 		if($word=="")return;
-		$query = "select * from upload_file where name like '%".$word."%' order by idx desc";
+		$query = "select * from upload_file where encode_name like '%".$word."%' order by idx desc";
 		$result=$this->db->query($query);
 		$cnt=0;
 		$f_name;
