@@ -140,8 +140,7 @@ class Service_SmartFile_Client
             $aryData = array_values($data);
             if (is_resource($aryData[0])) {
                 $boundary = "----------------------------" . uniqid();
-                $content_type = "multipart/form-data; boundary=$boundary";
-                ​        $asdff = array_keys($data);
+                $content_type = "multipart/form-data; boundary=$boundary";$asdff = array_keys($data);
           $asdff2 = array_values($data);
           $filename = $asdff[0];
           $rh =  $asdff2[0];
