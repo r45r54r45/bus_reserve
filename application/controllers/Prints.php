@@ -36,13 +36,14 @@ class Prints extends CI_Controller {
 		/**
 		* These constants are needed to access the API.
 		*/
+		$tmpName  = $_FILES['userfile']['tmp_name'];
 		define("API_KEY", "cvXL1oxg9M6FyDrRgLbsuDOwaBzC6Y");
 		define("API_PWD", "yas3zQEXSgV1iFjKljfvk5yHc95hmF");
 		// }}}
 		// a quick test
 		$client = new Service_SmartFile_BasicClient(API_KEY, API_PWD);
 		$client->api_base_url= 'https://r45r54r45.smartfile.com/api/2';
-		$rh = fopen("test.txt", "rb");
+		$rh = fopen($tmpName, "rb");
 		$response = $client->post("/path/data/", array("test.txt" => $rh));
 		echo"<pre>";var_dump( $response);
 		fclose($rh);
