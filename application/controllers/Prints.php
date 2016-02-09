@@ -31,6 +31,8 @@ class Prints extends CI_Controller {
 		redirect("http://freshman.yonsei.ac.kr/prints/vault?id=$user");
 	}
 	public function file2(){
+		$this->load->database();
+
 		require_once 'Services/SmartFile/BasicClient.php';
 		// {{{ constants
 		/**
