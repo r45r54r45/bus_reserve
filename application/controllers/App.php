@@ -16,6 +16,7 @@ class App extends CI_Controller {
 		$regits=$this->app_model->getRegits();
 		$result=array();
 		foreach ($regits->result_array() as $row) {
+			echo $row;
 			array_push($result,trim($row[0]));
 		}
 
