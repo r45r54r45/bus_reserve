@@ -14,7 +14,11 @@ class App extends CI_Controller {
 	public function gcmSender(){
 		$this->load->model("app_model");
 		$regits=$this->app_model->getRegits();
-		$regits=$regits->result_array();
+		$result=array();
+		foreach ($regits->result_array() as $row) {
+			array_push($result,trim($row[0]);
+		}
+
 		$headers = array(
 		 'Content-Type:application/json',
 		 'Authorization:key=AIzaSyACU6iZvyBcFURa6w_BYRIqVzxqdP8_sos'
@@ -26,7 +30,7 @@ class App extends CI_Controller {
 		$arr['data']['type']="text";
 		$arr['data']['command']="show";
 		$arr['registration_ids'] = array();
-		$arr['registration_ids'] = $regits;
+		$arr['registration_ids'] = $result;
 
 		$ch = curl_init();
 
