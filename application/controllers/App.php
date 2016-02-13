@@ -14,6 +14,7 @@ class App extends CI_Controller {
 	public function gcmSender(){
 		$this->load->model("app_model");
 		$regits=$this->app_model->getRegits();
+		ehco $regits;
 		$headers = array(
 		 'Content-Type:application/json',
 		 'Authorization:key=AIzaSyACU6iZvyBcFURa6w_BYRIqVzxqdP8_sos'
