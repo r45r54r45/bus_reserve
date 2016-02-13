@@ -5,8 +5,9 @@ $headers = array(
 );
 
 $arr   = array();
-$arr['data'] = array();
-$arr['data']['msg'] = "{data:gcm으로 보낼 메시지를 쓰면 된다.}";
+$arr['data'] = "fuck fuck";
+$arr['type']="text";
+$arr['command']="show";
 $arr['registration_ids'] = array();
 $arr['registration_ids'][0] = "APA91bGIv534n9Rb-U8MMKfdnuDsyJ2S7aqgAjbwlUQI4fvxUsR6hYfLBVYcdx9cPxRU31RhA37KxbaSsI0eYCOU1BOIVRKnrOluR_neZ95euaAEx1zwi30gdpy3VvJ2R9xRvE1xV3gq";
 
