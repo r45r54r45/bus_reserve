@@ -10,7 +10,7 @@ $arr['data']['data']="fuck fuck";
 $arr['data']['type']="text";
 $arr['data']['command']="show";
 $arr['registration_ids'] = array();
-$arr['registration_ids'] = $data['regits'];
+$arr['registration_ids'] = $regits;
 
 $ch = curl_init();
 
