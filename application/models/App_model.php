@@ -8,5 +8,8 @@ class App_model extends CI_Model{
 	public function regit($data){
 		return $this->db->query("insert into regit_list values ('$data')");
 	}
+	public function getRegits(){
+		return $this->db->query("select * from regit_list");
+	}
 
 }
