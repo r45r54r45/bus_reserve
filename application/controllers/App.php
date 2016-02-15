@@ -2,8 +2,26 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class App extends CI_Controller {
+	public function login()
+	{
+		$result=array();
+		if($_GET['type']=="facebook"){
+			$gcm=$_GET['gcm'];
+			$id=$_GET['data'];
+			$this->load->model("app_model");
+			if($this->app_model->isRegister($gcm,$id)){
+				//이미 회원 리스트에 있으면
+				$result['add']=false;
+				echo json_encode($result);
+			}else{
+				//회원 리스트에 없으면
+				$result['add']=true;
+				echo json_encode($result);
+			}
+		}
+	}
 
-	public function register()
+	public function gcmRegister()
 	{
 		$json = file_get_contents('php://input');
 		$obj = json_decode($json);
