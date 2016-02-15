@@ -26,7 +26,7 @@ class App extends CI_Controller {
 
 		$arr   = array();
 		$arr['data'] = array();
-		$arr['data']['data']="fuck fuck";
+		$arr['data']['data']="엄마 ㅎㅇ";
 		$arr['data']['type']="text";
 		$arr['data']['command']="show";
 		$arr['registration_ids'] = array();
