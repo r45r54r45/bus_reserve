@@ -15,7 +15,7 @@ class App_model extends CI_Model{
 		$result=$this->db->query("select count(*) from regit_list where regit='$gcm' and facebook_token='$token'");
 		$cnt=0;
 		foreach ($result->result_array as $row) {
-			cnt++;
+			$cnt++;
 		}
 		if($cnt==0)return false;
 		else return true;
