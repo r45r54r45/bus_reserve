@@ -6,7 +6,7 @@ class App_model extends CI_Model{
 		$this->load->database();
 	}
 	public function regit($data){
-		return $this->db->query("replace into regit_list (gcm) values ('$data')");
+		return $this->db->query("insert into regit_list (gcm) values ('$data')");
 	}
 	public function getRegits(){
 		return $this->db->query("select * from regit_list");
