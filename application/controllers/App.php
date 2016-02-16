@@ -20,6 +20,16 @@ class App extends CI_Controller {
 			}
 		}
 	}
+	public function signin()
+	{
+		$result=array();
+		if($_GET['type']=="facebook"){
+			$gcm=$_GET['gcm'];
+			$id=$_GET['data'];
+			$this->load->model("app_model");
+			$this->app_model->addUser($gcm,$id);
+		}
+	}
 
 	public function gcmRegister()
 	{
@@ -34,7 +44,7 @@ class App extends CI_Controller {
 		$regits=$this->app_model->getRegits();
 		$result=array();
 		foreach ($regits->result_array() as $row) {
-			array_push($result,trim($row['regit']));
+			array_push($result,trim($row['gcm']));
 		}
 
 		$headers = array(
