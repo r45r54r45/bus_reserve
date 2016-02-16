@@ -13,8 +13,12 @@ class App_model extends CI_Model{
 	}
 	public function isRegister($gcm,$token){
 		$result=$this->db->query("select count(*) from regit_list where gcm='$gcm' and facebook_token='$token'");
-
-		if($result->num_rows()==0)return false;
-		else return true;
+		if($result->num_rows()==0){
+			echo "새회원";
+			return false;//새회원
+		}
+		else {
+			echo "기존 회원";
+			return true; //기존 회원
 	}
 }
