@@ -22,3 +22,4 @@ class App_model extends CI_Model{
 			return true; //기존 회원
 	}
 }
+}
