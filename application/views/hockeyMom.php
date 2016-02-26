@@ -37,7 +37,7 @@
       setInterval(function(){
         var date1=new Date(2016, 11, 12, 9, 0);
         var date2= new Date();
-        var diff=new Date((date1-date2)*1000));
+        var diff=new Date((date1-date2)*1000);
         $("#countdown-days").text(diff.format("dd"));
         $("#countdown-hours").text(diff.format("hh"));
         $("#countdown-minutes").text(diff.format("mm"));
@@ -83,7 +83,7 @@
             <form class="form-inline">
               <div class="form-group">
                 <label for="email" class="sr-only"></label>
-                <input type="email" placeholder="jane.doe@example.com" id="email" class="form-control transparent">
+                <input type="email" placeholder="write your email" id="email" class="form-control transparent">
               </div>
               <button class="btn btn-danger">subscribe</button>
             </form>
