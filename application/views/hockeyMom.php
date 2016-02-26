@@ -24,6 +24,9 @@
     .desc{
 
     }
+    .center{
+      text-align:center;
+    }
   </style>
   <script>
   $(function(){
@@ -38,11 +41,11 @@
     <img src="http://www.muaac.org/front/data/cheditor4/1403/4e5d18ded39d245db7912b8f0fe84861_1393901932.jpg" class="img img-responsive">
   </div>
   <div class="row" style="">
-    <div class="col-xs-12">
-      <span style="font-weight:600; font-size:40px;">사이트 제목</span>
+    <div class="col-xs-12 center" style="margin-top:5%;">
+      <span style="font-weight:600; font-size:40px; color:white;">사이트 제목</span>
     </div>
-    <div class="col-xs-12">
-      <span style="font-weight:500; font-size:30px;">사이트 부제목</span>
+    <div class="col-xs-12 center" style="margin-top:3%">
+      <span style="font-weight:500; font-size:30px;color:white;">사이트 부제목</span>
     </div>
   </div>
     <div class="row" style="">
