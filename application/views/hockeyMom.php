@@ -37,12 +37,18 @@
       setInterval(function(){
         var date1=new Date(2016, 11, 12, 9, 0);
         var date2= new Date();
-        var diff=new Date((date1-date2)*1000);
-        var kk=diff.format("ddhhmmss");
-        $("#countdown-days").text(kk.substring(0,2));
-        $("#countdown-hours").text(kk.substring(2,4));
-        $("#countdown-minutes").text(kk.substring(4,6));
-        $("#countdown-seconds").text(kk.substring(6,8));
+        60 3600 86400
+        var diff=date1-date2;
+        var day=diff/86400;
+        var hour1=diff-day*86400;
+        var hour2=hour1/3600;
+        var min1=hour1-hour2*3600;
+        var min2=min1/60;
+        var sec=min1-min2*60;
+        $("#countdown-days").text(day);
+        $("#countdown-hours").text(hour2);
+        $("#countdown-minutes").text(min2);
+        $("#countdown-seconds").text(sec);
       },1000);
     });
     </script>
