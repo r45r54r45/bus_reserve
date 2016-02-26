@@ -37,12 +37,11 @@
       setInterval(function(){
         var date1=new Date(2016, 11, 12, 9, 0);
         var date2= new Date();
-      console.log(new Date((date1-date2)*1000).format("MM"));
-
-        $("#countdown-days").text();
-        $("#countdown-hours").text();
-        $("#countdown-minutes").text();
-        $("#countdown-seconds").text();
+        var diff=new Date((date1-date2)*1000));
+        $("#countdown-days").text(diff.format("dd"));
+        $("#countdown-hours").text(diff.format("hh"));
+        $("#countdown-minutes").text(diff.format("mm"));
+        $("#countdown-seconds").text(diff.format("ss"));
       },1000);
     });
     </script>
@@ -79,7 +78,7 @@
         </div>
         <!-- /.countdown-->
         <div class="mailing-list">
-          <h3 class="mailing-list-heading">Join our mailing list and we will let you know all the news!</h3>
+          <h3 class="mailing-list-heading">Join our mailing list and we will keep you updated!</h3>
           <div class="row">
             <form class="form-inline">
               <div class="form-group">
