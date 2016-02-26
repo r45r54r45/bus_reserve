@@ -35,7 +35,7 @@
     <script>
     $(function(){
       setInterval(function(){
-        var date1=new Date(2016, 11, 12, 9, 0);
+        var date1=new Date(2016, 10, 12);
         var date2= new Date();
         var diff=date1-date2;
         var day=Math.floor(diff/86400);
