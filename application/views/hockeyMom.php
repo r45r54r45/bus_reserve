@@ -74,7 +74,7 @@
             </div>
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-minutes" class="countdown-number">&nbsp;</div>
-                <div class="countdown-label">days</div>
+                <div class="countdown-label">minutes</div>
             </div>
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-seconds" class="countdown-number">&nbsp;</div>
