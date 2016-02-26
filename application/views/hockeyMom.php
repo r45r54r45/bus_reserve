@@ -35,7 +35,14 @@
     <script>
     $(function(){
       setInterval(function(){
-        new Date().format("");
+        var date1=new Date(2016, 11, 12, 9, 0);
+        var date2= new Date();
+      console.log(new Date((date1-date2)*1000).format("MM"));
+
+        $("#countdown-days").text();
+        $("#countdown-hours").text();
+        $("#countdown-minutes").text();
+        $("#countdown-seconds").text();
       },1000);
     });
     </script>
@@ -62,6 +69,7 @@
             </div>
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-minutes" class="countdown-number">&nbsp;</div>
+                <div class="countdown-label">days</div>
             </div>
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-seconds" class="countdown-number">&nbsp;</div>
