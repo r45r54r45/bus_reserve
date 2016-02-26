@@ -37,7 +37,6 @@
       setInterval(function(){
         var date1=new Date(2016, 11, 12, 9, 0);
         var date2= new Date();
-        60 3600 86400
         var diff=date1-date2;
         var day=diff/86400;
         var hour1=diff-day*86400;
