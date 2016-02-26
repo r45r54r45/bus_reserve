@@ -38,11 +38,11 @@
         var date1=new Date(2016, 11, 12, 9, 0);
         var date2= new Date();
         var diff=date1-date2;
-        var day=diff/86400;
+        var day=Integer.floor(diff/86400);
         var hour1=diff-day*86400;
-        var hour2=hour1/3600;
+        var hour2=Integer.floor(hour1/3600);
         var min1=hour1-hour2*3600;
-        var min2=min1/60;
+        var min2=Integer.floor(min1/60);
         var sec=min1-min2*60;
         $("#countdown-days").text(day);
         $("#countdown-hours").text(hour2);
