@@ -5,4 +5,7 @@ class HockeyMom extends CI_Controller {
 	public function index(){
       $this->load->view("hockeyMom");
   }
+  public function ko(){
+      $this->load->view("hockeyMomko");
+  }
 }

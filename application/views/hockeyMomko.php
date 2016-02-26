@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HockeyMom</title>
+    <title>하키맘</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -57,8 +57,8 @@
 
         <div class="row">
           <div class="col-sm-12">
-            <h1 class="cursive">HockeyMom</h1>
-            <h2 class="sub">We connect moms with other moms</h2>
+            <h1 class="cursive">하키맘</h1>
+            <h2 class="sub">우리는 엄마들과 엄마들을 연결합니다.</h2>
           </div>
         </div>
         <!-- countdown-->
@@ -66,32 +66,32 @@
           <div class="row">
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-days" class="countdown-number">&nbsp;</div>
-              <div class="countdown-label">days</div>
+              <div class="countdown-label">일</div>
             </div>
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-hours" class="countdown-number">&nbsp;</div>
-              <div class="countdown-label">hours</div>
+              <div class="countdown-label">시간</div>
             </div>
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-minutes" class="countdown-number">&nbsp;</div>
-                <div class="countdown-label">minutes</div>
+                <div class="countdown-label">분</div>
             </div>
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-seconds" class="countdown-number">&nbsp;</div>
-              <div class="countdown-label">seconds</div>
+              <div class="countdown-label">초</div>
             </div>
           </div>
         </div>
         <!-- /.countdown-->
         <div class="mailing-list">
-          <h3 class="mailing-list-heading">Join our mailing list and we will keep you updated!</h3>
+          <h3 class="mailing-list-heading">이메일을 적어주시면 최신 현황을 알려드리겠습니다!</h3>
           <div class="row">
             <form class="form-inline">
               <div class="form-group">
                 <label for="email" class="sr-only"></label>
                 <input type="email" placeholder="write your email" id="email" class="form-control transparent">
               </div>
-              <button class="btn btn-danger">subscribe</button>
+              <button class="btn btn-danger">신청</button>
             </form>
           </div>
         </div>
@@ -100,7 +100,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <p>&copy;2016 HockeyMom Korea</p>
+              <p>&copy;2016 하키맘 Korea</p>
             </div>
             <div class="col-md-6">
               <p class="credit">Made by Jinwoo Cheon, Younji Lee, Pierre Jipagan, Woohyun Kim</p>
