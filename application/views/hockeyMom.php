@@ -33,7 +33,7 @@
     },1000);
   });
   </script>
-  <div class="container" style="position:relative;">
+  <div class="container-fluid" style="position:relative;">
     <div style="position:absolute; left:0; top:0;">
     <img src="http://www.muaac.org/front/data/cheditor4/1403/4e5d18ded39d245db7912b8f0fe84861_1393901932.jpg" class="img img-responsive">
   </div>
