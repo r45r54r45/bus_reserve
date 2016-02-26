@@ -11,9 +11,13 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js"></script>
       <script src="/src/js/common.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <style>
+  .body{
+    font-family: 'Montserrat', sans-serif;
+  }
     .countdown{
       display: inline-block;
       text-align: center;
@@ -42,10 +46,10 @@
   </div>
   <div class="row" style="">
     <div class="col-xs-12 center" style="margin-top:5%;">
-      <span style="font-weight:600; font-size:40px; color:white;">사이트 제목</span>
+      <span style="font-weight:600; font-size:40px; color:white;">HockeyMom</span>
     </div>
     <div class="col-xs-12 center" style="margin-top:3%">
-      <span style="font-weight:500; font-size:30px;color:white;">사이트 부제목</span>
+      <span style="font-weight:500; font-size:30px;color:white;">We Connect Moms with other Moms</span>
     </div>
   </div>
     <div class="row" style="">
