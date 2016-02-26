@@ -38,10 +38,11 @@
         var date1=new Date(2016, 11, 12, 9, 0);
         var date2= new Date();
         var diff=new Date((date1-date2)*1000);
-        $("#countdown-days").text(diff.format("dd"));
-        $("#countdown-hours").text(diff.format("hh"));
-        $("#countdown-minutes").text(diff.format("mm"));
-        $("#countdown-seconds").text(diff.format("ss"));
+        var kk=diff.format("ddhhmmss");
+        $("#countdown-days").text(kk.substring(0,2));
+        $("#countdown-hours").text(kk.substring(2,4));
+        $("#countdown-minutes").text(kk.substring(4,6)));
+        $("#countdown-seconds").text(kk.substring(6,8));
       },1000);
     });
     </script>
