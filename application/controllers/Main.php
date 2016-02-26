@@ -39,7 +39,5 @@ class Main extends CI_Controller {
 		$this->load->view('mypage');
 		$this->load->view('footer');
 	}
-	public function gcmSender(){
-		$this->load->view('gcmSender_func');
-	}
+
 }
