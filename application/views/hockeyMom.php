@@ -41,7 +41,7 @@
         var kk=diff.format("ddhhmmss");
         $("#countdown-days").text(kk.substring(0,2));
         $("#countdown-hours").text(kk.substring(2,4));
-        $("#countdown-minutes").text(kk.substring(4,6)));
+        $("#countdown-minutes").text(kk.substring(4,6));
         $("#countdown-seconds").text(kk.substring(6,8));
       },1000);
     });
