@@ -22,16 +22,24 @@
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+          <script src="/src/js/common.js"></script>
   </head>
   <body>
-    <div style="background-image: url('img/beach.jpg')" class="main">
+    <script>
+    $(function(){
+      setInterval(function(){
+        new Date().format("");
+      },1000);
+    });
+    </script>
+    <div style="background-image: url('/src/hockey/img/beach.jpg')" class="main">
       <div class="overlay"></div>
       <div class="container">
-        <p class="social"><a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="#" title="" class="instagram"><i class="fa fa-instagram"></i></a></p>
+
         <div class="row">
           <div class="col-sm-12">
-            <h1 class="cursive">Countdown template</h1>
-            <h2 class="sub">We are still tweaking few details, stay tuned!</h2>
+            <h1 class="cursive">HockeyMom</h1>
+            <h2 class="sub">We connect moms with other moms</h2>
           </div>
         </div>
         <!-- countdown-->
@@ -47,7 +55,6 @@
             </div>
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-minutes" class="countdown-number">&nbsp;</div>
-              <div class="countdown-label">minutes</div>
             </div>
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-seconds" class="countdown-number">&nbsp;</div>
