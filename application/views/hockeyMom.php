@@ -37,7 +37,7 @@
       setInterval(function(){
         var date1=new Date(2016, 10, 12);
         var date2= new Date();
-        var diff=date1-date2;
+        var diff=Math.floor((date1-date2)/1000);
         var day=Math.floor(diff/86400);
         var hour1=diff-day*86400;
         var hour2=Math.floor(hour1/3600);
