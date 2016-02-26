@@ -10,6 +10,7 @@
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" crossorigin="anonymous" ></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js"></script>
+      <script src="/src/js/common.js"></script>
 </head>
 <body>
   <style>
@@ -31,8 +32,7 @@
   <script>
   $(function(){
     setInterval(function(){
-      // var time=
-      // $()
+      new Date().format("");
     },1000);
   });
   </script>
