@@ -22,7 +22,14 @@
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="/src/hockey/js/jquery.cookie.js"></script>
+        <script src="/src/hockey/js/jquery.countdown.min.js"></script>
+        <script src="/src/hockey/js/front.js"></script>
           <script src="/src/js/common.js"></script>
+
   </head>
   <body>
     <script>
@@ -80,22 +87,17 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <p>&copy;2015 Your name/company goes here</p>
+              <p>&copy;2016 HockeyMom Korea</p>
             </div>
             <div class="col-md-6">
-              <p class="credit">Made by <a href="http://bootstrapious.com">Bootstrapious &mdash; Free Bootstrap Templates</a><br />with support from <a href="http://kakusei.cz">Kakusei &mdash; design & interior</a></p>
+              <p class="credit">Made by Jinwoo Cheon, Younji Lee, Pierre Jipagan, Woohyun Kim</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- JAVASCRIPT FILES -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="/src/hockey/js/jquery.cookie.js"></script>
-    <script src="/src/hockey/js/jquery.countdown.min.js"></script>
-    <script src="/src/hockey/js/front.js"></script>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
 
   </body>
