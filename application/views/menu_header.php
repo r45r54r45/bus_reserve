@@ -17,5 +17,7 @@
   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
   <link href="/src/css/common.css" rel="stylesheet" type="text/css">
+  <script src="/src/js/jquery.js"></script>
+  <script src="/src/js/bootstrap.min.js"></script>
 </head>
 <body style="font-family: 'Open Sans', sans-serif;">
