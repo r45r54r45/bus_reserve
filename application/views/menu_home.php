@@ -4,16 +4,21 @@
 var type=1;
 $(function(){
   songdo_shuttle();
+  setInterval(function(){
+    songdo_shuttle();
+  },30000);
   $("#option1").on("click",function(){
     type=1;
     $("#to").text("해경 / haekyung");
     $("#from").text("해경");
+    songdo_shuttle();
     // $("#option1").css();
   });
   $("#option2").on("click",function(){
     type=2;
     $("#to").text("동춘 / dongchun");
     $("#from").text("동춘");
+    songdo_shuttle();
   });
 });
 // 셔틀 시간정보
@@ -28,7 +33,6 @@ for (var i = 0; i < d_time_s.length; i++) {
 	d_time_w[i]=d_time_s[i]+15;
 }
 function songdo_shuttle(){
-	setInterval(function(){
 		var now=new Date().format("HHmm");
     if(type==1){
     $("#to").text("해경 / haekyung");
@@ -41,7 +45,6 @@ function songdo_shuttle(){
 		$("#h_s").text(time_format(findPos(d_time_s,parseInt(now))));
 		$("#h_w").text(time_format(findPos(d_time_w,parseInt(now))));
   }
-	},1000);
 }
 function time_format(data){
 	var h;
