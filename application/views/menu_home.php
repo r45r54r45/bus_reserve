@@ -82,11 +82,10 @@
     width: 100%;
     height: 42px;
     padding-left: 4em;
-    margin-left: 18px;
-    padding-right: 36px;">
+    padding-right: 18px;">
           <div style="position: absolute;
     bottom: 2px;
-    font-size: 10px;">
+    font-size: 10px;padding-left: 18px;">
             <span>1</span><span> 정거장 전</span>
           </div>
           <div style="
@@ -111,11 +110,10 @@
     width: 100%;
     height: 42px;
     padding-left: 4em;
-    margin-left: 18px;
-    padding-right: 36px;">
+    padding-right: 18px;">
           <div style="position: absolute;
     bottom: 2px;
-    font-size: 10px;">
+    font-size: 10px;padding-left: 18px;">
             <span>1</span><span> 정거장 전</span>
           </div>
           <div style="
@@ -140,11 +138,10 @@
     width: 100%;
     height: 42px;
     padding-left: 4em;
-    margin-left: 18px;
-    padding-right: 36px;">
+    padding-right: 18px;">
           <div style="position: absolute;
     bottom: 2px;
-    font-size: 10px;">
+    font-size: 10px;padding-left: 18px;">
             <span>1</span><span> 정거장 전</span>
           </div>
           <div style="
@@ -169,11 +166,10 @@
     width: 100%;
     height: 42px;
     padding-left: 4em;
-    margin-left: 18px;
-    padding-right: 36px;">
+    padding-right: 18px;">
           <div style="position: absolute;
     bottom: 2px;
-    font-size: 10px;">
+    font-size: 10px;padding-left: 18px;">
             <span>1</span><span> 정거장 전</span>
           </div>
           <div style="
