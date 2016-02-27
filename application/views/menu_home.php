@@ -38,7 +38,7 @@
       <div class="row" style="height:100%;">
         <div class="col-xs-6" style="height:100%;">
           <div>
-            <span style="font-size: 1px;margin-right: 4px;">TO</span>
+            <span style="font-size: 8px;margin-right: 4px;">TO</span>
             <span style="font-size: 13px; ">해경 / haekyung</span>
           </div>
           <div style="position:absolute;bottom:0;width:100%;text-align:center;margin-left: -15px;">
@@ -47,7 +47,7 @@
         </div>
         <div class="col-xs-6" style="border-left:1px solid #fcd90d; height:100%;">
           <div style="text-align:right;">
-            <span style="font-size: 1px;margin-right: 4px;">FROM</span>
+            <span style="font-size: 8px;margin-right: 4px;">FROM</span>
             <span style="font-size: 13px; ">해경</span>
           </div>
           <div style="position:absolute;bottom:0;width:100%;text-align:center;margin-left: -15px;">
