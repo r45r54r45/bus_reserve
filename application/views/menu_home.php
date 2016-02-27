@@ -73,8 +73,8 @@
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;
     width: 4em; border-right:2px solid #fcd90d;">
-          <div><span style="font-size: 15px;">91</span></div>
-          <div><span style="font-size: 10px;">하모니 앞</span></div>
+          <div><span style="font-size: 20px;">91</span></div>
+          <div style="margin-top: -5px;"><span style="font-size: 10px;">하모니 앞</span></div>
         </div>
         <div style="position: absolute;
         top: 4px;
@@ -98,12 +98,12 @@
         </div>
       </div>
 
-      <!-- 91번 버스 카드 -->
+      <!-- 6724번 버스 카드 -->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;
     width: 4em; border-right:2px solid #fcd90d;">
-          <div><span style="font-size: 15px;">91</span></div>
-          <div><span style="font-size: 10px;">하모니 앞</span></div>
+          <div><span style="font-size: 20px;">6724</span></div>
+          <div style="margin-top: -5px;"><span style="font-size: 10px;">1학사 앞</span></div>
         </div>
         <div style="position: absolute;
         top: 4px;
@@ -127,12 +127,12 @@
         </div>
       </div>
 
-      <!-- 91번 버스 카드 -->
+      <!-- 6405번 버스 카드 -->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;
     width: 4em; border-right:2px solid #fcd90d;">
-          <div><span style="font-size: 15px;">91</span></div>
-          <div><span style="font-size: 10px;">하모니 앞</span></div>
+          <div><span style="font-size: 20px;">6405</span></div>
+          <div  style="margin-top: -5px;"><span style="font-size: 10px;">성지아파트</span></div>
         </div>
         <div style="position: absolute;
         top: 4px;
@@ -156,12 +156,12 @@
         </div>
       </div>
 
-      <!-- 91번 버스 카드 -->
+      <!-- 9201번 버스 카드 -->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;
     width: 4em; border-right:2px solid #fcd90d;">
-          <div><span style="font-size: 15px;">91</span></div>
-          <div><span style="font-size: 10px;">하모니 앞</span></div>
+          <div><span style="font-size: 20px;">9201</span></div>
+          <div  style="margin-top: -5px;"><span style="font-size: 10px;">1학사 앞</span></div>
         </div>
         <div style="position: absolute;
         top: 4px;
