@@ -68,9 +68,11 @@
 <div class="row" style="margin-top:20px;">
   <div class="col-xs-12">
     <div class="card_holder">
-      <div class="card" style="height:50px;">
+
+      <!-- 91번 버스 카드 -->
+      <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;
-    width: 4em; border-right:1px solid #fcd90d;">
+    width: 4em; border-right:2px solid #fcd90d;">
           <div><span style="font-size: 15px;">91</span></div>
           <div><span style="font-size: 10px;">하모니 앞</span></div>
         </div>
@@ -84,8 +86,7 @@
     padding-right: 36px;">
           <div style="position: absolute;
     bottom: 2px;
-    font-size: 10px;
-    padding: 0 10px;">
+    font-size: 10px;">
             <span>1</span><span> 정거장 전</span>
           </div>
           <div style="
@@ -97,9 +98,10 @@
         </div>
       </div>
 
-      <div class="card" style="height:50px;">
+      <!-- 91번 버스 카드 -->
+      <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;
-    width: 4em; border-right:1px solid #fcd90d;">
+    width: 4em; border-right:2px solid #fcd90d;">
           <div><span style="font-size: 15px;">91</span></div>
           <div><span style="font-size: 10px;">하모니 앞</span></div>
         </div>
@@ -113,8 +115,7 @@
     padding-right: 36px;">
           <div style="position: absolute;
     bottom: 2px;
-    font-size: 10px;
-    padding: 0 10px;">
+    font-size: 10px;">
             <span>1</span><span> 정거장 전</span>
           </div>
           <div style="
@@ -126,9 +127,10 @@
         </div>
       </div>
 
-      <div class="card" style="height:50px;">
+      <!-- 91번 버스 카드 -->
+      <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;
-    width: 4em; border-right:1px solid #fcd90d;">
+    width: 4em; border-right:2px solid #fcd90d;">
           <div><span style="font-size: 15px;">91</span></div>
           <div><span style="font-size: 10px;">하모니 앞</span></div>
         </div>
@@ -142,8 +144,7 @@
     padding-right: 36px;">
           <div style="position: absolute;
     bottom: 2px;
-    font-size: 10px;
-    padding: 0 10px;">
+    font-size: 10px;">
             <span>1</span><span> 정거장 전</span>
           </div>
           <div style="
@@ -155,9 +156,10 @@
         </div>
       </div>
 
-      <div class="card" style="height:50px;">
+      <!-- 91번 버스 카드 -->
+      <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;
-    width: 4em; border-right:1px solid #fcd90d;">
+    width: 4em; border-right:2px solid #fcd90d;">
           <div><span style="font-size: 15px;">91</span></div>
           <div><span style="font-size: 10px;">하모니 앞</span></div>
         </div>
@@ -171,8 +173,7 @@
     padding-right: 36px;">
           <div style="position: absolute;
     bottom: 2px;
-    font-size: 10px;
-    padding: 0 10px;">
+    font-size: 10px;">
             <span>1</span><span> 정거장 전</span>
           </div>
           <div style="
@@ -183,6 +184,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
