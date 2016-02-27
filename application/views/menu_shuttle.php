@@ -2,8 +2,26 @@
 <div class="container-fluid" id="top-con">
   <div class="row" >
     <div class="col-xs-12 center top-down-padding sky-blue">
-      <span class="t2"><b>[누구보다 빠르게]</b></span>
+      <span class="t2" style="cursor:pointer;" onclick="$('#myModal').modal('show');"><b>어떤 서비스인가요?</b></span>
     </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">셔틀 자동 예약 서비스</h4>
+      </div>
+      <div class="modal-body">
+        <p>(현재 개발 중입니다)</p>
+        <p>더이상 가슴졸이며 셔틀 예약을 위해 2시마다 대기타지 않아도 됩니다.</p>
+        <p>내가 타야하는 요일과 시간을 설정한 뒤 신청을 하면 <b>자동으로</b> 정확히 2시에 예약이 진행됩니다.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="col-xs-12 center side-padding-20 form-group" style="padding-top:10px;">
       <div class="full-width input-group">
         <input id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl')"  maxlength="10">
