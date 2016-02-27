@@ -64,7 +64,7 @@ function time_format(data){
 </script>
 <div class="container-fluid">
   <div class="row center-align" id="home-top-button">
-    <div class="btn-group" data-toggle="buttons">
+    <div id="home" class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
       border-top-left-radius: 16px;" id="option1">
       <input type="radio" name="options"  autocomplete="off"> 해경

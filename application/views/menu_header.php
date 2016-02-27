@@ -17,7 +17,10 @@
   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
   <link href="/src/css/common.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/css/bootstrap-select.min.css">
   <script src="/src/js/jquery.js"></script>
   <script src="/src/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js"></script>
+      <script src="/src/js/jquery.mobile.custom.min.js"></script>
 </head>
 <body style="font-family: 'Open Sans', sans-serif;">

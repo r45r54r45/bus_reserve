@@ -284,14 +284,14 @@ a{
 #page_title{
   letter-spacing: 1px;
 }
-.btn-group{
+#home.btn-group{
   border-radius: 16px;
   overflow: hidden;
 }
-.btn-group>label{
+#home.btn-group>label{
   font-size: 12px;
 }
-.btn-group>.btn{
+#home.btn-group>.btn{
   padding: 7px 25px;
 }
 #home-top-button{
