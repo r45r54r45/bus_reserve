@@ -68,8 +68,33 @@
 <div class="row" style="margin-top:20px;">
   <div class="col-xs-12">
     <div class="card_holder">
-      <div class="card">
-
+      <div class="card" style="height:50px;">
+        <div style="height: 100%;
+    width: 4em; border-right:1px solid #fcd90d;">
+          <div><span style="font-size: 15px;">91</span></div>
+          <div><span style="font-size: 10px;">하모니 앞</span></div>
+        </div>
+        <div style="position: absolute;
+        top: 4px;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    padding-left: 4em;
+    margin-left: 18px;
+    padding-right: 36px;">
+          <div style="position: absolute;
+    bottom: 2px;
+    font-size: 10px;
+    padding: 0 10px;">
+            <span>1</span><span> 정거장 전</span>
+          </div>
+          <div style="
+    float: right;
+    line-height: 40px;">
+            <span style="font-size: 17px;">2</span>
+            <span style="font-size: 10px;    vertical-align: bottom;"> min</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
