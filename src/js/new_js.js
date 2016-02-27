@@ -38,5 +38,5 @@ function content_manager(){
       return;
     }
     $("#page_title").text(path.toUpperCase());
-    $("iframe#contents").css("height",$(window).height()-100+"px").attr("src","http://localhost:8000/new_ver/"+path);
+    $("iframe#contents").css("height",$(window).height()-100+"px").attr("src","/new_ver/"+path);
 }
