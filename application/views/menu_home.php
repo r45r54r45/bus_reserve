@@ -31,9 +31,9 @@
         margin-top: -20px;
         text-align: center;">
         <span style="display: block;
-        font-size: 5px;
+        font-size: 10px;
         margin-top: 6px;">전체</span>
-        <span style="display: block; font-size: 5px;">보기</span>
+        <span style="display: block; font-size: 10px;">보기</span>
       </div>
       <div class="row" style="height:100%;">
         <div class="col-xs-6" style="height:100%;">
