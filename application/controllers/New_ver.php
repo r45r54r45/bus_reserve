@@ -43,8 +43,7 @@ class New_ver extends CI_Controller {
 		$this->load->view('menu_footer');
 	}
 	public function printhub(){
-		$this->load->view('header');
-		$this->load->view('print_main');
-		$this->load->view('footer');
+				$this->load->helper('url');
+		redirect('../prints');
 	}
 }
