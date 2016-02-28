@@ -1,3 +1,18 @@
+<div class="container-fluid">
+  <div class="row center-align" id="home-top-button">
+    <div id="home" class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
+      border-top-left-radius: 16px;" id="option1">
+      <input type="radio" name="options"  autocomplete="off"> 송도 맛집
+    </label>
+    <label class="btn btn-primary" style="border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px; display:none;" id="option2">
+    <input type="radio" name="options"  autocomplete="off" ><span id="menu_type"><span>
+  </label>
+</div>
+</div>
+</div>
+
 <div id="grid">
 
            <div class="grid-element">
@@ -115,7 +130,7 @@
              font-weight: 500;
            }
            #grid>div,#grid2>div{
-             border:1px solid black;
+             border:1px solid #46292b;
            }
            #g22,#g222{
              font-size: 25px;
@@ -129,6 +144,8 @@ $(".grid-element").on("click",function(e){
   var clicked=e.originalEvent.srcElement.firstElementChild.id;
   if(currentDepth==0){
     if(clicked!="g22"){
+      $("#option2").css("display","");
+      $("#menu_type").text($("#"+clicked).text());
     putInfo(clicked);
     $("#grid").animate({
       opacity:0,
@@ -143,6 +160,7 @@ $(".grid-element").on("click",function(e){
   }
   }else{
     if(clicked=="g222"){
+    $("#option2").css("display","none");
     $("#grid2").animate({
       opacity:0,
       height:0,
