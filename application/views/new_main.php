@@ -23,9 +23,11 @@
   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
   <link href="/src/css/common.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif; ">
-  <div class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
+  <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <div class="back_arrow"><i class="glyphicon glyphicon-arrow-left"></i></div>
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;"></span>
   </div>
