@@ -93,6 +93,15 @@ padding-right: 18px;">
 var type=0;
 $(function(){
   getFood();
+  $("#option1").on("click",function(){
+    type=0;
+  });
+  $("#option2").on("click",function(){
+    type=1;
+  });
+  $("#option3").on("click",function(){
+    type=2;
+  });
 });
 function getFood(){
 	$.get("/data/food", function( data ) {
