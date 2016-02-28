@@ -39,7 +39,8 @@ function moveto(path){
   location.replace("/#more#foodmap");
   content_manager();
 }else if(path=='more_printhub'){
-  window.open("http://freshman.yonsei.ac.kr/prints","_blank");
+  alert("3월 10일 완료 예정입니다.");
+  // window.open("http://freshman.yonsei.ac.kr/prints","_blank");
   // location.replace("/#more#printhub");
   // content_manager();
 }else if(path=='more_phonebook'){
