@@ -115,7 +115,7 @@ function getFood(){
       $("#lunch1").text(one[1][0]);
       $("#lunch2").text(one[1][1]);
       $("#dinner1").text(one[2][0]);
-      $("#dinner1").text(one[2][1]);
+      $("#dinner2").text(one[2][1]);
 	}, "json" );
 }
 </script>
