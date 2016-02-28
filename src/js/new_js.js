@@ -27,27 +27,25 @@ $(function(){
     content_manager();
   });
 
-  $("#contents").on("load",function(){
-    $("#contents").contents().find("#more_phonebook").on("click",function(){
-      location.replace("/#more#phonebook");
-      content_manager();
-      return;
-    });
-    $("#contents").contents().find("#more_foodmap").on("click",function(){
-      location.replace("/#more#foodmap");
-      content_manager();
-      return;
-    });
-    $("#contents").contents().find("#more_printhub").on("click",function(){
-      location.replace("/#more#printhub");
-      content_manager();
-      return;
-    });
-  });
+
+
+
 
 
 });
 
+function moveto(path){
+  if(path=='more_foodmap'){
+  location.replace("/#more#foodmap");
+  content_manager();
+}else if(path=='more_printhub'){
+  location.replace("/#more#printhub");
+  content_manager();
+}else if(path=='more_phonebook'){
+  location.replace("/#more#phonebook");
+  content_manager();
+}
+}
 window.onpopstate=function(e){
   // content_manager();
 }
