@@ -219,6 +219,10 @@ a{
 {
   color: #c4c6ca;
 }
+.nav-font-size{
+  font-size: 5px;
+  margin-top: 2px;
+}
 .nav-font-valign{
   vertical-align: middle;
   line-height: 50px;
@@ -248,6 +252,7 @@ a{
 {
   width: 19.5%;
   height: 100%;
+  padding-top: 5px;
 }
 
 #nav-bottom
@@ -318,4 +323,15 @@ a{
 }
 div>span{
   color: #46292b;
+}
+.back_arrow{
+  position: absolute;
+    left: 15px;
+    top: 10px;
+    color: white;
+    font-size: 24px;
+    cursor:pointer;
+}
+.pointer{
+  cursor: pointer;
 }

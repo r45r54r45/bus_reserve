@@ -20,6 +20,7 @@
 </head>
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif; ">
   <div class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
+    <div class="back_arrow"><i class="glyphicon glyphicon-arrow-left"></i></div>
     <span class="nav-font-color nav-font-valign" id="page_title"></span>
   </div>
   <iframe id="contents" frameBorder="0">
@@ -28,7 +29,8 @@
   <div class="container-fluid" style="padding:0;" id="nav-bottom">
     <ul class="nav nav-pills">
       <li id="menu1" class="center-align nav-bottom-border nav-bottom-5">
-        <img class="img img-responsive" src="/src/img/btn1.png" />
+        <img class="img img-responsive" src="/src/img/1home.png" style="width:20px; height:20px;"/>
+        <span class="nav-font-color nav-font-size">HOME</span>
       </li>
       <li id="menu2" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/btn2.png" /></li>
       <li id="menu3" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/btn3.png" /></li>

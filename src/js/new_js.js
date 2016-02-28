@@ -22,22 +22,50 @@ $(function(){
     location.replace("#more");
     content_manager();
   });
+  $(".back_arrow").on("click",function(){
+    location.replace("#more");
+    content_manager();
+  });
+
 
 
 });
+
 window.onpopstate=function(e){
   // content_manager();
 }
 
 function content_manager(){
+    $("#contents").on("load",function(){
+      $("#contents").contents().find("#more_phonebook").on("click",function(){
+        location.replace("/#more#phonebook");
+        content_manager();
+        return;
+      });
+      $("#contents").contents().find("#more_foodmap").on("click",function(){
+        location.replace("/#more#foodmap");
+        content_manager();
+        return;
+      });
+    });
     var url=window.location.href;
     var path=url.split('#')[1];
+    var path2;
     if(!path)
     {
       location.replace("/#home");
       content_manager();
       return;
     }
-    $("#page_title").text(path.toUpperCase());
-    $("iframe#contents").css("height",$(window).height()-100+"px").attr("src","/new_ver/"+path);
+    if(path2=url.split('#')[2]){
+      $("#page_title").text(path2.toUpperCase());
+      $("iframe#contents").css("height",$(window).height()-100+"px").attr("src","/new_ver/"+path2);
+      $(".back_arrow").css("display","");
+
+    }else{
+      $("#page_title").text(path.toUpperCase());
+      $("iframe#contents").css("height",$(window).height()-100+"px").attr("src","/new_ver/"+path);
+      $(".back_arrow").css("display","none");
+    }
+
 }
