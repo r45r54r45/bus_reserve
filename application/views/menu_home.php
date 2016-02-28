@@ -79,6 +79,7 @@ function time_format(data){
   <div class="col-xs-12">
     <div class="card_holder">
       <div class="card" style="height:100px;">
+        <a onclick="$('#myModal').modal('show')">
         <div style="position: absolute;
         width: 40px;
         height: 40px;
@@ -96,6 +97,23 @@ function time_format(data){
         margin-top: 6px;">전체</span>
         <span style="display: block; font-size: 10px;">보기</span>
       </div>
+    </a>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">전체 시간표</h4>
+      </div>
+      <div class="modal-body" style="padding:0;">
+        <img  style="    width: 100%;" src="/src/img/bus_time.png">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       <div class="row" style="height:100%;">
         <div class="col-xs-6" style="height:100%;">
           <div>

@@ -31,7 +31,7 @@
           <span style="font-size: 15px;">송도 맛집 지도(beta)</span>
         </div>
         <div style="text-align:right; margin-top:-5px;">
-          <span style="font-size: 10px;">songdo restaurant</span>
+          <span style="font-size: 10px;">songdo restaurant map</span>
         </div>
         <div style="position:absolute;bottom:5px;left:15px;">
           <i class="glyphicon glyphicon-map-marker" style="font-size: 22px; color: #e5e5e5;"></i>
