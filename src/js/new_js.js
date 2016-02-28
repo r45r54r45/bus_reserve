@@ -19,7 +19,7 @@ $(function(){
     content_manager();
   });
   $("#menu5").on("click",function(){
-    location.replace("#call");
+    location.replace("#more");
     content_manager();
   });
 
@@ -35,6 +35,7 @@ function content_manager(){
     if(!path)
     {
       location.replace("/#home");
+      content_manager();
       return;
     }
     $("#page_title").text(path.toUpperCase());
