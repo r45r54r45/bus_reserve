@@ -18,6 +18,7 @@
 <style>
 tr{
   height:30px;
+  width:90px;
 }
 td{
   height:100%;
