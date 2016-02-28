@@ -18,7 +18,7 @@
   <![endif]-->
   <link href="/src/css/common.css" rel="stylesheet" type="text/css">
 </head>
-<body style="font-family: 'Open Sans','Nanum Gothic', sans-serif;">
+<body style="font-family: 'Open Sans','Nanum Gothic', sans-serif; position:relative;">
   <div class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <span class="nav-font-color nav-font-valign" id="page_title"></span>
   </div>
