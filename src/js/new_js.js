@@ -47,6 +47,11 @@ function content_manager(){
         content_manager();
         return;
       });
+      $("#contents").contents().find("#more_printhub").on("click",function(){
+        location.replace("/#more#printhub");
+        content_manager();
+        return;
+      });
     });
     var url=window.location.href;
     var path=url.split('#')[1];
