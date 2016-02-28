@@ -141,7 +141,7 @@ function time_format(data){
 <div class="row" style="margin-top:20px;">
   <div class="col-xs-12 center-align">
     <span style="font-size: 13px;
-    margin-right: 5px;">일반 버스 실시간 정보</span><i class="glyphicon glyphicon-repeat"></i>
+    margin-right: 5px;">일반 버스 실시간 정보</span><i class="glyphicon glyphicon-repeat" style="color:#46292b;"></i>
   </div>
 </div>
 <div class="row" style="margin-top:20px;">

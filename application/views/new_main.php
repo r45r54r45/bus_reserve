@@ -10,6 +10,7 @@
   <!-- Bootstrap core CSS -->
   <link href="/src/css/bootstrap.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <!-- Custom styles for this template -->
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -21,7 +22,7 @@
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif; ">
   <div class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <div class="back_arrow"><i class="glyphicon glyphicon-arrow-left"></i></div>
-    <span class="nav-font-color nav-font-valign" id="page_title"></span>
+    <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;"></span>
   </div>
   <iframe id="contents" frameBorder="0">
 

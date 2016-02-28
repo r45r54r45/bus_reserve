@@ -1,31 +1,60 @@
-<table>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
-<style>
-tr{
-  height:30px;
-  width:90px;
-}
-td{
-  height:100%;
-  width:30px;
-}
-tr,td{
-  border:1px solid black;
-}
+<div id="grid">
+
+           <div class="grid-element">
+               <span>Label</span>
+           </div>
+
+           <div class="grid-element">
+               <span>Label</span>
+           </div>
+
+           <div class="grid-element">
+               <span>Label</span>
+           </div>
+
+
+           <div class="grid-element">
+               <span>Label</span>
+           </div>
+
+           <div class="grid-element">
+               <span>Label</span>
+           </div>
+
+           <div class="grid-element">
+               <span>Label</span>
+           </div>
+
+
+           <div class="grid-element">
+               <span>Label</span>
+           </div>
+
+           <div class="grid-element">
+             <span>Label</span>
+           </div>
+
+           <div class="grid-element">
+               <span>Label</span>
+           </div>
+
+       </div>
+
+       <div class="clear"></div>
+<style type="text/css">
+           .clear{
+               clear:both;
+           }
+           #grid{
+               width: 100%;
+               padding:5px;
+           }
+           .grid-element{
+               width:33%;
+
+               float:left;
+           }
+           #grid>div{
+             border:1px solid black;
+           }
 </style>
-dd
