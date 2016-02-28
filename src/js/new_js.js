@@ -39,8 +39,9 @@ function moveto(path){
   location.replace("/#more#foodmap");
   content_manager();
 }else if(path=='more_printhub'){
-  location.replace("/#more#printhub");
-  content_manager();
+  window.open("http://freshman.yonsei.ac.kr/prints","_blank");
+  // location.replace("/#more#printhub");
+  // content_manager();
 }else if(path=='more_phonebook'){
   location.replace("/#more#phonebook");
   content_manager();
