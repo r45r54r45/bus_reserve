@@ -34,7 +34,7 @@
   <iframe id="contents" frameBorder="0">
 
   </iframe>
-  <div class="container-fluid" style="padding:0;" id="nav-bottom">
+  <div data-role="footer" class="container-fluid" style="padding:0;" id="nav-bottom">
     <ul class="nav nav-pills">
       <li id="menu1" class="center-align nav-bottom-border nav-bottom-5">
         <img class="img img-responsive" src="/src/img/1home.png"/>
