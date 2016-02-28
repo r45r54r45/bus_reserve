@@ -108,14 +108,17 @@ $(function(){
 });
 function getFood(){
 	$.get("/data/food", function( data ) {
-      console.log(data);
 		  var one=data[type]; //1학사
+      try{
       $("#morning1").text(one[0][0]);
       $("#morning2").text(one[0][1]);
       $("#lunch1").text(one[1][0]);
       $("#lunch2").text(one[1][1]);
       $("#dinner1").text(one[2][0]);
       $("#dinner2").text(one[2][1]);
+    }catch(err){
+      alert("서버로부터 문제가 발생했습니다.");
+    }
 	}, "json" );
 }
 </script>
