@@ -18,7 +18,7 @@
   top: 0;
   left:0;
   position: absolute;
-  width: 100%;" src="https://yicdorm.yonsei.ac.kr/room.asp" frameBorder="0">
+  width: 400px;" src="https://yicdorm.yonsei.ac.kr/room.asp" frameBorder="0">
 </iframe>
 
 <script>
