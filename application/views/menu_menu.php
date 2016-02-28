@@ -117,6 +117,12 @@ function getFood(){
       $("#dinner1").text(one[2][0]);
       $("#dinner2").text(one[2][1]);
     }catch(err){
+      $("#morning1").text("");
+      $("#morning2").text("");
+      $("#lunch1").text("");
+      $("#lunch2").text("");
+      $("#dinner1").text("");
+      $("#dinner2").text("");
       alert("서버로부터 문제가 발생했습니다.");
     }
 	}, "json" );
