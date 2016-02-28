@@ -27,6 +27,23 @@ $(function(){
     content_manager();
   });
 
+  $("#contents").on("load",function(){
+    $("#contents").contents().find("#more_phonebook").on("click",function(){
+      location.replace("/#more#phonebook");
+      content_manager();
+      return;
+    });
+    $("#contents").contents().find("#more_foodmap").on("click",function(){
+      location.replace("/#more#foodmap");
+      content_manager();
+      return;
+    });
+    $("#contents").contents().find("#more_printhub").on("click",function(){
+      location.replace("/#more#printhub");
+      content_manager();
+      return;
+    });
+  });
 
 
 });
@@ -36,23 +53,7 @@ window.onpopstate=function(e){
 }
 
 function content_manager(){
-    $("#contents").on("load",function(){
-      $("#contents").contents().find("#more_phonebook").on("click",function(){
-        location.replace("/#more#phonebook");
-        content_manager();
-        return;
-      });
-      $("#contents").contents().find("#more_foodmap").on("click",function(){
-        location.replace("/#more#foodmap");
-        content_manager();
-        return;
-      });
-      $("#contents").contents().find("#more_printhub").on("click",function(){
-        location.replace("/#more#printhub");
-        content_manager();
-        return;
-      });
-    });
+
     var url=window.location.href;
     var path=url.split('#')[1];
     var path2;
