@@ -56,8 +56,8 @@ padding-left: 4em;
 margin-left:10px;
 padding-right: 18px;">
 <div class="row" style="margin:0;">
-<div class="col-xs-6" style="max-height:92px;"><span id="morning1"></span></div>
-<div class="col-xs-6" style="max-height:92px;"><span id="morning2"></span></div>
+<div class="col-xs-6" style="max-height:92px;"><span id="lunch1"></span></div>
+<div class="col-xs-6" style="max-height:92px;"><span id="lunch2"></span></div>
 </div>
 </div>
 </div>
@@ -78,8 +78,8 @@ padding-left: 4em;
 margin-left:10px;
 padding-right: 18px;">
 <div class="row" style="margin:0;">
-<div class="col-xs-6" style="max-height:92px;"><span id="morning1"></span></div>
-<div class="col-xs-6" style="max-height:92px;"><span id="morning2"></span></div>
+<div class="col-xs-6" style="max-height:92px;"><span id="dinner1"></span></div>
+<div class="col-xs-6" style="max-height:92px;"><span id="dinner2"></span></div>
 </div>
 </div>
 </div>
