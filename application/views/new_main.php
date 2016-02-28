@@ -29,13 +29,12 @@
   <div class="container-fluid" style="padding:0;" id="nav-bottom">
     <ul class="nav nav-pills">
       <li id="menu1" class="center-align nav-bottom-border nav-bottom-5">
-        <img class="img img-responsive" src="/src/img/1home.png" style="width:20px; height:20px;"/>
-        <span class="nav-font-color nav-font-size">HOME</span>
+        <img class="img img-responsive" src="/src/img/1home.png"/>
       </li>
-      <li id="menu2" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/btn2.png" /></li>
-      <li id="menu3" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/btn3.png" /></li>
-      <li id="menu4" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/btn4.png" /></li>
-      <li id="menu5" class="center-align nav-bottom-border nav-bottom-5" style="border:none">  <img class="img img-responsive" src="/src/img/btn5.png" /></li>
+      <li id="menu2" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/2shuttle.png" /></li>
+      <li id="menu3" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/3menu.png" /></li>
+      <li id="menu4" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/4reserve.png" /></li>
+      <li id="menu5" class="center-align nav-bottom-border nav-bottom-5" style="border:none">  <img class="img img-responsive" src="/src/img/5more.png" /></li>
     </ul>
   </div>
   <!-- Bootstrap core JavaScript
