@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>연세바나나</title>
+  <title>banana</title>
   <!-- Bootstrap core CSS -->
   <link rel="apple-touch-icon" href="/src/img/main_logo.png" />
   <link rel="apple-touch-icon-precomposed" href="/src/img/main_logo.png" />
