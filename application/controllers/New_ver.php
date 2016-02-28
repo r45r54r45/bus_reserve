@@ -44,6 +44,6 @@ class New_ver extends CI_Controller {
 	}
 	public function printhub(){
 				$this->load->helper('url');
-		redirect('../prints');
+		redirect('/prints');
 	}
 }
