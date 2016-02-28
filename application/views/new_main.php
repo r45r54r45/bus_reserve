@@ -9,11 +9,10 @@
   <meta name="author" content="">
   <title>banana</title>
   <!-- Bootstrap core CSS -->
+  <link rel="apple-touch-startup-image" href="/src/img/splash2.png" >
   <link rel="apple-touch-icon" href="/src/img/main_logo.png" />
   <link rel="apple-touch-icon-precomposed" href="/src/img/main_logo.png" />
-  <link href="/src/img/splash3.png"      media="(device-width: 320px)
-         and (device-height: 568px)
-         and (-webkit-device-pixel-ratio: 2)"  rel="apple-touch-startup-image">
+
   <link href="/src/css/bootstrap.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
