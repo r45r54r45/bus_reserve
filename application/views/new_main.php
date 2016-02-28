@@ -24,7 +24,7 @@
   <![endif]-->
   <link href="/src/css/common.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif; ">
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
@@ -51,6 +51,7 @@
   <script src="/src/js/jquery.js"></script>
   <script src="/src/js/new_js.js"></script>
   <script src="/src/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 </html>

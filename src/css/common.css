@@ -230,7 +230,7 @@ a{
 
 .bam-background
 {
-  background-color: #46292b;
+  background-color: #46292b !important;
 }
 
 .yellow-background

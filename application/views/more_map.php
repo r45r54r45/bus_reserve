@@ -60,3 +60,8 @@
              border:1px solid black;
            }
 </style>
+<script>
+$("#grid-element").on("click",function(){
+  // console.log("Dd");
+});
+</script>

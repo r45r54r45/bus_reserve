@@ -21,6 +21,6 @@
   <script src="/src/js/jquery.js"></script>
   <script src="/src/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js"></script>
-      <script src="/src/js/jquery.mobile.custom.min.js"></script>
+
 </head>
 <body style="font-family: 'Open Sans', sans-serif;">
