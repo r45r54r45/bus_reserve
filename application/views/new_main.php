@@ -9,6 +9,7 @@
   <meta name="author" content="">
   <title>Freshman Yosnei</title>
   <!-- Bootstrap core CSS -->
+  <link rel="apple-touch-startup-image" href="/src/img/bus_time.png" />
   <link href="/src/css/bootstrap.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
