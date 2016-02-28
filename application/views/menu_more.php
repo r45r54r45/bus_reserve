@@ -6,7 +6,7 @@
         <a href=""><div class="card" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
           <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
             <div style="text-align:right;">
-              <span style="font-size: 15px; letter-spacing:2px;">국제캠퍼스 내선 번호</span>
+              <span style="font-size: 15px;">국제캠퍼스 내선 번호</span>
             </div>
             <div style="text-align:right; margin-top:-5px;">
               <span style="font-size: 10px;">phonebook</span>
@@ -28,7 +28,7 @@
     <a href=""><div class="card" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
       <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
         <div style="text-align:right;">
-          <span style="font-size: 15px; letter-spacing:2px;">송도 맛집 지도(beta)</span>
+          <span style="font-size: 15px;">송도 맛집 지도(beta)</span>
         </div>
         <div style="text-align:right; margin-top:-5px;">
           <span style="font-size: 10px;">songdo restaurant</span>
