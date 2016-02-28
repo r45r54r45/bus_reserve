@@ -95,16 +95,20 @@ $(function(){
   getFood();
   $("#option1").on("click",function(){
     type=0;
+    getFood();
   });
   $("#option2").on("click",function(){
     type=1;
+    getFood();
   });
   $("#option3").on("click",function(){
     type=2;
+    getFood();
   });
 });
 function getFood(){
 	$.get("/data/food", function( data ) {
+      console.log(data);
 		  var one=data[type]; //1학사
       $("#morning1").text(one[0][0]);
       $("#morning2").text(one[0][1]);
