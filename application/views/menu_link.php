@@ -1,7 +1,9 @@
 <div class="container-fluid">
   <div class="row" style="margin-top:15px;">
+
     <div class="col-xs-4" >
-      <div class="circle" onclick="window.open('http://naver.com','_blank');">
+      <a href='http://www.google.com/' target='_blank'>
+      <div class="circle">
         <div style="vertical-align: middle;
     display: table-cell;">
         <span style="">와이섹</span>
@@ -12,6 +14,7 @@
         <span>YSCEC</span>
       </div>
       </div>
+    </a>
     </div>
 
     <div class="col-xs-4" >
