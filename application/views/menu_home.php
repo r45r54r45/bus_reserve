@@ -291,6 +291,7 @@ function setCurrentBus(){
         url: 'http://freshman.yonsei.ac.kr/main/test', //<- xml 위치
         cache: false,
         type: 'GET',
+        dataType:'json',
       success: function(res) {
         console.log(res);
         var data=JSON.parse(res);
