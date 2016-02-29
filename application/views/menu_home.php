@@ -286,12 +286,12 @@ function time_format(data){
  //  }
 
 function setCurrentBus(){
-  var path=encodeURIComponent("http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getSttnAcctoSpcifyRouteBusArvlPrearngeInfoList?ServiceKey=JwH8P3QCOaTv%2FYttZkCDASHiJZblEJAk8X2i6nICtptOT8O55JvqRPG7nluVp6QEVQu7sy51aHk%2FUgm2b0Ncyg%3D%3D&cityCode=23&routeId=ICB165000381&nodeId=ICB165000725");
-  var url = "http://freshman.yonsei.ac.kr/main/test?path="+path;
+
   $.ajax({
-        url: url, //<- xml 위치
+        url: 'http://freshman.yonsei.ac.kr/main/test', //<- xml 위치
         cache: false,
         type: 'GET',
+        dataType: 'json',
       success: function(res) {
         console.log(res);
   // console.log(JSONConvertedXML);
