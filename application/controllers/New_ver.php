@@ -20,10 +20,10 @@ class New_ver extends CI_Controller {
 		$this->load->view('menu_menu');
 		$this->load->view('menu_footer');
 	}
-	public function reserve()
+	public function link()
 	{
 		$this->load->view('menu_header');
-		$this->load->view('menu_reserve');
+		$this->load->view('menu_link');
 		$this->load->view('menu_footer');
 	}
 	public function more()

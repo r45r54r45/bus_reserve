@@ -15,7 +15,7 @@ $(function(){
     content_manager();
   });
   $("#menu4").on("click",function(){
-    location.replace("#reserve");
+    location.replace("#link");
     content_manager();
   });
   $("#menu5").on("click",function(){

@@ -1,5 +1,9 @@
 <div class="container-fluid">
-  <div class="row center-align" id="home-top-button">
+
+
+
+
+  <!-- <div class="row center-align" id="home-top-button">
     <div id="home" class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
       border-top-left-radius: 16px;" id="option1">
@@ -13,13 +17,7 @@
 </div>
 </div>
 </div>
-<iframe id="frame" style="  margin:50px 0px 0px;
-  bottom: 0;
-  top: 0;
-  left:0;
-  position: absolute;
-  width: 100%;" src="https://yicdorm.yonsei.ac.kr/room.asp" frameBorder="0">
-</iframe>
+
 
 <script>
 $(function(){
@@ -31,4 +29,4 @@ $(function(){
     $("#frame").attr("src","https://yicdorm.yonsei.ac.kr/study.asp");
   });
 });
-</script>
+</script> -->
