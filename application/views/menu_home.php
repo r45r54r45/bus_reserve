@@ -288,15 +288,11 @@ function time_format(data){
 function setCurrentBus(){
   console.log("ddd");
   $.ajax({
-        url: 'http://freshman.yonsei.ac.kr/main/test', //<- xml 위치
-        cache: false,
+        url: '/main/test', //<- xml 위치
         type: 'GET',
-        dataType:'json',
+        // dataType:'json',
       success: function(res) {
         console.log(res);
-        var data=JSON.parse(res);
-        console.log(data.get('6724'));
-
      }
    });
  }
