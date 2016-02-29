@@ -28,8 +28,8 @@
 </head>
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif; ">
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
-    <div class="back_arrow"><img src="/src/img/backbtn.png" style="    height: 22px;"></div>
-    <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;"></span>
+    <div class="back_arrow"><img src="/src/img/backbtn.png" style="    height: 18px;"></div>
+    <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee; font-weight:100"></span>
   </div>
   <iframe id="contents" frameBorder="0">
 

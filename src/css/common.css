@@ -305,7 +305,7 @@ a{
   margin: 10px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: #c4c6ca;
+    color: #fff;
     background-color: #46292b;
     border-color: #46292b;
   }

@@ -126,16 +126,15 @@
            }
            .grid-element>span{
              pointer-events:none;
-             font-size: 17px;
-             font-weight: 500;
+             font-size: 12px;
+             font-weight: 100;
            }
            #grid>div,#grid2>div{
              border:1px solid #46292b;
            }
            #g22,#g222{
-             font-size: 25px;
-             font-weight: bold;
-             color:#e5e5e5;
+             font-size: 15px;
+             color:#fff;
            }
 </style>
 <script>
