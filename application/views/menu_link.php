@@ -2,7 +2,7 @@
   <div class="row" style="margin-top:15px;">
 
     <div class="col-xs-4" >
-      <a href='http://www.google.com/' target='_blank'>
+      <a href='http://yscec.yonsei.ac.kr' target='_blank'>
       <div class="circle">
         <div style="vertical-align: middle;
     display: table-cell;">
@@ -16,19 +16,104 @@
       </div>
     </a>
     </div>
-
     <div class="col-xs-4" >
+      <a href='http://portal.yonsei.ac.kr/main/' target='_blank'>
       <div class="circle">
-        <span style="margin-top:10px;">dd</span>
+        <div style="vertical-align: middle;
+    display: table-cell;">
+        <span style="">포탈</span>
+        <div style="height: 0;
+    width: 20px;
+    border-top: 2px solid #fcd90d;
+    margin: 2px auto;"></div>
+        <span>PORTAL</span>
       </div>
+      </div>
+    </a>
     </div>
     <div class="col-xs-4" >
+      <a href='https://yicdorm.yonsei.ac.kr/study.asp' target='_blank'>
       <div class="circle">
-        <span style="margin-top:10px;">dd</span>
+        <div style="vertical-align: middle;
+    display: table-cell;">
+        <span style="">열람실</span>
+        <div style="height: 0;
+    width: 20px;
+    border-top: 2px solid #fcd90d;
+    margin: 2px auto;"></div>
+        <span>STUDY</span>
       </div>
+      </div>
+    </a>
     </div>
+  </div>
+  <div class="row" style="margin-top:15px;">
+    <div class="col-xs-4" >
+      <a href='https://yicdorm.yonsei.ac.kr/room.asp' target='_blank'>
+      <div class="circle">
+        <div style="vertical-align: middle;
+    display: table-cell;">
+        <span style="">세미나실</span>
+        <div style="height: 0;
+    width: 20px;
+    border-top: 2px solid #fcd90d;
+    margin: 2px auto;"></div>
+        <span>SEMINAR</span>
+      </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-xs-4" >
+      <a href='http://career.yonsei.ac.kr' target='_blank'>
+      <div class="circle">
+        <div style="vertical-align: middle;
+    display: table-cell;">
+        <span style="">커리어</span>
+        <div style="height: 0;
+    width: 20px;
+    border-top: 2px solid #fcd90d;
+    margin: 2px auto;"></div>
+        <span>CAREER</span>
+      </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-xs-4" >
+      <a href='https://yicdorm.yonsei.ac.kr' target='_blank'>
+      <div class="circle">
+        <div style="vertical-align: middle;
+    display: table-cell;">
+        <span style="">기숙사</span>
+        <div style="height: 0;
+    width: 20px;
+    border-top: 2px solid #fcd90d;
+    margin: 2px auto;"></div>
+        <span>DORM</span>
+      </div>
+      </div>
+    </a>
+    </div>
+  </div>
+  <div class="row" style="margin-top:15px;">
+    <div class="col-xs-4" >
+      <a href='http://uic.yonsei.ac.kr/main.asp' target='_blank'>
+      <div class="circle">
+        <div style="vertical-align: middle;
+    display: table-cell;">
+        <span style="">국제대학</span>
+        <div style="height: 0;
+    width: 20px;
+    border-top: 2px solid #fcd90d;
+    margin: 2px auto;"></div>
+        <span>UIC</span>
+      </div>
+      </div>
+    </a>
+    </div>
+</div>
 
   </div>
+</div>
 
 
 
