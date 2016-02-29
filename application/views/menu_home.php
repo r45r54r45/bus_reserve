@@ -293,7 +293,7 @@ function setCurrentBus(){
         cache: false,
         type: 'GET',
       success: function(res) {
-        console.log(res.responseText);
+        console.log(res);
   // console.log(JSONConvertedXML);
 
      }
