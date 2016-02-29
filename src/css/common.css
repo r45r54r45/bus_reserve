@@ -339,3 +339,17 @@ div>span{
 .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
   border: none !important;
 }
+.circle{
+  border-radius: 50%;
+  /*width:90px;
+  height:90px;*/
+
+  width: 22vw;
+  height: 22vw;
+  border:1px solid #46292b;
+  text-align: center;
+  display: table;
+}
+.circle>div>span{
+  font-size: 13px;
+}

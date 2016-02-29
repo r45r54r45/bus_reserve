@@ -1,5 +1,31 @@
 <div class="container-fluid">
+  <div class="row" style="margin-top:15px;">
+    <div class="col-xs-4" >
+      <div class="circle" onclick="window.open('http://naver.com','_blank');">
+        <div style="vertical-align: middle;
+    display: table-cell;">
+        <span style="">와이섹</span>
+        <div style="height: 0;
+    width: 20px;
+    border-top: 2px solid #fcd90d;
+    margin: 2px auto;"></div>
+        <span>YSCEC</span>
+      </div>
+      </div>
+    </div>
 
+    <div class="col-xs-4" >
+      <div class="circle">
+        <span style="margin-top:10px;">dd</span>
+      </div>
+    </div>
+    <div class="col-xs-4" >
+      <div class="circle">
+        <span style="margin-top:10px;">dd</span>
+      </div>
+    </div>
+
+  </div>
 
 
 
