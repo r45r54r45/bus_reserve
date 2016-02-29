@@ -268,11 +268,20 @@ function time_format(data){
 </div>
 </div>
 </div>
+<script src="/src/js/crossdomain.js"></script>
 <script>
   function setCurrentBus(){
-    $.get("http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getSttnAcctoSpcifyRouteBusArvlPrearngeInfoList?ServiceKey=JwH8P3QCOaTv%2FYttZkCDASHiJZblEJAk8X2i6nICtptOT8O55JvqRPG7nluVp6QEVQu7sy51aHk%2FUgm2b0Ncyg%3D%3D&cityCode=23&routeId=ICB165000381&nodeId=ICB165000725&numOfRows=999&pageSize=999&pageNo=1&startPage=1",function(data){
-      console.log(data);
-    });
+    $.ajax({
+       url: 'http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getSttnAcctoSpcifyRouteBusArvlPrearngeInfoList?ServiceKey=JwH8P3QCOaTv%2FYttZkCDASHiJZblEJAk8X2i6nICtptOT8O55JvqRPG7nluVp6QEVQu7sy51aHk%2FUgm2b0Ncyg%3D%3D&cityCode=23&routeId=ICB165000381&nodeId=ICB165000725', //<- xml 위치
+       dataType: "xml", // xml 형식
+       cache: false,
+       type: 'GET',
+     success: function(res) {
+       console.log(res.responseText);
+ // console.log(JSONConvertedXML);
+
+    }
+  });
   }
 
 
