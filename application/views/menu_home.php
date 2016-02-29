@@ -141,7 +141,7 @@ function time_format(data){
 <div class="row" style="margin-top:20px;">
   <div class="col-xs-12 center-align">
     <span style="font-size: 13px;
-    margin-right: 5px;">일반 버스 실시간 정보</span><i class="glyphicon glyphicon-repeat" style="color:#46292b;"></i>
+    margin-right: 5px;">일반 버스 실시간 정보</span><i class="glyphicon glyphicon-repeat" style="color:#46292b;" onclick="setCurrentBus()"></i>
   </div>
 </div>
 <div class="row" style="margin-top:20px;">
@@ -193,12 +193,12 @@ function time_format(data){
           <div style="position: absolute;
     bottom: 2px;
     font-size: 10px;padding-left: 18px;">
-            <span>1</span><span> 정거장 전</span>
+            <span id="bus6724before"></span><span> 정거장 전</span>
           </div>
           <div style="
     float: right;
     line-height: 40px;">
-            <span style="font-size: 17px;">2</span>
+            <span style="font-size: 17px;" id="bus6724time"></span>
             <span style="font-size: 10px;    vertical-align: bottom;"> min</span>
           </div>
         </div>
@@ -269,6 +269,14 @@ function time_format(data){
 </div>
 </div>
 <script>
+  function setCurrentBus(){
+    $.get("http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getSttnAcctoSpcifyRouteBusArvlPrearngeInfoList?ServiceKey=JwH8P3QCOaTv%2FYttZkCDASHiJZblEJAk8X2i6nICtptOT8O55JvqRPG7nluVp6QEVQu7sy51aHk%2FUgm2b0Ncyg%3D%3D&cityCode=23&routeId=ICB165000381&nodeId=ICB165000725&numOfRows=999&pageSize=999&pageNo=1&startPage=1",function(data){
+      console.log(data);
+    });
+  }
+
+
+
 Date.prototype.format = function(f) {
     if (!this.valueOf()) return " ";
 
