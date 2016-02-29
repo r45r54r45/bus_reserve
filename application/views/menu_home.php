@@ -290,7 +290,7 @@ function setCurrentBus(){
   $.ajax({
         url: 'http://freshman.yonsei.ac.kr/main/test', //<- xml 위치
         type: 'GET',
-        // dataType:'json',
+        dataType:'json',
       success: function(res) {
         console.log(res);
      }
