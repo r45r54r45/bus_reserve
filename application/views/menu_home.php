@@ -270,20 +270,32 @@ function time_format(data){
 </div>
 <script src="/src/js/crossdomain.js"></script>
 <script>
-  function setCurrentBus(){
-    $.ajax({
-       url: 'http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getSttnAcctoSpcifyRouteBusArvlPrearngeInfoList?ServiceKey=JwH8P3QCOaTv%2FYttZkCDASHiJZblEJAk8X2i6nICtptOT8O55JvqRPG7nluVp6QEVQu7sy51aHk%2FUgm2b0Ncyg%3D%3D&cityCode=23&routeId=ICB165000381&nodeId=ICB165000725', //<- xml 위치
-       dataType: "xml", // xml 형식
-       cache: false,
-       type: 'GET',
-     success: function(res) {
-       console.log(res.responseText);
- // console.log(JSONConvertedXML);
+ //  function setCurrentBus(){
+ //    // http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getSttnAcctoSpcifyRouteBusArvlPrearngeInfoList?ServiceKey=JwH8P3QCOaTv%2FYttZkCDASHiJZblEJAk8X2i6nICtptOT8O55JvqRPG7nluVp6QEVQu7sy51aHk%2FUgm2b0Ncyg%3D%3D&cityCode=23&routeId=ICB165000381&nodeId=ICB165000725
+ //    $.ajax({
+ //       url: 'http://freshman.yonsei.ac.kr', //<- xml 위치
+ //       dataType: "xml", // xml 형식
+ //       cache: false,
+ //       type: 'GET',
+ //     success: function(res) {
+ //       console.log(res.responseText);
+ // // console.log(JSONConvertedXML);
+ //
+ //    }
+ //  });
+ //  }
 
-    }
-  });
-  }
+function setCurrentBus(){
+  var url = "http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getSttnAcctoSpcifyRouteBusArvlPrearngeInfoList?ServiceKey=JwH8P3QCOaTv%2FYttZkCDASHiJZblEJAk8X2i6nICtptOT8O55JvqRPG7nluVp6QEVQu7sy51aHk%2FUgm2b0Ncyg%3D%3D&cityCode=23&routeId=ICB165000381&nodeId=ICB165000725";
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "http://jsonproxy.appspot.com/proxy?url=" + encodeURIComponent(url) + "&callback=openApiTest_appspot_jsonproxy_callback";
+document.getElementsByTagName('body')[0].appendChild(script);
+}
 
+function openApiTest_appspot_jsonproxy_callback(response) {
+console.log(response);
+}
 
 
 Date.prototype.format = function(f) {
