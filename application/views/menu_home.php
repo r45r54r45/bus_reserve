@@ -268,6 +268,7 @@ function time_format(data){
 </div>
 </div>
 </div>
+<div id="temp"></div>
 <script src="/src/js/crossdomain.js"></script>
 <script>
  //  function setCurrentBus(){
@@ -292,8 +293,12 @@ function setCurrentBus(){
         type: 'GET',
         // dataType:'json',
       success: function(res) {
-        var k=res.responseText;
-        console.log(k);
+        var div = document.createElement("div");
+        div.innerHTML = res.responseText;
+        var text = div.textContent || div.innerText || "";
+        console.log(text);
+        var json=JSON.parse(text);
+        console.log(json);
 
      }
    });
