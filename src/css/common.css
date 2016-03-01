@@ -225,7 +225,7 @@ a{
 }
 .nav-font-valign{
   vertical-align: middle;
-  line-height: 84px;
+  line-height: 74px;
 }
 
 .bam-background
@@ -329,7 +329,7 @@ div>span{
 .back_arrow{
   position: absolute;
     left: 15px;
-    top: 13px;
+    top: 27px;
     color: white;
     cursor:pointer;
 }
