@@ -96,7 +96,7 @@ padding-right: 18px;">
     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <h4 class="modal-title" id="myModalLabel">전체 시간표</h4>
   </div> -->
-  <div class="modal-body" style="">
+  <div class="modal-body" style="padding:0">
     <img  style="    width: 100%;" src="/src/img/yplaza31.png" onclick="$('#myModal').modal('hide')">
   </div>
   <!-- <div class="modal-footer">
