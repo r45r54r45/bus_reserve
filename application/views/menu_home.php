@@ -294,20 +294,21 @@ function setCurrentBus(){
     $("#bus6405time").css("font-size","10px").text("loading...");
     $("#bus9201time").css("font-size","10px").text("loading...");
   $.ajax({
-        url: 'http://freshman.yonsei.ac.kr/main/test', //<- xml 위치
+        url: '/main/test', //<- xml 위치
         type: 'GET',
         // dataType:'json',
       success: function(res) {
-        var div = document.createElement("div");
-        div.innerHTML = res.responseText;
-        var text = div.textContent || div.innerText || "";
-        try{
-          var json=JSON.parse(text);
-        }catch(err){
-          setCurrentBus();
-          console.log("php 에러발생");
-          return;
-        }
+        console.log(res);
+        // var div = document.createElement("div");
+        // div.innerHTML = res.responseText;
+        // var text = div.textContent || div.innerText;
+        //
+        // var json=JSON.parse(res);
+        var json=res;
+        //   setCurrentBus();
+        //   console.log("php 에러발생");
+        //   return;
+        // }
         console.log(json['6405']);
         //6724
         $("#bus6724before").text(json['6724']['count']);
@@ -318,11 +319,6 @@ function setCurrentBus(){
         $("#bus6405time").css("font-size","17px").text(toMin(json['6405']['time']));
         $("#bus9201before").text(json['9201']['count']);
         $("#bus9201time").css("font-size","17px").text(toMin(json['9201']['time']));
-     },error: function(err){
-      setCurrentBus();
-       console.log("에러발생");
-       return;
-
      }
    });
  }
