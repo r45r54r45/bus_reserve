@@ -59,6 +59,42 @@
 </div>
 </div>
 </div>
+<div class="col-xs-6" style="padding:0 5px">
+  <div class="card_holder">
+<!-- printhub card-->
+<div id="more_printhub" onclick="parent.moveto('more_printhub');" class="card" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
+  <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
+    <div style="text-align:right;">
+      <span style="font-size: 15px;">심부름<br>(3/10 예정)</span>
+    </div>
+    <div style="text-align:right; margin-top:-5px;">
+      <span style="font-size: 10px;">yonsei print hub</span>
+    </div>
+    <div style="position:absolute;bottom:5px;left:15px;">
+      <i class="glyphicon glyphicon-print" style="font-size: 22px; color: #e5e5e5;"></i>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
+<div class="col-xs-6" style="padding:0 5px">
+  <div class="card_holder">
+<!-- printhub card-->
+<div id="more_printhub" onclick="parent.moveto('more_printhub');" class="card" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
+  <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
+    <div style="text-align:right;">
+      <span style="font-size: 15px;">배달<br>(3/10 예정)</span>
+    </div>
+    <div style="text-align:right; margin-top:-5px;">
+      <span style="font-size: 10px;">yonsei print hub</span>
+    </div>
+    <div style="position:absolute;bottom:5px;left:15px;">
+      <i class="glyphicon glyphicon-print" style="font-size: 22px; color: #e5e5e5;"></i>
+    </div>
+  </div>
+</div>
+</div>
+</div>
   </div>
 </div>

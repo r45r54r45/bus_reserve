@@ -292,7 +292,9 @@ function setCurrentBus(){
         type: 'GET',
         // dataType:'json',
       success: function(res) {
-        console.log(res);
+        var k=res.responseText;
+        console.log(k);
+
      }
    });
  }
