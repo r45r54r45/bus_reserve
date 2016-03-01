@@ -271,7 +271,7 @@ function time_format(data){
 </div>
 </div>
 <div id="temp"></div>
-<script src="/src/js/crossdomain.js"></script>
+<!-- <script src="/src/js/crossdomain.js"></script> -->
 <script>
  //  function setCurrentBus(){
  //    // http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getSttnAcctoSpcifyRouteBusArvlPrearngeInfoList?ServiceKey=JwH8P3QCOaTv%2FYttZkCDASHiJZblEJAk8X2i6nICtptOT8O55JvqRPG7nluVp6QEVQu7sy51aHk%2FUgm2b0Ncyg%3D%3D&cityCode=23&routeId=ICB165000381&nodeId=ICB165000725
@@ -298,15 +298,17 @@ function setCurrentBus(){
         type: 'GET',
         // dataType:'json',
       success: function(res) {
-        var div;
-
-        var text;
-        var json;
-
-          div=document.createElement("div");
-          div.innerHTML = res.responseText;
-          text = div.textContent || div.innerText || "";
-          json=JSON.parse(text);
+        var div = document.createElement("div");
+        div.innerHTML = res.responseText;
+        var text = div.textContent || div.innerText || "";
+        try{
+          var json=JSON.parse(text);
+        }catch(err){
+          setCurrentBus();
+          console.log("php 에러발생");
+          return;
+        }
+        console.log(json['6405']);
         //6724
         $("#bus6724before").text(json['6724']['count']);
         $("#bus6724time").css("font-size","17px").text(toMin(json['6724']['time']));
