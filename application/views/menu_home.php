@@ -22,6 +22,7 @@ $(function(){
     songdo_shuttle();
   });
   setCurrentBus();
+  setInterval(function(){setCurrentBus();},5000);
 });
 // 셔틀 시간정보
 var h_time_s=[0820,0900,0940,1020,1100,1140,1300,1340,1420,1500,1540,1620,1700,1730,1820,2020,2100,2140,2220];
@@ -309,18 +310,7 @@ function setCurrentBus(){
         // dataType:'json',
       success: function(res) {
         console.log(res);
-        // var div = document.createElement("div");
-        // div.innerHTML = res.responseText;
-        // var text = div.textContent || div.innerText;
-        //
-        // var json=JSON.parse(res);
         var json=JSON.parse(res);
-        //   setCurrentBus();
-        //   console.log("php 에러발생");
-        //   return;
-        // }
-        console.log(json['6405']);
-        //6724
         $("#bus6724before").text(json['6724']['count']);
         $("#bus6724time").css("font-size","17px").text(toMin(json['6724']['time']));
         $("#bus91before").text(json['91']['count']);
@@ -333,12 +323,6 @@ function setCurrentBus(){
    });
  }
 function toMin(sec){
-  // var result=Math.floor(sec/60);
-  // if(result==0){
-  //
-  //   return "잠시후";
-  // }
-  // else return result;
   if(sec==""){
     return "정보 없음";
   }
