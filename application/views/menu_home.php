@@ -298,11 +298,15 @@ function setCurrentBus(){
         type: 'GET',
         // dataType:'json',
       success: function(res) {
-        var div = document.createElement("div");
-        div.innerHTML = res.responseText;
-        var text = div.textContent || div.innerText || "";
+        var div;
+
+        var text;
+        var json;
         try{
-          var json=JSON.parse(text);
+          div=document.createElement("div");
+          div.innerHTML = res.responseText;
+          text = div.textContent || div.innerText || "";
+          json=JSON.parse(text);
         }catch(err){
           // setCurrentBus();
           console.log("php 에러발생");
