@@ -140,6 +140,11 @@ function time_format(data){
   </div>
 </div>
 </div>
+<div class="row" >
+  <div class="col-xs-12" style="text-align:right">
+    <span style="font-size:8px;">*공휴일에는 운행하지 않습니다</span>
+  </div>
+</div>
 <div class="row" style="margin-top:20px;">
   <div class="col-xs-12 center-align">
     <span style="font-size: 13px;
