@@ -6,7 +6,7 @@
         <div id="more_phonebook" onclick="parent.moveto('more_phonebook');" class="card pointer" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
           <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
             <div style="text-align:right;">
-              <span style="font-size: 15px;">국제캠퍼스 내선 번호</span>
+              <span style="font-size: 15px;">연세대학교 내선 번호</span>
             </div>
             <div style="text-align:right; margin-top:-5px;">
               <span style="font-size: 10px;">phonebook</span>

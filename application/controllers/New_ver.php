@@ -42,6 +42,11 @@ class New_ver extends CI_Controller {
 		$this->load->view('more_phonebook');
 		$this->load->view('menu_footer');
 	}
+	public function delivery(){
+		$this->load->view('menu_header');
+		$this->load->view('more_delivery');
+		$this->load->view('menu_footer');
+	}
 	public function printhub(){
 				$this->load->helper('url');
 		redirect('http://freshman.yonsei.ac.kr/prints');
