@@ -302,18 +302,11 @@ function setCurrentBus(){
 
         var text;
         var json;
-        try{
+
           div=document.createElement("div");
           div.innerHTML = res.responseText;
           text = div.textContent || div.innerText || "";
           json=JSON.parse(text);
-        }catch(err){
-          // setCurrentBus();
-          console.log("php 에러발생");
-          console.log(res);
-          return;
-        }
-        console.log(json['6405']);
         //6724
         $("#bus6724before").text(json['6724']['count']);
         $("#bus6724time").css("font-size","17px").text(toMin(json['6724']['time']));
