@@ -20,6 +20,6 @@ $time6405= $object->body->items->item->arrtime;
 echo '{
   "6724":{"count":'.$count6724.',"time":'.$time6724.'},
   "6405":{"count":'.$count6405.',"time":'.$time6405.'},
-  "6724":{"count":'.$count6724.',"time":'.$time6724.'},
-  "6405":{"count":'.$count6405.',"time":'.$time6405.'}
+  "91":{"count":'.$count6724.',"time":'.$time6724.'},
+  "9201":{"count":'.$count6405.',"time":'.$time6405.'}
 }';
