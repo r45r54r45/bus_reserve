@@ -225,7 +225,7 @@ a{
 }
 .nav-font-valign{
   vertical-align: middle;
-  line-height: 50px;
+  line-height: 84px;
 }
 
 .bam-background
@@ -274,7 +274,7 @@ a{
   top:0;
   left:0;
   width: 100%;
-  height: 50px;
+  height: 64px;
   z-index: 5;
 }
 .nav-pills
@@ -284,7 +284,7 @@ a{
 }
 #contents{
   bottom: 0;
-  top: 50px;
+  top: 64px;
   position: absolute;
   width: 100%;
 }
