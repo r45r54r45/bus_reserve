@@ -6,13 +6,13 @@
 </div>
 <div>
   1긱
-<textarea name="data1" style=" width: 100%;height: 40%;">
+<textarea name="data1" style=" width: 100%;height: 150px;">
 
 </textarea>
 </div>
 <div>
   2긱
-<textarea name="data2" style=" width: 100%;height: 40%;">
+<textarea name="data2" style=" width: 100%;height: 150px">
 
 </textarea>
 </div>
