@@ -43,7 +43,7 @@
       </li>
       <li id="menu2" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/2shuttle.png" /></li>
       <li id="menu3" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/3menu.png" /></li>
-      <li id="menu4" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/3link.png" /></li>
+      <li id="menu4" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/4link.png" /></li>
       <li id="menu5" class="center-align nav-bottom-border nav-bottom-5" style="border:none">  <img class="img img-responsive" src="/src/img/5more.png" /></li>
     </ul>
   </div>

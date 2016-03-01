@@ -3,22 +3,47 @@ content_manager();
 $(function(){
   //nav-bottom-click
   $("#menu1").on("click",function(){
+    $("#menu1>img").attr("src","/src/img/1home_o.png");
+    $("#menu2>img").attr("src","/src/img/2shuttle.png");
+    $("#menu3>img").attr("src","/src/img/3menu.png");
+    $("#menu4>img").attr("src","/src/img/4link.png");
+    $("#menu5>img").attr("src","/src/img/5more.png");
     location.href="#home";
     content_manager();
   });
   $("#menu2").on("click",function(){
+    $("#menu2>img").attr("src","/src/img/2shuttle_o.png");
+    $("#menu1>img").attr("src","/src/img/1home.png");
+    $("#menu3>img").attr("src","/src/img/3menu.png");
+    $("#menu4>img").attr("src","/src/img/4link.png");
+    $("#menu5>img").attr("src","/src/img/5more.png");
     location.replace("#shuttle");
     content_manager();
   });
   $("#menu3").on("click",function(){
+    $("#menu3>img").attr("src","/src/img/3menu_o.png");
+    $("#menu1>img").attr("src","/src/img/1home.png");
+    $("#menu2>img").attr("src","/src/img/2shuttle.png");
+    $("#menu4>img").attr("src","/src/img/4link.png");
+    $("#menu5>img").attr("src","/src/img/5more.png");
     location.replace("#menu");
     content_manager();
   });
   $("#menu4").on("click",function(){
+    $("#menu4>img").attr("src","/src/img/4link_o.png");
+    $("#menu1>img").attr("src","/src/img/1home.png");
+    $("#menu2>img").attr("src","/src/img/2shuttle.png");
+    $("#menu3>img").attr("src","/src/img/3menu.png");
+    $("#menu5>img").attr("src","/src/img/5more.png");
     location.replace("#link");
     content_manager();
   });
   $("#menu5").on("click",function(){
+    $("#menu5>img").attr("src","/src/img/5more_o.png");
+    $("#menu1>img").attr("src","/src/img/1home.png");
+    $("#menu2>img").attr("src","/src/img/2shuttle.png");
+    $("#menu3>img").attr("src","/src/img/3menu.png");
+    $("#menu4>img").attr("src","/src/img/4link.png");
     location.replace("#more");
     content_manager();
   });
