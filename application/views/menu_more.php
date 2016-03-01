@@ -65,7 +65,7 @@
 <div id="more_printhub" onclick="parent.moveto('more_printhub');" class="card" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
   <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
     <div style="text-align:right;">
-      <span style="font-size: 15px;">심부름<br>(3/10 예정)</span>
+      <span style="font-size: 15px;">심부름<br>(예정)</span>
     </div>
     <div style="text-align:right; margin-top:-5px;">
       <span style="font-size: 10px;">yonsei print hub</span>
@@ -84,7 +84,7 @@
 <div id="more_printhub" onclick="parent.moveto('more_printhub');" class="card" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
   <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
     <div style="text-align:right;">
-      <span style="font-size: 15px;">배달<br>(3/10 예정)</span>
+      <span style="font-size: 15px;">배달<br>(예정)</span>
     </div>
     <div style="text-align:right; margin-top:-5px;">
       <span style="font-size: 10px;">yonsei print hub</span>
