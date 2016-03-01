@@ -183,41 +183,52 @@
 </style>
 <script>
 var currentDepth=0;
-$(".grid-element,.grid-element-right,.grid-element-corner,.grid-element-bottom").on("click",function(e){
-  var clicked=e.originalEvent.srcElement.firstElementChild.id;
-  if(currentDepth==0){
-    if(clicked!="g22"){
-      $("#option2").css("display","");
-      $("#menu_type").text($("#"+clicked).text());
-    putInfo(clicked);
-    $("#grid").animate({
-      opacity:0,
-      height:0,
-    },700, function(){
-      $("#grid2").animate({
-        opacity:1,
-        height:'100vw',
-      },700);
-    });
-    currentDepth=1;
-  }
-  }else{
-    if(clicked=="g222"){
-    $("#option2").css("display","none");
-    $("#grid2").animate({
-      opacity:0,
-      height:0,
-    },700, function(){
-      $("#grid").animate({
-        opacity:1,
-        height:'100vw',
-      },700);
-    });
-    currentDepth=0;
-  }
-}
 
+$(function(){
+  $(".grid-element,.grid-element-right,.grid-element-corner,.grid-element-bottom").on("click",function(e){
+    var clicked=e.originalEvent.srcElement.firstElementChild.id;
+    console.log(clicked);
+    if(currentDepth==0){
+      if(clicked!="g22"){
+        $("#option1").removeClass('active');
+        $("#option2").addClass('active').css("display","");
+         e.stopPropagation();
+        $("#menu_type").text($("#"+clicked).text());
+      putInfo(clicked);
+      $("#grid").animate({
+        opacity:0,
+        height:0,
+      },700, function(){
+        $("#grid2").animate({
+          opacity:1,
+          height:'100vw',
+        },700);
+      });
+      currentDepth=1;
+    }
+    }
+  });
+    $("#option2").on("click",function(e){
+      $("#option2").css("display","none").removeClass('active');
+      $("#option1").addClass('active');
+       e.stopPropagation();
+      $("#grid2").animate({
+        opacity:0,
+        height:0,
+      },700, function(){
+        $("#grid").animate({
+          opacity:1,
+          height:'100vw',
+        },700);
+      });
+      currentDepth=0;
+    });
 });
+
+
+
+
+
 var obj= {
   'g11':[
   [["맛불작전"],["Chi Mc"],["94st"]],
