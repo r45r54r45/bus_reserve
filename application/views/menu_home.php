@@ -304,7 +304,7 @@ function setCurrentBus(){
     $("#bus6405time").css("font-size","10px").text("loading...");
     $("#bus9201time").css("font-size","10px").text("loading...");
   $.ajax({
-        url: '/main/test', //<- xml 위치
+        url: '/main/test2', //<- xml 위치
         type: 'GET',
         // dataType:'json',
       success: function(res) {
@@ -314,7 +314,7 @@ function setCurrentBus(){
         // var text = div.textContent || div.innerText;
         //
         // var json=JSON.parse(res);
-        var json=res;
+        var json=JSON.parse(res);
         //   setCurrentBus();
         //   console.log("php 에러발생");
         //   return;
@@ -333,12 +333,16 @@ function setCurrentBus(){
    });
  }
 function toMin(sec){
-  var result=Math.floor(sec/60);
-  if(result==0){
-
-    return "잠시후";
+  // var result=Math.floor(sec/60);
+  // if(result==0){
+  //
+  //   return "잠시후";
+  // }
+  // else return result;
+  if(sec==""){
+    return "정보 없음";
   }
-  else return result;
+  return sec;
 }
 
 Date.prototype.format = function(f) {
