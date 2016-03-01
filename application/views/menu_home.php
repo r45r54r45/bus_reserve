@@ -319,7 +319,10 @@ function setCurrentBus(){
         $("#bus9201before").text(json['9201']['count']);
         $("#bus9201time").css("font-size","17px").text(toMin(json['9201']['time']));
      },error: function(err){
+      setCurrentBus();
        console.log("에러발생");
+       return;
+
      }
    });
  }
