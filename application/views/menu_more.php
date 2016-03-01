@@ -68,7 +68,7 @@
       <span style="font-size: 15px;">심부름<br>(예정)</span>
     </div>
     <div style="text-align:right; margin-top:-5px;">
-      <span style="font-size: 10px;">yonsei print hub</span>
+      <span style="font-size: 10px;">yonsei help</span>
     </div>
     <div style="position:absolute;bottom:5px;left:15px;">
       <i class="glyphicon glyphicon-print" style="font-size: 22px; color: #e5e5e5;"></i>
@@ -87,7 +87,7 @@
       <span style="font-size: 15px;">배달<br>(예정)</span>
     </div>
     <div style="text-align:right; margin-top:-5px;">
-      <span style="font-size: 10px;">yonsei print hub</span>
+      <span style="font-size: 10px;">delivery</span>
     </div>
     <div style="position:absolute;bottom:5px;left:15px;">
       <i class="glyphicon glyphicon-print" style="font-size: 22px; color: #e5e5e5;"></i>
