@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" style="padding-left:35px;padding-right:35px;">
   <div class="row" style="margin-top:15px;">
 
     <div class="col-xs-4" >
