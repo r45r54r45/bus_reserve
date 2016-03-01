@@ -12,7 +12,7 @@
     <div class="col-xs-12" style="padding:0 5px;float:left;">
       <!-- 디디치킨 -->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
-        <div style="height: 100%;width: 4em; border-right:2px solid #fcd90d;">
+        <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
           <div><span style="font-size: 12px;">디디치킨</span></div>
           <div  style="margin-top: -5px;"></div>
         </div>
@@ -29,7 +29,7 @@
       </div>
       <!-- 멕시카나 -->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
-        <div style="height: 100%;width: 4em; border-right:2px solid #fcd90d;">
+        <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
           <div><span style="font-size: 12px;">멕시카나</span></div>
           <div  style="margin-top: -5px;"></div>
         </div>
@@ -46,7 +46,7 @@
       </div>
       <!-- 파닭-->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
-        <div style="height: 100%;width: 4em; border-right:2px solid #fcd90d;">
+        <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
           <div><span style="font-size: 12px;">파닭</span></div>
           <div  style="margin-top: -5px;"></div>
         </div>
@@ -63,7 +63,7 @@
       </div>
       <!-- BBQ치킨-->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
-        <div style="height: 100%;width: 4em; border-right:2px solid #fcd90d;">
+        <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
           <div><span style="font-size: 12px;">BBQ치킨</span></div>
           <div  style="margin-top: -5px;"></div>
         </div>
@@ -94,7 +94,7 @@
   <div class="col-xs-12" style="padding:0 5px;float:left;">
     <!-- 원할머니보쌈-->
     <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
-      <div style="height: 100%;width: 4em; border-right:2px solid #fcd90d;">
+      <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
         <div><span style="font-size: 12px;">원할머니보쌈</span></div>
         <div  style="margin-top: -5px;"></div>
       </div>
@@ -111,7 +111,7 @@
     </div>
     <!-- 장충당-->
     <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
-      <div style="height: 100%;width: 4em; border-right:2px solid #fcd90d;">
+      <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
         <div><span style="font-size: 12px;">장충당</span></div>
         <div  style="margin-top: -5px;"></div>
       </div>
@@ -128,7 +128,7 @@
     </div>
     <!-- 옥천불난족발-->
     <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
-      <div style="height: 100%;width: 4em; border-right:2px solid #fcd90d;">
+      <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
         <div><span style="font-size: 12px;">옥천불난족발</span></div>
         <div  style="margin-top: -5px;"></div>
       </div>
