@@ -265,6 +265,11 @@ function time_format(data){
     </div>
   </div>
 </div>
+<div class="row" style="margin-top:1px;">
+  <div class="col-xs-12" style="text-align:left">
+    <span style="font-size:5px;">*공공데이터 포탈의 정보를 사용합니다</span>
+  </div>
+</div>
 </div>
 </div>
 </div>
@@ -324,7 +329,10 @@ function setCurrentBus(){
  }
 function toMin(sec){
   var result=Math.floor(sec/60);
-  if(result==0)return "잠시후";
+  if(result==0){
+
+    return "잠시후";
+  }
   else return result;
 }
 
