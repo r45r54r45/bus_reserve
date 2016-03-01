@@ -190,8 +190,7 @@ $(function(){
     console.log(clicked);
     if(currentDepth==0){
       if(clicked!="g22"){
-        $("#option1").removeClass('active');
-        $("#option2").addClass('active').css("display","");
+        $("#option2").css("display","");
          e.stopPropagation();
         $("#menu_type").text($("#"+clicked).text());
       putInfo(clicked);
