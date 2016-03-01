@@ -294,7 +294,7 @@ function setCurrentBus(){
     $("#bus6405time").css("font-size","10px").text("loading...");
     $("#bus9201time").css("font-size","10px").text("loading...");
   $.ajax({
-        url: '/main/test', //<- xml 위치
+        url: 'http://freshman.yonsei.ac.kr/main/test', //<- xml 위치
         type: 'GET',
         // dataType:'json',
       success: function(res) {
@@ -304,8 +304,9 @@ function setCurrentBus(){
         try{
           var json=JSON.parse(text);
         }catch(err){
-          setCurrentBus();
+          // setCurrentBus();
           console.log("php 에러발생");
+          console.log(res);
           return;
         }
         console.log(json['6405']);
