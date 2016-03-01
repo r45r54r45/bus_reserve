@@ -82,15 +82,17 @@ function content_manager(){
     var url=window.location.href;
     var path=url.split('#')[1];
     var path2;
-    if(!path)
-    {
-      location.replace("/#home");
-      content_manager();
+    if(path=="home"){
       $("#menu1>img").attr("src","/src/img/1home_o.png");
       $("#menu2>img").attr("src","/src/img/2shuttle.png");
       $("#menu3>img").attr("src","/src/img/3menu.png");
       $("#menu4>img").attr("src","/src/img/4link.png");
       $("#menu5>img").attr("src","/src/img/5more.png");
+    }
+    if(!path)
+    {
+      location.replace("/#home");
+      content_manager();
       return;
     }
     if(path2=url.split('#')[2]){
