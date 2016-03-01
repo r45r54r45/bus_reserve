@@ -61,7 +61,7 @@
 </div>
 <div class="col-xs-6" style="padding:0 5px">
   <div class="card_holder">
-<!-- printhub card-->
+<!-- yonsei help card-->
 <div id="more_printhub" onclick="parent.moveto('more_printhub');" class="card" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
   <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
     <div style="text-align:right;">
@@ -80,8 +80,8 @@
 
 <div class="col-xs-6" style="padding:0 5px">
   <div class="card_holder">
-<!-- printhub card-->
-<div id="more_printhub" onclick="parent.moveto('more_printhub');" class="card" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
+<!-- delivery card-->
+<div id="more_printhub" onclick="parent.moveto('more_delivery');" class="card pointer" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
   <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
     <div style="text-align:right;">
       <span style="font-size: 15px;">배달<br>(예정)</span>

@@ -71,6 +71,9 @@ function moveto(path){
 }else if(path=='more_phonebook'){
   location.replace("/#more#phonebook");
   content_manager();
+}else if(path=='more_delivery'){
+  location.replace("/#more#delivery");
+  content_manager();
 }
 }
 window.onpopstate=function(e){
