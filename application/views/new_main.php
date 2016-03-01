@@ -39,7 +39,7 @@
   <div data-role="footer" class="container-fluid" style="padding:0;" id="nav-bottom">
     <ul class="nav nav-pills">
       <li id="menu1" class="center-align nav-bottom-border nav-bottom-5">
-        <img class="img img-responsive" src="/src/img/1home.png"/>
+        <img class="img img-responsive" src="/src/img/1home_o.png"/>
       </li>
       <li id="menu2" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/2shuttle.png" /></li>
       <li id="menu3" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/3menu.png" /></li>
