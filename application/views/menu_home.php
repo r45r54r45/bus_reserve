@@ -323,7 +323,9 @@ function setCurrentBus(){
    });
  }
 function toMin(sec){
-  return Math.floor(sec/60);
+  var result=Math.floor(sec/60);
+  if(result==0)return "잠시후";
+  else return result;
 }
 
 Date.prototype.format = function(f) {
