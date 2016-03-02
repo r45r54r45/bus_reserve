@@ -22,7 +22,7 @@ $(function(){
     songdo_shuttle();
   });
   setCurrentBus();
-  setInterval(function(){setCurrentBus();},5000);
+  setInterval(function(){setCurrentBus();},20000);
 });
 // 셔틀 시간정보
 var h_time_s=[0820,0900,0940,1020,1100,1140,1300,1340,1420,1500,1540,1620,1700,1730,1820,2020,2100,2140,2220];
