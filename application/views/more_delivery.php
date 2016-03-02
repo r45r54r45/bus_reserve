@@ -7,7 +7,7 @@
     </label>
     </div>
   </div>
-  <div class="row" style="margin-top:10px;" style="overflow:scroll">
+  <div class="row" style="margin-top:10px;">
     <!--first col-->
     <div class="col-xs-12" style="padding:0 5px;float:left;">
       <!-- 디디치킨 -->
