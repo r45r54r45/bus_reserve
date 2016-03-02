@@ -1,4 +1,4 @@
-<div class="container-fluid" style="height:1000px;">
+<div class="container-fluid" >
   <div class="row" style="margin-top:10px;">
     <div class="col-xs-6" style="padding:0 5px">
       <div class="card_holder">
