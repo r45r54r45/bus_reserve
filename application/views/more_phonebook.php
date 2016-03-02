@@ -20,7 +20,7 @@
           <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
           </div>
           <div style="float: right;line-height: 40px;">
-            <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+            <span> <a href="tel:0327495103"><img class="img img-responsive" src="/src/img/call.png"></a></span>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
           <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
           </div>
           <div style="float: right;line-height: 40px;">
-            <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+            <span> <a href="tel:0327495203"><img class="img img-responsive" src="/src/img/call.png"></a></span>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
           <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
           </div>
           <div style="float: right;line-height: 40px;">
-            <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+            <span> <a href="tel:0327493304"><img class="img img-responsive" src="/src/img/call.png"></a></span>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
           <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
           </div>
           <div style="float: right;line-height: 40px;">
-            <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+            <span> <a href="tel:0327492118"><img class="img img-responsive" src="/src/img/call.png"></a></span>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0327495105"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
       </div>
     </div>
@@ -93,7 +93,7 @@
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0327495205"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0327493007"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
       </div>
     </div>
@@ -121,7 +121,7 @@
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0327492800"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
       </div>
     </div>
@@ -149,7 +149,7 @@
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0221234184"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
       </div>
     </div>
@@ -163,7 +163,7 @@
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0221234131"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
       </div>
     </div>
@@ -177,7 +177,7 @@
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0221235115"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
       </div>
     </div>
@@ -195,7 +195,7 @@
       <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
       </div>
       <div style="float: right;line-height: 40px;">
-        <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+        <span> <a href="tel:0221233488"><img class="img img-responsive" src="/src/img/call.png"></a></span>
       </div>
     </div>
   </div>
@@ -209,7 +209,7 @@
       <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
       </div>
       <div style="float: right;line-height: 40px;">
-        <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+        <span> <a href="tel:0221233303"><img class="img img-responsive" src="/src/img/call.png"></a></span>
       </div>
     </div>
   </div>
@@ -223,7 +223,7 @@
       <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
       </div>
       <div style="float: right;line-height: 40px;">
-        <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+        <span> <a href="tel:0221233622"><img class="img img-responsive" src="/src/img/call.png"></a></span>
       </div>
     </div>
   </div>
