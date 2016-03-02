@@ -23,10 +23,26 @@
             <span> <a href="tel:0328588105"><img class="img img-responsive" src="/src/img/call.png"></a></span>
           </div>
           <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
-            <span><img class="img img-responsive" src="/src/img/menu.png"></span>
+            <span><img class="img img-responsive" src="/src/img/menu.png" onclick='$("#DDMenuModal").modal("show");'></span>
           </div>
         </div>
       </div>
+      <div class="modal fade" id="DDMenuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="width:90%;margin:0 auto">
+        <!-- <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">전체 시간표</h4>
+        </div> -->
+        <div class="modal-body" style="padding:0;">
+          <img  style="    width: 100%;" src="/src/img/DDChicken.png" onclick="$('#DDMenuModal').modal('hide')">
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
       <!-- 멕시카나 -->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;width: 10em;padding:10px 0px 0px 10px; ">
