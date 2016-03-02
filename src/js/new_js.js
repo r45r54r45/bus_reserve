@@ -100,7 +100,8 @@ function content_manager(){
     }
     if(path2=url.split('#')[2]){
       $("#page_title").text(path2.toUpperCase());
-      $("iframe#contents").css("height",$(window).height()-114+"px").attr("src","/new_ver/"+path2);
+      $(".scroll-wrapper").css("height",$(window).height()-114+"px");
+      $("iframe#contents").attr("src","/new_ver/"+path2);
       $(".back_arrow").css("display","");
 
     }else{
