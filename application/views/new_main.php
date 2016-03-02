@@ -14,6 +14,12 @@
   <link rel="apple-touch-icon" href="/src/img/main_logo.png" />
   <link rel="apple-touch-icon-precomposed" href="/src/img/main_logo.png" />
 
+  <link rel="stylesheet" type="text/css" href="/src/css/addtohomescreen.css">
+  <script src="/src/js/addtohomescreen.js"></script>
+  <script>
+    addToHomescreen();
+  </script>
+
   <link href="/src/css/bootstrap.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
