@@ -42,7 +42,7 @@ ath.intl = {
 	},
 
 	en_us: {
-		ios: 'Add to the home screen to use it as an app: tap %icon and then <strong>Add to Home Screen</strong>.',
+		ios: 'Add to home screen to use it as an app: tap %icon and then <strong>Add to Home Screen</strong>.',
 		android: 'To add this web app to the home screen open the browser option menu and tap on <strong>Add to homescreen</strong>. <small>The menu can be accessed by pressing the menu hardware button if your device has one, or by tapping the top right menu icon %icon.</small>'
 	},
 
