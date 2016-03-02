@@ -84,7 +84,7 @@
 <div id="more_printhub" onclick="parent.moveto('more_delivery');" class="card pointer" style="height:100px; margin-bottom:10px; position:relative; padding:5px 10px;">
   <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
     <div style="text-align:right;">
-      <span style="font-size: 15px;">배달<br>(예정)</span>
+      <span style="font-size: 15px;">배달<br>(beta)</span>
     </div>
     <div style="text-align:right; margin-top:-5px;">
       <span style="font-size: 10px;">delivery</span>
