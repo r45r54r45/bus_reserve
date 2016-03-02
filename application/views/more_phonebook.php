@@ -38,10 +38,10 @@
           </div>
         </div>
       </div>
-      <!-- 언더우드기념도서관-->
+      <!-- UML도서관-->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
         <div style="height: 100%;width: 8em;padding:10px 0px 0px 10px; ">
-          <div><span style="font-size: 12px;">언더우드기념도서관</span></div>
+          <div><span style="font-size: 12px;">UML도서관</span></div>
           <div  style="margin-top: -5px;"></div>
         </div>
         <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
