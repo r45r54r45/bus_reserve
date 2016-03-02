@@ -31,23 +31,17 @@
   <![endif]-->
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
   <link href="/src/css/common.css" rel="stylesheet" type="text/css">
-<style>
-.scroll-wrapper {
-   overflow:scroll !important; -webkit-overflow-scrolling:touch !important;
-}
-</style>
-
 </head>
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif; ">
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <div class="back_arrow"><img src="/src/img/backbtn.png" style="    height: 18px;"></div>
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
-  <div class="scroll-wrapper">
+
   <iframe id="contents" frameBorder="0">
 
   </iframe>
-</div>
+
   <div data-role="footer" class="container-fluid" style="padding:0;" id="nav-bottom">
     <ul class="nav nav-pills">
       <li id="menu1" class="center-align nav-bottom-border nav-bottom-5">
