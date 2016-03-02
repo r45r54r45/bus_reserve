@@ -100,13 +100,12 @@ function content_manager(){
     }
     if(path2=url.split('#')[2]){
       $("#page_title").text(path2.toUpperCase());
-      $(".scroll-wrapper").css("height",$(window).height()-114+"px");
-      $("iframe#contents").attr("src","/new_ver/"+path2);
+      $("iframe#contents").css("height",$(window).height()-114+"px").attr("src","/new_ver/"+path2);
       $(".back_arrow").css("display","");
 
     }else{
       $("#page_title").text(path.toUpperCase());
-      $("iframe#contents").css("height",$(window).height()-114+"px").attr("src","/new_ver/"+path);
+      $("iframe#contents").css("height",$(window).height()-100+"px").attr("src","/new_ver/"+path);
       $(".back_arrow").css("display","none");
     }
 
