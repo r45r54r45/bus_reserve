@@ -33,10 +33,7 @@
   <link href="/src/css/common.css" rel="stylesheet" type="text/css">
 <style>
 .scroll-wrapper {
-	-webkit-overflow-scrolling: touch;
-  	overflow-y: scroll;
-
-	/* important:  dimensions or positioning here! */
+   overflow:scroll !important; -webkit-overflow-scrolling:touch !important;
 }
 </style>
 
