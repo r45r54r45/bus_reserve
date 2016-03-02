@@ -148,7 +148,7 @@ ath.defaults = {
 	fontSize: 15,				// base font size, used to properly resize the popup based on viewport scale factor
 	debug: false,				// override browser checks
 	logging: false,				// log reasons for showing or not showing to js console; defaults to true when debug is true
-	modal: true,				// prevent further actions until the message is closed
+	modal: false,				// prevent further actions until the message is closed
 	mandatory: true,			// you can't proceed if you don't add the app to the homescreen
 	autostart: true,			// show the message automatically
 	skipFirstVisit: false,		// show only to returning visitors (ie: skip the first time you visit)
