@@ -353,3 +353,13 @@ div>span{
 .circle>div>span{
   font-size: 13px;
 }
+
+.scrollable {
+position: absolute;
+top: 0px;
+left: 0;
+right: 0;
+bottom: 0;
+overflow: scroll;
+-webkit-overflow-scrolling: touch;
+}
