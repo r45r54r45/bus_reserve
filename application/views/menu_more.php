@@ -70,8 +70,8 @@
     <div style="text-align:right; margin-top:-5px;">
       <span style="font-size: 10px;">yonsei help</span>
     </div>
-    <div style="position:absolute;bottom:10px;left:15px;">
-
+    <div style="position:absolute;bottom:7px;left:15px;">
+      <img class="img img-responsive" style="width:25px;height:auto;" src="/src/img/help.png">
     </div>
   </div>
 </div>
