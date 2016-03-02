@@ -11,8 +11,8 @@
             <div style="text-align:right; margin-top:-5px;">
               <span style="font-size: 10px;">phonebook</span>
             </div>
-            <div style="position:absolute;bottom:5px;left:15px;">
-              <i class="glyphicon glyphicon-phone-alt" style="font-size: 22px; color: #e5e5e5;"></i>
+            <div style="position:absolute;bottom:10px;left:15px;">
+              <img class="img img-responsive" style="width:25px;height:auto;" src="/src/img/phonebook.png">
             </div>
           </div>
         </div>
@@ -33,8 +33,8 @@
         <div style="text-align:right; margin-top:-5px;">
           <span style="font-size: 10px;">songdo restaurant map</span>
         </div>
-        <div style="position:absolute;bottom:5px;left:15px;">
-          <i class="glyphicon glyphicon-map-marker" style="font-size: 22px; color: #e5e5e5;"></i>
+        <div style="position:absolute;bottom:10px;left:15px;">
+          <img class="img img-responsive" style="width:25px;height:auto;" src="/src/img/songdomap.png">
         </div>
       </div>
     </div>
@@ -52,8 +52,8 @@
     <div style="text-align:right; margin-top:-5px;">
       <span style="font-size: 10px;">yonsei print hub</span>
     </div>
-    <div style="position:absolute;bottom:5px;left:15px;">
-      <i class="glyphicon glyphicon-print" style="font-size: 22px; color: #e5e5e5;"></i>
+    <div style="position:absolute;bottom:10px;left:15px;">
+      <img class="img img-responsive" style="width:25px;height:auto;" src="/src/img/print.png">
     </div>
   </div>
 </div>
@@ -70,8 +70,8 @@
     <div style="text-align:right; margin-top:-5px;">
       <span style="font-size: 10px;">yonsei help</span>
     </div>
-    <div style="position:absolute;bottom:5px;left:15px;">
-      <i class="glyphicon glyphicon-print" style="font-size: 22px; color: #e5e5e5;"></i>
+    <div style="position:absolute;bottom:10px;left:15px;">
+
     </div>
   </div>
 </div>
@@ -90,7 +90,7 @@
       <span style="font-size: 10px;">delivery</span>
     </div>
     <div style="position:absolute;bottom:5px;left:15px;">
-      <i class="glyphicon glyphicon-print" style="font-size: 22px; color: #e5e5e5;"></i>
+      <img class="img img-responsive" style="width:25px;height:auto;" src="/src/img/delivery.png">
     </div>
   </div>
 </div>
