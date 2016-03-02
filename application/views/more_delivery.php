@@ -1,5 +1,5 @@
 <div class="container-fluid" >
-  <div class="row center-align" id="home-top-button" style="overflow:scroll">
+  <div class="row center-align" id="home-top-button" >
     <div id="home" class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
       border-top-left-radius: 16px;" id="option1">
@@ -7,7 +7,7 @@
     </label>
     </div>
   </div>
-  <div class="row" style="margin-top:10px;">
+  <div class="row" style="margin-top:10px;" style="overflow:scroll">
     <!--first col-->
     <div class="col-xs-12" style="padding:0 5px;float:left;">
       <!-- 디디치킨 -->
