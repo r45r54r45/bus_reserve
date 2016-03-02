@@ -323,9 +323,12 @@ function setCurrentBus(){
    });
  }
 function toMin(sec){
+
   if(sec==""){
     return "정보 없음";
-  }
+  }else if(sec.toString()[1]=="�"){
+    return sec.toString()[0];
+  }else
   return sec;
 }
 
