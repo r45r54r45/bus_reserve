@@ -20,7 +20,7 @@
           <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
           </div>
           <div style="float: right;line-height: 40px;padding-left:20px;">
-            <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+            <span> <a href="tel:0328588105"><img class="img img-responsive" src="/src/img/call.png"></a></span>
           </div>
           <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
             <span><img class="img img-responsive" src="/src/img/menu.png"></span>
@@ -37,10 +37,10 @@
           <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
           </div>
           <div style="float: right;line-height: 40px;padding-left:20px;">
-            <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+            <span> <a href="tel:0328319266"><img class="img img-responsive" src="/src/img/call.png"></a></span>
           </div>
           <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
-            <span><img class="img img-responsive" src="/src/img/menu.png"></span>
+            <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
           </div>
         </div>
       </div>
@@ -54,10 +54,10 @@
           <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
           </div>
           <div style="float: right;line-height: 40px;padding-left:20px;">
-            <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+            <span> <a href="tel:0328357441"><img class="img img-responsive" src="/src/img/call.png"></a></span>
           </div>
           <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
-            <span><img class="img img-responsive" src="/src/img/menu.png"></span>
+            <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
           </div>
         </div>
       </div>
@@ -71,10 +71,10 @@
           <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
           </div>
           <div style="float: right;line-height: 40px;padding-left:20px;">
-            <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+            <span> <a href="tel:0328589200"><img class="img img-responsive" src="/src/img/call.png"></a></span>
           </div>
           <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
-            <span><img class="img img-responsive" src="/src/img/menu.png"></span>
+            <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
           </div>
         </div>
       </div>
@@ -92,6 +92,23 @@
 <div class="row" style="margin-top:10px;">
   <!--first col-->
   <div class="col-xs-12" style="padding:0 5px;float:left;">
+    <!-- 원조압구정보쌈족발-->
+    <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+      <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
+        <div><span style="font-size: 12px;">원조압구정보쌈족발</span></div>
+        <div  style="margin-top: -5px;"></div>
+      </div>
+      <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
+        <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
+        </div>
+        <div style="float: right;line-height: 40px;padding-left:20px;">
+          <span> <a href="tel:0328125858"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+        </div>
+        <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+          <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+        </div>
+      </div>
+    </div>
     <!-- 원할머니보쌈-->
     <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
       <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
@@ -102,44 +119,44 @@
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;padding-left:20px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0328580030"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
         <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
-          <span><img class="img img-responsive" src="/src/img/menu.png"></span>
+          <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
         </div>
       </div>
     </div>
-    <!-- 장충당-->
+    <!-- 장충동족발보쌈-->
     <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
       <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
-        <div><span style="font-size: 12px;">장충당</span></div>
+        <div><span style="font-size: 12px;">장충동</span></div>
         <div  style="margin-top: -5px;"></div>
       </div>
       <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;padding-left:20px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0328347521"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
         <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
-          <span><img class="img img-responsive" src="/src/img/menu.png"></span>
+          <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
         </div>
       </div>
     </div>
-    <!-- 옥천불난족발-->
+    <!-- 할매보쌈-->
     <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
       <div style="height: 100%;width: 6em;padding:10px 0px 0px 10px; ">
-        <div><span style="font-size: 12px;">옥천불난족발</span></div>
+        <div><span style="font-size: 12px;">할매보쌈</span></div>
         <div  style="margin-top: -5px;"></div>
       </div>
       <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;padding-left:20px;">
-          <span> <a href="tel:01058521555"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0328130003"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
         <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
-          <span><img class="img img-responsive" src="/src/img/menu.png"></span>
+          <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
         </div>
       </div>
     </div>
