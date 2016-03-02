@@ -1,5 +1,5 @@
-<div class="container-fluid" style="overflow:scroll">
-  <div class="row center-align" id="home-top-button">
+<div class="container-fluid" >
+  <div class="row center-align" id="home-top-button" style="overflow:scroll">
     <div id="home" class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
       border-top-left-radius: 16px;" id="option1">
