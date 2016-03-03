@@ -42,7 +42,7 @@
 
   </iframe>
 
-  <div data-role="footer" class="container-fluid" style="padding:0;" id="nav-bottom">
+  <div class="navbar-fixed-bottom" style="padding:0;">
     <ul class="nav nav-pills">
       <li id="menu1" class="center-align nav-bottom-border nav-bottom-5">
         <img class="img img-responsive" src="/src/img/1home_o.png"/>
