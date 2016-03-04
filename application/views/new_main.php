@@ -38,7 +38,7 @@
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
 
-  <!--<div id="makelong" style="height:2000px; color:color:#0000FF;"></div>-->
+  <div id="makelong" style="color:#0000FF;"></div>
 
 
 
@@ -57,7 +57,7 @@
       <li id="menu2" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/2shuttle.png" /></li>
       <li id="menu3" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/3menu.png" /></li>
       <li id="menu4" class="center-align nav-bottom-border nav-bottom-5">  <img class="img img-responsive" src="/src/img/4link.png" /></li>
-      <li id="menu5" class="center-align nav-bottom-border nav-bottom-5" style="border:none">  <img class="img img-responsive" src="/src/img/5more.png" onclick="this.parentNode.style.height='2000px'"" /></li>
+      <li id="menu5" class="center-align nav-bottom-border nav-bottom-5" style="border:none" >  <img class="img img-responsive" src="/src/img/5more.png" onclick="document.getElementById("makelong").style.height='2000px'"/></li>
     </ul>
   </div>
   <!-- Bootstrap core JavaScript
