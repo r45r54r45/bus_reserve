@@ -50,7 +50,7 @@ $(function(){
     $("#menu3>img").attr("src","/src/img/3menu.png");
     $("#menu4>img").attr("src","/src/img/4link.png");
     location.replace("#more");
-    document.getElementById("makelong").style.height = "1200px";
+    document.getElementById("makelong").style.height = "1500px";
     content_manager();
   });
   $(".back_arrow").on("click",function(){
