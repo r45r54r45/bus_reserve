@@ -1,6 +1,6 @@
 <div class="scroll-wrapper">
 <div class="container-fluid">
-  
+
 <div class="row center-align" id="home-top-button" >
   <div id="home" class="btn-group" data-toggle="buttons">
     <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
@@ -227,6 +227,158 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 롯데리아-->
+  <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+    <div style="height: 100%;width: 10em;padding:10px 0px 0px 10px; ">
+      <div><span style="font-size: 12px;">롯데리아</span></div>
+      <div  style="margin-top: -5px;"></div>
+    </div>
+    <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
+      <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
+      </div>
+      <div style="float: right;line-height: 40px;padding-left:20px;">
+        <span> <a href="tel:0328581777"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+      </div>
+      <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+        <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+      </div>
+    </div>
+  </div>
+  <!-- 롯데리아-->
+  <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+    <div style="height: 100%;width: 10em;padding:10px 0px 0px 10px; ">
+      <div><span style="font-size: 12px;">롯데리아</span></div>
+      <div  style="margin-top: -5px;"></div>
+    </div>
+    <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
+      <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
+      </div>
+      <div style="float: right;line-height: 40px;padding-left:20px;">
+        <span> <a href="tel:0328581777"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+      </div>
+      <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+        <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+      </div>
+    </div>
+  </div>
+  <!-- 롯데리아-->
+  <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+    <div style="height: 100%;width: 10em;padding:10px 0px 0px 10px; ">
+      <div><span style="font-size: 12px;">롯데리아</span></div>
+      <div  style="margin-top: -5px;"></div>
+    </div>
+    <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
+      <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
+      </div>
+      <div style="float: right;line-height: 40px;padding-left:20px;">
+        <span> <a href="tel:0328581777"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+      </div>
+      <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+        <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+      </div>
+    </div>
+  </div>
+  <!-- 롯데리아-->
+  <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+    <div style="height: 100%;width: 10em;padding:10px 0px 0px 10px; ">
+      <div><span style="font-size: 12px;">롯데리아</span></div>
+      <div  style="margin-top: -5px;"></div>
+    </div>
+    <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
+      <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
+      </div>
+      <div style="float: right;line-height: 40px;padding-left:20px;">
+        <span> <a href="tel:0328581777"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+      </div>
+      <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+        <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+      </div>
+    </div>
+  </div>
+  <!-- 롯데리아-->
+  <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+    <div style="height: 100%;width: 10em;padding:10px 0px 0px 10px; ">
+      <div><span style="font-size: 12px;">롯데리아</span></div>
+      <div  style="margin-top: -5px;"></div>
+    </div>
+    <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
+      <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
+      </div>
+      <div style="float: right;line-height: 40px;padding-left:20px;">
+        <span> <a href="tel:0328581777"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+      </div>
+      <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+        <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+      </div>
+    </div>
+  </div>
+  <!-- 롯데리아-->
+  <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+    <div style="height: 100%;width: 10em;padding:10px 0px 0px 10px; ">
+      <div><span style="font-size: 12px;">롯데리아</span></div>
+      <div  style="margin-top: -5px;"></div>
+    </div>
+    <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
+      <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
+      </div>
+      <div style="float: right;line-height: 40px;padding-left:20px;">
+        <span> <a href="tel:0328581777"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+      </div>
+      <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+        <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+      </div>
+    </div>
+  </div>
+  <!-- 롯데리아-->
+  <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+    <div style="height: 100%;width: 10em;padding:10px 0px 0px 10px; ">
+      <div><span style="font-size: 12px;">롯데리아</span></div>
+      <div  style="margin-top: -5px;"></div>
+    </div>
+    <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
+      <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
+      </div>
+      <div style="float: right;line-height: 40px;padding-left:20px;">
+        <span> <a href="tel:0328581777"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+      </div>
+      <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+        <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+      </div>
+    </div>
+  </div>
+  <!-- 롯데리아-->
+  <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+    <div style="height: 100%;width: 10em;padding:10px 0px 0px 10px; ">
+      <div><span style="font-size: 12px;">롯데리아</span></div>
+      <div  style="margin-top: -5px;"></div>
+    </div>
+    <div style="position: absolute;top: 4px;left: 0;width: 100%;height: 42px;padding-left: 4em;padding-right: 8px;">
+      <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
+      </div>
+      <div style="float: right;line-height: 40px;padding-left:20px;">
+        <span> <a href="tel:0328581777"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+      </div>
+      <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+        <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
 
 
 
