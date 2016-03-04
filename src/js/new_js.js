@@ -107,7 +107,7 @@ function content_manager(){
       $("#page_title").text(path2.toUpperCase());
       $("iframe#contents").css("height",$(window).height()-114+"px").attr("src","/new_ver/"+path2);
       $(".back_arrow").css("display","");
-      document.getElementById('contents').contentWindow.location.reload();
+
 
     }else{
       $("#page_title").text(path.toUpperCase());
