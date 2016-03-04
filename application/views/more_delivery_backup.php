@@ -1,4 +1,5 @@
-<div class="container">
+  <div class="scroll-wrapper">
+<div class="container-fluid">
   <div class="row center-align" id="home-top-button" >
     <div id="home" class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
@@ -228,6 +229,7 @@
 
 
 
+</div>
 </div>
 </div>
 </div>
