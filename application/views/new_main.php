@@ -37,8 +37,8 @@
     <div class="back_arrow"><img src="/src/img/backbtn.png" style="    height: 18px;"></div>
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
-  <div style="overflow:auto!important;-webkit-overflow-scrolling:touch!important;">
-  <iframe id="contents" frameBorder="0">
+  <div style=" overflow:scroll !important; -webkit-overflow-scrolling:touch !important;width:100%;height:100%;">
+  <iframe id="contents" frameBorder="0" style="width:1000px;height:2000px;" scrolling="no">
 
   </iframe>
   </div>
