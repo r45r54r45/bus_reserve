@@ -87,7 +87,6 @@ window.onpopstate=function(e){
 }
 
 function content_manager(){
-    document.getElementById("iframe#contents").contentWindow.location.reload();
     var url=window.location.href;
     var path=url.split('#')[1];
     var path2;
@@ -100,6 +99,7 @@ function content_manager(){
     }
     if(!path)
     {
+      document.getElementById("iframe#contents").contentWindow.location.reload();
       location.replace("/#home");
       content_manager();
       return;
