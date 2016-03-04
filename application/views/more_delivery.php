@@ -1,10 +1,6 @@
 <div class="scroll-wrapper">
 <div class="container-fluid">
-  <button
-    type="button"
-    onclick="this.parentNode.style.height='1900px'" style="padding-top:200px;">
-    resize
-  </button>
+  
 <div class="row center-align" id="home-top-button" >
   <div id="home" class="btn-group" data-toggle="buttons">
     <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
