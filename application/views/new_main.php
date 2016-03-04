@@ -38,7 +38,7 @@
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
   <div style=" overflow:auto; position:absolute; -webkit-overflow-scrolling: touch; width:100%; height:100%;">
-  <iframe id="contents" frameBorder="0" style="width:100%;height:2000px;" scrolling="no">
+  <iframe id="contents" frameBorder="0" style="height:2000px;" scrolling="no">
 
   </iframe>
   </div>
