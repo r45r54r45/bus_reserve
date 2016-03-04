@@ -1,4 +1,4 @@
-<div class="scroll-wrapper">
+
 <div class="container-fluid">
 
 <div class="row center-align" id="home-top-button" >
@@ -24,7 +24,7 @@
         <div style="float: right;line-height: 40px;padding-left:20px;">
           <span> <a href="tel:0328588105"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
-        <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
+        <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;z-index: 2;">
           <span><img class="img img-responsive" src="/src/img/menu.png" onclick='$("#DDMenuModal").modal("show");'></span>
         </div>
       </div>
@@ -374,7 +374,6 @@
       </div>
     </div>
   </div>
-  
 
 
 
@@ -382,7 +381,7 @@
 
 
 
-</div>
+
 </div>
 </div>
 </div>
