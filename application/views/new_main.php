@@ -38,48 +38,7 @@
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
 
-
-
-  h1><a href="http://yscec.yonsei.ac.kr">YSCEC</a></h1>
-           <h1><a href="http://portal.yonsei.ac.kr/main/"> Yonsei Portal</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/study.asp">열람실</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/room.asp">세미나실</a></h1>
-           <h1><a href="http://career.yonsei.ac.kr">커리어</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr">기숙사</a></h1>
-           <h1><a href="http://uic.yonsei.ac.kr/main.asp">국제대</a></h1>
-           <h1><a href="http://yscec.yonsei.ac.kr">YSCEC</a></h1>
-           <h1><a href="http://portal.yonsei.ac.kr/main/"> Yonsei Portal</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/study.asp">열람실</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/room.asp">세미나실</a></h1>
-           <h1><a href="http://career.yonsei.ac.kr">커리어</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr">기숙사</a></h1>
-           <h1><a href="http://uic.yonsei.ac.kr/main.asp">국제대</a></h1>
-           <h1><a href="http://yscec.yonsei.ac.kr">YSCEC</a></h1>
-           <h1><a href="http://portal.yonsei.ac.kr/main/"> Yonsei Portal</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/study.asp">열람실</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/room.asp">세미나실</a></h1>
-           <h1><a href="http://career.yonsei.ac.kr">커리어</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr">기숙사</a></h1>
-           <h1><a href="http://uic.yonsei.ac.kr/main.asp">국제대</a></h1>
-           <h1><a href="http://yscec.yonsei.ac.kr">YSCEC</a></h1>
-           <h1><a href="http://portal.yonsei.ac.kr/main/"> Yonsei Portal</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/study.asp">열람실</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/room.asp">세미나실</a></h1>
-           <h1><a href="http://career.yonsei.ac.kr">커리어</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr">기숙사</a></h1>
-           <h1><a href="http://uic.yonsei.ac.kr/main.asp">국제대</a></h1>
-           <h1><a href="http://yscec.yonsei.ac.kr">YSCEC</a></h1>
-           <h1><a href="http://portal.yonsei.ac.kr/main/"> Yonsei Portal</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/study.asp">열람실</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr/room.asp">세미나실</a></h1>
-           <h1><a href="http://career.yonsei.ac.kr">커리어</a></h1>
-           <h1><a href="https://yicdorm.yonsei.ac.kr">기숙사</a></h1>
-           <h1><a href="http://uic.yonsei.ac.kr/main.asp">국제대</a></h1>
-
-
-
-
-
+  <div style="height:2000px; color:color:#0000FF;"></div>
 
 
 
