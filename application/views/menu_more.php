@@ -90,7 +90,7 @@
       <span style="font-size: 10px;">delivery</span>
     </div>
     <div style="position:absolute;bottom:5px;left:15px;">
-      <img class="img img-responsive" style="width:25px;height:auto;" src="/src/img/delivery.png">
+      <img class="img img-responsive" style="width:25px;height:auto;" src="/src/img/delivery.png" onclick="window.parent.document.getElementById(‘makelong’).style.height = “1000px";">
     </div>
   </div>
 </div>
