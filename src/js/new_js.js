@@ -50,6 +50,7 @@ $(function(){
     $("#menu3>img").attr("src","/src/img/3menu.png");
     $("#menu4>img").attr("src","/src/img/4link.png");
     location.replace("#more");
+      document.getElementById("makelong").style.height = "100%";
     // document.getElementById("makelong").style.height="0px";
     // document.getElementById("makelong").style.height = "2200px";
     content_manager();
@@ -59,11 +60,6 @@ $(function(){
     // document.getElementById("makelong").style.height="0px";
     content_manager();
   });
-
-
-
-
-
 
 });
 
