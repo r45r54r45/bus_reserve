@@ -21,6 +21,12 @@ class Main extends CI_Controller {
 		$this->load->view('test2');
 		// $this->load->view('footer');
 	}
+	public function test2()
+	{
+		$this->load->view('header');
+		$this->load->view('test3');
+		$this->load->view('footer');
+	}
 	public function proxy()
 	{
 		$this->load->view('header');

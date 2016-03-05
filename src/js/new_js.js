@@ -50,13 +50,13 @@ $(function(){
     $("#menu3>img").attr("src","/src/img/3menu.png");
     $("#menu4>img").attr("src","/src/img/4link.png");
     location.replace("#more");
-    document.getElementById("makelong").style.height="0px";
-    document.getElementById("makelong").style.height = "2200px";
+    // document.getElementById("makelong").style.height="0px";
+    // document.getElementById("makelong").style.height = "2200px";
     content_manager();
   });
   $(".back_arrow").on("click",function(){
     location.replace("#more");
-    document.getElementById("makelong").style.height="0px";
+    // document.getElementById("makelong").style.height="0px";
     content_manager();
   });
 
@@ -70,6 +70,7 @@ $(function(){
 function moveto(path){
   if(path=='more_foodmap'){
   location.replace("/#more#foodmap");
+
   content_manager();
 }else if(path=='more_printhub'){
   // alert("3월 10일 완료 예정입니다.");
@@ -81,6 +82,7 @@ function moveto(path){
   content_manager();
 }else if(path=='more_delivery'){
   location.replace("/#more#delivery");
+  document.getElementById("makelong").style.height = "100%";
   content_manager();
 }
 }
