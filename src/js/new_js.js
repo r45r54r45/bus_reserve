@@ -50,7 +50,7 @@ $(function(){
     $("#menu3>img").attr("src","/src/img/3menu.png");
     $("#menu4>img").attr("src","/src/img/4link.png");
     location.replace("#more");
-    $("body").scrollTop(0);
+    $("#contents").contents().find("body").scrollTop(0);
     document.getElementById("makelong").style.height = "100%";
     // document.getElementById("makelong").style.height="0px";
     // document.getElementById("makelong").style.height = "2200px";
