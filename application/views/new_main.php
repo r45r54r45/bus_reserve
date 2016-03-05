@@ -31,6 +31,16 @@
   <![endif]-->
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
   <link href="/src/css/common.css" rel="stylesheet" type="text/css">
+  <style>
+  html {
+  	height: 100%;
+  }
+  body {
+  	margin: 0;
+  	padding: 0;
+  	height: 100%;
+  }
+  </style>
 </head>
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif;">
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
@@ -41,8 +51,9 @@
 <div id="makelong" style="background-color:#ffffff"></div>
 
 
-
+<div style="background-color:#999;height:100%;overflow:auto;-webkit-overflow-scrolling:touch">
   <iframe id="contents" frameBorder="0">
+  </div>
 
   </iframe>
   <div>
