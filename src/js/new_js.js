@@ -59,8 +59,7 @@ $(function(){
   });
   $(".back_arrow").on("click",function(){
     location.replace("#more");
-        document.getElementById("makelong").style.height = "100%";
-    // document.getElementById("makelong").style.height="0px";
+    document.getElementById("makelong").style.height="0px";
     content_manager();
   });
 
