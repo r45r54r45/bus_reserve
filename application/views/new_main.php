@@ -46,7 +46,7 @@ body {
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
 
-<div id="makelong" style="background-color:#ffffff;overflow:auto;-webkit-overflow-scrolling:touch;position:absolute;top:64px;">
+<div id="makelong" style="background-color:#ffffff;overflow:auto;-webkit-overflow-scrolling:touch;width:100%;position:absolute;top:64px;">
 
   <iframe id="contents" frameBorder="0">
 
