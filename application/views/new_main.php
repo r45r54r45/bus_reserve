@@ -48,7 +48,7 @@ body {
 
   <!--<div id="makelong" style="background-color:#ffff00; height:100%;overflow:auto;-webkit-overflow-scrolling:touch;">-->
 
-<div id="makelong" style="background-color:#fff;height:100%;overflow:auto;-webkit-overflow-scrolling:touch">
+<div id="makelong" style="background-color:#ffffff;overflow:auto;-webkit-overflow-scrolling:touch">
 
 
 
