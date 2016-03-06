@@ -48,11 +48,11 @@ body {
 
   <!--<div id="makelong" style="background-color:#ffff00; height:100%;overflow:auto;-webkit-overflow-scrolling:touch;">-->
 
-<div id="makelong" style="background-color:#ffff00;height:100%;overflow:auto;-webkit-overflow-scrolling:touch">
+<div id="makelong" style="background-color:#fff;height:100%;overflow:auto;-webkit-overflow-scrolling:touch">
 
 
 
-  <iframe id="contents" frameBorder="0" >
+  <iframe id="contents" frameBorder="0">
 
   </iframe>
 
