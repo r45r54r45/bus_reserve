@@ -284,7 +284,7 @@ a{
 }
 #contents{
   /*bottom: 0;*/
-  top: 64px;
+  /*top: 64px;*/
   position: absolute;
   width: 100%;
 }
