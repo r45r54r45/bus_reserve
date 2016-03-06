@@ -48,7 +48,7 @@ body {
 
 <div id="makelong" style="background-color:#ffffff;overflow:auto;-webkit-overflow-scrolling:touch;width:100%;position:absolute;top:64px;">
 
-  <iframe id="contents" frameBorder="0">
+  <iframe id="contents" frameBorder="0" height="100%">
 
   </iframe>
 
