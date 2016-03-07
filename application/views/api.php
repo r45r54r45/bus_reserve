@@ -105,3 +105,10 @@ switch($_GET['type']){
 
   break;
 }
+
+function getTargetDay(){
+  $date=[0,1,2,3,4,5,6];
+  //일월화수목금토
+  date_default_timezone_set('Asia/Seoul');
+  return array_search(date("w",strtotime("+2 day")),$date);
+}
