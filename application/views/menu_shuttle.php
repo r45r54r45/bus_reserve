@@ -21,7 +21,7 @@
         <div class="col-xs-12 center form-group">
           <div class="full-width input-group">
             <!-- <div id="pwg" class="input-group-addon" style="color: darkgray">SHA-3 암호화 적용중</div> -->
-            <input id="spw" name="pw" class="full-width form-control" type="password" onkeydown=" input_range(event)" onkeyup="len_ch(7,'spw','pwgl');"  placeholder="연세포털 비밀번호" maxlength="7">
+            <input id="spw" name="pw" class="full-width form-control" type="password" onkeyup="len_ch(7,'spw','pwgl');"  placeholder="연세포털 비밀번호" maxlength="7">
             <span id="pwgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
           </div>
         </div>
@@ -69,6 +69,7 @@ $(function(){
     var url="/new_ver/normal_shuttle?id="+id+"&pw="+pw;
     $("#normal_shuttle").attr("src",url).on("load",function(){
       $("#normal_shuttle").contents().find("#form").submit();
+
       $("#normal_shuttle").css("display","");
     });
   });
