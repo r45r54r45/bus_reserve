@@ -14,7 +14,7 @@
 
 <div class="row" style="margin-top:15px;">
   <div class="col-xs-12">
-    <textarea style="height:100px; width:100%; font-size:12px; resize:none;    border-color: #46292b;
+    <textarea style="height:100px; width:100%; font-size:12px; resize:none;border: 1px solid rgba(70, 41, 43, .5);
     box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
     border-radius: 3px;background-color: white; " placeholder="문제 제보 (핸드폰 번호를 써주셔야 추첨이 가능합니다.)"
      id="help_textarea" maxlength="1000"></textarea>
