@@ -21,6 +21,33 @@ class Data extends CI_Controller {
 		$this->load->model("reserve");
 		$this->reserve->addUser($id, $pw);
 	}
+	public function addReserve($id, $date, $week, $time, $loc){
+		$this->load->model("reserve");
+		$this->reserve->addReserve($id, $date, $week, $time, $loc);
+	}
+	function getTargetDay(){
+	  $date=[0,1,2,3,4,5,6];
+	  //일월화수목금토
+	  date_default_timezone_set('Asia/Seoul');
+	  return array_search(date("w"),$date);
+	}
+	public function _run(){
+		//- 일단 대상이 되는 항목을 모두 가져옴
+		//1. 특정 일만 하는 경우
+		//2. 특정 요일만 하는 경우
+		$r_date=date("Y-m-d",strtotime("+2 day"));
+		//target r_date
+		$r_week=date("w",strtotime("+2 day"))
+		//target r_week
+		$this->load->model("reserve");
+		$result_date=$this->reserve->getByDate($r_date);
+		$result_week=$this->reserve->getByWeek($r_week);
+		$result=array_merge($result_date,$result_week);
+		//비동기
+		foreach($result as $case){
+			echo $case->r_reserve_id;
+		}
+	}
 	public function food()
 	{
 		$a; $b;
