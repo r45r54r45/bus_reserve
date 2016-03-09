@@ -14,7 +14,7 @@
         <span style="font-size:10px;">바나나 고릴라 서비스 더 알아보기</span>
         <div class="col-xs-12 center form-group" style="padding-top:10px;">
           <div class="full-width input-group">
-            <input id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl')"  maxlength="10">
+            <input id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl');"  maxlength="10">
             <span id="idgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
           </div>
         </div>
@@ -56,6 +56,8 @@ body {
 </style>
 <script>
 $(function(){
+  $("#sid").val(getCookie("sid"));
+  $("#spw").val(getCookie("spw"));
   $("#normal_login_btn").on("click",function(){
     var id=$("#sid").val();
     var pw=$("#spw").val();
@@ -82,9 +84,33 @@ function input_range(event){
 }
 function len_ch(n,m,t){
   if($("#"+m).val().length==n){
+    setCookie(m,$("#"+m).val(),100);
     $("#"+t).css("display","");
   }else{
     $("#"+t).css("display","none");
   }
 }
+
+function setCookie(cName, cValue, cDay){
+       var expire = new Date();
+       expire.setDate(expire.getDate() + cDay);
+       cookies = cName + '=' + escape(cValue) + '; path=/ '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+       if(typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
+       document.cookie = cookies;
+   }
+
+   // 쿠키 가져오기
+   function getCookie(cName) {
+       cName = cName + '=';
+       var cookieData = document.cookie;
+       var start = cookieData.indexOf(cName);
+       var cValue = '';
+       if(start != -1){
+           start += cName.length;
+           var end = cookieData.indexOf(';', start);
+           if(end == -1)end = cookieData.length;
+           cValue = cookieData.substring(start, end);
+       }
+       return unescape(cValue);
+   }
 </script>
