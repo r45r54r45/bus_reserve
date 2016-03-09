@@ -32,7 +32,7 @@ class Data extends CI_Controller {
 		date_default_timezone_set('Asia/Seoul');
 		$r_date=date("Y-m-d",strtotime("+2 day"));
 		//target r_date
-		$r_week=date("w",strtotime("+2 day"))
+		$r_week=date("w",strtotime("+2 day"));
 		//target r_week
 		$this->load->model("reserve");
 		$result_date=$this->reserve->getByDate($r_date);
