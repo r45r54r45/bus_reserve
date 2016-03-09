@@ -28,7 +28,7 @@ class Prints extends CI_Controller {
 		$user=$_POST['id'];
 		// 로그인 성공하면
 		// freshman.yonsei.ac.kr
-		redirect("http://freshman.yonsei.ac.kr/prints/vault?id=$user");
+		redirect("http://ybanana.yonsei.ac.kr/prints/vault?id=$user");
 	}
 	public function file2(){
 		$this->load->database();
