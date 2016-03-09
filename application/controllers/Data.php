@@ -30,7 +30,7 @@ class Data extends CI_Controller {
 		//1. 특정 일만 하는 경우
 		//2. 특정 요일만 하는 경우
 		date_default_timezone_set('Asia/Seoul');
-		$r_date=date("Y-m-d",strtotime("+2 day"));
+		$r_date=date("Ymd",strtotime("+2 day"));
 		//target r_date
 		$r_week=date("w",strtotime("+2 day"));
 		//target r_week
