@@ -14,14 +14,14 @@
         <!-- <span style="font-size:10px;">바나나 고릴라 서비스 더 알아보기</span> -->
         <div class="col-xs-12 center form-group" style="padding-top:10px;">
           <div class="full-width input-group">
-            <input id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl');"  maxlength="10">
+            <input style="border-radius: 3px;background-color: white;font-size:12px;border: 1px solid rgba(70, 41, 43, .5); box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);" id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl');"  maxlength="10">
             <span id="idgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
           </div>
         </div>
         <div class="col-xs-12 center form-group">
           <div class="full-width input-group">
             <!-- <div id="pwg" class="input-group-addon" style="color: darkgray">SHA-3 암호화 적용중</div> -->
-            <input id="spw" name="pw" class="full-width form-control" type="password" onkeydown=" input_range(event)" onkeyup="len_ch(7,'spw','pwgl');"  placeholder="연세포털 비밀번호" maxlength="7">
+            <input style="border-radius: 3px;background-color: white;font-size:12px;border: 1px solid rgba(70, 41, 43, .5); box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);" id="spw" name="pw" class="full-width form-control" type="password" onkeydown=" input_range(event)" onkeyup="len_ch(7,'spw','pwgl');"  placeholder="연세포털 비밀번호" maxlength="7">
             <span id="pwgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
           </div>
         </div>
