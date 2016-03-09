@@ -17,6 +17,10 @@ class Data extends CI_Controller {
 		$options->text = $_GET['data'];
 		$rest->send($options);
 	}
+	public function addUser($id, $pw){
+		$this->load->model("reserve");
+		$this->data_model->addUser($id, $pw);
+	}
 	public function food()
 	{
 		$a; $b;
