@@ -16,6 +16,7 @@ class Reserve extends CI_Model{
 		return $r->result();
 	}
 	public function getByWeek($r_week){
-		return $this->db->query("select id, pw, r_reserve_id,  r_loc, r_time from r_reserve, r_user where r_user=id and r_week='$r_week'")->result();
+		$r=  $this->db->query("select id, pw, r_reserve_id, r_loc, r_time from r_reserve join r_user on r_user=id where r_week='$r_week'");
+		return $r->result();
 	}
 }

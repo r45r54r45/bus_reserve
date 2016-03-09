@@ -57,4 +57,7 @@ class New_ver extends CI_Controller {
 				$this->load->helper('url');
 		redirect('http://freshman.yonsei.ac.kr/prints');
 	}
+	public function normal_shuttle(){
+			$this->load->view('shuttle_login');
+	}
 }

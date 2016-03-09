@@ -29,6 +29,9 @@ class Data extends CI_Controller {
 		//- 일단 대상이 되는 항목을 모두 가져옴
 		//1. 특정 일만 하는 경우
 		//2. 특정 요일만 하는 경우
+
+		// 그래도 예약은 날짜로 확인해서 하는건데 말이지
+		//그러면 week(요일)로 정기적으로 신청한 것에 대해서는 알맞는 날짜를 자동으로 구해서 해줘야하는거지...
 		date_default_timezone_set('Asia/Seoul');
 		$r_date=date("Ymd",strtotime("+2 day"));
 		echo $r_date;
@@ -42,7 +45,12 @@ class Data extends CI_Controller {
 		$result=array_merge($result_date,$result_week);
 		//비동기
 		foreach($result as $case){
-			echo $case->r_reserve_id;
+			$case->id;
+			$case->pw;
+			$case->r_reserve_id;
+			$case->r_date;
+			$case->r_loc;
+			$case->r_time;
 		}
 	}
 	public function food()
