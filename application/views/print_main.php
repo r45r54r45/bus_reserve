@@ -82,7 +82,7 @@ $(function(){
 });
 function search_func(){
     $.ajax({
-      url: "http://freshman.yonsei.ac.kr/prints/search?word="+$("input[name='search']").val(),
+      url: "http://ybanana.yonsei.ac.kr/prints/search?word="+$("input[name='search']").val(),
       cache: false
     })
     .done(function( html ) {
@@ -91,7 +91,7 @@ function search_func(){
 }
 function recent_refresh(){
   $.ajax({
-    url: "http://freshman.yonsei.ac.kr/prints/recent",
+    url: "http://ybanana.yonsei.ac.kr/prints/recent",
     cache: false
   })
   .done(function( html ) {
@@ -106,7 +106,7 @@ function recent_refresh(){
     <!-- 다른 사람들의 실시간 파일 정보 -->
     <div class="row">
       <div class="col-xs-12 span-center page-title">
-        <p class="extra-font"><img src="http://newton.kias.re.kr/~kylee/public_html/yonsei.gif" style="height:40px;margin-right:10px;" ><a href="http://freshman.yonsei.ac.kr/prints">연세 프린트 허브</a></p>
+        <p class="extra-font"><img src="http://newton.kias.re.kr/~kylee/public_html/yonsei.gif" style="height:40px;margin-right:10px;" ><a href="http://ybanana.yonsei.ac.kr/prints">연세 프린트 허브</a></p>
         <p class="page-desc small-font">네이버 메일로 보내고 받고 할 필요없이 모바일이든 데스크탑이든 노트북이든 편하고 빠르게 파일을 보관, 인쇄하세요.</p>
       </div>
     </div>

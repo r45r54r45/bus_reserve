@@ -10,7 +10,7 @@ $(function(){
 });
 function vault_refresh(){
   $.ajax({
-    url: "http://freshman.yonsei.ac.kr/prints/vault_refresh?id=<?=$user?>",
+    url: "http://ybanana.yonsei.ac.kr/prints/vault_refresh?id=<?=$user?>",
     cache: false
   })
   .done(function( html ) {
@@ -20,7 +20,7 @@ function vault_refresh(){
 function delete1(data){
   $(".loading").css("display","");
   $.ajax({
-    url: "http://freshman.yonsei.ac.kr/prints/delete1?num="+data,
+    url: "http://ybanana.yonsei.ac.kr/prints/delete1?num="+data,
     cache: false
   })
   .done(function( html ) {
