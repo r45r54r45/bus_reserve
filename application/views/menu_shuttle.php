@@ -11,7 +11,7 @@
           셔틀버스 자동예약은 바나나 고릴라 회원<br>
           전용회원입니다.<br>
         </span><br> -->
-        <span style="font-size:10px;">바나나 고릴라 서비스 더 알아보기</span>
+        <!-- <span style="font-size:10px;">바나나 고릴라 서비스 더 알아보기</span> -->
         <div class="col-xs-12 center form-group" style="padding-top:10px;">
           <div class="full-width input-group">
             <input id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl');"  maxlength="10">
