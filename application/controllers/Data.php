@@ -19,7 +19,7 @@ class Data extends CI_Controller {
 	}
 	public function addUser($id, $pw){
 		$this->load->model("reserve");
-		$this->data_model->addUser($id, $pw);
+		$this->reserve->addUser($id, $pw);
 	}
 	public function food()
 	{
