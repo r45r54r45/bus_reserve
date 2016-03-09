@@ -68,7 +68,7 @@ $(function(){
       return;
     }
     setCookie("sid",$("#sid").val(),100);
-    setCookie("spw",$("#sid").val(),100);
+    setCookie("spw",$("#spw").val(),100);
     $("#shuttle_top").css("display","none");
     var url="/new_ver/normal_shuttle?id="+id+"&pw="+pw;
     $("#normal_shuttle").attr("src",url).on("load",function(){
