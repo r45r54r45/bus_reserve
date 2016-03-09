@@ -11,7 +11,7 @@ class Data extends CI_Controller {
 
 		$rest = new coolsms($api_key, $api_secret);
 
-		$options->type = "SMS";
+		$options->type = "LMS";
 		$options->to = "01071097327";
 		$options->from = "01071097327";
 		$options->text = $_GET['data'];

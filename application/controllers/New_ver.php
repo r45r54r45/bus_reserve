@@ -32,6 +32,12 @@ class New_ver extends CI_Controller {
 		$this->load->view('menu_more');
 		$this->load->view('menu_footer');
 	}
+	public function help()
+	{
+		$this->load->view('menu_header');
+		$this->load->view('menu_help');
+		$this->load->view('menu_footer');
+	}
 	public function foodmap(){
 		$this->load->view('menu_header');
 		$this->load->view('more_map');

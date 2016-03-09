@@ -58,6 +58,11 @@ $(function(){
     document.getElementById("makelong").style.height="0px";
     content_manager();
   });
+  $(".help_button").on("click",function(){
+    location.replace("#help");
+    document.getElementById("makelong").style.height="0px";
+    content_manager();
+  });
 
 });
 

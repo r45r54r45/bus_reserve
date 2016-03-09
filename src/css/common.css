@@ -333,6 +333,13 @@ div>span{
     color: white;
     cursor:pointer;
 }
+.help_button{
+  position: absolute;
+    right: 15px;
+    top: 26px;
+    color: white;
+    cursor:pointer;
+}
 .pointer{
   cursor: pointer;
 }
