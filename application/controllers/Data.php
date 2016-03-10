@@ -20,13 +20,13 @@ class Data extends CI_Controller {
 	public function getCookieUser($cookieId){
 		$this->load->model("data_model");
 		$result=$this->data_model->getUserInfo($cookieId);
-		// if($result->num_rows==0)echo "no row";
-		// echo $result->num_rows;
+		$data=$result[0];
+		if($data->num_rows==0)echo "fuck";
 		foreach ($result as $data) {
 			//TODO foreach 수정해야함..
 			if($data!=null){
 				//등록된 id가 존재할 경우
-				echo var_dump($data);
+				// echo var_dump($data);
 
 			}else{
 				//회원으로 등록 안되어 있는 경우
