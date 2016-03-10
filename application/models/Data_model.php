@@ -13,7 +13,7 @@ class Data_model extends CI_Model{
 		return $r;
 	}
 	public function setUserInfo($cookieId){
-		return $this->db->query("insert into cookie_user (cookie) values  ('$cookieId')")->result();
+		return $this->db->query("insert into cookie_user (cookie) values  ('$cookieId')");
 	}
 	public function food_add($date,$data1,$data2){
 		return $this->db->query("insert into food values ('$date','$data1','$data2')");
