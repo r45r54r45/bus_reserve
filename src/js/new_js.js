@@ -1,6 +1,7 @@
 //on page load
 content_manager();
 $(function(){
+  statusGet();
   //nav-bottom-click
   $("#menu1").on("click",function(){
     $("#menu1>img").attr("src","/src/img/1home_o.png");
@@ -119,26 +120,40 @@ function content_manager(){
       $("iframe#contents").attr("src","/new_ver/"+path);
       $(".back_arrow").css("display","none");
     }
+    statusGet();
     statusUpdate();
 }
-function statusUpdate(){
+var UserData;
+function statusGet(){
   //1. 현재 접속자의 쿠키확인 -
   // sid 쿠키가 있는지 확인후 있다면 로그인한 적이 있다는 거니깐, 계정을 합쳐줄 필요가 있음.-TODO
 
   // -> db에 쿠키가 없다면 추가함. - 쿠키는 랜덤 생성
   //2. 안읽은게 있는지 확인 + 알람 개수 확인- db
   //3. 안읽은게 있다면 띄워줌. - 알람 숫자
-  var user;
  //1
   if((user=getCookie("user"))!=""){
     $.get("/data/getCookieUser/"+user,function(data){
-      console.log(data);
+      //유저의 정보를 가져옴
+      // statusUpdate(data);
+      UserData=data;
     });
   }else{
     setCookie("user",generateId(20),1000);
-    user=getCookie("user");
+    var user=getCookie("user");
+    $.get("/data/getCookieUser/"+user,function(data){
+      //유저의 정보를 가져옴
+      // statusUpdate(data);
+      UserData=data;
+    });
   }
-
+}
+function statusUpdate(){
+  var json=JSON.parse(UserData);
+  var userIdx=json['idx'];
+  $.get("/data/getUnreadNoti/"+useuserIdx,function(data){
+    console.log(data);
+  });
 
 
 }

@@ -12,6 +12,11 @@ class Data_model extends CI_Model{
 		$r= $this->db->query("select * from cookie_user where cookie='$cookieId'");
 		return $r;
 	}
+	public function getUnreadNoti($cookieId){
+	return $this->db->query("select * from notice n where n.idx not in (select notif.idx from notification notif join cookie_user c on notif.read_user=c.idx where c.idx='')");
+	// "select * from notification n join cookie_user c, notice n on read_user=";
+	}
+
 	public function setUserInfo($cookieId){
 		return $this->db->query("insert into cookie_user (cookie) values  ('$cookieId')");
 	}

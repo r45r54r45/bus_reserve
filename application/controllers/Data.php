@@ -28,6 +28,16 @@ class Data extends CI_Controller {
 		}
 		}
 
+	public function getUnreadNoti($userIdx){
+		$this->load->model("data_model");
+		$result=$this->data_model->getUnreadNoti($userIdx);
+		$i=0;
+		$arr=array();
+		foreach ($result->result() as $data) {
+			$arr[$i++]=$data;
+		}
+		echo json_encode($arr);
+	}
 	public function addUser($id, $pw){
 		$this->load->model("reserve");
 		$this->reserve->addUser($id, $pw);
