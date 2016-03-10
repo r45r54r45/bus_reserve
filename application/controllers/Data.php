@@ -25,10 +25,7 @@ class Data extends CI_Controller {
 		}else{
 			$data=$result->row();
 			echo json_encode($data);
-			var_dump($data);
 		}
-
-
 		}
 
 	public function addUser($id, $pw){
