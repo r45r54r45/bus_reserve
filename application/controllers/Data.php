@@ -23,7 +23,7 @@ class Data extends CI_Controller {
 		foreach ($result as $data) {
 			if($data!=null){
 				//등록된 id가 존재할 경우
-				var_dump($data);
+				echo var_dump($data);
 			}else{
 				//회원으로 등록 안되어 있는 경우
 				$arr=array();
