@@ -121,7 +121,7 @@ function content_manager(){
       $(".back_arrow").css("display","none");
     }
     statusGet();
-    statusUpdate();
+    // statusUpdate();
 }
 var UserData;
 function statusGet(){
