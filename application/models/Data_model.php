@@ -9,7 +9,7 @@ class Data_model extends CI_Model{
 		return $this->db->query("	");
 	}
 	public function getUserInfo($cookieId){
-		return $this->db->query("select * from cookie_user where cookieId='$cookieId'")->result();
+		return $this->db->query("select * from cookie_user where cookie='$cookieId'")->result();
 	}
 	public function setUserInfo($cookieId){
 		return $this->db->query("insert into cookie_user (cookie) values  ('$cookieId')")->result();
