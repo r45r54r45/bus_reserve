@@ -121,7 +121,6 @@ function content_manager(){
       $(".back_arrow").css("display","none");
     }
     statusGet();
-    // statusUpdate();
 }
 var UserData;
 function statusGet(){
@@ -135,21 +134,20 @@ function statusGet(){
   if((user=getCookie("user"))!=""){
     $.get("/data/getCookieUser/"+user,function(data){
       //유저의 정보를 가져옴
-      // statusUpdate(data);
-      UserData=data;
+      statusUpdate(data);
+
     });
   }else{
     setCookie("user",generateId(20),1000);
     var user=getCookie("user");
     $.get("/data/getCookieUser/"+user,function(data){
       //유저의 정보를 가져옴
-      // statusUpdate(data);
-      UserData=data;
+      statusUpdate(data);
     });
   }
 }
-function statusUpdate(){
-  var json=JSON.parse("");
+function statusUpdate(data){
+  var json=JSON.parse(data);
   var userIdx=json['idx'];
   $.get("/data/getUnreadNoti/"+useuserIdx,function(data){
     console.log(data);
