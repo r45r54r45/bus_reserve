@@ -119,5 +119,61 @@ function content_manager(){
       $("iframe#contents").attr("src","/new_ver/"+path);
       $(".back_arrow").css("display","none");
     }
+    statusUpdate();
+}
+function statusUpdate(){
+  //1. 현재 접속자의 쿠키확인 -
+  // sid 쿠키가 있는지 확인후 있다면 로그인한 적이 있다는 거니깐, 계정을 합쳐줄 필요가 있음.-TODO
+
+  // -> db에 쿠키가 없다면 추가함. - 쿠키는 랜덤 생성
+  //2. 안읽은게 있는지 확인 + 알람 개수 확인- db
+  //3. 안읽은게 있다면 띄워줌. - 알람 숫자
+  var user;
+ //1
+  if((user=getCookie("user"))!=""){
+    $.get("/data/getCookieUser/"+user,function(data){
+      console.log(data);
+    });
+  }else{
+    setCookie("user",generateId(20),1000);
+    user=getCookie("user");
+  }
+
+
 
 }
+// str byteToHex(uint8 byte)
+//   converts a single byte to a hex string
+function byteToHex(byte) {
+  return ('0' + byte.toString(16)).slice(-2);
+}
+
+// str generateId(int len);
+//   len - must be an even number (default: 40)
+function generateId(len) {
+  var arr = new Uint8Array((len || 40) / 2);
+  window.crypto.getRandomValues(arr);
+  return [].map.call(arr, byteToHex).join("");
+}
+function setCookie(cName, cValue, cDay){
+       var expire = new Date();
+       expire.setDate(expire.getDate() + cDay);
+       cookies = cName + '=' + escape(cValue) + '; path=/ '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+       if(typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
+       document.cookie = cookies;
+   }
+
+   // 쿠키 가져오기
+   function getCookie(cName) {
+       cName = cName + '=';
+       var cookieData = document.cookie;
+       var start = cookieData.indexOf(cName);
+       var cValue = '';
+       if(start != -1){
+           start += cName.length;
+           var end = cookieData.indexOf(';', start);
+           if(end == -1)end = cookieData.length;
+           cValue = cookieData.substring(start, end);
+       }
+       return unescape(cValue);
+   }
