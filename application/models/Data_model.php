@@ -10,6 +10,7 @@ class Data_model extends CI_Model{
 	}
 	public function getUserInfo($cookieId){
 		$r= $this->db->query("select * from cookie_user where cookie='$cookieId'");
+		var_dump($r);
 		return $r->result();
 	}
 	public function setUserInfo($cookieId){
