@@ -149,7 +149,7 @@ function statusGet(){
 function statusUpdate(data){
   var json=JSON.parse(data);
   var userIdx=json['idx'];
-  $.get("/data/getUnreadNoti/"+useuserIdx,function(data){
+  $.get("/data/getUnreadNoti/"+userIdx,function(data){
     console.log(data);
   });
 
