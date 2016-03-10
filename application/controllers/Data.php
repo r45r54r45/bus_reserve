@@ -20,7 +20,7 @@ class Data extends CI_Controller {
 	public function getCookieUser($cookieId){
 		$this->load->model("data_model");
 		$result=$this->data_model->getUserInfo($cookieId);
-		var_dump($result);
+		var_dump($result->result_array);
 		// $data=$result;
 		// if($data->num_rows==0)echo "fuck";
 		foreach ($result as $data) {
