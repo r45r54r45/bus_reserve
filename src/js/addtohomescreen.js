@@ -43,7 +43,7 @@ ath.intl = {
 
 	en_us: {
 		ios: 'Add to home screen to use it as an app: tap %icon and then <strong>Add to Home Screen</strong>.',
-		android: 'To add this web app to the home screen open the browser option menu and tap on <strong>Add to homescreen</strong>. <small>The menu can be accessed by pressing the menu hardware button if your device has one, or by tapping the top right menu icon %icon.</small>'
+		android: 'Download <strong>Yonsei Banana</strong> from the Google Play Store to use it as an app.</small>'
 	},
 
 	es_es: {
@@ -83,7 +83,7 @@ ath.intl = {
 
 	ko_kr: {
 		ios: '홈 화면에 바로가기를 생성을하셔야 앱을 사용하실 수 있습니다: %icon 을 클릭한 후 <strong>홈 화면에 추가</strong>.',
-		android: '브라우저 옵션 메뉴의 <string>홈 화면에 추가</string>를 클릭하여 홈화면에 바로가기를 생성할 수 있습니다. <small>옵션 메뉴는 장치의 메뉴 버튼을 누르거나 오른쪽 상단의 메뉴 아이콘 %icon을 클릭하여 접근할 수 있습니다.</small>'
+		android: '구글플레이스토어에서 <string>연세대학교 바나나</string>를 검색하시고 앱으로 사용해주세요.'
 	},
 
 	nb_no: {
