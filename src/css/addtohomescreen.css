@@ -97,8 +97,8 @@
 	background-size: 50%;
 	background-repeat: no-repeat;
 	background-position: 50%;
-	width: 2.7em;
-	height: 2.7em;
+	width: 2em;
+	height: 2em;
 	text-align: center;
 	overflow: hidden;
 	color: #a33;
@@ -107,8 +107,8 @@
 
 .ath-container.ath-icon:before {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 5;
+	right: 5;
 	margin: 0;
 	float: none;
 }
@@ -125,8 +125,8 @@
 .ath-container.ath-android.ath-icon:before {
 	position: absolute;
 	right: auto;
-	left: 0;
-	margin: 0;
+	left: 5;
+	margin: 5;
 	float: none;
 }
 
