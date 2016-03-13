@@ -43,13 +43,13 @@ body {
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif;">
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <div class="back_arrow"><img src="/src/img/backbtn.png" style="height: 18px;" ></div>
-    <div class="noti notification"><img id="noti_img" src="/src/img/noti_on.png" style="height: 30px;" >
+    <div class="noti notification"><img id="noti_img" src="/src/img/noti_on.png" style="height: 26px;" >
     <span class="notification" id="noti_num" style="position: absolute;
-    top: 7px;
+    top: 6px;
     text-shadow: none;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 100;
-    left: 12px;
+    left: 10px;
     color: white;"></span>
   </div>
     <div class="help_button"><img src="/src/img/help_btn.png" style="height: 18px;" ></div>
