@@ -156,6 +156,8 @@ function statusUpdate(data){
   var userIdx=json['idx'];
   $.get("/data/getUnreadNotiCnt/"+userIdx,function(data){
     var re=JSON.parse(data);
+    console.log(re);
+    console.log(data['count']);
     $("#noti_num").text(data['count']);
   });
   $.get("/data/getCurrentNoti/"+userIdx,function(data){
