@@ -127,7 +127,9 @@ function content_manager(){
       $(".back_arrow").css("display","none");
     }
     statusGet();
-    $("#noti_modal").modal('hide');
+    $("#noti_modal").modal({
+      backdrop: false
+    }).modal('hide');
 }
 var UserData;
 function statusGet(){
