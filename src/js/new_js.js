@@ -169,6 +169,7 @@ function statusUpdate(data){
     $("#noti_body").text("");
     if(data=""){
       $("#noti_header").text("알림이 없습니다");
+      console.log("알림 없으");
     }else{
       $("#noti_header").text("");
       for(var i=0; i<re.length; i++){
