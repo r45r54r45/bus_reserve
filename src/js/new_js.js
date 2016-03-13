@@ -114,13 +114,14 @@ function content_manager(){
       $("#makelong").css("height",$(window).height()-114+"px");
       $("iframe#contents").attr("src","/new_ver/"+path2);
       $(".back_arrow").css("display","");
-
+      $(".noti").css("display","none");
 
     }else{
       $("#page_title").text(path.toUpperCase());
       $("#makelong").css("height",$(window).height()-114+"px");
       $("iframe#contents").attr("src","/new_ver/"+path);
       $(".back_arrow").css("display","none");
+      $(".noti").css("display","");
     }
     statusGet();
     $("#noti_modal").modal({
