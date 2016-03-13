@@ -13,7 +13,7 @@ class Data_model extends CI_Model{
 		return $r;
 	}
 	public function setNotiRead($noti_idx){
-		return $this->db->query("update notification set read_check='1' where noticeId='$noti_idx';");
+		return $this->db->query("update notification set read_check=1 where noticeId='$noti_idx';");
 	}
 	public function getCurrentNoti($userIdx){
 	// return $this->db->query("select * from notice n where n.idx not in (select notif.idx from notification notif join cookie_user c on notif.read_user=c.idx where c.idx='$userIdx')");
