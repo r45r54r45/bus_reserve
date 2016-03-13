@@ -57,7 +57,7 @@ body {
   <!-- notification -->
   <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="    margin-top: 53px;
     margin-left: -10px;">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog" style="width:150px;" role="document">
     <div class="modal-content">
       <div class="modal-header" style="padding: 5px 15px 20px;">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
