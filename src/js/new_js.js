@@ -154,7 +154,7 @@ function statusGet(){
 function statusUpdate(data){
   var json=JSON.parse(data);
   var userIdx=json['idx'];
-  $.get("/data/getUnreadNotiCnt"+userIdx,function(data){
+  $.get("/data/getUnreadNotiCnt/"+userIdx,function(data){
     var re=JSON.parse(data);
     console.log(data['count']);
     $("#noti_num").text(data['count']);
