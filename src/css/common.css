@@ -336,13 +336,13 @@ div>span{
 .noti{
   position: absolute;
   left: 15px;
-  top: 26px;
+  top: 25px;
   cursor:pointer;
 }
 .help_button{
   position: absolute;
     right: 15px;
-    top: 26px;
+    top: 27px;
     color: white;
     cursor:pointer;
 }
