@@ -29,7 +29,7 @@ class Data extends CI_Controller {
 		}
 	public function setNotiRead($noti_idx){
 		$this->load->model("data_model");
-		$result=$this->data_model->getNotiInfo($noti_idx);
+		$result=$this->data_model->setNotiRead($noti_idx);
 	}
 	public function getUnreadNotiCnt($userIdx){
 		$this->load->model("data_model");
