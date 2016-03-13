@@ -10,7 +10,7 @@
         </a>
       </h4>
     </div>
-    <div id="notice_<?=$row['idx']?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+    <div id="notice_<?=$row['idx']?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body font-10">
         <?=$row['content']?>
       </div>
