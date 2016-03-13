@@ -33,7 +33,7 @@ class Data extends CI_Controller {
 		$row=$result->result_array();
 		$arr=array();
 		$kkk=$row[0];
-		$arr["count"]=$kkk["COUNT( * )"];
+		$arr['count']=$kkk['COUNT( * )'];
 		echo json_encode($arr);
 	}
 	public function getCurrentNoti($userIdx){
