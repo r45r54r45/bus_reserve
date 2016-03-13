@@ -170,9 +170,11 @@ function statusGet(){
     });
   }
 }
+var final_userIdx;
 function statusUpdate(data){
   var json=JSON.parse(data);
   var userIdx=json['idx'];
+  final_userIdx=userIdx;
   $.get("/data/getUnreadNotiCnt/"+userIdx,function(data){
     var re=JSON.parse(data);
     if(re['count']=="0"){
@@ -205,7 +207,8 @@ function statusUpdate(data){
         var strVar="";
 strVar += "<div class=\"noti_element\""+background;
 strVar +="onclick=\"noti_manager("+re[i]['idx'];
-strVar += ")\">          <div class=\"noti_img\"> "+image;
+strVar += ");moveto('"+re[i]['target'];
+strVar +="')\">          <div class=\"noti_img\"> "+image;
 strVar += "<\/div>          <div class=\"noti_wrap\">";
 strVar += "            <div><span class=\"font-12\">"+re[i]['content'];
 strVar+="<\/span><\/div>";
@@ -222,7 +225,9 @@ jQuery("time.timeago").timeago();
 
 }
 function noti_manager(noti_idx){
+  $.get("/data/setNotiRead/"+noti_idx,function(data){
 
+  });
 }
 // str byteToHex(uint8 byte)
 //   converts a single byte to a hex string

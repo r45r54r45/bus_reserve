@@ -27,6 +27,10 @@ class Data extends CI_Controller {
 			echo json_encode($data);
 		}
 		}
+	public function setNotiRead($noti_idx){
+		$this->load->model("data_model");
+		$result=$this->data_model->getNotiInfo($noti_idx);
+	}
 	public function getUnreadNotiCnt($userIdx){
 		$this->load->model("data_model");
 		$result=$this->data_model->getUnreadNotiCnt($userIdx);
