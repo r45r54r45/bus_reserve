@@ -55,6 +55,11 @@ body {
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
   <!-- notification -->
+  <style>
+  .modal{
+    height: 200px; 
+  }
+  </style>
   <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="    margin-top: 53px;
     margin-left: -10px;">
   <div class="modal-dialog" style="width:150px;" role="document">
@@ -63,7 +68,9 @@ body {
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel"></h4>
       </div>
-      <div id="noti_body" class="modal-body" style="    padding: 5px;">
+      <div id="noti_body" class="modal-body" style="overflow-y: scroll;
+    width: 150px;
+    max-height: 130px; padding: 5px;">
         <!-- <div class="card_holder">
           <div id="more_phonebook" onclick="parent.moveto('more_phonebook');" class="card pointer" style="height:50px; margin-bottom:10px; position:relative; padding:5px 10px;">
             <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
