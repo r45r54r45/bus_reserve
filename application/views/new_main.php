@@ -44,7 +44,7 @@ body {
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <div class="back_arrow"><img src="/src/img/backbtn.png" style="height: 18px;" ></div>
 
-    <div class="noti notification" style="display:none"><img id="noti_img" src="/src/img/noti_on.png" style="height: 30px;" >
+    <div class="noti notification" style=""><img id="noti_img" src="/src/img/noti_on.png" style="height: 30px;" >
 
     <span class="notification" id="noti_num" style="position: absolute;
     top: 6px;
@@ -55,37 +55,25 @@ body {
     color: white;"></span>
   </div>
     <div class="help_button"><img src="/src/img/help_btn.png" style="height: 18px;" ></div>
+    <div class="banana_button" style="display:none;"><img src="/src/img/banana.png" style="height: 18px;" ><span id="banana_count"></span></div>
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
   <!-- notification -->
-  <style>
-  .modal{
-    height: 200px;
-  }
-  </style>
-  <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top: 53px;
-    margin-left: -10px;">
-  <div class="modal-dialog" style="width:150px;" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="padding: 5px 15px 20px;">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel"></h4>
-      </div>
+  <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top: 53px;margin-left:0">
+  <div class="noti_tri"></div>
+  <div class="modal-dialog" style="width: 96vw;margin: 11px 2vw;" role="document">
+    <div class="modal-content" style="border-top: none;">
+      <div class="modal-header" style="border-bottom:none; padding: 5px 15px 5px;"></div>
       <div id="noti_body" class="modal-body" style="overflow-y: scroll;
-    width: 150px;
-    max-height: 130px; padding: 5px;">
-        <!-- <div class="card_holder">
-          <div id="more_phonebook" onclick="parent.moveto('more_phonebook');" class="card pointer" style="height:50px; margin-bottom:10px; position:relative; padding:5px 10px;">
-            <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
-              <div style="text-align:right;">
-                <span style="font-size: 15px;" name="noti_title">연세대학교 내선 번호</span>
-              </div>
-              <div style="text-align:right; margin-top:-5px;">
-                <span style="font-size: 10px;"    name="noti_content">phonebook</span>
-              </div>
-            </div>
+    width: 100%;
+    max-height: 130px; padding: 0px 0px 15px;">
+        <div class="noti_element">
+          <div class="noti_img"><img src="/src/img/banana_plus.png" class="img" style="width:100%; height:100%;"></div>
+          <div class="noti_wrap">
+            <div><span class="font-12">문제 문의 답변</span></div>
+            <div><span class="font-10">37 minutes ago</span></div>
           </div>
-        </div> -->
+        </div>
 
       </div>
 

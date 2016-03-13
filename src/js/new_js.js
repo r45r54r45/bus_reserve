@@ -65,11 +65,7 @@ $(function(){
     content_manager();
   });
   $(".noti").on("click",function(){
-    if(noti_flag==true){
-    $("#noti_modal").modal({
-      backdrop: false
-    }).modal('show');
-  }
+    $("#noti_modal").modal('toggle');
   });
 });
 var noti_flag=false;
@@ -158,38 +154,23 @@ function statusGet(){
 function statusUpdate(data){
   var json=JSON.parse(data);
   var userIdx=json['idx'];
-  $.get("/data/getUnreadNoti/"+userIdx,function(data){
+  $.get("/data/getUnreadNotiCnt"+userIdx,function(data){
+    var re=JSON.parse(data);
+    console.log(data['count']);
+    $("#noti_num").text(data['count']);
+  });
+  $.get("/data/getCurrentNoti/"+userIdx,function(data){
     console.log(data);
     var re=JSON.parse(data);
     if(data=""){
       $("#noti_img").attr("src","/src/img/noti_off.png");
-      $("#noti_num").text("0");
       $("#noti_body").append("알림 없음.");
-      noti_flag=false;
     }else{
       $("#noti_img").attr("src","/src/img/noti_on.png");
-      $("#noti_num").text(re.length);
       $("#noti_body").text("");
       for(var i=0; i<re.length; i++){
-        var strVar="";
-strVar += "<div class=\"card_holder\">";
-strVar += "          <!-- phonebook card-->";
-strVar += "          <div id=\"more_phonebook\"  onclick=\"noti_manager("+re[i]['idx'];
-strVar +=");\" class=\"card pointer\" style=\"height:50px; margin-bottom:10px; position:relative; padding:5px 10px;\">";
-strVar += "            <div style=\"border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;\">";
-strVar += "              <div style=\"text-align:right;\">";
-strVar += "                <span style=\"font-size: 15px;\" name=\"noti_title\">"+re[i]['title'];
-strVar += "<\/span>              <\/div>";
-strVar += "              <div style=\"text-align:right; margin-top:-5px;\">";
-strVar += "                <span style=\"font-size: 10px;\"    name=\"noti_content\">"+re[i]['content'];
-strVar += " <\/span>             <\/div>";
-strVar += "            <\/div>";
-strVar += "          <\/div>";
-strVar += "        <\/div>";
 
-        $("#noti_body").append(strVar);
       }
-      noti_flag=true;
     }
   });
 
