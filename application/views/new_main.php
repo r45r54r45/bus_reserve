@@ -66,7 +66,7 @@ body {
       <div class="modal-header" style="border-bottom:none; padding: 5px 15px 5px;"></div>
       <div id="noti_body" class="modal-body" style="overflow-y: scroll;
     width: 100%;
-    max-height: 130px; padding: 0px 0px 15px;">
+    max-height: 130px; padding: 0px 0px 15px; ">
 
 
       </div>
