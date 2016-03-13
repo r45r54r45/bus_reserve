@@ -5,7 +5,7 @@
   <div class="panel panel-default">
     <div class="panel-heading notice_heading" role="tab" id="headingOne">
       <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="font-12">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="font-12">
           <?=$row['title']?>
         </a>
       </h4>
