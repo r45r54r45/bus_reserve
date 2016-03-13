@@ -125,6 +125,12 @@ function content_manager(){
       $(".back_arrow").css("display","");
       $(".noti").css("display","none");
       $(".more_page_btn").css("display","none");
+      if(path2=="notice"){
+        var noticeNum=url.split('#')[3];
+        $("iframe#contents").on("load",function(){
+          $("#contents").contents().find("#notice_"+noticeNum).collapse('show');
+        });
+      }
 
     }else{
       $("#page_title").text(path.toUpperCase());
