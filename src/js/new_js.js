@@ -173,6 +173,21 @@ function statusUpdate(data){
     }else{
 
       for(var i=0; i<re.length; i++){
+        var background="";
+        if(re['count']=="0"){
+          background="style='background:#fef6d1'";
+        }
+        var strVar="";
+strVar += "<div class=\"noti_element\""+background;
+strVar +="onclick=\"noti_manager("+re['idx'];
+strVar += ")\">          <div class=\"noti_img\"><img src=\"\/src\/img\/banana_plus.png\" class=\"img\" style=\"width:100%; height:100%;\"><\/div>";
+strVar += "          <div class=\"noti_wrap\">";
+strVar += "            <div><span class=\"font-12\">"+re['content'];
+strVar+="<\/span><\/div>";
+strVar += "            <div><time class=\"timeago font-10\" datetime=\""+re['n_timestamp'];
+strVar+="\"><\/time><\/div>";
+strVar += "          <\/div>";
+strVar += "        <\/div>";
 
       }
     }

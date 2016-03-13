@@ -70,7 +70,7 @@ body {
         <div class="noti_element" onclick="noti_manager()">
           <div class="noti_img"><img src="/src/img/banana_plus.png" class="img" style="width:100%; height:100%;"></div>
           <div class="noti_wrap">
-            <div><span class="font-12">문제 문의 답변</span></div>
+            <div><span class="font-12"></span></div>
             <div><time class="timeago font-10" datetime=""></time></div>
           </div>
         </div>
