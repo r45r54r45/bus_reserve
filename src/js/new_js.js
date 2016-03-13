@@ -130,6 +130,7 @@ function content_manager(){
       $(".back_arrow").css("display","none");
       $(".noti").css("display","");
       $(".more_page_btn").css("display","none");
+      $(".help_button").css("display","");
     }
     statusGet();
     $("#noti_modal").modal({
