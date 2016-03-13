@@ -181,6 +181,7 @@ function statusUpdate(data){
           //바바나 증정일 경우
           image="<img src=\"\/src\/img\/banana_plus.png\" class=\"img\" style=\"width:100%; height:100%;\">";
         }
+        $("#noti_body").text("");
         var strVar="";
 strVar += "<div class=\"noti_element\""+background;
 strVar +="onclick=\"noti_manager("+re[i]['idx'];
