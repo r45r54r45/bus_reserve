@@ -196,7 +196,7 @@ function statusUpdate(data){
       for(var i=0; i<re.length; i++){
         var background="";
         var image="";
-        if(re[i]['count']=="0"){
+        if(re[i]['read_check']=="0"){
           background="style='background:#fef6d1'";
         }
         if (re[i]['noticeId']=="1") {
