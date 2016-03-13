@@ -177,7 +177,7 @@ strVar += "              <div style=\"text-align:right;\">";
 strVar += "                <span style=\"font-size: 15px;\" name=\"noti_title\">"+re[i]['title'];
 strVar += "<\/span>              <\/div>";
 strVar += "              <div style=\"text-align:right; margin-top:-5px;\">";
-strVar += "                <span style=\"font-size: 10px;\"    name=\"noti_content\">phonebook"+re[i]['content'];
+strVar += "                <span style=\"font-size: 10px;\"    name=\"noti_content\">"+re[i]['content'];
 strVar += " <\/span>             <\/div>";
 strVar += "            <\/div>";
 strVar += "          <\/div>";
