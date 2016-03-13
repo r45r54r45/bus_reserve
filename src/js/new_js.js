@@ -182,7 +182,7 @@ strVar += "            <\/div>";
 strVar += "          <\/div>";
 strVar += "        <\/div>";
 
-        $("#noti_body").append(strvar);
+        $("#noti_body").append(strVar);
       }
       noti_flag=true;
     }
