@@ -67,7 +67,7 @@ $(function(){
   $(".noti").on("click",function(){
     if(noti_flag==true){
     $("#noti_modal").modal({
-      backdrop: true
+      backdrop: false
     }).modal('show');
   }
   });
