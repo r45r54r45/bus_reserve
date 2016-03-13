@@ -165,7 +165,6 @@ function statusUpdate(data){
 
   });
   $.get("/data/getCurrentNoti/"+userIdx,function(data){
-    console.log(data);
     var re=JSON.parse(data);
     $("#noti_body").text("");
     if(data=""){

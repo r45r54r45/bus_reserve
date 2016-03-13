@@ -310,7 +310,6 @@ function setCurrentBus(){
         type: 'GET',
         // dataType:'json',
       success: function(res) {
-        console.log(res);
         var json=JSON.parse(res);
         $("#bus6724before").text(json['6724']['count']);
         $("#bus6724time").css("font-size","17px").text(toMin(json['6724']['time']));
