@@ -43,6 +43,13 @@ class New_ver extends CI_Controller {
 		$this->load->view('more_map');
 		$this->load->view('menu_footer');
 	}
+	public function notice(){
+		$this->load->model("data_model");
+		$result=$this->data_model->getNotice();
+		$this->load->view('menu_header');
+		$this->load->view('more_notice',$result);
+		$this->load->view('menu_footer');
+	}
 	public function phonebook(){
 		$this->load->view('menu_header');
 		$this->load->view('more_phonebook');

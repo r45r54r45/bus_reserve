@@ -88,6 +88,9 @@ function moveto(path){
 }else if(path=='more_phonebook'){
   location.replace("/#more#phonebook");
   content_manager();
+}else if(path=='more_notice'){
+  location.replace("/#more#notice");
+  content_manager();
 }else if(path=='more_delivery'){
   location.replace("/#more#delivery");
   document.getElementById("makelong").style.height = "100%";

@@ -434,3 +434,8 @@ border-bottom: 10px solid white;
     color: white;
     text-shadow: none;
 }
+.notice_heading{
+  background: white !important;
+  height:40px;
+  border:1px solid black;
+}

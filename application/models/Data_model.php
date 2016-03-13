@@ -28,4 +28,7 @@ class Data_model extends CI_Model{
 	public function food_get($date){
 		return $this->db->query("select * from food where week_date='$date'");
 	}
+	public function getNotice(){
+		return $this->db->query("select * from noticeBoard order by idx desc");
+	}
 }
