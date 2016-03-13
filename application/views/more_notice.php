@@ -6,7 +6,7 @@
     <div class="panel-heading notice_heading" role="tab" id="heading<?=$row['idx']?>">
       <h4 class="panel-title">
         <a class="collapsed font-12" role="button" data-toggle="collapse" data-parent="#accordion" href="#notice_<?=$row['idx']?>" aria-expanded="true" aria-controls="notice_<?=$row['idx']?>" >
-          <?=$row['title']?>
+          <?=$row['title']?> <? echo "<span style='font-size:8px;'>(".date("m/d", strtotime($row['n_date'])).")</span>"?> 
         </a>
       </h4>
     </div>
