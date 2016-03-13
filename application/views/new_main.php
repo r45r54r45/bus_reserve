@@ -57,7 +57,7 @@ body {
   <!-- notification -->
   <style>
   .modal{
-    height: 200px; 
+    height: 200px;
   }
   </style>
   <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="    margin-top: 53px;
@@ -113,9 +113,9 @@ body {
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="/src/js/jquery.js"></script>
-  <script src="/src/js/new_js.js"></script>
   <script src="/src/js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="/src/js/new_js.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
 </body>
