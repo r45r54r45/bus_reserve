@@ -190,7 +190,7 @@ strVar += ")\">          <div class=\"noti_img\"> "+image;
 strVar += "<\/div>          <div class=\"noti_wrap\">";
 strVar += "            <div><span class=\"font-12\">"+re[i]['content'];
 strVar+="<\/span><\/div>";
-strVar += "            <div><time class=\"timeago font-10\" datetime=\""+re[i]['n_timestamp'];
+strVar += "            <div style='margin-top: -5px;'><time class=\"timeago font-10\" datetime=\""+re[i]['n_timestamp'];
 strVar+="\"><\/time><\/div>";
 strVar += "          <\/div>";
 strVar += "        <\/div>";
