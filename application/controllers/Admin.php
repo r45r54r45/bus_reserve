@@ -23,8 +23,8 @@ class Admin extends CI_Controller {
 		$content=$_POST['content'];
 		$target=$_POST['target'];
 		$nIdx=$this->admin_model->uploadAndGetNoticeIdx($type, $title, $content, $target);
-		$nIdx=$nIdx->row(0);
-		$noticeIdx=$nIdx['max(idx)'];
+		$nIdx=$nIdx->result_array();
+		$noticeIdx=$nIdxp[0]['max(idx)'];
 		//type이 2인 경우 전체 업로드
 		if($type=="2"){
 			$result=$this->admin_model->getgetAllUser();
