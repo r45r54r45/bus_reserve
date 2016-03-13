@@ -51,7 +51,7 @@ body {
     <span class="notification" id="noti_num" style="position: absolute;
     top: 6px;
     text-shadow: none;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 100;
     left: 10px;
     color: white;"></span>
