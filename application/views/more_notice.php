@@ -1,6 +1,6 @@
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <?
-  foreach ($result->result_array() as $row) {
+  foreach ($notice->result_array() as $row) {
   ?>
   <div class="panel panel-default">
     <div class="panel-heading notice_heading" role="tab" id="headingOne">
