@@ -97,6 +97,7 @@ window.onpopstate=function(e){
 }
 
 function content_manager(){
+    $("#noti_modal").modal('hide');
     var url=window.location.href;
     var path=url.split('#')[1];
     var path2;
