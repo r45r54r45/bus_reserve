@@ -27,7 +27,7 @@ class Admin extends CI_Controller {
 		$noticeIdx=$nIdxp[0]['max(idx)'];
 		//type이 2인 경우 전체 업로드
 		if($type=="2"){
-			$result=$this->admin_model->getgetAllUser();
+			$result=$this->admin_model->getAllUser();
 			foreach ($result->result() as $row) {
 				$userIdx=$row->idx;
 				$this->admin_model->pushNoti($noticeIdx, $userIdx);
