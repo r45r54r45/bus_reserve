@@ -30,9 +30,9 @@ class Data extends CI_Controller {
 	public function getUnreadNotiCnt($userIdx){
 		$this->load->model("data_model");
 		$result=$this->data_model->getUnreadNotiCnt($userIdx);
-		$row=$result->row(0);
+		$row=$result->result_array();
 		$arr=array();
-		$arr["count"]=$row->COUNT( * );
+		$arr["count"]=$row[0][0];
 		echo json_encode($arr);
 	}
 	public function getCurrentNoti($userIdx){
