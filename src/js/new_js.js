@@ -53,11 +53,13 @@ $(function(){
     location.replace("#more");
     $("#makelong").scrollTop(0);
     content_manager();
+    $(".noti").css("display","none");
   });
   $(".back_arrow").on("click",function(){
     location.replace("#more");
     document.getElementById("makelong").style.height="0px";
     content_manager();
+    $(".noti").css("display","none");
   });
   $(".help_button").on("click",function(){
     location.replace("#help");
