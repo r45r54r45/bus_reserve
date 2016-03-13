@@ -46,7 +46,7 @@ body {
     <div class="setting more_page_btn" style="display:none"><img src="/src/img/setting_btn.png" style="height: 30px;" ></div>
     <div class="notice more_page_btn" onclick="moveto('more_notice')" style="display:none"><img src="/src/img/notice_btn.png" style="height: 30px;" ></div>
 
-    <div class="noti notification" style=""><img id="noti_img" src="/src/img/noti_on.png" style="height: 25px;" >
+    <div class="noti notification" style=""><img id="noti_img" src="/src/img/noti_on.png" style="height: 26px;" >
 
     <span class="notification" id="noti_num" style="position: absolute;
     top: 6px;
