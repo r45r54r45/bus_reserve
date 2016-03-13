@@ -393,6 +393,7 @@ border-bottom: 10px solid white;
   border:1px solid #e5e5e5;
   border-bottom: none;
   padding-right: 40px;
+  position: relative;
 }
 .noti_wrap{
   width:100%;
