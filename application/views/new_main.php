@@ -43,7 +43,7 @@ body {
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif;">
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <div class="back_arrow"><img src="/src/img/backbtn.png" style="height: 18px;" ></div>
-    <div class="noti notification"><img id="noti_img" src="/src/img/noti_on.png" style="height: 30px;" >
+    <div class="noti notification" style="display:none"><img id="noti_img" src="/src/img/noti_on.png" style="height: 30px;" >
     <span class="notification" id="noti_num" style="position: absolute;
     top: 7px;
     text-shadow: none;
@@ -61,7 +61,7 @@ body {
     height: 200px;
   }
   </style>
-  <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="    margin-top: 53px;
+  <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top: 53px;
     margin-left: -10px;">
   <div class="modal-dialog" style="width:150px;" role="document">
     <div class="modal-content">
