@@ -188,7 +188,7 @@ strVar += "            <div><time class=\"timeago font-10\" datetime=\""+re['n_t
 strVar+="\"><\/time><\/div>";
 strVar += "          <\/div>";
 strVar += "        <\/div>";
-
+      $("#noti_body").append(strVar);
       }
     }
   });
