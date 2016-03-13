@@ -3,14 +3,14 @@
   foreach ($notice->result_array() as $row) {
   ?>
   <div class="panel panel-default">
-    <div class="panel-heading notice_heading" role="tab" id="headingOne">
+    <div class="panel-heading notice_heading" role="tab" id="heading<?=$row['idx']?>">
       <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="font-12">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#notice_<?=$row['idx']?>" aria-expanded="true" aria-controls="notice_<?=$row['idx']?>" class="font-12">
           <?=$row['title']?>
         </a>
       </h4>
     </div>
-    <div id="notice_<?=$row['idx']?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    <div id="notice_<?=$row['idx']?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?=$row['idx']?>">
       <div class="panel-body font-10">
         <?=$row['content']?>
       </div>
