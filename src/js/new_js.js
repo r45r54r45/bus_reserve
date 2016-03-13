@@ -200,7 +200,7 @@ function statusUpdate(data){
         if(re[i]['read_check']=="0"){
           background="style='background:#fef6d1'";
         }
-        if (re[i]['noticeId']=="1") {
+        if (re[i]['type']=="1") {
           //바바나 증정일 경우
           image="<img src=\"\/src\/img\/banana_plus.png\" class=\"img\" style=\"width:100%; height:100%;\">";
         }
