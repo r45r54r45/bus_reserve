@@ -55,6 +55,7 @@ $(function(){
     content_manager();
     $(".noti").css("display","none");
     $(".help_button").css("display","none");
+    $(".more_page_btn").css("display","");
   });
   $(".back_arrow").on("click",function(){
     location.replace("#more");
@@ -62,6 +63,7 @@ $(function(){
     content_manager();
     $(".noti").css("display","none");
     $(".help_button").css("display","none");
+    $(".more_page_btn").css("display","");
   });
   $(".help_button").on("click",function(){
     location.replace("#help");
@@ -119,6 +121,7 @@ function content_manager(){
       $("iframe#contents").attr("src","/new_ver/"+path2);
       $(".back_arrow").css("display","");
       $(".noti").css("display","none");
+      $(".more_page_btn").css("display","none");
 
     }else{
       $("#page_title").text(path.toUpperCase());
@@ -126,6 +129,7 @@ function content_manager(){
       $("iframe#contents").attr("src","/new_ver/"+path);
       $(".back_arrow").css("display","none");
       $(".noti").css("display","");
+      $(".more_page_btn").css("display","none");
     }
     statusGet();
     $("#noti_modal").modal({

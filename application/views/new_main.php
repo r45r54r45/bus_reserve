@@ -43,6 +43,8 @@ body {
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif;">
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <div class="back_arrow"><img src="/src/img/backbtn.png" style="height: 18px;" ></div>
+    <div class="setting more_page_btn" style="display:none"><img src="/src/img/notice_btn.png" style="height: 30px;" ></div>
+    <div class="notice more_page_btn" style="display:none"><img src="/src/img/setting_btn.png" style="height: 30px;" ></div>
 
     <div class="noti notification" style=""><img id="noti_img" src="/src/img/noti_on.png" style="height: 30px;" >
 
