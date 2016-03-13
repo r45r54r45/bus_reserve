@@ -167,10 +167,11 @@ function statusUpdate(data){
   $.get("/data/getCurrentNoti/"+userIdx,function(data){
     console.log(data);
     var re=JSON.parse(data);
+    $("#noti_body").text("");
     if(data=""){
-
+      $("#noti_header").text("알림이 없습니다");
     }else{
-
+      $("#noti_header").text("");
       for(var i=0; i<re.length; i++){
         var background="";
         var image="";
@@ -181,7 +182,7 @@ function statusUpdate(data){
           //바바나 증정일 경우
           image="<img src=\"\/src\/img\/banana_plus.png\" class=\"img\" style=\"width:100%; height:100%;\">";
         }
-        $("#noti_body").text("");
+
         var strVar="";
 strVar += "<div class=\"noti_element\""+background;
 strVar +="onclick=\"noti_manager("+re[i]['idx'];

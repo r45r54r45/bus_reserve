@@ -62,8 +62,8 @@ body {
   <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top: 53px;margin-left:0">
   <div class="noti_tri"></div>
   <div class="modal-dialog" style="width: 96vw;margin: 11px 2vw;" role="document">
-    <div class="modal-content" style="border-top: none;">
-      <div class="modal-header" style="border-bottom:none; padding: 5px 15px 5px;"></div>
+    <div class="modal-content" style="border-top: none; text-align:center;">
+      <div id="noti_header" class="modal-header" style="border-bottom:none; padding: 5px 15px 5px;"></div>
       <div id="noti_body" class="modal-body" style="overflow-y: scroll;
     width: 100%;
     max-height: 130px; padding: 0px 0px 15px; ">
