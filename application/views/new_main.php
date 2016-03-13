@@ -46,14 +46,14 @@ body {
     <div class="setting more_page_btn" style="display:none"><img src="/src/img/setting_btn.png" style="height: 30px;" ></div>
     <div class="notice more_page_btn" onclick="moveto('more_notice')" style="display:none"><img src="/src/img/notice_btn.png" style="height: 30px;" ></div>
 
-    <div class="noti notification" style=""><img id="noti_img" src="/src/img/noti_on.png" style="height: 30px;" >
+    <div class="noti notification" style=""><img id="noti_img" src="/src/img/noti_on.png" style="height: 25px;" >
 
     <span class="notification" id="noti_num" style="position: absolute;
     top: 6px;
     text-shadow: none;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 100;
-    left: 11px;
+    left: 10px;
     color: white;"></span>
   </div>
     <div class="help_button"><img src="/src/img/help_btn.png" style="height: 18px;" ></div>
