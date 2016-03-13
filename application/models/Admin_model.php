@@ -13,7 +13,7 @@ class Admin_model extends CI_Model{
 		return $this->db->query("select max(idx) from notice");
 	}
 	public function pushNoti($nIdx, $user){
-		return $this->db->query("insert into notification (noticeId, user) values ($nIdx, $user)");
+		return $this->db->query("insert into notification (noticeId, user) values ('$nIdx', '$user')");
 	}
 
 }
