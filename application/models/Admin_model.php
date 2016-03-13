@@ -9,7 +9,7 @@ class Admin_model extends CI_Model{
 		return $this->db->query("select * from cookie_user");
 	}
 	public function uploadAndGetNoticeIdx($type, $title, $content, $target){
-		$this->db->query("insert into notice (type, title, content, target) values ('$type', '$title', '$content', '$target')";
+		$this->db->query("insert into notice (type, title, content, target) values ('$type', '$title', '$content', '$target'");
 		return $this->db->query("select max(idx) from notice");
 	}
 	public function pushNoti($nIdx, $user){
