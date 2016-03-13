@@ -333,6 +333,12 @@ div>span{
     color: white;
     cursor:pointer;
 }
+.noti{
+  position: absolute;
+  left: 15px;
+  top: 26px;
+  cursor:pointer;
+}
 .help_button{
   position: absolute;
     right: 15px;

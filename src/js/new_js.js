@@ -64,9 +64,15 @@ $(function(){
     document.getElementById("makelong").style.height="0px";
     content_manager();
   });
-
+  $(".noti").on("click",function(){
+    if(noti_flag==true){
+    $("#noti_modal").modal({
+      backdrop: false
+    }).modal('show');
+  }
+  });
 });
-
+var noti_flag=false;
 function moveto(path){
   if(path=='more_foodmap'){
   location.replace("/#more#foodmap");
@@ -151,6 +157,35 @@ function statusUpdate(data){
   var userIdx=json['idx'];
   $.get("/data/getUnreadNoti/"+userIdx,function(data){
     console.log(data);
+    var re=JSON.parse(data);
+    if(data=""){
+      $("#noti_img").attr("src","/src/img/noti_off.png");
+      $("#noti_num").text("0");
+      $("#noti_body").append("알림 없음.");
+      noti_flag=false;
+    }else{
+      $("#noti_img").attr("src","/src/img/noti_on.png");
+      $("#noti_num").text(re.length);
+      for(var i=0; i<re.length; i++){
+        var strVar="";
+strVar += "<div class=\"card_holder\">";
+strVar += "          <!-- phonebook card-->";
+strVar += "          <div id=\"more_phonebook\"  class=\"card pointer\" style=\"height:50px; margin-bottom:10px; position:relative; padding:5px 10px;\">";
+strVar += "            <div style=\"border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;\">";
+strVar += "              <div style=\"text-align:right;\">";
+strVar += "                <span style=\"font-size: 15px;\" name=\"noti_title\">"+re[i]['title'];
+strVar += "<\/span>              <\/div>";
+strVar += "              <div style=\"text-align:right; margin-top:-5px;\">";
+strVar += "                <span style=\"font-size: 10px;\"    name=\"noti_content\">phonebook"+re[i]['content'];
+strVar += " <\/span>             <\/div>";
+strVar += "            <\/div>";
+strVar += "          <\/div>";
+strVar += "        <\/div>";
+
+        $("#noti_body").append(strvar);
+      }
+      noti_flag=true;
+    }
   });
 
 

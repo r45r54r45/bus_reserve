@@ -43,10 +43,44 @@ body {
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif;">
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <div class="back_arrow"><img src="/src/img/backbtn.png" style="height: 18px;" ></div>
+    <div class="noti notification"><img id="noti_img" src="/src/img/noti_on.png" style="height: 30px;" >
+    <span class="notification" id="noti_num" style="position: absolute;
+    top: 7px;
+    font-size: 13px;
+    font-weight: 100;
+    left: 12px;
+    color: white;"></span></div>
     <div class="help_button"><img src="/src/img/help_btn.png" style="height: 18px;" ></div>
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
+  <!-- notification -->
+  <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="    margin-top: 53px;
+    margin-left: -10px;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div id="noti_body" class="modal-body" style="    padding: 5px;">
+        <!-- <div class="card_holder">
+          <div id="more_phonebook" onclick="parent.moveto('more_phonebook');" class="card pointer" style="height:50px; margin-bottom:10px; position:relative; padding:5px 10px;">
+            <div style="border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;">
+              <div style="text-align:right;">
+                <span style="font-size: 15px;" name="noti_title">연세대학교 내선 번호</span>
+              </div>
+              <div style="text-align:right; margin-top:-5px;">
+                <span style="font-size: 10px;"    name="noti_content">phonebook</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
+      </div>
+
+    </div>
+  </div>
+</div>
 <div id="makelong" style="background-color:#ffffff;overflow:auto;-webkit-overflow-scrolling:touch;width:100%;position:absolute;top:64px;">
 
   <iframe id="contents" frameBorder="0" height="100%">
@@ -66,6 +100,7 @@ body {
       <li id="menu5" class="center-align nav-bottom-border nav-bottom-5" style="border:none" >  <img class="img img-responsive" src="/src/img/5more.png"/></li>
     </ul>
   </div>
+
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
