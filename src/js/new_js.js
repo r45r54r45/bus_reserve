@@ -67,7 +67,6 @@ $(function(){
   $(".noti").on("click",function(){
     $("#noti_modal").modal('toggle');
   });
-  jQuery("time.timeago").timeago();
 });
 var noti_flag=false;
 function moveto(path){
@@ -193,7 +192,7 @@ strVar += "        <\/div>";
     }
   });
 
-
+jQuery("time.timeago").timeago();
 }
 function noti_manager(noti_idx){
 
