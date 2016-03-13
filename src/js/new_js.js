@@ -179,6 +179,7 @@ function statusUpdate(data){
     var re=JSON.parse(data);
     if(re['count']=="0"){
       $("#noti_img").attr("src","/src/img/noti_off.png");
+      $("#noti_num").text("");
     }else{
       $("#noti_img").attr("src","/src/img/noti_on.png");
       $("#noti_num").text(re['count']);
