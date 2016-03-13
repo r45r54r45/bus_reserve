@@ -59,9 +59,9 @@ body {
     margin-left: -10px;">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header" style="padding: 5px 15px 20px;">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel"></h4>
       </div>
       <div id="noti_body" class="modal-body" style="    padding: 5px;">
         <!-- <div class="card_holder">

@@ -166,6 +166,7 @@ function statusUpdate(data){
     }else{
       $("#noti_img").attr("src","/src/img/noti_on.png");
       $("#noti_num").text(re.length);
+      $("#noti_body").text("");
       for(var i=0; i<re.length; i++){
         var strVar="";
 strVar += "<div class=\"card_holder\">";
