@@ -174,7 +174,8 @@ function statusUpdate(data){
         var strVar="";
 strVar += "<div class=\"card_holder\">";
 strVar += "          <!-- phonebook card-->";
-strVar += "          <div id=\"more_phonebook\"  class=\"card pointer\" style=\"height:50px; margin-bottom:10px; position:relative; padding:5px 10px;\">";
+strVar += "          <div id=\"more_phonebook\"  onclick=\"noti_manager("+re[i]['idx'];
+strVar +=");\" class=\"card pointer\" style=\"height:50px; margin-bottom:10px; position:relative; padding:5px 10px;\">";
 strVar += "            <div style=\"border-right:2px solid #fcd90d;height:100%;width:100%;padding-right:5px;\">";
 strVar += "              <div style=\"text-align:right;\">";
 strVar += "                <span style=\"font-size: 15px;\" name=\"noti_title\">"+re[i]['title'];
@@ -192,6 +193,9 @@ strVar += "        <\/div>";
     }
   });
 
+
+}
+function noti_manager(noti_idx){
 
 }
 // str byteToHex(uint8 byte)
