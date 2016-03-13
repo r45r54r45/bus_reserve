@@ -5,7 +5,7 @@
   <div class="panel panel-default">
     <div class="panel-heading notice_heading" role="tab" id="heading<?=$row['idx']?>">
       <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#notice_<?=$row['idx']?>" aria-expanded="true" aria-controls="notice_<?=$row['idx']?>" class="font-12">
+        <a class="collapsed font-12" role="button" data-toggle="collapse" data-parent="#accordion" href="#notice_<?=$row['idx']?>" aria-expanded="true" aria-controls="notice_<?=$row['idx']?>" >
           <?=$row['title']?>
         </a>
       </h4>
