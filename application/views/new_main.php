@@ -49,9 +49,9 @@ body {
     <span class="notification" id="noti_num" style="position: absolute;
     top: 6px;
     text-shadow: none;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 100;
-    left: 10px;
+    left: 11px;
     color: white;"></span>
   </div>
     <div class="help_button"><img src="/src/img/help_btn.png" style="height: 18px;" ></div>
@@ -67,11 +67,11 @@ body {
       <div id="noti_body" class="modal-body" style="overflow-y: scroll;
     width: 100%;
     max-height: 130px; padding: 0px 0px 15px;">
-        <div class="noti_element">
+        <div class="noti_element" onclick="noti_manager()">
           <div class="noti_img"><img src="/src/img/banana_plus.png" class="img" style="width:100%; height:100%;"></div>
           <div class="noti_wrap">
             <div><span class="font-12">문제 문의 답변</span></div>
-            <div><span class="font-10">37 minutes ago</span></div>
+            <div><time class="timeago font-10" datetime=""></time></div>
           </div>
         </div>
 
@@ -107,6 +107,7 @@ body {
   <script src="/src/js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script src="/src/js/new_js.js"></script>
+  <script src="/src/js/jquery.timeago.js" type="text/javascript"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
 </body>

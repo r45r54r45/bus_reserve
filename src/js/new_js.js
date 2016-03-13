@@ -67,6 +67,7 @@ $(function(){
   $(".noti").on("click",function(){
     $("#noti_modal").modal('toggle');
   });
+  jQuery("time.timeago").timeago();
 });
 var noti_flag=false;
 function moveto(path){
@@ -156,17 +157,21 @@ function statusUpdate(data){
   var userIdx=json['idx'];
   $.get("/data/getUnreadNotiCnt/"+userIdx,function(data){
     var re=JSON.parse(data);
-    $("#noti_num").text(re['count']);
+    if(re['count']=="0"){
+      $("#noti_img").attr("src","/src/img/noti_off.png");
+    }else{
+      $("#noti_img").attr("src","/src/img/noti_on.png");
+      $("#noti_num").text(re['count']);
+    }
+
   });
   $.get("/data/getCurrentNoti/"+userIdx,function(data){
     console.log(data);
     var re=JSON.parse(data);
     if(data=""){
-      $("#noti_img").attr("src","/src/img/noti_off.png");
-      $("#noti_body").append("알림 없음.");
+
     }else{
-      $("#noti_img").attr("src","/src/img/noti_on.png");
-      $("#noti_body").text("");
+
       for(var i=0; i<re.length; i++){
 
       }
