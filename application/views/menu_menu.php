@@ -83,7 +83,9 @@ padding-right: 18px;">
 </div>
 </div>
 </div>
-
+<div class="col-xs-12" style="text-align:right">
+  <span style="font-size:8px;">*당일 메뉴가 없으면 여기서 확인하세요. <a href="https://coop.yonsei.ac.kr:5013/Menu/Kukje.asp" target='_blank'>메뉴 확인</a></span>
+</div>
 <div style="height:200px;"></div>
 
 
