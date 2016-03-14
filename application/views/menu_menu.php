@@ -84,7 +84,7 @@ padding-right: 18px;">
 </div>
 </div>
 <div class="col-xs-12" style="text-align:right">
-  <span style="font-size:8px;">*당일 메뉴가 없으면 여기서 확인하세요. <a href="https://coop.yonsei.ac.kr:5013/Menu/Kukje.asp" target='_blank'>메뉴 확인</a></span>
+  <span style="font-size:8px;">*바나나는 월요일 새벽에 주간 메뉴를 받기 때문에 월요일 메뉴 업데이트가 조금 늦어질 수 있습니다. 메뉴 업데이트가 안 돼 있으면 여기서 확인해주세요. <a href="https://coop.yonsei.ac.kr:5013/Menu/Kukje.asp" target='_blank'>메뉴 확인</a></span>
 </div>
 <div style="height:200px;"></div>
 
