@@ -43,11 +43,11 @@
       ?>
       <tr id="<?="tr".$i?>">
         <td class="shown_time" id="<?="shown_time".$i?>"><?=$time[$i]?></td>
-        <td id="<?="tr".$i."_1"?>"></td>
-        <td id="<?="tr".$i."_2"?>"></td>
-        <td id="<?="tr".$i."_3"?>"></td>
-        <td id="<?="tr".$i."_4"?>"></td>
-        <td id="<?="tr".$i."_5"?>"></td>
+        <td class="blank" id="<?="tr".$i."_1"?>"></td>
+        <td class="blank" id="<?="tr".$i."_2"?>"></td>
+        <td class="blank" id="<?="tr".$i."_3"?>"></td>
+        <td class="blank" id="<?="tr".$i."_4"?>"></td>
+        <td class="blank" id="<?="tr".$i."_5"?>"></td>
       </tr>
       <?}?>
     </tbody>
@@ -142,10 +142,12 @@ $(function(){
   getCurrent();
   $("#option1").on("click",function(){
     locFlag="S";
+    $(".blank").css("background","none").text("");
     getCurrent();
   });
   $("#option2").on("click",function(){
     locFlag="I";
+    $(".blank").css("background","none").text("");
     getCurrent();
   });
   $("td").on("click", function(e){
@@ -220,6 +222,7 @@ function getCurrent(){
       }
       var id=json[i]['r_cell'];
       if(locFlag==json[i]['r_loc']){
+        //문제 발생: 이렇게 하니까 마지막에 나오는게 덮어버림
         if(json[i]['r_date']=="null"){ //요일로 반복
           $("#"+id).text("매 주");
         }else{
@@ -227,8 +230,6 @@ function getCurrent(){
         }
         $("#"+id).css("background","#fbd734");
         $("#"+id).append('<div class="x_btn" onclick="cancel(\''+id+'\')"><i style="color:white;" class="glyphicon glyphicon-remove"></i></div>');
-      }else{
-        $("#"+id).css("background","none").text("");
       }
     }
   });
