@@ -142,9 +142,11 @@ $(function(){
   getCurrent();
   $("#option1").on("click",function(){
     locFlag="S";
+    getCurrent();
   });
   $("#option2").on("click",function(){
     locFlag="I";
+    getCurrent();
   });
   $("td").on("click", function(e){
     var cell=e.target.id;
