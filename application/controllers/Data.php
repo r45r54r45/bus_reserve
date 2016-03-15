@@ -94,7 +94,7 @@ class Data extends CI_Controller {
 			$arr['loc']=$case->r_loc;
 			$arr['time']=$case->r_time;
 			$arr['date']=$r_date;
-			$this->curl_request_async("/api/reserve",$arr,'GET');
+			$this->curl_request_async("http://ybanana.yonsei.ac.kr/api/reserve",$arr,'GET');
 		}
 
 
