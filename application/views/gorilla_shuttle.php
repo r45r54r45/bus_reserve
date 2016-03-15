@@ -7,9 +7,9 @@
     </label>
     <label class="btn btn-primary" style="    border-bottom-right-radius: 16px;
     border-top-right-radius: 16px;" id="option2" >
-      <input type="radio" name="options"  autocomplete="off"> 송도
-    </label>
-  </div>
+    <input type="radio" name="options"  autocomplete="off"> 송도
+  </label>
+</div>
 </div>
 <table>
   <thead>
@@ -54,13 +54,13 @@
   </table>
 
 
-<div class="modal" id="modal" tabindex="-1" role="dialog" style="    margin-left: -120px;
-    margin-top: -75px;
-    height: 150px;
-    width: 240px;
-    top: 50%;
-    left: 50%;">
-    <div class="x_btn" id="x_button"><i class="glyphicon glyphicon-remove"></i></div>
+  <div class="modal" id="modal" tabindex="-1" role="dialog" style="    margin-left: -120px;
+  margin-top: -75px;
+  height: 150px;
+  width: 240px;
+  top: 50%;
+  left: 50%;">
+  <div class="x_btn" id="x_button"><i class="glyphicon glyphicon-remove"></i></div>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body" style="text-align:center; padding: 10px;">
@@ -98,7 +98,7 @@ td>.x_btn{
   z-index: 9;
 }
 .gorilla_circle_btn{
-    vertical-align: middle;
+  vertical-align: middle;
   display: inline-table;
   border-radius: 50%;
   width:50px;
@@ -116,7 +116,7 @@ td:nth-child(1){
   color:black !important;
 }
 td,th{
-    height:35px;
+  height:35px;
   width:16.6vw;
   border:1px solid black !important;
   text-align: center;
@@ -139,6 +139,13 @@ var Gtime;
 var Gday;
 var timeArr=['0720','0750','0930','1030','1130','1230','1430','1500','1630','1730','1830','1900','2000','2100'];
 $(function(){
+  getCurrent();
+  $("#option1").on("click",function(){
+    locFlag="S";
+  });
+  $("#option2").on("click",function(){
+    locFlag="I";
+  });
   $("td").on("click", function(e){
     var cell=e.target.id;
     selectedCell=cell;
@@ -189,16 +196,36 @@ function cancel(cellId){
   var user=getCookie("final_userIdx");
   $("#"+cellId).text("").css("background","none");
   $.get("/data/deleteReserve/"+user+"/"+cellId,function(data){
-
+    //TODO 제대로 지워졌는지 확인 response
   });
+  getCurrent();
 }
 function getCurrent(){
-  $.get("/",function(data){
+  var user=getCookie("final_userIdx");
+  $.get("/data/getPersonal/"+user,function(data){
     //data 로 이미 신청한 내역을 가져온다.
     //날짜로 저장된 것의 경우 현재 주의 범위에 해당되면 가져온다.
     //요일로 저장된 것의 경우 다 가져온다.
     //세로로는 0부터 13까지 가로는 1부터 5까지
     //화면에 채워준다
+    var d=new Date();
+    var json=JSON.parse(data);
+    for(var i=0;i<json.length;i++){
+      if(json[i]['r_date']!="null"&&json[i]['r_date']<(d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate()))){
+        continue; //지난 일이면
+      }
+      var id=json[i]['r_cell'];
+      if(locFlag==json[i]['r_loc']){
+        $("#"+id).css("background","#fbd734");
+        $("#"+id).append('<div class="x_btn" onclick="cancel(\''+id+'\')"><i style="color:white;" class="glyphicon glyphicon-remove"></i></div>');
+        if(json[i]['r_date']=="null"){ //요일로 반복
+          $("#"+id).text("매 주");
+        }else{
+          $("#"+id).text("한 주");
+        }
+
+      }
+    }
   });
 }
 function reserve(time, day, loc, type){
@@ -221,25 +248,22 @@ function reserve(time, day, loc, type){
   $.get("/data/addReserve/"+user+"/"+date+"/"+week+"/"+time+"/"+loc+"/"+selectedCell,function(data){
     //파라미터로 예약할 시간 요일, 회원번호를 보낸다.
     //성공이면
-    $("#"+selectedCell).css("background","#fbd734");
-    if(type==1){$("#"+selectedCell).text("한 주");}
-    else if(type==2){$("#"+selectedCell).text("매 주");}
-    $("#"+selectedCell).append('<div class="x_btn" onclick="cancel(\''+selectedCell+'\')"><i style="color:white;" class="glyphicon glyphicon-remove"></i></div>');
   });
+  getCurrent();
 
 }
 function getCookie(cName) {
-    cName = cName + '=';
-    var cookieData = document.cookie;
-    var start = cookieData.indexOf(cName);
-    var cValue = '';
-    if(start != -1){
-        start += cName.length;
-        var end = cookieData.indexOf(';', start);
-        if(end == -1)end = cookieData.length;
-        cValue = cookieData.substring(start, end);
-    }
-    return unescape(cValue);
+  cName = cName + '=';
+  var cookieData = document.cookie;
+  var start = cookieData.indexOf(cName);
+  var cValue = '';
+  if(start != -1){
+    start += cName.length;
+    var end = cookieData.indexOf(';', start);
+    if(end == -1)end = cookieData.length;
+    cValue = cookieData.substring(start, end);
+  }
+  return unescape(cValue);
 }
 function pad(n){return n<10 ? '0'+n : n}
 </script>
