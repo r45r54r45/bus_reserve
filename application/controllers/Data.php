@@ -99,7 +99,7 @@ class Data extends CI_Controller {
 
 
 	}
-	function curl_request_async($url, $params, $type='POST')
+	public function curl_request_async($url, $params, $type='POST')
 {
     foreach ($params as $key => &$val)
     {
