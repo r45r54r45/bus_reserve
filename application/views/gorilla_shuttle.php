@@ -211,17 +211,17 @@ function getCurrent(){
 }
 function reserve(time, day, loc, type){
   var user=getCookie("final_userIdx");
-  var date="";
-  var week="";
+  var date="null";
+  var week="null";
   var d=new Date();
   //type은 한주(1)인지 매주(2)인지 알려주는 인자로
   if(type=1){ //한주면 날짜를 넣는다.
     if(d.getDay()>day){ //이미 지낫을 경우에는 다음 주로 예약을 잡는다.
       d.setDate(d.getDate()+7-(d.getDay()-day));
-      date=d.getFullYear()+""+(d.getMonth()+1)+""+d.getDate();
+      date=d.getFullYear()+""+pad(d.getMonth()+1)+""+pad(d.getDate());
     }else{ //아직 안지낫으면 이번 주로 예약을 잡는다.
       d.setDate(d.getDate()+(day-d.getDay()));
-      date=d.getFullYear()+""+(d.getMonth()+1)+""+d.getDate();
+      date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
     }
   }else{ //매주면 요일을 넣는다.
     week=day;
@@ -249,4 +249,5 @@ function getCookie(cName) {
     }
     return unescape(cValue);
 }
+function pad(n){return n<10 ? '0'+n : n}
 </script>
