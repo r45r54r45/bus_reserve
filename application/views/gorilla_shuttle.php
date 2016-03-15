@@ -218,6 +218,7 @@ function getCurrent(){
     var d=new Date();
     var json=JSON.parse(data);
     for(var i=0;i<json.length;i++){
+      console.log(json);
       if(json[i]['r_date']!="null"&&json[i]['r_date']<(d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate()))){
         continue; //지난 일이면
       }
