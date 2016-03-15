@@ -189,7 +189,7 @@ function cancel(cellId){
   var user=getCookie("final_userIdx");
   $("#"+cellId).text("").css("background","none");
   $.get("/data/deleteReserve/"+user+"/"+cellId,function(data){
-    console.log(data);
+
   });
 }
 function getCurrent(){

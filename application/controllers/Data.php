@@ -62,6 +62,12 @@ class Data extends CI_Controller {
 		$this->load->model("reserve");
 		$this->reserve->deleteReserve($id, $cell);
 	}
+	public function getPersonal($id){
+		$this->load->model("reserve");
+		$query=$this->reserve->getPersonal($id);
+		$result=$query->result_array();
+		echo json_encode($result);
+	}
 	public function run(){
 		//- 일단 대상이 되는 항목을 모두 가져옴
 		//1. 특정 일만 하는 경우

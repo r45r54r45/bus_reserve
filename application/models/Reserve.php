@@ -14,6 +14,9 @@ class Reserve extends CI_Model{
 	public function deleteReserve($id, $cell){
 		return $this->db->query("delete from r_reserve where r_user='$id' and r_cell='$cell'");
 	}
+	public function getPersonal($id){
+		return $this->db->query("select r_cell, r_loc, r_date from r_reserve where r_user='$id'");
+	}
 	public function getByDate($r_date){
 		$r= $this->db->query("select id, pw, r_reserve_id, r_loc, r_time from r_reserve join cookie_user on r_user=idx where r_date='$r_date'");
 		return $r->result();
