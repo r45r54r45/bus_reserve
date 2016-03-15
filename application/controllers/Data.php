@@ -85,14 +85,16 @@ class Data extends CI_Controller {
 		$result_week=$this->reserve->getByWeek($r_week);
 		$result=array_merge($result_date,$result_week);
 		//비동기
-		foreach($result as $case){
-			$case->id;
-			$case->pw;
-			echo $case->r_reserve_id;
-			$case->r_loc;
-			$case->r_time;
-			$r_date;
 
+		foreach($result as $case){
+			$arr=array();
+			$arr['id']=$case->id;
+			$arr['pw']=$case->pw;
+		  // $arr['']=$case->r_reserve_id;
+			$arr['loc']=$case->r_loc;
+			$arr['time']=$case->r_time;
+			$arr['date']=$r_date;
+			curl_request_async("/api/reserve",$arr,'GET');
 		}
 
 
