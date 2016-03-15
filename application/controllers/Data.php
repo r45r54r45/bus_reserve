@@ -94,12 +94,12 @@ class Data extends CI_Controller {
 			$arr['loc']=$case->r_loc;
 			$arr['time']=$case->r_time;
 			$arr['date']=$r_date;
-			curl_request_async("/api/reserve",$arr,'GET');
+			$this->curl_request_async("/api/reserve",$arr,'GET');
 		}
 
 
 	}
-	public function curl_request_async($url, $params, $type='POST')
+	private function curl_request_async($url, $params, $type='POST')
 {
     foreach ($params as $key => &$val)
     {
