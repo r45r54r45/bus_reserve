@@ -169,7 +169,6 @@ $(function(){
   });
   $("#btn1").on("click",function(){
     if(typeFlag==1){
-      console.log(Gtime+" "+Gday);
       reserve(Gtime, Gday, locFlag, 1);
 
       $("#modal").modal('hide');
@@ -179,9 +178,7 @@ $(function(){
   });
   $("#btn2").on("click",function(){
     if(typeFlag==1){
-      $("#"+selectedCell).css("background","#fbd734");
-      $("#"+selectedCell).text("매 주");
-      $("#"+selectedCell).append('<div class="x_btn" onclick="cancel(\''+selectedCell+'\')"><i style="color:white;" class="glyphicon glyphicon-remove"></i></div>');
+      reserve(Gtime, Gday, locFlag, 2);
       $("#modal").modal('hide');
     }else if(typeFlag==2){
 
