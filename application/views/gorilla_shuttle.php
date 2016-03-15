@@ -223,9 +223,7 @@ function getCurrent(){
         continue; //지난 일이면
       }
       var id=json[i]['r_cell'];
-      console.log(i+" : "+locFlag+" : "+json[i]['r_loc']);
       if(locFlag==json[i]['r_loc']){
-        console.log(i+" : pass");
         if(json[i]['r_date']=="null"){ //요일로 반복
           $("#"+id).text("매 주");
         }else{
@@ -233,6 +231,8 @@ function getCurrent(){
         }
         $("#"+id).css("background","#fbd734");
         $("#"+id).append('<div class="x_btn" onclick="cancel(\''+id+'\')"><i style="color:white;" class="glyphicon glyphicon-remove"></i></div>');
+      }else{
+        $("#"+id).css("background","none").text("");
       }
     }
   });
