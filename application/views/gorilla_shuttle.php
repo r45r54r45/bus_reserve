@@ -212,7 +212,7 @@ function reserve(time, day, loc, type){
   var week="null";
   var d=new Date();
   //type은 한주(1)인지 매주(2)인지 알려주는 인자로
-  if(type=1){ //한주면 날짜를 넣는다.
+  if(type==1){ //한주면 날짜를 넣는다.
     if(d.getDay()>day){ //이미 지낫을 경우에는 다음 주로 예약을 잡는다.
       d.setDate(d.getDate()+7-(d.getDay()-day));
       date=d.getFullYear()+""+pad(d.getMonth()+1)+""+pad(d.getDate());
