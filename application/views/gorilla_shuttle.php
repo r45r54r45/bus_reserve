@@ -197,8 +197,9 @@ function cancel(cellId){
   $("#"+cellId).text("").css("background","none");
   $.get("/data/deleteReserve/"+user+"/"+cellId,function(data){
     //TODO 제대로 지워졌는지 확인 response
+    getCurrent();
   });
-  getCurrent();
+
 }
 function getCurrent(){
   var user=getCookie("final_userIdx");
@@ -247,8 +248,9 @@ function reserve(time, day, loc, type){
   $.get("/data/addReserve/"+user+"/"+date+"/"+week+"/"+time+"/"+loc+"/"+selectedCell,function(data){
     //파라미터로 예약할 시간 요일, 회원번호를 보낸다.
     //성공이면
+    getCurrent();
   });
-  getCurrent();
+
 
 }
 function getCookie(cName) {
