@@ -217,13 +217,15 @@ function getCurrent(){
     //화면에 채워준다
     var d=new Date();
     var json=JSON.parse(data);
+    console.log(json);
     for(var i=0;i<json.length;i++){
-      console.log(json);
       if(json[i]['r_date']!="null"&&json[i]['r_date']<(d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate()))){
         continue; //지난 일이면
       }
       var id=json[i]['r_cell'];
+      console.log(i+" : "+locFlag+" : "+json[i]['r_loc']);
       if(locFlag==json[i]['r_loc']){
+        console.log(i+" : pass");
         if(json[i]['r_date']=="null"){ //요일로 반복
           $("#"+id).text("매 주");
         }else{
