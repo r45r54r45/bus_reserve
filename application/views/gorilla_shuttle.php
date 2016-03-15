@@ -189,7 +189,7 @@ function cancel(cellId){
   var user=getCookie("final_userIdx");
   $("#"+cellId).text("").css("background","none");
   $.get("/data/deleteReserve/"+user+"/"+cellId,function(data){
-    //파라미터로 제거할 시간 요일을 보낸다.
+    console.log(data);
   });
 }
 function getCurrent(){
