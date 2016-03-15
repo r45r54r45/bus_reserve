@@ -87,14 +87,30 @@ class Data extends CI_Controller {
 		$result_week=$this->reserve->getByWeek($r_week);
 		$result=array_merge($result_date,$result_week);
 		//비동기
+
+		//
+			$arr=array();
+
+		//
+		$i=0;
 		foreach($result as $case){
-			$case->id;
-			$case->pw;
-			$case->r_reserve_id;
-			$case->r_date;
-			$case->r_loc;
-			$case->r_time;
+			// $case->id;
+			// $case->pw;
+			// $case->r_reserve_id;
+			// $case->r_loc;
+			// $case->r_time;
+			// $r_date;
+			$arr[$i]['id']=$case->id;
+			$arr[$i]['pw']=$case->pw;
+			$arr[$i]['rid']=$case->r_reserve_id;
+			$arr[$i]['loc']=$case->r_loc;
+			$arr[$i]['time']=$case->r_time;
+			$arr[$i]['date']=$r_date;
+			$i++;
 		}
+		echo json_encode($arr);
+
+
 	}
 	public function food()
 	{

@@ -141,15 +141,11 @@ var timeArr=['0720','0750','0930','1030','1130','1230','1430','1500','1630','173
 $(function(){
   getCurrent();
   $("#option1").on("click",function(){
-    console.log("1");
     locFlag="S";
-    console.log(locFlag);
     getCurrent();
   });
   $("#option2").on("click",function(){
-    console.log("2");
     locFlag="I";
-    console.log(locFlag);
     getCurrent();
   });
   $("td").on("click", function(e){
@@ -217,7 +213,6 @@ function getCurrent(){
     //화면에 채워준다
     var d=new Date();
     var json=JSON.parse(data);
-    console.log(json);
     for(var i=0;i<json.length;i++){
       if(json[i]['r_date']!="null"&&json[i]['r_date']<(d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate()))){
         continue; //지난 일이면
