@@ -34,4 +34,7 @@ class Data_model extends CI_Model{
 	public function getNotice(){
 		return $this->db->query("select * from noticeBoard order by idx desc");
 	}
+	public function addReserve(){
+		return;
+	}
 }

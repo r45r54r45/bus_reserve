@@ -60,11 +60,17 @@ class New_ver extends CI_Controller {
 		$this->load->view('more_delivery');
 		$this->load->view('menu_footer');
 	}
+
 	public function printhub(){
-				$this->load->helper('url');
+			$this->load->helper('url');
 		redirect('http://freshman.yonsei.ac.kr/prints');
 	}
 	public function normal_shuttle(){
 			$this->load->view('shuttle_login');
+	}
+	public function gorilla_shuttle(){
+			$this->load->view('menu_header');
+			$this->load->view('gorilla_shuttle');
+			$this->load->view('menu_footer');
 	}
 }
