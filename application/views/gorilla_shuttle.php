@@ -213,6 +213,7 @@ function getCurrent(){
     //화면에 채워준다
     var d=new Date();
     var json=JSON.parse(data);
+    console.log(json);
     for(var i=0;i<json.length;i++){
       if(json[i]['r_date']!="null"&&json[i]['r_date']<(d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate()))){
         continue; //지난 일이면
