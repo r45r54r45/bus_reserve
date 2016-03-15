@@ -210,7 +210,7 @@ function getCurrent(){
   });
 }
 function reserve(time, day, loc, type){
-  var user=final_userIdx;
+  var user=getCookie("final_userIdx");
   console.log(user);
   $.get("/",function(data){
     //파라미터로 예약할 시간 요일, 회원번호를 보낸다.

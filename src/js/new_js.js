@@ -175,6 +175,7 @@ function statusUpdate(data){
   var json=JSON.parse(data);
   var userIdx=json['idx'];
   final_userIdx=userIdx;
+  setCookie("final_userIdx",final_userIdx,1000);
   $.get("/data/getUnreadNotiCnt/"+userIdx,function(data){
     var re=JSON.parse(data);
     if(re['count']=="0"){
