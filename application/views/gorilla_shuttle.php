@@ -216,14 +216,13 @@ function getCurrent(){
       }
       var id=json[i]['r_cell'];
       if(locFlag==json[i]['r_loc']){
-        $("#"+id).css("background","#fbd734");
-        $("#"+id).append('<div class="x_btn" onclick="cancel(\''+id+'\')"><i style="color:white;" class="glyphicon glyphicon-remove"></i></div>');
         if(json[i]['r_date']=="null"){ //요일로 반복
           $("#"+id).text("매 주");
         }else{
           $("#"+id).text("한 주");
         }
-
+        $("#"+id).css("background","#fbd734");
+        $("#"+id).append('<div class="x_btn" onclick="cancel(\''+id+'\')"><i style="color:white;" class="glyphicon glyphicon-remove"></i></div>');
       }
     }
   });
