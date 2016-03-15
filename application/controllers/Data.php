@@ -58,9 +58,9 @@ class Data extends CI_Controller {
 		$this->load->model("reserve");
 		$this->reserve->addReserve($id, $date, $week, $time, $loc, $cell);
 	}
-	public function deleteReserve($id, $cell){
+	public function deleteReserve($id, $cell, $loc){
 		$this->load->model("reserve");
-		$this->reserve->deleteReserve($id, $cell);
+		$this->reserve->deleteReserve($id, $cell, $loc);
 	}
 	public function getPersonal($id){
 		$this->load->model("reserve");

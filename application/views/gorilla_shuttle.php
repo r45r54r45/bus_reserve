@@ -197,7 +197,7 @@ $(function(){
 function cancel(cellId){
   var user=getCookie("final_userIdx");
   $("#"+cellId).text("").css("background","none");
-  $.get("/data/deleteReserve/"+user+"/"+cellId,function(data){
+  $.get("/data/deleteReserve/"+user+"/"+cellId+"/"+locFlag,function(data){
     //TODO 제대로 지워졌는지 확인 response
     getCurrent();
   });
