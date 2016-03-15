@@ -12,7 +12,7 @@ class Reserve extends CI_Model{
 	return $this->db->query("insert into r_reserve (r_user,	r_date,	r_week,	r_time,	r_loc, r_cell) values ('$id', '$date', '$week', '$time', '$loc', '$cell')");
 	}
 	public function deleteReserve($id, $cell){
-		return $this->db->query("delete from reserveList where r_user='$id' and r_cell='$cell'");
+		return $this->db->query("delete from r_reserve where r_user='$id' and r_cell='$cell'");
 	}
 	public function getByDate($r_date){
 		$r= $this->db->query("select id, pw, r_reserve_id, r_loc, r_time from r_reserve join cookie_user on r_user=idx where r_date='$r_date'");
