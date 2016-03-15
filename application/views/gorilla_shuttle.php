@@ -211,13 +211,23 @@ function getCurrent(){
 }
 function reserve(time, day, loc, type){
   var user=getCookie("final_userIdx");
-  console.log(user);
-  $.get("/",function(data){
+  var date="";
+  var week="";
+  var d=new Date();
+  //type은 한주(1)인지 매주(2)인지 알려주는 인자로
+  if(type=1){ //한주면 날짜를 넣는다.
+    if(d.getDay()>day){ //이미 지낫을 경우에는 다음 주로 예약을 잡는다.
+      d.setDate(d.getDate()+7-(d.getDay()-day);
+      date=d.getFullYear()+""+(d.getMonth()+1)+""+d.getDate();
+    }else{ //아직 안지낫으면 이번 주로 예약을 잡는다.
+      d.setDate(d.getDate()+(day-d.getDay());
+      date=d.getFullYear()+""+(d.getMonth()+1)+""+d.getDate();
+    }
+  }else{ //매주면 요일을 넣는다.
+    week=day;
+  }
+  $.get("/data/addReserve/"+user+"/"+date+"/"+week+"/"+time+"/"+loc,function(data){
     //파라미터로 예약할 시간 요일, 회원번호를 보낸다.
-    //type은 한주(1)인지 매주(2)인지 알려주는 인자로
-    //한주면 날짜를 넣는다.
-    //매주면 요일을 넣는다.
-
     //성공이면
     $("#"+selectedCell).css("background","#fbd734");
     if(type=1){$("#"+selectedCell).text("한 주");}
