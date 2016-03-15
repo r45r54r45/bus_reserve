@@ -88,7 +88,7 @@ class Data extends CI_Controller {
 		foreach($result as $case){
 			$case->id;
 			$case->pw;
-			$case->r_reserve_id;
+			echo $case->r_reserve_id;
 			$case->r_loc;
 			$case->r_time;
 			$r_date;
