@@ -186,14 +186,9 @@ $(function(){
   });
 });
 function cancel(cellId){
-  console.log("cancel: "+cellId);
+  var user=getCookie("final_userIdx");
   $("#"+cellId).text("").css("background","none");
-  var cellArr=cellId.split("_");
-  var shown_time=$("#shown_time"+cellArr[0]);
-  var time=timeArr[cellArr[0]]; //time
-  var day=cellArr[1]; //요일 1~5
-
-  $.get("/",function(data){
+  $.get("/data/deleteReserve/"+user+"/"+selectedCell,function(data){
     //파라미터로 제거할 시간 요일을 보낸다.
   });
 }
@@ -223,12 +218,12 @@ function reserve(time, day, loc, type){
   }else{ //매주면 요일을 넣는다.
     week=day;
   }
-  $.get("/data/addReserve/"+user+"/"+date+"/"+week+"/"+time+"/"+loc,function(data){
+  $.get("/data/addReserve/"+user+"/"+date+"/"+week+"/"+time+"/"+loc+"/"+selectedCell,function(data){
     //파라미터로 예약할 시간 요일, 회원번호를 보낸다.
     //성공이면
     $("#"+selectedCell).css("background","#fbd734");
-    if(type=1){$("#"+selectedCell).text("한 주");}
-    else if(type=2){$("#"+selectedCell).text("매 주");}
+    if(type==1){$("#"+selectedCell).text("한 주");}
+    else if(type==2){$("#"+selectedCell).text("매 주");}
     $("#"+selectedCell).append('<div class="x_btn" onclick="cancel(\''+selectedCell+'\')"><i style="color:white;" class="glyphicon glyphicon-remove"></i></div>');
   });
 

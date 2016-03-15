@@ -54,9 +54,13 @@ class Data extends CI_Controller {
 		$this->load->model("reserve");
 		$this->reserve->addUser($id, $pw);
 	}
-	public function addReserve($id, $date, $week, $time, $loc){
+	public function addReserve($id, $date, $week, $time, $loc, $cell){
 		$this->load->model("reserve");
-		$this->reserve->addReserve($id, $date, $week, $time, $loc);
+		$this->reserve->addReserve($id, $date, $week, $time, $loc, $cell);
+	}
+	public function deleteReserve($id, $cell){
+		$this->load->model("reserve");
+		$this->reserve->deleteReserve($id, $cell);
 	}
 	public function run(){
 		//- 일단 대상이 되는 항목을 모두 가져옴
