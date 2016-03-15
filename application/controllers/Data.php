@@ -77,41 +77,63 @@ class Data extends CI_Controller {
 		//그러면 week(요일)로 정기적으로 신청한 것에 대해서는 알맞는 날짜를 자동으로 구해서 해줘야하는거지...
 		date_default_timezone_set('Asia/Seoul');
 		$r_date=date("Ymd",strtotime("+2 day"));
-		echo $r_date;
 		//target r_date
 		$r_week=date("w",strtotime("+2 day"));
-		echo $r_week;
 		//target r_week
 		$this->load->model("reserve");
 		$result_date=$this->reserve->getByDate($r_date);
 		$result_week=$this->reserve->getByWeek($r_week);
 		$result=array_merge($result_date,$result_week);
 		//비동기
-
-		//
-			$arr=array();
-
-		//
-		$i=0;
 		foreach($result as $case){
-			// $case->id;
-			// $case->pw;
-			// $case->r_reserve_id;
-			// $case->r_loc;
-			// $case->r_time;
-			// $r_date;
-			$arr[$i]['id']=$case->id;
-			$arr[$i]['pw']=$case->pw;
-			$arr[$i]['rid']=$case->r_reserve_id;
-			$arr[$i]['loc']=$case->r_loc;
-			$arr[$i]['time']=$case->r_time;
-			$arr[$i]['date']=$r_date;
-			$i++;
+			$case->id;
+			$case->pw;
+			$case->r_reserve_id;
+			$case->r_loc;
+			$case->r_time;
+			$r_date;
+
 		}
-		echo json_encode($arr);
 
 
 	}
+	function curl_request_async($url, $params, $type='POST')
+{
+    foreach ($params as $key => &$val)
+    {
+        if (is_array($val))
+            $val = implode(',', $val);
+        $post_params[] = $key.'='.urlencode($val);
+    }
+    $post_string = implode('&', $post_params);
+
+    $parts=parse_url($url);
+
+    if ($parts['scheme'] == 'http')
+    {
+        $fp = fsockopen($parts['host'], isset($parts['port'])?$parts['port']:80, $errno, $errstr, 30);
+    }
+    else if ($parts['scheme'] == 'https')
+    {
+        $fp = fsockopen("ssl://" . $parts['host'], isset($parts['port'])?$parts['port']:443, $errno, $errstr, 30);
+    }
+
+    // Data goes in the path for a GET request
+    if('GET' == $type)
+        $parts['path'] .= '?'.$post_string;
+
+    $out = "$type ".$parts['path']." HTTP/1.1\r\n";
+    $out.= "Host: ".$parts['host']."\r\n";
+    $out.= "Content-Type: application/x-www-form-urlencoded\r\n";
+    $out.= "Content-Length: ".strlen($post_string)."\r\n";
+    $out.= "Connection: Close\r\n\r\n";
+    // Data goes in the request body for a POST request
+    if ('POST' == $type && isset($post_string))
+        $out.= $post_string;
+
+    fwrite($fp, $out);
+    fclose($fp);
+}
 	public function food()
 	{
 		$a; $b;
