@@ -141,11 +141,15 @@ var timeArr=['0720','0750','0930','1030','1130','1230','1430','1500','1630','173
 $(function(){
   getCurrent();
   $("#option1").on("click",function(){
+    console.log("1");
     locFlag="S";
+    console.log(locFlag);
     getCurrent();
   });
   $("#option2").on("click",function(){
+    console.log("2");
     locFlag="I";
+    console.log(locFlag);
     getCurrent();
   });
   $("td").on("click", function(e){
