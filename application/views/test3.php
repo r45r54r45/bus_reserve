@@ -1,6 +1,9 @@
 <?
-$result=file_get_contents("http://ybanana.yonsei.ac.kr/api/login?id=2014198024&pw=185512");
-var_dump(json_decode($result));
+	$q = new SplQueue();
+  $q->enqueue(1);
+  $q->enqueue(2);
+  $q->enqueue(3);
 
-$kk=json_decode($result);
-print $kk->{'result'};
+  echo $q->dequeue();
+  echo $q->dequeue();
+  echo $q->dequeue();

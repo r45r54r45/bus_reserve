@@ -85,6 +85,7 @@ class Data extends CI_Controller {
 		$result_week=$this->reserve->getByWeek($r_week);
 		$result=array_merge($result_date,$result_week);
 		//비동기
+		$q = new SplQueue();
 
 		foreach($result as $case){
 			$arr=array();
@@ -97,7 +98,24 @@ class Data extends CI_Controller {
 			// $this->curl_request_async("http://ybanana.yonsei.ac.kr/api/reserve",$arr,'GET');
 			file_get_contents("http://ybanana.yonsei.ac.kr/api/reserve?".http_build_query($arr));
 			$result=file_get_contents("http://ybanana.yonsei.ac.kr/api/status?".http_build_query($arr));
-			json_decode($result);
+			$kk=json_decode($result);
+			$boolResult=$kk->{'result'};
+			if(!$boolResult){
+				$q->enqueue(http_build_query($arr));
+				echo "실패 목록에 들어감: ".http_build_query($arr);
+			}
+		}
+		while(!($q->isEmpty())){
+			file_get_contents("http://ybanana.yonsei.ac.kr/api/reserve?".$q->dequeue());
+			$result=file_get_contents("http://ybanana.yonsei.ac.kr/api/status?".$q->dequeue());
+			$kk=json_decode($result);
+			$boolResult=$kk->{'result'};
+			if(!$boolResult){
+				$q->enqueue($q->dequeue());
+				echo "실패 목록에 들어감: ".$q->dequeue();
+			}else{
+				echo "성공";
+			}
 		}
 
 
