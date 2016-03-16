@@ -72,6 +72,8 @@ $(function(){
       alert("입력을 확인해주세요");
       return;
     }
+    setCookie("sid",$("#sid").val(),100);
+    setCookie("spw",$("#spw").val(),100);
     var final_userIdx=getCookie("final_userIdx");
     $.get("http://ybanana.yonsei.ac.kr/data/gorilla_login/"+id+"/"+pw+"/"+final_userIdx, function(data){
       var json=JSON.parse(data);
@@ -94,12 +96,21 @@ $(function(){
     setCookie("sid",$("#sid").val(),100);
     setCookie("spw",$("#spw").val(),100);
     $("#shuttle_top").css("display","none");
-    var url="/new_ver/normal_shuttle?id="+id+"&pw="+pw;
-    $("#normal_shuttle").attr("src",url).on("load",function(){
-      $("#normal_shuttle").contents().find("#form").submit();
-
-      $("#normal_shuttle").css("display","");
+    $.get("http://ybanana.yonsei.ac.kr/api/login/"+id+"/"+pw, function(data){
+      var json=JSON.parse(data);
+      var result=json['result'];
+      if(result){
+        var url="/new_ver/normal_shuttle?id="+id+"&pw="+pw;
+        $("#normal_shuttle").attr("src",url).on("load",function(){
+          $("#normal_shuttle").contents().find("#form").submit();
+          $("#normal_shuttle").css("display","");
+        });
+      }else{
+        alert("학번인증이 실패했습니다.");
+      }
     });
+
+
   });
 
   // $("#shuttle_top")
