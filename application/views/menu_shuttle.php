@@ -29,10 +29,10 @@
         </div>
 
         <div class="col-xs-12" style="">
-          <!-- <div style="inline-block; width:40px; height:40px; border-radius:50%; border:1px solid #46292b; float:right;  background:#46292b; line-height:80%;    display: table;">
+          <div id="gorilla_login_btn" style="inline-block; width:40px; height:40px; border-radius:50%; border:1px solid #46292b; float:right;  background:#46292b; line-height:80%;    display: table;">
             <span style="color:white; display: table-cell;
     vertical-align: middle;font-size:10px;">고릴라<br>Login</span>
-          </div> -->
+          </div>
             <div id="normal_login_btn" style="inline-block; width:40px; height:40px; border-radius:50%; border:1px solid #46292b; float:right; margin-right:10px;display: table;">
               <span style="color:#46292b; display: table-cell;
             vertical-align: middle; font-size:10px;">일반<br>Login</span>
@@ -60,6 +60,24 @@ body {
 $(function(){
   $("#sid").val(getCookie("sid"));
   $("#spw").val(getCookie("spw"));
+  $("#gorilla_login_btn").on("click",function(){
+    var id=$("#sid").val();
+    var pw=$("#spw").val();
+    if(id==""||pw==""){
+      alert("입력을 확인해주세요");
+      return;
+    }
+    var final_userIdx=getCookie("final_userIdx");
+    $.get("http://ybanana.yonsei.ac.kr/data/gorilla_login/"+id+"/"+pw+"/"+final_userIdx, function(data){
+      var json=JSON.parse(data);
+      var result=json['result'];
+      if(result){
+        location.href="http://ybanana.yonsei.ac.kr/new_ver/gorilla_shuttle";
+      }else{
+        alert("고릴라 회원이 아닙니다!");
+      }
+    });
+  });
   $("#normal_login_btn").on("click",function(){
     var id=$("#sid").val();
     var pw=$("#spw").val();

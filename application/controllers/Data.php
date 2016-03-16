@@ -31,6 +31,17 @@ class Data extends CI_Controller {
 		$this->load->model("data_model");
 		$result=$this->data_model->setNotiRead($noti_idx);
 	}
+	public function gorilla_login($id, $pw, $final_userIdx){
+		$this->load->model("data_model");
+		$result=$this->data_model->gorilla_login($id, $pw, $final_userIdx);
+		$arr=array();
+		if($result->num_rows()==1){
+			$arr['result']=true;
+		}else{
+			$arr['result']=false;
+		}
+		echo json_encode($arr);
+	}
 	public function getUnreadNotiCnt($userIdx){
 		$this->load->model("data_model");
 		$result=$this->data_model->getUnreadNotiCnt($userIdx);

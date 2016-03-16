@@ -37,5 +37,7 @@ class Data_model extends CI_Model{
 	public function addReserve($user, $loc, $date, $day, $time){
 		return $this->db->query("insert into reserveList values ('$user', '$loc', '$date', '$day', '$time')");
 	}
-	
+	public function gorilla_login($id, $pw, $final_userIdx){
+		return $this->db->query("select * from cookie_user where id='$id' and pw='$pw' and idx='$final_userIdx'");
+	}
 }
