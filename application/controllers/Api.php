@@ -56,7 +56,6 @@ class Api extends CI_Controller {
 
 public function status(){
 	$file = file_get_contents('http://ysweb.yonsei.ac.kr/busTest/reserveinfo2.jsp', false, $this->context);
-	echo $file;
 	$DOM = new DOMDocument;
 	$DOM->loadHTML($file);
 	$tbody = $DOM->getElementsByTagName('tbody');
@@ -88,11 +87,9 @@ public function status(){
 		// $result["$i"]["time"]["date"]=$date;
 		// $result["$i"]["time"]["time"]=$time;
 		// $result["$i"]["seatNum"]=$seatNum;
-		echo ":::".$departure[0].":::";
-		$loc_result=(trim($departure[0])=="신촌캠퍼스"?"S":"I");
+		$loc_result=(trim($departure[0])=="ì ì´ìº í¼ì¤ "?"S":"I");
 		$date_result=$temp_date[0].$temp_date[1].$temp_date[2];
 		$time_result=$time;
-		echo $loc_result." : ".$date_result." : ".$time_result;
 		if($loc==$loc_result&&$bdt==$date_result&&$shm==$time_result){
 			$result['result']=true;
 			echo json_encode($result);
