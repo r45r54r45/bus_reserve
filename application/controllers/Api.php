@@ -89,7 +89,7 @@ public function status(){
 		// $result["$i"]["time"]["time"]=$time;
 		// $result["$i"]["seatNum"]=$seatNum;
 		echo ":::".substr($departure[1],0,1).":::";
-		$loc_result=(substr($departure[1],0,1)=="신촌캠퍼스"?"S":"I");
+		$loc_result=(substr($departure[1],0,1)=="S"?"S":"I");
 		$date_result=$temp_date[0].$temp_date[1].$temp_date[2];
 		$time_result=$time;
 		echo $loc_result." : ".$date_result." : ".$time_result;
