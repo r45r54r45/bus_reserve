@@ -96,7 +96,7 @@ $(function(){
     setCookie("sid",$("#sid").val(),100);
     setCookie("spw",$("#spw").val(),100);
     $("#shuttle_top").css("display","none");
-    $.get("http://ybanana.yonsei.ac.kr/api/login/"+id+"/"+pw, function(data){
+    $.get("http://ybanana.yonsei.ac.kr/api/login?id="+id+"&pw="+pw, function(data){
       var json=JSON.parse(data);
       var result=json['result'];
       if(result){
