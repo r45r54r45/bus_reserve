@@ -56,6 +56,7 @@ class Api extends CI_Controller {
 
 public function status(){
 	$file = file_get_contents('http://ysweb.yonsei.ac.kr/busTest/reserveinfo2.jsp', false, $this->context);
+	echo $file;
 	$DOM = new DOMDocument;
 	$DOM->loadHTML($file);
 	$tbody = $DOM->getElementsByTagName('tbody');
@@ -67,6 +68,7 @@ public function status(){
 
 	for ($i=0; $i < $tr->length; $i++) {
 		$td=$tr->item($i)->getElementsByTagName('td');
+		//TODO 결과값이 아예 없을 때에 대한 error 핸들링 해줘야함.
 		$departure= $td->item(0)->nodeValue;
 		$time=$td->item(1)->nodeValue;
 		$seatNum=$td->item(2)->nodeValue;
