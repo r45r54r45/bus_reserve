@@ -108,15 +108,16 @@ class Data extends CI_Controller {
 			}
 		}
 		while(!($q->isEmpty())){
-			file_get_contents("http://ybanana.yonsei.ac.kr/api/reserve?".$q->dequeue());
-			$result=file_get_contents("http://ybanana.yonsei.ac.kr/api/status?".$q->dequeue());
+			$data=$q->dequeue();
+			file_get_contents("http://ybanana.yonsei.ac.kr/api/reserve?".$data);
+			$result=file_get_contents("http://ybanana.yonsei.ac.kr/api/status?".$data);
 			$kk=json_decode($result);
 			$boolResult=$kk->{'result'};
 			if(!$boolResult){
-				$q->enqueue($q->dequeue());
-				echo "실패 목록에 들어감: ".$q->dequeue();
+				$q->enqueue($data);
+				echo "실패 목록에 들어감: ".$data;
 			}else{
-				echo "성공: ".$q->dequeue();
+				echo "성공: ".$data;
 			}
 		}
 
