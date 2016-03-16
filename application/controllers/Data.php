@@ -103,6 +103,8 @@ class Data extends CI_Controller {
 			if(!$boolResult){
 				$q->enqueue(http_build_query($arr));
 				echo "실패 목록에 들어감: ".http_build_query($arr);
+			}else{
+				echo "성공: ".http_build_query($arr);
 			}
 		}
 		while(!($q->isEmpty())){
@@ -114,7 +116,7 @@ class Data extends CI_Controller {
 				$q->enqueue($q->dequeue());
 				echo "실패 목록에 들어감: ".$q->dequeue();
 			}else{
-				echo "성공";
+				echo "성공: ".$q->dequeue();
 			}
 		}
 
