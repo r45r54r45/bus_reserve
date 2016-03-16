@@ -96,7 +96,8 @@ class Data extends CI_Controller {
 			$arr['date']=$r_date;
 			// $this->curl_request_async("http://ybanana.yonsei.ac.kr/api/reserve",$arr,'GET');
 			file_get_contents("http://ybanana.yonsei.ac.kr/api/reserve?".http_build_query($arr));
-			// $result=file_get_contents("http://ybanana.yonsei.ac.kr/api/status?".http_build_query($arr));
+			$result=file_get_contents("http://ybanana.yonsei.ac.kr/api/status?".http_build_query($arr));
+			json_decode($result);
 		}
 
 
