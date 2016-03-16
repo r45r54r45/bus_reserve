@@ -86,7 +86,7 @@ class Data extends CI_Controller {
 		$result=array_merge($result_date,$result_week);
 		//비동기
 		$q = new SplQueue();
-
+		$failCount=array();
 		foreach($result as $case){
 			$arr=array();
 			$arr['id']=$case->id;
@@ -102,6 +102,7 @@ class Data extends CI_Controller {
 			$boolResult=$kk->{'result'};
 			if(!$boolResult){
 				$q->enqueue(http_build_query($arr));
+				$failCount[http_build_query($arr)]=1;
 				echo "실패 목록에 들어감: ".http_build_query($arr);
 			}else{
 				echo "성공: ".http_build_query($arr);
@@ -114,10 +115,11 @@ class Data extends CI_Controller {
 			$kk=json_decode($result);
 			$boolResult=$kk->{'result'};
 			if(!$boolResult){
+				$failCount[$data]++;
 				$q->enqueue($data);
-				echo "실패 목록에 들어감: ".$data;
+				echo $failCount[$data]."번째 실패 목록에 들어감: ".$data;
 			}else{
-				echo "성공: ".$data;
+				echo $failCount[$data]."번 시도 후 성공: ".$data;
 			}
 		}
 
