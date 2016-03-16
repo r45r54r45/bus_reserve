@@ -29,6 +29,8 @@
         </div>
 
         <div class="col-xs-12" style="">
+          <div id="cookie_check_btn" style="inline-block; width:40px; height:40px; border-radius:50%;  float:left;  line-height:80%;    display: table;">
+          </div>
           <div id="gorilla_login_btn" style="inline-block; width:40px; height:40px; border-radius:50%; border:1px solid #46292b; float:right;  background:#46292b; line-height:80%;    display: table;">
             <span style="color:white; display: table-cell;
     vertical-align: middle;font-size:10px;">고릴라<br>Login</span>
@@ -60,6 +62,9 @@ body {
 $(function(){
   $("#sid").val(getCookie("sid"));
   $("#spw").val(getCookie("spw"));
+  $("#cookie_check_btn").on("click",function(){
+    alert(getCookie("final_userIdx"));
+  });
   $("#gorilla_login_btn").on("click",function(){
     var id=$("#sid").val();
     var pw=$("#spw").val();
@@ -73,6 +78,7 @@ $(function(){
       var result=json['result'];
       if(result){
         location.href="http://ybanana.yonsei.ac.kr/new_ver/gorilla_shuttle";
+        //TODO 보안 문제 체크, 토큰주고 양방향으로 체크하는 것
       }else{
         alert("고릴라 회원이 아닙니다!");
       }
