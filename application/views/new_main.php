@@ -57,7 +57,7 @@ body {
     color: white;"></span>
   </div>
     <div class="help_button"><img src="/src/img/help_btn.png" style="height: 18px;" ></div>
-    <div class="banana_button" style="display:none;"><img src="/src/img/banana.png" style="height: 18px;" ><span id="banana_count"></span></div>
+    <div class="banana_button" style=""><img src="/src/img/banana.png" style="height: 18px;" ><span id="banana_count"></span></div>
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
   <!-- notification -->

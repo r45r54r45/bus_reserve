@@ -4,6 +4,7 @@ $(function(){
   statusGet();
   //nav-bottom-click
   $("#menu1").on("click",function(){
+    bananaPlus(1);
     $("#menu1>img").attr("src","/src/img/1home_o.png");
     $("#menu2>img").attr("src","/src/img/2shuttle.png");
     $("#menu3>img").attr("src","/src/img/3menu.png");
@@ -14,6 +15,7 @@ $(function(){
     content_manager();
   });
   $("#menu2").on("click",function(){
+    bananaPlus(1);
     $("#menu2>img").attr("src","/src/img/2shuttle_o.png");
     $("#menu1>img").attr("src","/src/img/1home.png");
     $("#menu3>img").attr("src","/src/img/3menu.png");
@@ -24,6 +26,7 @@ $(function(){
     content_manager();
   });
   $("#menu3").on("click",function(){
+    bananaPlus(1);
     $("#menu3>img").attr("src","/src/img/3menu_o.png");
     $("#menu1>img").attr("src","/src/img/1home.png");
     $("#menu2>img").attr("src","/src/img/2shuttle.png");
@@ -34,6 +37,7 @@ $(function(){
     content_manager();
   });
   $("#menu4").on("click",function(){
+    bananaPlus(1);
     $("#menu4>img").attr("src","/src/img/4link_o.png");
     $("#menu1>img").attr("src","/src/img/1home.png");
     $("#menu2>img").attr("src","/src/img/2shuttle.png");
@@ -76,6 +80,7 @@ $(function(){
 });
 var noti_flag=false;
 function moveto(path){
+  bananaPlus(1);
   if(path=='more_foodmap'){
   location.replace("/#more#foodmap");
 
