@@ -51,6 +51,15 @@ class Data extends CI_Controller {
 		$arr['count']=$kkk['COUNT( * )'];
 		echo json_encode($arr);
 	}
+	public function addBanana($id, $num){
+		$this->load->model("data_model");
+		$result=$this->data_model->addBanana($id, $num);
+		$row=$result->result_array();
+		$arr=array();
+		$kkk=$row[0];
+		$arr['current']=$kkk['banana'];
+		echo json_encode($arr);
+	}
 	public function getCurrentNoti($userIdx){
 		$this->load->model("data_model");
 		$result=$this->data_model->getCurrentNoti($userIdx);

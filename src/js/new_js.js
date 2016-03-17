@@ -44,7 +44,7 @@ $(function(){
     content_manager();
   });
   $("#menu5").on("click",function(){
-
+    bananaPlus(1);
     $("#menu5>img").attr("src","/src/img/5more_o.png");
     $("#menu1>img").attr("src","/src/img/1home.png");
     $("#menu2>img").attr("src","/src/img/2shuttle.png");
@@ -174,6 +174,8 @@ var final_userIdx;
 function statusUpdate(data){
   var json=JSON.parse(data);
   var userIdx=json['idx'];
+  var banana=json['banana'];
+  $("#banana_count").text(banana);
   final_userIdx=userIdx;
   setCookie("final_userIdx",final_userIdx,1000);
   $.get("/data/getUnreadNotiCnt/"+userIdx,function(data){
@@ -229,6 +231,12 @@ jQuery("time.timeago").timeago();
 function noti_manager(noti_idx){
   $.get("/data/setNotiRead/"+noti_idx,function(data){
 
+  });
+}
+function bananaPlus(num){
+  $.get("/data/addBanana/"+final_userIdx+"/"+num,function(data){
+    var json=JSON.parse(data);
+    $("#banana_count").text(json['current']);
   });
 }
 // str byteToHex(uint8 byte)

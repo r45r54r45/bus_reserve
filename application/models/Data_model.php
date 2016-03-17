@@ -40,4 +40,8 @@ class Data_model extends CI_Model{
 	public function gorilla_login($id, $pw, $final_userIdx){
 		return $this->db->query("select * from cookie_user where id='$id' and pw='$pw' and idx='$final_userIdx'");
 	}
+	public function addBanana($id, $num){
+	 $this->db->query("update cookie_user set banana=banana+$num where idx='$id'");
+	 return $this->db->query("select banana from cookie_user where idx='$id'");
+	}
 }
