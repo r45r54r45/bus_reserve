@@ -38,6 +38,7 @@ $(function(){
   });
   $("#menu4").on("click",function(){
     bananaPlus(1);
+
     $("#menu4>img").attr("src","/src/img/4link_o.png");
     $("#menu1>img").attr("src","/src/img/1home.png");
     $("#menu2>img").attr("src","/src/img/2shuttle.png");
