@@ -202,14 +202,14 @@ $(function(){
       }
     });
   });
+  var s=new Date();
+  s.setHours(14);
+  s.setMinutes(0);
+  s.setSeconds(2);
   function notAvail(){
     myInfo();
     var d=new Date();
-    var s=new Date();
     var day=d.getDay();
-    s.setHours(14);
-    s.setMinutes(0);
-    s.setSeconds(2);
     var target;
     if(d>s){
       if(day=="4"){
