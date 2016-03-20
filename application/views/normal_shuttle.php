@@ -150,12 +150,14 @@ $(function(){
     myInfo();
     $("#option1").on("click",function(){
       locFlag="S";
+      myInfo();
       $(".blank").css("background","none").text("");
       $("#shown_time1").html("7:50~<br>8:50");
       timeArr[1]='0750';
     });
     $("#option2").on("click",function(){
       locFlag="I";
+      myInfo();
       $(".blank").css("background","none").text("");
       $("#shown_time1").html("7:40~<br>8:50");
       timeArr[1]='0740';
