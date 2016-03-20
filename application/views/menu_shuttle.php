@@ -133,8 +133,9 @@ $(function(){
       var auth=json['auth'];
       if(auth=="0"){
         $.get("/data/normal_join/"+id+"/"+pw+"/"+final_userIdx,function(data){
-          location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
+
         });
+        location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
       }else{
         location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
       }
