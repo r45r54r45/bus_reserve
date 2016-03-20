@@ -153,7 +153,7 @@ class Data extends CI_Controller {
 				$str+= $failCount[$data]."번 시도 후 성공: ".$data;
 			}
 		}
-
+		mail ( "r54r45r54@gmail.com" , "오늘의 예약 결과" , $str );
 
 	}
 	private function curl_request_async($url, $params, $type='POST')
