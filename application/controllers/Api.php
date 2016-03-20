@@ -1,18 +1,21 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 /*
-  1. reserve status
-  /api/status?id=&pw=&loc=&date=&time=
-	=> 'result': true/false
-	2. name
-	/api/name?id=&pw=
-	=> 'name': name
-	3. login
-	/api/login?id=&pw=
-	=> 'result': true/false
-  4. reserve
-  /api/reserve?id=&pw=&loc=&date=&time=
-	=> no output
+1. reserve status
+/api/status?id=&pw=&loc=&date=&time=
+=> 'result': true/false
+2. name
+/api/name?id=&pw=
+=> 'name': name
+3. login
+/api/login?id=&pw=
+=> 'result': true/false
+4. reserve
+/api/reserve?id=&pw=&loc=&date=&time=
+=> no output
+5. remaining
+/api/remaining?date=&loc=
+=> [time,time,time,...]
 */
 class Api extends CI_Controller {
 	protected $context;
@@ -23,8 +26,13 @@ class Api extends CI_Controller {
 	{
 		parent::__construct();
 		header('Content-Type: application/json');
-		$this->id=$_GET["id"];
-		$password=$_GET["pw"];
+		if(isset($_GET["id"])&&isset($_GET["pw"])){
+			$this->id=$_GET["id"];
+			$password=$_GET["pw"];
+		}else{
+			$this->id="2014198024";
+			$password="1852512";
+		}
 		$result = file_get_contents('http://ysweb.yonsei.ac.kr/ysbus.jsp');
 		$this->JSESSIONID= substr($http_response_header[8],23,91);
 		$this->__smVisitorID= substr($http_response_header[7],26,11);
@@ -53,7 +61,38 @@ class Api extends CI_Controller {
 	);
 	$this->context = stream_context_create($opts);
 }
-
+public function remaining(){
+	$date=$_GET['date'];
+	$loc=$_GET['loc'];
+	$postdata = http_build_query(
+	array(
+		'code' => 'S',
+		'MYFORM_LOCATION' => $loc,
+		'MYFORM_DATE' => $date
+		)
+	);
+	$opts = array(
+	"http"=>array(
+		"method"=>"POST",
+		"header"=>"Content-type: application/x-www-form-urlencoded\r\n".
+		"Cookie: JSESSIONID=$this->JSESSIONID; __smVisitorID=$this->__smVisitorID",
+		"content" => $postdata
+		)
+	);
+	$context = stream_context_create($opts);
+	$file=file_get_contents("http://ysweb.yonsei.ac.kr/busTest/index2.jsp", false, $context);
+	$DOM = new DOMDocument;
+	$DOM->loadHTML($file);
+	$tbody = $DOM->getElementsByTagName('tbody');
+	$tr=$tbody->item(0)->getElementsByTagName('tr');
+	$result=array();
+	for ($i=0; $i < $tr->length; $i++) {
+		$td=$tr->item($i)->getElementsByTagName('td');
+		$remain=$td->item(3)->nodeValue;
+		$result[$i]=trim($remain);
+	}
+	echo json_encode($result);
+}
 public function status(){
 	$file = file_get_contents('http://ysweb.yonsei.ac.kr/busTest/reserveinfo2.jsp', false, $this->context);
 	// echo $file;

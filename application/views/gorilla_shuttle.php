@@ -143,17 +143,21 @@ $(function(){
   $("#option1").on("click",function(){
     locFlag="S";
     $(".blank").css("background","none").text("");
+    $("#shown_time1").html("7:50~<br>8:50");
+    timeArr[1]='0750';
     getCurrent();
   });
   $("#option2").on("click",function(){
     locFlag="I";
     $(".blank").css("background","none").text("");
+    $("#shown_time1").html("7:40~<br>8:50");
+    timeArr[1]='0740';
     getCurrent();
   });
   $("td").on("click", function(e){
     var cell=e.target.id;
     selectedCell=cell;
-    if(cell!=""){
+    if(cell.split("_")[0]!="shown"){
       var cellId=cell.substring(2);
       var cellArr=cellId.split("_");
       var shown_time=$("#shown_time"+cellArr[0]);

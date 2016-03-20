@@ -66,7 +66,9 @@ class New_ver extends CI_Controller {
 		redirect('http://freshman.yonsei.ac.kr/prints');
 	}
 	public function normal_shuttle(){
-			$this->load->view('shuttle_login');
+		$this->load->view('menu_header');
+		$this->load->view('normal_shuttle');
+		$this->load->view('menu_footer');
 	}
 	public function gorilla_shuttle(){
 			$this->load->view('menu_header');

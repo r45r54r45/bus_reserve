@@ -27,6 +27,12 @@ class Main extends CI_Controller {
 		$this->load->view('test3');
 		// $this->load->view('footer');
 	}
+	public function nshuttle()
+	{
+		$this->load->view('menu_header');
+		$this->load->view('normal_shuttle');
+		$this->load->view('menu_footer');
+	}
 	public function proxy()
 	{
 		$this->load->view('header');

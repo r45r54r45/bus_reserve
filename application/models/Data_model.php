@@ -41,7 +41,13 @@ class Data_model extends CI_Model{
 		return $this->db->query("select * from cookie_user where id='$id' and pw='$pw' and idx='$final_userIdx'");
 	}
 	public function gorilla_join($id, $pw, $final_userIdx){
-		return $this->db->query("update cookie_user set id='$id', pw='$pw' where idx='$final_userIdx'");
+		return $this->db->query("update cookie_user set id='$id', pw='$pw', auth='1' where idx='$final_userIdx'");
+	}
+	public function normal_join($id, $pw, $final_userIdx){
+		return $this->db->query("update cookie_user set id='$id', pw='$pw', auth='2' where idx='$final_userIdx'");
+	}
+	public function get_auth($final_userIdx){
+		return $this->db->query("select auth from cookie_user where idx='$final_userIdx'");
 	}
 	public function addBanana($id, $num){
 	 $this->db->query("update cookie_user set banana=banana+$num where idx='$id'");

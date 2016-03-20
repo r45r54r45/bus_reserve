@@ -69,6 +69,17 @@ class Data extends CI_Controller {
 			echo json_encode($arr);
 		}
 	}
+	public function normal_join($id, $pw, $final_userIdx){
+		$this->load->model("data_model");
+		$result=$this->data_model->normal_join($id, $pw, $final_userIdx);
+	}
+	public function get_auth($final_userIdx){
+		$this->load->model("data_model");
+		$result=$this->data_model->get_auth($final_userIdx);
+		$re=$result->result_array();
+		$auth['auth']=$re[0]['auth'];
+		echo json_encode($auth);
+	}
 	public function getUnreadNotiCnt($userIdx){
 		$this->load->model("data_model");
 		$result=$this->data_model->getUnreadNotiCnt($userIdx);

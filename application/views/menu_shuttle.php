@@ -128,13 +128,18 @@ $(function(){
       if(data['result']){
     setCookie("sid",$("#sid").val(),100);
     setCookie("spw",$("#spw").val(),100);
-    $("#shuttle_top").css("display","none");
-
-    var url="/new_ver/normal_shuttle?id="+id+"&pw="+pw;
-    $("#normal_shuttle").attr("src",url).on("load",function(){
-      $("#normal_shuttle").contents().find("#form").submit();
-      $("#normal_shuttle").css("display","");
+    $.get("/data/get_auth/"+final_userIdx,function(data){
+      var json=JSON.parse(data);
+      var auth=json['auth'];
+      if(auth=="0"){
+        $.get("/data/normal_join/"+id+"/"+pw+"/"+final_userIdx,function(data){
+          location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
+        });
+      }else{
+        location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
+      }
     });
+
   }else{
     alert('포탈 로그인에 실패했습니다.');
   }
