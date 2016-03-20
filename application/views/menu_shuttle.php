@@ -124,6 +124,7 @@ $(function(){
       return;
     }
     //먼저 아이디 비번 로그인 체크부터
+    var final_userIdx=getCookie("final_userIdx");
     $.get("/api/login?id="+id+"&pw="+pw,function(data){
       if(data['result']){
     setCookie("sid",$("#sid").val(),100);
@@ -133,9 +134,8 @@ $(function(){
       var auth=json['auth'];
       if(auth=="0"){
         $.get("/data/normal_join/"+id+"/"+pw+"/"+final_userIdx,function(data){
-
+          location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
         });
-        location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
       }else{
         location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
       }
