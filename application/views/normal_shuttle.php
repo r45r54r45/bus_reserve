@@ -172,7 +172,12 @@ $(function(){
         remaining(day,cellArr[0]);
         Gtime=time;
         Gday=day;
-
+        for(var i=0; i<14;i++){
+          if($("#tr"+i+"_"+day).text()!=""){
+            alert("같은 방향으로는 하루에 한건만 예약가능합니다.");
+            return;
+          }
+        }
         $("#selected").text(shown_time.text()+" "+$("#day"+cellArr[1]).text());
         typeFlag=1;
         $("#message").text("빈자리를 확인중입니다");
