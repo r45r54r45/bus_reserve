@@ -1,2 +1,9 @@
 <?
-mail ( "r54r45r54@gmail.com" , "예약 결과" , "엿이나 먹으센" );
+$to      = 'r54r45r54@gmail.com';
+$subject = 'the subject';
+$message = 'hello';
+$headers = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($to, $subject, $message, $headers);
