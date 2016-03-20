@@ -75,7 +75,7 @@ $(function(){
   $("#spw").val(getCookie("spw"));
   $("#cookie_check_btn").on("click",function(){
     $("#gorilla_input").toggle();
-    gorilla_flag!=gorilla_flag;
+    gorilla_flag=!gorilla_flag;
   });
   $("#gorilla_login_btn").on("click",function(){
     var id=$("#sid").val();
@@ -118,8 +118,9 @@ $(function(){
       alert("입력을 확인해주세요");
       return;
     }
-    //TODO 먼저 아이디 비번 로그인 체크부터
-
+    //먼저 아이디 비번 로그인 체크부터
+    $.get("/api/login?id="+id+"&pw="+pw,function(data){
+      if(data['result']){
     setCookie("sid",$("#sid").val(),100);
     setCookie("spw",$("#spw").val(),100);
     $("#shuttle_top").css("display","none");
@@ -127,10 +128,11 @@ $(function(){
     var url="/new_ver/normal_shuttle?id="+id+"&pw="+pw;
     $("#normal_shuttle").attr("src",url).on("load",function(){
       $("#normal_shuttle").contents().find("#form").submit();
-
-
       $("#normal_shuttle").css("display","");
     });
+  }else{
+    alert('포탈 로그인에 실패했습니다.');
+  }
   });
 
   // $("#shuttle_top")
