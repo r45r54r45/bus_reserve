@@ -145,7 +145,7 @@ $(function(){
   setInterval(
     function(){
       notAvail();
-    },1000);
+    },3000);
     notAvail();
     $("#option1").on("click",function(){
       locFlag="S";
@@ -207,7 +207,7 @@ $(function(){
     var day=d.getDay();
     s.setHours(14);
     s.setMinutes(0);
-    s.setSeconds(5);
+    s.setSeconds(2);
     var target;
     if(d>s){
       if(day=="4"){
