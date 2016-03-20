@@ -105,6 +105,7 @@ class Data extends CI_Controller {
 
 		// 그래도 예약은 날짜로 확인해서 하는건데 말이지
 		//그러면 week(요일)로 정기적으로 신청한 것에 대해서는 알맞는 날짜를 자동으로 구해서 해줘야하는거지...
+		$str="";
 		date_default_timezone_set('Asia/Seoul');
 		$r_date=date("Ymd",strtotime("+2 day"));
 		//target r_date
@@ -133,9 +134,9 @@ class Data extends CI_Controller {
 			if(!$boolResult){
 				$q->enqueue(http_build_query($arr));
 				$failCount[http_build_query($arr)]=1;
-				echo "실패 목록에 들어감: ".http_build_query($arr);
+				$str+= "실패 목록에 들어감: ".http_build_query($arr);
 			}else{
-				echo "성공: ".http_build_query($arr);
+				$str+= "성공: ".http_build_query($arr);
 			}
 		}
 		while(!($q->isEmpty())){
@@ -147,9 +148,9 @@ class Data extends CI_Controller {
 			if(!$boolResult){
 				$failCount[$data]++;
 				$q->enqueue($data);
-				echo $failCount[$data]."번째 실패 목록에 들어감: ".$data;
+				$str+= $failCount[$data]."번째 실패 목록에 들어감: ".$data;
 			}else{
-				echo $failCount[$data]."번 시도 후 성공: ".$data;
+				$str+= $failCount[$data]."번 시도 후 성공: ".$data;
 			}
 		}
 
