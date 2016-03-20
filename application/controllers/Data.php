@@ -31,7 +31,7 @@ class Data extends CI_Controller {
 			$result=$this->data_model->auto_login_add($user,$code);
 		}
 
-		$arr['code']= ;
+		$arr['code']= "";
 		echo json_encode($arr);
 	}
 	public function getCookieUser($cookieId){
