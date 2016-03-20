@@ -149,12 +149,14 @@ $(function(){
     notAvail();
     $("#option1").on("click",function(){
       locFlag="S";
+      notAvail();
       $(".blank").css("background","none").text("");
       $("#shown_time1").html("7:50~<br>8:50");
       timeArr[1]='0750';
     });
     $("#option2").on("click",function(){
       locFlag="I";
+      notAvail();
       $(".blank").css("background","none").text("");
       $("#shown_time1").html("7:40~<br>8:50");
       timeArr[1]='0740';
