@@ -26,7 +26,7 @@ class Data extends CI_Controller {
 			$data=$result->row();
 			echo json_encode($data);
 		}
-		}
+	}
 	public function setNotiRead($noti_idx){
 		$this->load->model("data_model");
 		$result=$this->data_model->setNotiRead($noti_idx);
@@ -41,6 +41,23 @@ class Data extends CI_Controller {
 			$arr['result']=false;
 		}
 		echo json_encode($arr);
+	}
+	public function gorilla_join($id, $pw, $final_userIdx, $gorilla_pw){
+		$this->load->model("data_model");
+		if($id[0].$id[2].$id[4].$id[6].$id[8]==$gorilla_pw){
+			$result=$this->data_model->gorilla_join($id, $pw, $final_userIdx);
+			$arr=array();
+			if($result->num_rows()==1){
+				$arr['result']=true;
+			}else{
+				$arr['result']=false;
+			}
+			echo json_encode($arr);
+		}else{
+			$arr=array();
+			$arr['result']=false;
+			echo json_encode($arr);
+		}
 	}
 	public function getUnreadNotiCnt($userIdx){
 		$this->load->model("data_model");
@@ -111,7 +128,7 @@ class Data extends CI_Controller {
 			$arr=array();
 			$arr['id']=$case->id;
 			$arr['pw']=$case->pw;
-		  // $arr['']=$case->r_reserve_id;
+			// $arr['']=$case->r_reserve_id;
 			$arr['loc']=$case->r_loc;
 			$arr['time']=$case->r_time;
 			$arr['date']=$r_date;
@@ -146,42 +163,42 @@ class Data extends CI_Controller {
 
 	}
 	private function curl_request_async($url, $params, $type='POST')
-{
-    foreach ($params as $key => &$val)
-    {
-        if (is_array($val))
-            $val = implode(',', $val);
-        $post_params[] = $key.'='.urlencode($val);
-    }
-    $post_string = implode('&', $post_params);
+	{
+		foreach ($params as $key => &$val)
+		{
+			if (is_array($val))
+			$val = implode(',', $val);
+			$post_params[] = $key.'='.urlencode($val);
+		}
+		$post_string = implode('&', $post_params);
 
-    $parts=parse_url($url);
+		$parts=parse_url($url);
 
-    if ($parts['scheme'] == 'http')
-    {
-        $fp = fsockopen($parts['host'], isset($parts['port'])?$parts['port']:80, $errno, $errstr, 30);
-    }
-    else if ($parts['scheme'] == 'https')
-    {
-        $fp = fsockopen("ssl://" . $parts['host'], isset($parts['port'])?$parts['port']:443, $errno, $errstr, 30);
-    }
+		if ($parts['scheme'] == 'http')
+		{
+			$fp = fsockopen($parts['host'], isset($parts['port'])?$parts['port']:80, $errno, $errstr, 30);
+		}
+		else if ($parts['scheme'] == 'https')
+		{
+			$fp = fsockopen("ssl://" . $parts['host'], isset($parts['port'])?$parts['port']:443, $errno, $errstr, 30);
+		}
 
-    // Data goes in the path for a GET request
-    if('GET' == $type)
-        $parts['path'] .= '?'.$post_string;
+		// Data goes in the path for a GET request
+		if('GET' == $type)
+		$parts['path'] .= '?'.$post_string;
 
-    $out = "$type ".$parts['path']." HTTP/1.1\r\n";
-    $out.= "Host: ".$parts['host']."\r\n";
-    $out.= "Content-Type: application/x-www-form-urlencoded\r\n";
-    $out.= "Content-Length: ".strlen($post_string)."\r\n";
-    $out.= "Connection: Close\r\n\r\n";
-    // Data goes in the request body for a POST request
-    if ('POST' == $type && isset($post_string))
-        $out.= $post_string;
+		$out = "$type ".$parts['path']." HTTP/1.1\r\n";
+		$out.= "Host: ".$parts['host']."\r\n";
+		$out.= "Content-Type: application/x-www-form-urlencoded\r\n";
+		$out.= "Content-Length: ".strlen($post_string)."\r\n";
+		$out.= "Connection: Close\r\n\r\n";
+		// Data goes in the request body for a POST request
+		if ('POST' == $type && isset($post_string))
+		$out.= $post_string;
 
-    fwrite($fp, $out);
-    fclose($fp);
-}
+		fwrite($fp, $out);
+		fclose($fp);
+	}
 	public function food()
 	{
 		$a; $b;
@@ -189,8 +206,8 @@ class Data extends CI_Controller {
 		$result=$this->data_model->food_get(date("Y-m-d"));
 		foreach ($result->result() as $row)
 		{
-        $a= $row->data_1;
-        $b= $row->data_2;
+			$a= $row->data_1;
+			$b= $row->data_2;
 		}
 		$aa=explode('|',$a); //6개
 		$bb=explode('|',$b);
@@ -224,14 +241,14 @@ class Data extends CI_Controller {
 	}
 	public function bus91()
 	{
-				$this->load->view('header');
+		$this->load->view('header');
 		$this->load->view("bus91");
-				$this->load->view('footer');
+		$this->load->view('footer');
 	}
 	public function bus6724()
 	{
-				$this->load->view('header');
+		$this->load->view('header');
 		$this->load->view("bus6724");
-			$this->load->view('footer');
+		$this->load->view('footer');
 	}
 }
