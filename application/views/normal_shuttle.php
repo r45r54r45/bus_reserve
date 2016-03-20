@@ -147,6 +147,7 @@ $(function(){
       notAvail();
     },1000);
     notAvail();
+    myInfo();
     $("#option1").on("click",function(){
       locFlag="S";
       $(".blank").css("background","none").text("");
@@ -229,12 +230,22 @@ $(function(){
       for(var j=0; j<target.length; j++){
         $("#tr"+i+"_"+target[j]).css("background","#FBD80D");
         $("#tr"+i+"_"+target[j]).attr("avail","true");
-        // $("#tr"+i+"_"+target[j]).text("잔여: "+4);
       }
     }
   }
   function myInfo(){
-    
+    $.get("/api/status_all?id="+getCookie("id")+"&pw="+getCookie("pw"),function(data){
+      for(var i=0; i<data.length; i++){
+        var t=data[i];
+        if(t['loc']==locFlag){
+          var date=t['date'];
+          var kk=new Date(date.substring(0,4)+"/"+date.substring(4,6)+"/"+date.substring(6,8));
+          var day=kk.getDay();
+          var time=timeArr.indexOf(t['time']);
+          $("#tr"+time+"_"+day).text(t['seatNum']+"번");
+        }
+      }
+    });
   }
   function remaining(r_day,r_time){
     var d=new Date();
@@ -262,6 +273,7 @@ $(function(){
     console.log(date);
     query="id="+getCookie("id")+"&pw="+getCookie("pw")+"&loc="+loc+"&date="+date+"&time="+time;
     $.get("/api/reserve?"+query,function(data){
+      myInfo();
     });
   }
   function getCookie(cName) {
