@@ -44,7 +44,7 @@ class Data extends CI_Controller {
 	}
 	public function gorilla_join($id, $pw, $final_userIdx, $gorilla_pw){
 		$this->load->model("data_model");
-		if($id[0].$id[2].$id[4].$id[6].$id[8]==$gorilla_pw){
+		if("g".$id[0].$id[2].$id[4].$id[6].$id[8]==$gorilla_pw){
 			$result=$this->data_model->gorilla_join($id, $pw, $final_userIdx);
 			$arr=array();
 			if($result->num_rows()==1){
