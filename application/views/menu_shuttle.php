@@ -103,7 +103,12 @@ $(function(){
           var gorilla_pw=$("#gorilla_pw").val();
           $.get("http://ybanana.yonsei.ac.kr/data/gorilla_join/"+id+"/"+pw+"/"+final_userIdx+"/"+gorilla_pw, function(data){
             var json=JSON.parse(data);
-            console.log(json);
+            if(!json['result']){
+              alert("고릴라 승인번호가 옳지 않습니다.");
+            }else{
+              location.href="http://ybanana.yonsei.ac.kr/new_ver/gorilla_shuttle";
+              //TODO 보안 문제 체크, 토큰주고 양방향으로 체크하는 것
+            }
           });
         }
       }else{
