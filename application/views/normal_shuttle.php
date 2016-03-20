@@ -229,8 +229,12 @@ $(function(){
       for(var j=0; j<target.length; j++){
         $("#tr"+i+"_"+target[j]).css("background","#FBD80D");
         $("#tr"+i+"_"+target[j]).attr("avail","true");
+        // $("#tr"+i+"_"+target[j]).text("잔여: "+4);
       }
     }
+  }
+  function myInfo(){
+    
   }
   function remaining(r_day,r_time){
     var d=new Date();
