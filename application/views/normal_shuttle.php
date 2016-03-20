@@ -147,17 +147,14 @@ $(function(){
       notAvail();
     },1000);
     notAvail();
-    myInfo();
     $("#option1").on("click",function(){
       locFlag="S";
-      myInfo();
       $(".blank").css("background","none").text("");
       $("#shown_time1").html("7:50~<br>8:50");
       timeArr[1]='0750';
     });
     $("#option2").on("click",function(){
       locFlag="I";
-      myInfo();
       $(".blank").css("background","none").text("");
       $("#shown_time1").html("7:40~<br>8:50");
       timeArr[1]='0740';
@@ -204,6 +201,7 @@ $(function(){
     });
   });
   function notAvail(){
+    myInfo();
     var d=new Date();
     var s=new Date();
     var day=d.getDay();
@@ -275,7 +273,7 @@ $(function(){
     console.log(date);
     query="id="+getCookie("id")+"&pw="+getCookie("pw")+"&loc="+loc+"&date="+date+"&time="+time;
     $.get("/api/reserve?"+query,function(data){
-      myInfo();
+
     });
   }
   function getCookie(cName) {
