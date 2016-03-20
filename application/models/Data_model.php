@@ -47,4 +47,17 @@ class Data_model extends CI_Model{
 	 $this->db->query("update cookie_user set banana=banana+$num where idx='$id'");
 	 return $this->db->query("select banana from cookie_user where idx='$id'");
 	}
+	public function auto_login_add($user,$code){
+		return $this->db->query("insert into auto_login (user, code) values ('$user','$code')");
+		// return $this->->db->query("select code from auto_login where user='$user'");
+	}
+	public function auto_login_verify($user){
+		return $this->db->query("select * from auto_login where user='$user'");
+	}
+	public function auto_login_delete($user){
+		return $this->db->query("delete from auto_login where user='$user'");
+	}
+	public function auto_login_getUser($code){
+		return $this->db->query("select id,pw from cookie_user c join auto_login a on c.idx=a.user where a.code='$code'");
+	}
 }
