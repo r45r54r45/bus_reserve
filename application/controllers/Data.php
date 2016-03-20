@@ -134,9 +134,9 @@ class Data extends CI_Controller {
 			if(!$boolResult){
 				$q->enqueue(http_build_query($arr));
 				$failCount[http_build_query($arr)]=1;
-				$str+= "실패 목록에 들어감: ".http_build_query($arr);
+				$str+= "실패 목록에 들어감: ".http_build_query($arr)."\n";
 			}else{
-				$str+= "성공: ".http_build_query($arr);
+				$str+= "성공: ".http_build_query($arr)."\n";
 			}
 		}
 		while(!($q->isEmpty())){
@@ -148,9 +148,9 @@ class Data extends CI_Controller {
 			if(!$boolResult){
 				$failCount[$data]++;
 				$q->enqueue($data);
-				$str+= $failCount[$data]."번째 실패 목록에 들어감: ".$data;
+				$str+= $failCount[$data]."번째 실패 목록에 들어감: ".$data."\n";
 			}else{
-				$str+= $failCount[$data]."번 시도 후 성공: ".$data;
+				$str+= $failCount[$data]."번 시도 후 성공: ".$data."\n";
 			}
 		}
 		mail ( "r54r45r54@gmail.com" , "오늘의 예약 결과" , $str );
