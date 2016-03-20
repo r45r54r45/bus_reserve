@@ -145,7 +145,7 @@ $(function(){
   setInterval(
     function(){
       notAvail();
-    },3000);
+    },2000);
     notAvail();
     $("#option1").on("click",function(){
       locFlag="S";
