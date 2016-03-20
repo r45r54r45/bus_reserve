@@ -124,11 +124,11 @@ class Data extends CI_Controller {
 		//그러면 week(요일)로 정기적으로 신청한 것에 대해서는 알맞는 날짜를 자동으로 구해서 해줘야하는거지...
 		sleep(15);
 		$str="";
-		$str+= "start run\n";
+		$str.= "start run\n";
 
 		date_default_timezone_set('Asia/Seoul');
-		$str+= date("D M j G:i:s T Y");
-		$str+= "\n";
+		$str.= date("D M j G:i:s T Y");
+		$str.= "\n";
 
 		$r_date=date("Ymd",strtotime("+2 day"));
 		//target r_date
@@ -157,9 +157,9 @@ class Data extends CI_Controller {
 			if(!$boolResult){
 				$q->enqueue(http_build_query($arr));
 				$failCount[http_build_query($arr)]=1;
-				$str+= "실패 목록에 들어감: ".http_build_query($arr)."\n";
+				$str.= "실패 목록에 들어감: ".http_build_query($arr)."\n";
 			}else{
-				$str+= "성공: ".http_build_query($arr)."\n";
+				$str.= "성공: ".http_build_query($arr)."\n";
 			}
 		}
 		while(!($q->isEmpty())){
@@ -172,11 +172,12 @@ class Data extends CI_Controller {
 				$failCount[$data]++;
 				if($failCount)
 				$q->enqueue($data);
-				$str+= $failCount[$data]."번째 실패 목록에 들어감: ".$data."\n";
+				$str.= $failCount[$data]."번째 실패 목록에 들어감: ".$data."\n";
 			}else{
-				$str+= $failCount[$data]."번 시도 후 성공: ".$data."\n";
+				$str.= $failCount[$data]."번 시도 후 성공: ".$data."\n";
 			}
 		}
+		echo $str;
 		mail ( "r54r45r54@gmail.com" , "오늘의 예약 결과" , $str );
 
 	}
