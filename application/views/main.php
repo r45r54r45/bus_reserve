@@ -286,7 +286,7 @@ function help(){
 	$("#help").append('<span class="big-font">고맙당</span>');
 }
 // 셔틀 시간정보
-var h_time_s=[0820,0900,0940,1020,1200,1240,1320,1400,1500,1700,1820,1940,2100];
+var h_time_s=[0820,0900,0940,1020,1200,1240,1320,1400,1500,1700,1840,1940,2100];
 var h_time_w=[];
 for (var i = 0; i < h_time_s.length; i++) {
 	h_time_w[i]=h_time_s[i]+15;
