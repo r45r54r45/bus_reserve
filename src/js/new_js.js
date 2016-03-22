@@ -80,6 +80,9 @@ $(function(){
   });
 });
 var noti_flag=false;
+function openUrl(url){
+  $("iframe#contents").attr("src",url);
+}
 function moveto(path){
   bananaPlus(1);
   if(path=='more_foodmap'){
