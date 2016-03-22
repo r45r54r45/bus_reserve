@@ -1,16 +1,5 @@
 <div class="container-fluid">
-  <div class="row center-align" id="home-top-button">
-    <div id="home" class="btn-group" data-toggle="buttons">
-      <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
-      border-top-left-radius: 16px;" id="day_0">
-      <input type="radio" name="options"  autocomplete="off"> 오늘
-    </label>
-    <label class="btn btn-primary" style="border-bottom-right-radius: 16px;
-    border-top-right-radius: 16px;" id="day_1">
-    <input type="radio" name="options"  autocomplete="off"> 내일
-  </label>
-</div>
-</div>
+
   <div class="row center-align" id="home-top-button">
     <div id="home" class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
@@ -24,6 +13,18 @@
     border-top-right-radius: 16px;" id="option3">
     <input type="radio" name="options"  autocomplete="off"> 언기도
   </label>
+</div>
+</div>
+<div class="row center-align" id="home-top-button">
+  <div id="home" class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;" id="day_0">
+    <input type="radio" name="options"  autocomplete="off"> 오늘
+  </label>
+  <label class="btn btn-primary" style="border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;" id="day_1">
+  <input type="radio" name="options"  autocomplete="off"> 내일
+</label>
 </div>
 </div>
 <div class="row">
