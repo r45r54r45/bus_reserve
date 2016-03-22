@@ -144,14 +144,38 @@ $(function(){
     locFlag="S";
     $(".blank").css("background","none").text("");
     $("#shown_time1").html("7:50~<br>8:50");
+    $("#shown_time7").html("15:00~<br>16:00");
+    $("#shown_time9").html("17:30~<br>18:30");
+    $("#shown_time10").html("18:30~<br>19:30");
+    $("#shown_time11").html("19:00~<br>20:00");
+    $("#shown_time12").html("20:00~<br>21:00");
+    $("#shown_time13").html("21:00~<br>22:00");
     timeArr[1]='0750';
+    timeArr[7]='1500';
+    timeArr[9]='1730';
+    timeArr[10]='1830';
+    timeArr[11]='1900';
+    timeArr[12]='2000';
+    timeArr[13]='2100';
     getCurrent();
   });
   $("#option2").on("click",function(){
     locFlag="I";
     $(".blank").css("background","none").text("");
     $("#shown_time1").html("7:40~<br>8:50");
+    $("#shown_time7").html("15:30~<br>16:30");
+    $("#shown_time9").html("17:00~<br>18:00");
+    $("#shown_time10").html("17:30~<br>18:30");
+    $("#shown_time11").html("18:00~<br>19:00");
+    $("#shown_time12").html("18:30~<br>19:30");
+    $("#shown_time13").html("19:30~<br>20:30");
     timeArr[1]='0740';
+    timeArr[7]='1530';
+    timeArr[9]='1700';
+    timeArr[10]='1730';
+    timeArr[11]='1800';
+    timeArr[12]='1830';
+    timeArr[13]='1930';
     getCurrent();
   });
   $("td").on("click", function(e){
