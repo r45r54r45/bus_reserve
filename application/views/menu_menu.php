@@ -2,6 +2,18 @@
   <div class="row center-align" id="home-top-button">
     <div id="home" class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
+      border-top-left-radius: 16px;" id="day_0">
+      <input type="radio" name="options"  autocomplete="off"> 오늘
+    </label>
+    <label class="btn btn-primary" style="border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;" id="day_1">
+    <input type="radio" name="options"  autocomplete="off"> 내일
+  </label>
+</div>
+</div>
+  <div class="row center-align" id="home-top-button">
+    <div id="home" class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
       border-top-left-radius: 16px;" id="option1">
       <input type="radio" name="options"  autocomplete="off"> 1학사
     </label>
@@ -113,15 +125,24 @@ padding-right: 18px;">
 <script>
 
 var type=0;
+var dayFlag=0;
 $(function(){
   getFood();
+  $("#day_0").on("click",function(){
+    dayFlag=0;
+    getFood(dayFlag);
+  });
+  $("#day_1").on("click",function(){
+    dayFlag=1;
+    getFood(dayFlag);
+  });
   $("#option1").on("click",function(){
     type=0;
-    getFood();
+    getFood(dayFlag);
   });
   $("#option2").on("click",function(){
     type=1;
-    getFood();
+    getFood(dayFlag);
   });
   $("#option3").on("click",function(){
     $('#myModal').modal('show');
@@ -129,8 +150,8 @@ $(function(){
     // getFood();
   });
 });
-function getFood(){
-	$.get("/data/food", function( data ) {
+function getFood(day){
+	$.get("/data/food/"+day, function( data ) {
 		  var one=data[type]; //1학사
       try{
       $("#morning1").text(one[0][0]);

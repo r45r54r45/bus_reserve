@@ -229,11 +229,13 @@ class Data extends CI_Controller {
 		fwrite($fp, $out);
 		fclose($fp);
 	}
-	public function food()
+	public function food($day)
 	{
 		$a; $b;
 		$this->load->model("data_model");
-		$result=$this->data_model->food_get(date("Y-m-d"));
+		$day_temp  = mktime (0,0,0,date("m") , date("d")+$day, date("Y"));
+		$day_target= date("Y-m-d",$day_temp);
+		$result=$this->data_model->food_get($day_target);
 		foreach ($result->result() as $row)
 		{
 			$a= $row->data_1;
