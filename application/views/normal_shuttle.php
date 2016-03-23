@@ -296,7 +296,7 @@ $(function(){
     var date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
     $.get("/api/remaining?loc="+locFlag+"&date="+date,function(data){
       $("#message").text(data['remaining'][r_time]+"석 남음");
-      if(data[r_time]!="0"){
+      if(data['remaining'][r_time]!="0"){
         $("#r_btn1").css("display","");
         $("#r_btn2").css("display","none");
       }else{
