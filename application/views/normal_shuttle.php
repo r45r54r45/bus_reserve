@@ -257,13 +257,22 @@ $(function(){
         target=[day,day+1];
       }
     }
-    for(var i=0; i<14; i++){
-      for(var j=0; j<target.length; j++){
+    for(var j=0; j<target.length; j++){
+      for(var i=0; i<14; i++){
         if(j==0&&(hour+""+minute)>timeArr[i])continue;
         $("#tr"+i+"_"+target[j]).css("background","#FBD80D");
         $("#tr"+i+"_"+target[j]).attr("avail","true");
       }
+      var start_date=d.getDate()-d.getDay()+1;
+      d.setDate(parseInt(start_date)+parseInt(target[j])-1);
+      var date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
+      $.get("/api/remaining?loc="+locFlag+"&date="+date,function(data){
+        console.log(target[j]);
+        console.log(data);
+      });
     }
+
+
   }
   function myInfo(){
     $.get("/api/status_all?id="+getCookie("id")+"&pw="+getCookie("pw"),function(data){
