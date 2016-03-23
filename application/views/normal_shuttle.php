@@ -260,6 +260,7 @@ $(function(){
     for(var j=0; j<target.length; j++){
       for(var i=0; i<14; i++){
         if(j==0&&(hour+""+minute)>timeArr[i])continue;
+        if(remainStatus[locFlag][target[j]][i]=="0")continue;
         $("#tr"+i+"_"+target[j]).css("background","#FBD80D");
         $("#tr"+i+"_"+target[j]).attr("avail","true");
       }
@@ -269,16 +270,11 @@ $(function(){
       $.get("/api/remaining?loc="+locFlag+"&date="+date+"&day="+target[j],function(data){
         var day=data['day'];
         var remain=data['remaining'];
-        for(var i=0; i<14; i++){
-          if(remain[i]=="0"){
-            console.log(locFlag);
-          }
-        }
+          remainStatus[locFlag][day]=remain;
       });
     }
-
-
   }
+  var remainStatus=['S','I'];
   function myInfo(){
     $.get("/api/status_all?id="+getCookie("id")+"&pw="+getCookie("pw"),function(data){
       for(var i=0; i<data.length; i++){
