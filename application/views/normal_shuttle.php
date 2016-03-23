@@ -271,8 +271,7 @@ $(function(){
         var remain=data['remaining'];
         for(var i=0; i<14; i++){
           if(remain[i]=="0"){
-            $("#tr"+i+"_"+day).css("background","white");
-            $("#tr"+i+"_"+day).attr("avail","false");
+            console.log(locFlag);
           }
         }
       });
