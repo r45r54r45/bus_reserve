@@ -14,8 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 /api/reserve?id=&pw=&loc=&date=&time=
 => no output
 5. remaining
-/api/remaining?date=&loc=
-=> [int,int,int,...]
+/api/remaining?date=&loc=&day=
+=> remaining[int,int,int,...], day[int]
 6. reserve status all
 /api/status_all?id=&pw=
 => 'result':
@@ -67,6 +67,10 @@ class Api extends CI_Controller {
 public function remaining(){
 	$date=$_GET['date'];
 	$loc=$_GET['loc'];
+	$day;
+	if(isset($_GET['day'])){
+		$day=$_GET['day'];
+	}
 	$postdata = http_build_query(
 	array(
 		'code' => 'S',
@@ -92,8 +96,9 @@ public function remaining(){
 	for ($i=0; $i < $tr->length; $i++) {
 		$td=$tr->item($i)->getElementsByTagName('td');
 		$remain=$td->item(3)->nodeValue;
-		$result[$i]=trim($remain);
+		$result['remaining'][$i]=trim($remain);
 	}
+	$result['day']=$day;
 	echo json_encode($result);
 }
 public function status(){

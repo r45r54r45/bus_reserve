@@ -266,9 +266,15 @@ $(function(){
       var start_date=d.getDate()-d.getDay()+1;
       d.setDate(parseInt(start_date)+parseInt(target[j])-1);
       var date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
-      $.get("/api/remaining?loc="+locFlag+"&date="+date,function(data){
-        console.log(target[j]);
-        console.log(data);
+      $.get("/api/remaining?loc="+locFlag+"&date="+date+"&day="+target[j],function(data){
+        var day=data['day'];
+        var remain=data['remaining'];
+        for(var i=0; i<14; i++){
+          if(remain[i]=="0"){
+            $("#tr"+i+"_"+day).css("background","white");
+            $("#tr"+i+"_"+day).attr("avail","false");
+          }
+        }
       });
     }
 
@@ -294,7 +300,7 @@ $(function(){
     d.setDate(parseInt(start_date)+parseInt(r_day)-1);
     var date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
     $.get("/api/remaining?loc="+locFlag+"&date="+date,function(data){
-      $("#message").text(data[r_time]+"석 남음");
+      $("#message").text(data['remaining'][r_time]+"석 남음");
       if(data[r_time]!="0"){
         $("#r_btn1").css("display","");
         $("#r_btn2").css("display","none");
