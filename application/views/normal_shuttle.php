@@ -260,7 +260,7 @@ $(function(){
     for(var j=0; j<target.length; j++){
       for(var i=0; i<14; i++){
         if(j==0&&(hour+""+minute)>timeArr[i])continue;
-        if(remainStatus[locFlag][target[j]][i]=="0")continue;
+        // if(remainStatus[locFlag][target[j]][i]=="0")continue;
         $("#tr"+i+"_"+target[j]).css("background","#FBD80D");
         $("#tr"+i+"_"+target[j]).attr("avail","true");
       }
