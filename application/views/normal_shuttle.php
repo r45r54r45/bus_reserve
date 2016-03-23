@@ -237,6 +237,8 @@ $(function(){
     myInfo();
     var d=new Date();
     var day=d.getDay();
+    var hour=d.getHours();
+    var minute=d.getMinutes();
     var target;
     if(d>s){
       if(day=="4"){
@@ -257,6 +259,7 @@ $(function(){
     }
     for(var i=0; i<14; i++){
       for(var j=0; j<target.length; j++){
+        if(j==0&&(hour+""+minute)>timeArr[i])continue;
         $("#tr"+i+"_"+target[j]).css("background","#FBD80D");
         $("#tr"+i+"_"+target[j]).attr("avail","true");
       }
