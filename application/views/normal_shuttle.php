@@ -240,19 +240,27 @@ $(function(){
     var hour=d.getHours();
     var minute=d.getMinutes();
     var target;
-    if(d>s){
-      if(day=="4"){
-        target=[4,5,1];
-      }else if(day=="5"){
-        target=[5,1,2];
-      }else{
-        target=[day,day+1,day+2];
-      }
-    }else{
+    if(d>s){ //2시 보다 크면
       if(day=="4"){
         target=[4,5];
       }else if(day=="5"){
-        target=[5,1];
+        target=[5];
+      }else if(day=="6"){
+        target=[1];
+      }else if(day=="0"){
+        target=[1,2];
+      }else{
+        target=[day,day+1,day+2];
+      }
+    }else{ //2시가 안됫으면
+      if(day=="4"){
+        target=[4,5];
+      }else if(day=="5"){
+        target=[5];
+      }else if(day=="6"){
+        target=[];
+      }else if(day=="0"){
+        target=[1];
       }else{
         target=[day,day+1];
       }
