@@ -50,7 +50,8 @@
         vertical-align: middle;font-size:10px;">고릴라<br>Login</span>
       </div>
       <!-- id="normal_login_btn" -->
-      <div onclick="alert('공사중 입니다. 혹시 월요일 셔틀을 예약하신 분은 예약이 된 것이 아니니 토요일에 다시 예약해주세요.')" style="inline-block; width:40px; height:40px; border-radius:50%; border:1px solid #46292b; float:right; margin-right:10px;display: table;">
+      <!-- onclick="alert('공사중 입니다. 혹시 월요일 셔틀을 예약하신 분은 예약이 된 것이 아니니 토요일에 다시 예약해주세요.')" -->
+      <div id="normal_login_btn" style="inline-block; width:40px; height:40px; border-radius:50%; border:1px solid #46292b; float:right; margin-right:10px;display: table;">
         <span style="color:#46292b; display: table-cell;
         vertical-align: middle; font-size:10px;">일반<br>Login</span>
       </div>
