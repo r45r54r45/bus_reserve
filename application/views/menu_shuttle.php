@@ -7,7 +7,7 @@
         height: 40px;
         width: 40px;">
       </div>
-      <img src="/src/img/yonsei.png" id="cookie_check_img" style="margin:20px auto 20px; width:80px; height:80px;" class="img img-responsive">
+      <img src="/src/img/yonsei.png" style="margin:20px auto 20px; width:80px; height:80px;" class="img img-responsive">
 
       <!-- <span style="font-size:12px;">
       셔틀버스 자동예약이란?<br>
@@ -20,8 +20,8 @@
     <!-- <span style="font-size:10px;">바나나 고릴라 서비스 더 알아보기</span> -->
     <div class="col-xs-12 center form-group" style="padding-top:10px;">
       <div class="alert alert-success" role="alert">
-        <a onclick="parent.moveto('more_notice')" class="alert-link">셔틀 예약 리뉴얼 안내</a>
-      </div>
+      <a onclick="parent.openUrl('/more_notice')" class="alert-link">셔틀 예약 리뉴얼 안내</a>
+    </div>
       <div class="full-width input-group">
         <input style="border-radius: 3px;background-color: white;font-size:12px;border: 1px solid rgba(70, 41, 43, .5); box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);" id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl');"  maxlength="10">
         <span id="idgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
@@ -49,7 +49,8 @@
         <span style="color:white; display: table-cell;
         vertical-align: middle;font-size:10px;">고릴라<br>Login</span>
       </div>
-      <div id="normal_login_btn" style="inline-block; width:40px; height:40px; border-radius:50%; border:1px solid #46292b; float:right; margin-right:10px;display: table;">
+      <!-- id="normal_login_btn" -->
+      <div onclick="alert('공사중 입니다. 혹시 월요일 셔틀을 예약하신 분은 예약이 된 것이 아니니 토요일에 다시 예약해주세요.')" style="inline-block; width:40px; height:40px; border-radius:50%; border:1px solid #46292b; float:right; margin-right:10px;display: table;">
         <span style="color:#46292b; display: table-cell;
         vertical-align: middle; font-size:10px;">일반<br>Login</span>
       </div>
@@ -77,7 +78,7 @@ var gorilla_flag=false;
 $(function(){
   $("#sid").val(getCookie("sid"));
   $("#spw").val(getCookie("spw"));
-  $("#cookie_check_btn,#cookie_check_img").on("click",function(){
+  $("#cookie_check_btn").on("click",function(){
     $("#gorilla_input").toggle();
     gorilla_flag=!gorilla_flag;
   });

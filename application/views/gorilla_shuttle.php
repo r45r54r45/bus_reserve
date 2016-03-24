@@ -209,7 +209,6 @@ $(function(){
   $("#btn1").on("click",function(){
     if(typeFlag==1){
       reserve(Gtime, Gday, locFlag, 1);
-
       $("#modal").modal('hide');
     }else if(typeFlag==2){
 
