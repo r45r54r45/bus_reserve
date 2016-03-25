@@ -22,7 +22,7 @@
       <a onclick="parent.moveto('more_notice')" class="alert-link">셔틀 예약 리뉴얼 안내</a>
     </div>
       <div class="full-width input-group">
-        <input style="border-radius: 3px;background-color: white;font-size:12px;border: 1px solid rgba(70, 41, 43, .5); box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);" id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl');"  maxlength="10">
+        <input style="border-radius: 3px;background-color: white;font-size:12px;border: 1px solid rgba(70, 41, 43, .5); box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);" id="sid" name="id" class="full-width form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl');"  maxlength="10">
         <span id="idgl" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="display:none;"></span>
       </div>
     </div>
