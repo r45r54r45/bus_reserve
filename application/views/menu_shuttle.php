@@ -8,7 +8,6 @@
         width: 40px;">
       </div>
       <img src="/src/img/yonsei.png" style="margin:20px auto 20px; width:80px; height:80px;" class="img img-responsive">
-
       <!-- <span style="font-size:12px;">
       셔틀버스 자동예약이란?<br>
       2시에 자동으로 정해놓은 시간에<br>
@@ -20,7 +19,7 @@
     <!-- <span style="font-size:10px;">바나나 고릴라 서비스 더 알아보기</span> -->
     <div class="col-xs-12 center form-group" style="padding-top:10px;">
       <div class="alert alert-success" role="alert">
-      <a onclick="parent.openUrl('/more_notice')" class="alert-link">셔틀 예약 리뉴얼 안내</a>
+      <a onclick="parent.moveto('more_notice')" class="alert-link">셔틀 예약 리뉴얼 안내</a>
     </div>
       <div class="full-width input-group">
         <input style="border-radius: 3px;background-color: white;font-size:12px;border: 1px solid rgba(70, 41, 43, .5); box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);" id="sid" name="id" class="form-control" type="text" placeholder="학번" onkeydown=" input_range(event)" onkeyup="len_ch(10,'sid','idgl');"  maxlength="10">
