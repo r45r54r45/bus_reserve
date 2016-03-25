@@ -3,11 +3,11 @@
     <div id="home" class="btn-group" data-toggle="buttons">
       <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
       border-top-left-radius: 16px;" id="option1">
-      <input type="radio" name="options"  autocomplete="off"> 신촌
+      <input type="radio" name="options"  autocomplete="off"> 신촌발
     </label>
     <label class="btn btn-primary" style="    border-bottom-right-radius: 16px;
     border-top-right-radius: 16px;" id="option2" >
-    <input type="radio" name="options"  autocomplete="off"> 송도
+    <input type="radio" name="options"  autocomplete="off"> 송도발
   </label>
 </div>
 </div>
