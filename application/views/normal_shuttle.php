@@ -330,8 +330,14 @@ $(function(){
   function reserve(time, day, loc, type){
     var user=getCookie("final_userIdx");
     var d=new Date();
-    d.setDate(d.getDate()+(day-d.getDay()));
-    var date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
+    var date;
+    if(d.getDay()==6||d.getDay()==0){
+      d.setDate(d.getDate()+(day-d.getDay())+7);
+      date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
+    }else{
+      d.setDate(d.getDate()+(day-d.getDay()));
+      date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
+    }
     console.log(date);
     query="id="+getCookie("id")+"&pw="+getCookie("pw")+"&loc="+loc+"&date="+date+"&time="+time;
     $.get("/api/reserve?"+query,function(data){
