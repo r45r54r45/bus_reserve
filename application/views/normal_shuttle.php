@@ -304,6 +304,7 @@ $(function(){
     var start_date=d.getDate()-d.getDay()+1;
     d.setDate(parseInt(start_date)+parseInt(r_day)-1);
     var date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
+    console.log("/api/remaining?loc="+locFlag+"&date="+date);
     $.get("/api/remaining?loc="+locFlag+"&date="+date,function(data){
       console.log(data);
       $("#message").text(data['remaining'][r_time]+"석 남음");
