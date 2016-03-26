@@ -267,8 +267,7 @@ $(function(){
     }
     for(var j=0; j<target.length; j++){
       for(var i=0; i<14; i++){
-        if(j==0&&(pad(hour)+""+pad(minute))>timeArr[i]){
-          console.log(pad(hour)+""+pad(minute)+" ,>, "+timeArr[i]);
+        if(target[j]==day&&(pad(hour)+""+pad(minute))>timeArr[i]){
           continue;
         }
         // if(remainStatus[locFlag][target[j]][i]=="0")continue;
