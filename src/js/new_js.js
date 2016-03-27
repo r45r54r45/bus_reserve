@@ -283,3 +283,7 @@ function setCookie(cName, cValue, cDay){
        }
        return unescape(cValue);
    }
+   var isIosChrome=window.navigator.userAgent.match("CriOS");
+   if(isIosChrome){
+     alert('사파리 브라우저로 접속해주세요.');
+   }
