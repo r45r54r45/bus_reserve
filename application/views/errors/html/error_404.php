@@ -57,8 +57,8 @@ p {
 </head>
 <body>
 	<div id="container">
-		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
+		<h1>이런 이런.. 없는 페이지로 와버렸네요</h1>
+		무슨일이죠.......
 	</div>
 </body>
 </html>
