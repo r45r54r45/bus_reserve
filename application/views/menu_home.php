@@ -303,7 +303,6 @@ function time_format(data){
   <div class="col-xs-12" style="text-align:right">
     <span style="font-size:8px;">*공공데이터 포탈의 정보를 사용합니다</span>
   </div>
-  <div style="height:100px;"></div>
 </div>
 </div>
 </div>
