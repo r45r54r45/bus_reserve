@@ -197,7 +197,7 @@ $(function(){
         Gtime=time;
         Gday=day;
         if($(cellId).text()!=""){
-          var text=$(cellId).text();
+          var text=$("#"+cellId).text();
           console.log(text);
         }
         for(var i=0; i<14;i++){
