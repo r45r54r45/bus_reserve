@@ -286,4 +286,6 @@ function setCookie(cName, cValue, cDay){
    function isMobileDevice() {
     return navigator.userAgent.search('CriOS')!=-1;
 };
-if(isMobileDevice())alert("사파리로 접속해주세요");
+if(isMobileDevice()){
+  location.href="http://ybanana.yonsei.ac.kr/main/forIosChrome";
+}

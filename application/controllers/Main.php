@@ -9,6 +9,9 @@ class Main extends CI_Controller {
 		$this->load->view('new_main');
 		// $this->load->view('footer');
 	}
+	public function forIosChrome(){
+		$this->load->view('forIosChrome');
+	}
 	public function api()
 	{
 		// $this->load->view('header');
