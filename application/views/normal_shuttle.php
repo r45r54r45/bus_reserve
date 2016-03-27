@@ -201,6 +201,7 @@ $(function(){
           var seat=(text.split("번"))[0];
           if(confirm("취소하시겠습니까?")){
             r_cancel(time, day, locFlag, seat);
+            $("#"+cell).text("");
           }
           return;
         }
