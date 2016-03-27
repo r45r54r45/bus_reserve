@@ -196,6 +196,10 @@ $(function(){
         remaining(day,cellArr[0]);
         Gtime=time;
         Gday=day;
+        if($(cellId).text()!=""){
+          var text=$(cellId).text();
+          console.log(text);
+        }
         for(var i=0; i<14;i++){
           if($("#tr"+i+"_"+day).text()!=""){
             alert("같은 방향으로는 하루에 한건만 예약가능합니다.");
@@ -358,4 +362,22 @@ $(function(){
     return unescape(cValue);
   }
   function pad(n){return n<10 ? '0'+n : n}
+
+  function r_cancel(time, day, loc, seat){
+    var user=getCookie("final_userIdx");
+    var d=new Date();
+    var date;
+    if(d.getDay()==6){
+      d.setDate(d.getDate()+(day-d.getDay())+7);
+      date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
+    }else{
+      d.setDate(d.getDate()+(day-d.getDay()));
+      date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
+    }
+    console.log(date);
+    query="id="+getCookie("id")+"&pw="+getCookie("pw")+"&loc="+loc+"&date="+date+"&time="+time+"&seat="+seat;
+    $.get("/api/r_cancel?"+query,function(data){
+
+    });
+  }
   </script>
