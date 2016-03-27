@@ -264,7 +264,7 @@ public function r_cancel(){
 	$bdt =$_GET['date']; //예약 날짜 20160303
 	$shm =$_GET['time']; //출발시간 1330
 	$bcd =$loc."1"; //버스 일련 번호
-
+	$seat=$_GET["seat"];
 
 	$postdata = http_build_query(
 	array(
@@ -272,8 +272,12 @@ public function r_cancel(){
 		'bdt' => $bdt, //
 		'shm' => $shm, //
 		'bcd' => $bcd, //
-		'gbn' => 1, //
+		'chk' => $chk,
+		'seat'=> $seat,
 		'code' => 'D', //
+		'MYFORM_LOCATION' => $loc,
+		'MYFORM_DATE' => $bdt, //
+		'MYFORM_REASON' => 1
 	)
 );
 $opts = array(
