@@ -196,8 +196,8 @@ $(function(){
         remaining(day,cellArr[0]);
         Gtime=time;
         Gday=day;
-        if($("#"+cellId).text()!=""){
-          var text=$("#"+cellId).text();
+        if($("#"+cell).text()!=""){
+          var text=$("#"+cell).text();
           console.log(text);
         }
         for(var i=0; i<14;i++){
