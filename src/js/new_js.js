@@ -283,7 +283,7 @@ function setCookie(cName, cValue, cDay){
        }
        return unescape(cValue);
    }
-//    function isMobileDevice() {
-//     return navigator.userAgent.search('Chrome')&&navigator.userAgent.search('Apple');
-// };
-// if(isMobileDevice())alert("사파리로 접속해주세요").
+   function isMobileDevice() {
+    return navigator.userAgent.search('CriOS')!=-1;
+};
+if(isMobileDevice())alert("사파리로 접속해주세요");
