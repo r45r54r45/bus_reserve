@@ -198,7 +198,10 @@ $(function(){
         Gday=day;
         if($("#"+cell).text()!=""){
           var text=$("#"+cell).text();
-          console.log(text);
+          var seat=(text.split("번"))[0];
+          if(confirm("취소하시겠습니까?")){
+            r_cancel(time, day, locFlag, seat);
+          }
         }
         for(var i=0; i<14;i++){
           if($("#tr"+i+"_"+day).text()!=""){
