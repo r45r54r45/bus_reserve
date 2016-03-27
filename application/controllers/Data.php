@@ -5,17 +5,19 @@ class Data extends CI_Controller {
 
 	public function help()
 	{
-		require_once(APPPATH.'libraries/coolsms.php');
-		$api_key = 'NCS53C2A831865B7';
-		$api_secret = 'BEF1FE1C24C72F28C488728F91A2C838';
-
-		$rest = new coolsms($api_key, $api_secret);
-
-		$options->type = "LMS";
-		$options->to = "01071097327";
-		$options->from = "01071097327";
-		$options->text = $_GET['data'];
-		$rest->send($options);
+		// require_once(APPPATH.'libraries/coolsms.php');
+		// $api_key = 'NCS53C2A831865B7';
+		// $api_secret = 'BEF1FE1C24C72F28C488728F91A2C838';
+		//
+		// $rest = new coolsms($api_key, $api_secret);
+		//
+		// $options->type = "LMS";
+		// $options->to = "01071097327";
+		// $options->from = "01071097327";
+		// $options->text = $_GET['data'];
+		// $rest->send($options);
+		mail("r54r45r54@gmail.com","문의 제보",$_GET['data']);
+		mail("jaehadlee@naver.com","문의 제보",$_GET['data']);
 	}
 	public function auto_login_add($user){
 
