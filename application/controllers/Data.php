@@ -311,6 +311,17 @@ class Data extends CI_Controller {
 		}
 		//end of 91
 
+		$content= file_get_contents("http://bus.incheon.go.kr/iwcm/retrievebusstopcararriveinfo.laf?bstopid=165000848&routeid=165000206&pathseq=74");
+		$time=strrpos($content,'<font color="red">');
+		$pos= stripos($content,'<font color="red">');
+		$b912=array("","");
+		if(!$pos||!$time){}
+		else{
+		$b912[0]=substr($content,$pos+18,1);
+		$b912[1]=substr($content,$time+18,2);
+		}
+		//end of 912
+
 		$content= file_get_contents("http://bus.incheon.go.kr/iwcm/retrievebusstopcararriveinfo.laf?bstopid=164000016&routeid=165000215&pathseq=41");
 		$time=strrpos($content,'<font color="red">');
 		$pos= stripos($content,'<font color="red">');
@@ -326,6 +337,7 @@ class Data extends CI_Controller {
 		  "6724":{"count":"'.$b6724[0].'","time":"'.$b6724[1].'"},
 		  "6405":{"count":"'.$b6405[0].'","time":"'.$b6405[1].'"},
 		  "91":{"count":"'.$b91[0].'","time":"'.$b91[1].'"},
+			"912":{"count":"'.$b912[0].'","time":"'.$b912[1].'"},
 		  "9201":{"count":"'.$b9201[0].'","time":"'.$b9201[1].'"}
 		}';
 	}

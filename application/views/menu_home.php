@@ -155,6 +155,34 @@ function time_format(data){
 <div class="row" style="margin-top:20px;">
   <div class="col-xs-12">
     <div class="card_holder">
+      <!-- 91번 2 (1학사 앞)버스 카드 -->
+      <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
+        <div style="height: 100%;
+    width: 4em; border-right:2px solid #fcd90d;">
+          <div><span style="font-size: 20px;">91</span></div>
+          <div style="margin-top: -5px;"><span style="font-size: 10px;">1학사 앞</span></div>
+        </div>
+        <div style="position: absolute;
+        top: 4px;
+    left: 0;
+    width: 100%;
+    height: 42px;
+    padding-left: 4em;
+    padding-right: 18px;">
+          <div style="position: absolute;
+    bottom: 2px;
+    font-size: 10px;padding-left: 18px;">
+            <span id="bus91before2"></span><span> 정거장 전</span>
+          </div>
+          <div style="
+    float: right;
+    line-height: 40px;">
+            <span style="font-size: 17px;" id="bus91time2"></span>
+            <span style="font-size: 10px;    vertical-align: bottom;"> min</span>
+          </div>
+        </div>
+      </div>
+
 
       <!-- 91번 버스 카드 -->
       <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
@@ -303,6 +331,7 @@ function time_format(data){
 function setCurrentBus(){
     $("#bus6724time").css("font-size","10px").text("loading...");
     $("#bus91time").css("font-size","10px").text("loading...");
+    $("#bus91time2").css("font-size","10px").text("loading...");
     $("#bus6405time").css("font-size","10px").text("loading...");
     $("#bus9201time").css("font-size","10px").text("loading...");
   $.ajax({
@@ -315,6 +344,8 @@ function setCurrentBus(){
         $("#bus6724time").css("font-size","17px").text(toMin(json['6724']['time']));
         $("#bus91before").text(json['91']['count']);
         $("#bus91time").css("font-size","17px").text(toMin(json['91']['time']));
+        $("#bus91before2").text(json['912']['count']);
+        $("#bus91time2").css("font-size","17px").text(toMin(json['912']['time']));
         $("#bus6405before").text(json['6405']['count']);
         $("#bus6405time").css("font-size","17px").text(toMin(json['6405']['time']));
         $("#bus9201before").text(json['9201']['count']);
