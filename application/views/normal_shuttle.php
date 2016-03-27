@@ -332,7 +332,7 @@ $(function(){
     var d=new Date();
     var date;
     if(d.getDay()==6||d.getDay()==0){
-      d.setDate(d.getDate()+(day-d.getDay())+7);
+      d.setDate(d.getDate()+(day-d.getDay()));
       date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
     }else{
       d.setDate(d.getDate()+(day-d.getDay()));
