@@ -104,6 +104,10 @@ function moveto(path){
   location.replace("/#more#delivery");
   document.getElementById("makelong").style.height = "100%";
   content_manager();
+}else{
+  location.replace(path);
+  content_manager();
+
 }
 }
 window.onpopstate=function(e){

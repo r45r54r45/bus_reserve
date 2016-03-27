@@ -19,7 +19,7 @@
     <!-- <span style="font-size:10px;">바나나 고릴라 서비스 더 알아보기</span> -->
     <div class="col-xs-12 center form-group" style="padding-top:10px;">
       <div class="alert alert-success" role="alert">
-      <a onclick="parent.location.replace('/#more#notice#3');" class="alert-link">셔틀 취소 기능 업데이트 완료!!</a>
+      <a onclick="parent.moveto('/#more#notice#3');" class="alert-link">셔틀 취소 기능 업데이트 완료!!</a>
     </div>
       <div class="full-width input-group">
         <input style="border-radius: 3px;background-color: white;font-size:12px;border: 1px solid rgba(70, 41, 43, .5); box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);" id="sid" name="id" class="full-width form-control" type="text" placeholder="학번" >
