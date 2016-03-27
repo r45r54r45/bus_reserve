@@ -26,9 +26,9 @@ class Main extends CI_Controller {
 	}
 	public function test3()
 	{
-		// $this->load->view('header');
+		$this->load->view('menu_header');
 		$this->load->view('test3');
-		// $this->load->view('footer');
+		$this->load->view('menu_footer');
 	}
 	public function nshuttle()
 	{
