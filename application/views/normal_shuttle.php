@@ -202,6 +202,7 @@ $(function(){
           if(confirm("취소하시겠습니까?")){
             r_cancel(time, day, locFlag, seat);
           }
+          return;
         }
         for(var i=0; i<14;i++){
           if($("#tr"+i+"_"+day).text()!=""){
