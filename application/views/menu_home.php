@@ -306,7 +306,7 @@ function setCurrentBus(){
     $("#bus6405time").css("font-size","10px").text("loading...");
     $("#bus9201time").css("font-size","10px").text("loading...");
   $.ajax({
-        url: '/main/test2', //<- xml 위치
+        url: '/data/busTime', //<- xml 위치
         type: 'GET',
         // dataType:'json',
       success: function(res) {
