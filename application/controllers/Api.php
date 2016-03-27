@@ -289,6 +289,6 @@ $opts = array(
 	)
 );
 $context = stream_context_create($opts);
-$file = file_get_contents('http://ysweb.yonsei.ac.kr/busTest/index2.jsp', false, $context);
+$file = file_get_contents('http://ysweb.yonsei.ac.kr/busTest/reserveinfo2.jsp', false, $context);
 }
 }
