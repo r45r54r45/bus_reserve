@@ -19,6 +19,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 6. reserve status all
 /api/status_all?id=&pw=
 => 'result':
+7. cancel
+/api/r_cancel?id=&pw=&loc=&date=&time=
 */
 class Api extends CI_Controller {
 	protected $context;
@@ -256,5 +258,33 @@ public function status_all(){
 
 	}
 	echo json_encode($result);
+}
+public function r_cancel(){
+	$loc =$_GET['loc']; //출발 위치  S, I
+	$bdt =$_GET['date']; //예약 날짜 20160303
+	$shm =$_GET['time']; //출발시간 1330
+	$bcd =$loc."1"; //버스 일련 번호
+
+
+	$postdata = http_build_query(
+	array(
+		'loc' => $loc,//
+		'bdt' => $bdt, //
+		'shm' => $shm, //
+		'bcd' => $bcd, //
+		'gbn' => 1, //
+		'code' => 'D', //
+	)
+);
+$opts = array(
+	"http"=>array(
+		"method"=>"POST",
+		"header"=>"Content-type: application/x-www-form-urlencoded\r\n".
+		"Cookie: JSESSIONID=$this->JSESSIONID; __smVisitorID=$this->__smVisitorID; gbn=1; yisid=$this->id; lang=0;",
+		"content" => $postdata
+	)
+);
+$context = stream_context_create($opts);
+$file = file_get_contents('http://ysweb.yonsei.ac.kr/busTest/index2.jsp', false, $context);
 }
 }
