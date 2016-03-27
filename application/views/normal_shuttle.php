@@ -303,8 +303,8 @@ $(function(){
     var d=new Date();
     var start_date;
     var date;
-    if(d.getDay()==6||d.getDay()==0){ //오늘이 토요일이거나 일요일일경우
-      start_date=d.getDate()-d.getDay()+1; //월요일 날짜 구하기
+    if(d.getDay()==6){ //오늘이 토요일
+      start_date=d.getDate()-d.getDay()+1+7;
       d.setDate(parseInt(start_date)+parseInt(r_day)-1);
       date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
     }else{ //일반적인 날짜일경우
@@ -331,8 +331,8 @@ $(function(){
     var user=getCookie("final_userIdx");
     var d=new Date();
     var date;
-    if(d.getDay()==6||d.getDay()==0){
-      d.setDate(d.getDate()+(day-d.getDay()));
+    if(d.getDay()==6){
+      d.setDate(d.getDate()+(day-d.getDay())+7);
       date=d.getFullYear()+""+pad((d.getMonth()+1))+""+pad(d.getDate());
     }else{
       d.setDate(d.getDate()+(day-d.getDay()));
