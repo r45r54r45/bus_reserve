@@ -341,9 +341,9 @@ function setCurrentBus(){
         var json=JSON.parse(res);
         $("#bus6724before").text(json['6724']['count']);
         $("#bus6724time").css("font-size","17px").text(toMin(json['6724']['time']));
-        $("#bus91before").text(toMin(json['91']['count']));
+        $("#bus91before").text(toCount(json['91']['count']));
         $("#bus91time").css("font-size","17px").text(toMin(json['91']['time']));
-        $("#bus91before2").text(toMin(json['912']['count']));
+        $("#bus91before2").text(toCount(json['912']['count']));
         $("#bus91time2").css("font-size","17px").text(toMin(json['912']['time']));
         $("#bus6405before").text(json['6405']['count']);
         $("#bus6405time").css("font-size","17px").text(toMin(json['6405']['time']));
@@ -357,6 +357,15 @@ function toMin(sec){
   if(sec==""){
     return "정보 없음";
   }else if(sec.toString()[1]=="�"){
+    return sec.toString()[0];
+  }else
+  return sec;
+}
+function toCount(sec){
+
+  if(sec==""){
+    return "";
+  }else if(sec.toString()[1]=="<"){
     return sec.toString()[0];
   }else
   return sec;
