@@ -17,7 +17,7 @@
     </a>
     </div>
     <div class="col-xs-4" >
-      <a href='http://portal.yonsei.ac.kr/main/' target='_blank'>
+      <a href='http://portal.yonsei.ac.kr/main/' target='_blank' onclick="ga('send', 'event', 'Link', 'click', 'PORTAL');">
       <div class="circle">
         <div style="vertical-align: middle;
     display: table-cell;">
@@ -32,7 +32,7 @@
     </a>
     </div>
     <div class="col-xs-4" >
-      <a href='https://yicdorm.yonsei.ac.kr/study.asp' target='_blank'>
+      <a href='https://yicdorm.yonsei.ac.kr/study.asp' target='_blank' onclick="ga('send', 'event', 'Link', 'click', 'STUDY');">
       <div class="circle">
         <div style="vertical-align: middle;
     display: table-cell;">
@@ -49,7 +49,7 @@
   </div>
   <div class="row" style="margin-top:15px;">
     <div class="col-xs-4" >
-      <a href='https://yicdorm.yonsei.ac.kr/room.asp' target='_blank'>
+      <a href='https://yicdorm.yonsei.ac.kr/room.asp' target='_blank' onclick="ga('send', 'event', 'Link', 'click', 'SEMINAR');">
       <div class="circle">
         <div style="vertical-align: middle;
     display: table-cell;">
@@ -64,7 +64,7 @@
     </a>
     </div>
     <div class="col-xs-4" >
-      <a href='http://career.yonsei.ac.kr' target='_blank'>
+      <a href='http://career.yonsei.ac.kr' target='_blank' onclick="ga('send', 'event', 'Link', 'click', 'CAREER');">
       <div class="circle">
         <div style="vertical-align: middle;
     display: table-cell;">
@@ -79,7 +79,7 @@
     </a>
     </div>
     <div class="col-xs-4" >
-      <a href='https://yicdorm.yonsei.ac.kr' target='_blank'>
+      <a href='https://yicdorm.yonsei.ac.kr' target='_blank' onclick="ga('send', 'event', 'Link', 'click', 'DORM');">
       <div class="circle">
         <div style="vertical-align: middle;
     display: table-cell;">
@@ -96,7 +96,7 @@
   </div>
   <div class="row" style="margin-top:15px;">
     <div class="col-xs-4" >
-      <a href='http://uic.yonsei.ac.kr/main.asp' target='_blank'>
+      <a href='http://uic.yonsei.ac.kr/main.asp' target='_blank' onclick="ga('send', 'event', 'Link', 'click', 'UIC');">
       <div class="circle">
         <div style="vertical-align: middle;
     display: table-cell;">
