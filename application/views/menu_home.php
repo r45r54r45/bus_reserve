@@ -339,11 +339,11 @@ function setCurrentBus(){
         // dataType:'json',
       success: function(res) {
         var json=JSON.parse(res);
-        $("#bus6724before").text(json['6724']['count']);
+        $("#bus6724before").text(toMin(json['6724']['count']));
         $("#bus6724time").css("font-size","17px").text(toMin(json['6724']['time']));
-        $("#bus91before").text(json['91']['count']);
+        $("#bus91before").text(toMin(json['91']['count']));
         $("#bus91time").css("font-size","17px").text(toMin(json['91']['time']));
-        $("#bus91before2").text(json['912']['count']);
+        $("#bus91before2").text(toMin(json['912']['count']));
         $("#bus91time2").css("font-size","17px").text(toMin(json['912']['time']));
         $("#bus6405before").text(json['6405']['count']);
         $("#bus6405time").css("font-size","17px").text(toMin(json['6405']['time']));
