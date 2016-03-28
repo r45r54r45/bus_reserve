@@ -306,7 +306,7 @@ class Data extends CI_Controller {
 		$b91=array("","");
 		if(!$pos||!$time){}
 		else{
-		$b91[0]=substr($content,$pos+18,1);
+		$b91[0]=substr($content,$pos+18,2);
 		$b91[1]=substr($content,$time+18,2);
 		}
 		//end of 91
