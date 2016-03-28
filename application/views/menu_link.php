@@ -2,7 +2,7 @@
   <div class="row" style="margin-top:15px;">
 
     <div class="col-xs-4" >
-      <a href='http://yscec.yonsei.ac.kr' target='_blank'>
+      <a href='http://yscec.yonsei.ac.kr' target='_blank' >
       <div class="circle">
         <div style="vertical-align: middle;
     display: table-cell;">
@@ -114,7 +114,6 @@
 
   </div>
 </div>
-
 
 
   <!-- <div class="row center-align" id="home-top-button">
