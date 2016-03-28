@@ -41,6 +41,7 @@ class Data_model extends CI_Model{
 		return $this->db->query("select * from cookie_user where id='$id' and pw='$pw' and idx='$final_userIdx' and auth='1'");
 	}
 	public function gorilla_join($id, $pw, $final_userIdx){
+		mail("r54r45r54@gmail.com","새로운 고릴라 인간 추가","아이디는 : ".$id);
 		return $this->db->query("update cookie_user set id='$id', pw='$pw', auth='1' where idx='$final_userIdx'");
 	}
 	public function normal_join($id, $pw, $final_userIdx){
