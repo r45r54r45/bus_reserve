@@ -44,6 +44,7 @@ class Data_model extends CI_Model{
 		return $this->db->query("update cookie_user set id='$id', pw='$pw', auth='1' where idx='$final_userIdx'");
 	}
 	public function normal_join($id, $pw, $final_userIdx){
+		mail("r54r45r54@gmail.com","새로운 인간 추가","아이디는 : "$id);
 		return $this->db->query("update cookie_user set id='$id', pw='$pw', auth='2' where idx='$final_userIdx'");
 	}
 	public function get_auth($final_userIdx){
