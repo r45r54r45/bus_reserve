@@ -311,7 +311,7 @@ class Data extends CI_Controller {
 		}
 		//end of 91
 
-		$content= file_get_contents("http://bus.incheon.go.kr/iwcm/retrievebusstopcararriveinfo.laf?bstopid=165000848&routeid=165000206&pathseq=74");
+		$content= file_get_contents("http://bus.incheon.go.kr/iwcm/retrievebusstopcararriveinfo.laf?bstopid=165000725&routeid=165000206&pathseq=61");
 		$time=strrpos($content,'<font color="red">');
 		$pos= stripos($content,'<font color="red">');
 		$b912=array("","");
