@@ -112,7 +112,7 @@ body {
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-73228564-1', 'auto');
   ga('set', 'userId', getCookie("id"));
-  ga('send', 'pageview');
+  // ga('send', 'pageview');
   </script>
 </body>
 </html>
