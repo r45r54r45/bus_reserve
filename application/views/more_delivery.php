@@ -22,7 +22,7 @@
         <div style="position: absolute;bottom: 2px;font-size: 10px;padding-left: 18px;">
         </div>
         <div style="float: right;line-height: 40px;padding-left:20px;">
-          <span> <a href="tel:0328588105"><img class="img img-responsive" src="/src/img/call.png"></a></span>
+          <span> <a href="tel:0328588105" onclick="ga('send', 'event', 'MENU', 'call', 'DD_Chicken');"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
         <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;z-index: 2;">
           <span><img class="img img-responsive" src="/src/img/menu.png" onclick='$("#DDMenuModal").modal("show");'></span>
