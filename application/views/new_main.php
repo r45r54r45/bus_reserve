@@ -105,6 +105,14 @@ body {
   <script src="/src/js/new_js.js"></script>
   <script src="/src/js/jquery.timeago.js" type="text/javascript"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-73228564-1', 'auto');
+  ga('set', 'userId', getCookie("id"));
+  ga('send', 'pageview');
+  </script>
 </body>
 </html>
