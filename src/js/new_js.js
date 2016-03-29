@@ -223,7 +223,8 @@ function statusUpdate(data){
 
         var strVar="";
 strVar += "<div class=\"noti_element\""+background;
-strVar +="onclick=\"noti_manager("+re[i]['idx'];
+strVar +="onclick=\"ga('send', 'event', 'Notification', 'click', '"+re[i]['content'];
+strVar +="');noti_manager("+re[i]['idx'];
 strVar += ");location.replace('/"+re[i]['target'];
 strVar +="');content_manager();\">          <div class=\"noti_img\"> "+image;
 strVar += "<\/div>          <div class=\"noti_wrap\">";
