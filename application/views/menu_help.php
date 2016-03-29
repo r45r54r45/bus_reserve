@@ -39,7 +39,7 @@ $(function(){
     $("#option1").removeClass('active');
     $("#option2").addClass('active');
     $("#help_desc").text("* 문제 발견 시 제보 해주시면 추첨을 통해 기프트콘을 보내드립니다");
-    $("textarea").attr("placeholder","문제 제보 (핸드폰 번호를 써주셔야 추첨이 가능합니다.)");
+    $("textarea").attr("placeholder","문제 제보 (핸드폰 번호를 써주셔야 추첨이 가능합니다. 그리고 연락처를 알려주셔야 도와드릴 수가 있어요 ㅠㅠㅠ)");
 
   });
   $("#option2").on("click",function(){
