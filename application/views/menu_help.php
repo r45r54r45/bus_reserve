@@ -16,7 +16,7 @@
   <div class="col-xs-12">
     <textarea style="height:100px; width:100%; font-size:12px; resize:none;border: 1px solid rgba(70, 41, 43, .5);
     box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
-    border-radius: 3px;background-color: white; " placeholder="문제 제보 (핸드폰 번호를 써주셔야 추첨이 가능합니다.  그리고 연락처를 알려주셔야 도와드릴 수가 있어요 ㅠㅠㅠ)"
+    border-radius: 3px;background-color: white; " placeholder="문제 제보 (핸드폰 번호를 써주셔야 추첨이 가능합니다.  그리고 연락처를 알려주셔야 도와드릴 수가 있어요 ㅠㅠㅠ 이메일도 됩니당~)"
      id="help_textarea" maxlength="1000"></textarea>
   </div>
 </div>
@@ -39,7 +39,7 @@ $(function(){
     $("#option1").removeClass('active');
     $("#option2").addClass('active');
     $("#help_desc").text("* 문제 발견 시 제보 해주시면 추첨을 통해 기프트콘을 보내드립니다");
-    $("textarea").attr("placeholder","문제 제보 (핸드폰 번호를 써주셔야 추첨이 가능합니다. 그리고 연락처를 알려주셔야 도와드릴 수가 있어요 ㅠㅠㅠ)");
+    $("textarea").attr("placeholder","문제 제보 (핸드폰 번호를 써주셔야 추첨이 가능합니다. 그리고 연락처를 알려주셔야 도와드릴 수가 있어요 ㅠㅠㅠ 이메일도 됩니당~)");
 
   });
   $("#option2").on("click",function(){
