@@ -112,6 +112,7 @@ $(function(){
             if(!json['result']){
               alert("고릴라 승인번호가 옳지 않습니다.");
             }else{
+              ga('send', 'event', 'SHUTTLE', 'join', 'gorilla_user');
               location.href="http://ybanana.yonsei.ac.kr/new_ver/gorilla_shuttle";
               //TODO 보안 문제 체크, 토큰주고 양방향으로 체크하는 것
             }
@@ -139,6 +140,7 @@ $(function(){
       var json=JSON.parse(data);
       var auth=json['auth'];
       if(auth=="0"){
+        ga('send', 'event', 'SHUTTLE', 'join', 'normal_user');
         $.get("/data/normal_join/"+id+"/"+pw+"/"+final_userIdx,function(data){
           location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
         });
