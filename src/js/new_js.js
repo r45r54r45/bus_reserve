@@ -206,10 +206,11 @@ function statusUpdate(data){
     var re=JSON.parse(data);
     $("#noti_body").text("");
     if(data=""){
-      $("#noti_header").text("알림이 없습니다");
+
       console.log("알림 없으");
     }else{
       $("#noti_header").text("");
+      if(re.length==0)$("#noti_header").text("알림이 없습니다");
       for(var i=0; i<re.length; i++){
         var background="";
         var image="";
