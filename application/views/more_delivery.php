@@ -25,7 +25,7 @@
           <span> <a href="tel:0328588105" onclick="ga('send', 'event', 'MENU', 'call', 'DD_Chicken');"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
         <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;z-index: 2;">
-          <span><img class="img img-responsive" src="/src/img/menu.png" onclick="ga('send', 'event', 'MENU', '메뉴열기', 'DD_Chicken'); $('#DDMenuModal').modal('show');"></span>
+          <span><img class="img img-responsive" src="/src/img/menu.png" onclick="ga('send', 'event', 'MENU', 'menu_open', 'DD_Chicken'); $('#DDMenuModal').modal('show');"></span>
         </div>
       </div>
     </div>
