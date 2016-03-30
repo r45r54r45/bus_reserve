@@ -9,8 +9,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>banana</title>
-  <!-- Bootstrap core CSS -->
-  <link rel="apple-touch-startup-image" href="/src/img/splash2.png" >
+  <!-- Bootstrap core CSS 
+  <link rel="apple-touch-startup-image" href="/src/img/splash2.png" > -->
+    <!-- iPhone 6 startup image -->
+    <link href="/src/img/splash2.png" 
+          media="(device-width: 375px) and (device-height: 667px)
+                 and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+
+
   <link rel="apple-touch-icon" href="/src/img/main_logo.png" />
   <link rel="apple-touch-icon-precomposed" href="/src/img/main_logo.png" />
 
