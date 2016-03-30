@@ -148,7 +148,7 @@ $(function(){
         location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
       }
     });
-
+location.href="http://ybanana.yonsei.ac.kr/new_ver/normal_shuttle";
   }else{
     alert('포탈 로그인에 실패했습니다.');
   }
