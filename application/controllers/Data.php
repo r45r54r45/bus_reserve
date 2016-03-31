@@ -362,10 +362,6 @@ class Data extends CI_Controller {
 	public function rank_page(){
 		$this->load->model("data_model");
 		$rank_result=$this->data_model->getAllRankResult()->result();
-		// foreach ($rank_result as $row) {
-		// 	$row->name;
-		// 	$row->banana;
-		// }
 		echo json_encode($rank_result);
 	}
 }

@@ -86,7 +86,7 @@ $(function(){
     var level=json['level'];
     $("#myRank").text(rank);
     $("#myName").text(name);
-    $("#myBanana").text(banana);
+    $("#myBananaTop").text(banana);
     $("#myLevel").text(level);
     $("#myRankTop").text(rank);
     $("#myNameTop").text(name);
