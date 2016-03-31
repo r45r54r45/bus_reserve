@@ -71,4 +71,10 @@ class Data_model extends CI_Model{
 	public function getUserRank($user){
 		return $this->db->query("select count(*)+1 as rank from cookie_user cuser where (select banana from cookie_user where idx='$user') < cuser.banana");
 	}
+	public function getUserId($user){
+		return $this->db->query("select id from cookie_user where idx='$user'");
+	}
+	public function getUserName($user){
+		return $this->db->query("select name from cookie_user where idx='$user'");
+	}
 }
