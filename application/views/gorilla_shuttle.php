@@ -179,6 +179,7 @@ $(function(){
     getCurrent();
   });
   $("td").on("click", function(e){
+    console.log(e+" : td");
     var cell=e.target.id;
     selectedCell=cell;
     if(cell.split("_")[0]!="shown"){
@@ -202,7 +203,8 @@ $(function(){
       $("#modal").modal('show');
     }
   });
-  $("#x_button").on("click",function(){
+  $("#x_button").on("click",function(e){
+    console.log(e+" : xb");
     typeFlag=0;
     $("#modal").modal('hide');
   });
