@@ -33,12 +33,12 @@
     </label>
     <label class="btn btn-primary"  style="border-bottom-right-radius: 16px;
     border-top-right-radius: 16px;" id="option2" >
-      <input type="radio" name="options"  autocomplete="off"> 학과
-    </label>
+    <input type="radio" name="options"  autocomplete="off"> 학과
+  </label>
 </div>
 </div>
-  <div class="row" style="margin-top:20px; border-top:1px solid #D3D3D3;">
-    <? for($i=0; $i<5; $i++){ ?>
+<div class="row" style="margin-top:20px; border-top:1px solid #D3D3D3;">
+  <? for($i=0; $i<5; $i++){ ?>
     <div class="col-xs-12 ranking_line">
       <div>
         <span  style="font-size:9px;"><?=$i+1?></span>
@@ -109,13 +109,14 @@ $(function(){
   $.get("/data/rank_page",function(data){
     var json=JSON.parse(data);
     for(var i=0; i<json.length; i++){
-      if(json[i]['name']!=""){
-        $("#name_"+i).text(json[i]['name']);
-      }else if(json[i]['id']!=null){
-      $("#name_"+i).text(json[i]['id']);
-    }else{
-      $("#name_"+i).text("아기원숭이");
-    }
+      // if(json[i]['name']!=""){
+        // $("#name_"+i).text(json[i]['name']);
+      // }else
+      if(json[i]['id']!=null){
+        $("#name_"+i).text(json[i]['id']);
+      }else{
+        $("#name_"+i).text("아기원숭이");
+      }
       $("#banana_"+i).text(json[i]['banana']);
     }
   });
