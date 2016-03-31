@@ -14,6 +14,12 @@ class New_ver extends CI_Controller {
 		$this->load->view('menu_shuttle');
 		$this->load->view('menu_footer');
 	}
+	public function rank_page()
+	{
+		$this->load->view('menu_header');
+		$this->load->view('rank_page');
+		$this->load->view('menu_footer');
+	}
 	public function menu()
 	{
 		$this->load->view('menu_header');

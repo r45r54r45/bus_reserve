@@ -78,9 +78,13 @@ $(function(){
   $(".noti").on("click",function(){
     $("#noti_modal").modal('toggle');
   });
+  $(".banana_button").on("click",function(){
+    openUrl("http://ybanana.yonsei.ac.kr/new_ver/rank_page");
+  });
 });
 var noti_flag=false;
 function openUrl(url){
+  $("#page_title").text("MY BANANA");
   $("iframe#contents").attr("src",url);
 }
 function moveto(path){
