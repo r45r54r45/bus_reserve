@@ -114,7 +114,7 @@ $(function(){
       }else if(json[i]['id']!=null){
       $("#name_"+i).text(json[i]['id']);
     }else{
-      $("#name_"+i).text("정보없음");
+      $("#name_"+i).text("아기원숭이");
     }
       $("#banana_"+i).text(json[i]['banana']);
     }
