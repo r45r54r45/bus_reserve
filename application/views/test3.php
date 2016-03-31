@@ -91,8 +91,8 @@ $(function(){
   $.get("/data/rank_page",function(data){
     var json=JSON.parse(data);
     for(var i=0; i<json.length; i++){
-      $("#name_"+i).text(json[i]['name']);
-      $("#banana_"+i).text(json[i]['banana']);
+      $("#name_"+i+1).text(json[i]['name']);
+      $("#banana_"+i+1).text(json[i]['banana']);
     }
   });
 });
