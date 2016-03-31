@@ -77,6 +77,21 @@
 // 1~5 my level
 // search everytime?
 (function(){
-  $.get("/data/personalInformation/7")
+  $.get("/data/personalInformation/7",function(data){
+    var json=JSON.parse(data);
+    var rank=json['rank'];
+    var name=json['name'];
+    var banana=json['banana'];
+    var level=json['level'];
+    $("#myName").text(name);
+    $("#myBanana").text(banana);
+  });
+  $.get("/data/rank_page",function(data){
+    var json=JSON.parse(data);
+    for(var i=0; i<json.length; i++){
+      $("#name_"+i).text(json[i]['name']);
+      $("#banana_"+i).text(json[i]['banana']);
+    }
+  });
 });
 </script>
