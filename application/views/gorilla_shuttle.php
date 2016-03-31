@@ -183,6 +183,7 @@ $(function(){
     var cell=e.target.id;
     selectedCell=cell;
     if(cell.split("_")[0]!="shown"&&$("#"+cell).text()==""){
+      console.log($("#"+cell).text());
       var cellId=cell.substring(2);
       var cellArr=cellId.split("_");
       var shown_time=$("#shown_time"+cellArr[0]);
