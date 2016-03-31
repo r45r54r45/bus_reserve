@@ -97,7 +97,7 @@ $(function(){
     for(var i=0; i<json.length; i++){
       if(json[i]['name']!=""){
         $("#name_"+i).text(json[i]['name']);
-      }else if(json[i]['id']!="NULL"){
+      }else if(json[i]['id']!=null){
       $("#name_"+i).text(json[i]['id']);
     }else{
       $("#name_"+i).text("정보없음");
