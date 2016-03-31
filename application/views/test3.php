@@ -76,7 +76,7 @@
 //TODO name, level, rank, banana, gorilla
 // 1~5 my level
 // search everytime?
-(function(){
+$(function(){
   $.get("/data/personalInformation/7",function(data){
     console.log(data);
     var json=JSON.parse(data);
