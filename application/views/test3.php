@@ -87,6 +87,7 @@ $(function(){
     $("#myRank").text(rank);
     $("#myName").text(name);
     $("#myBananaTop").text(banana);
+    $("#myBanana").text(banana);
     $("#myLevel").text(level);
     $("#myRankTop").text(rank);
     $("#myNameTop").text(name);
