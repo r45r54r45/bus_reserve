@@ -83,7 +83,7 @@
   /*margin-left:20px;*/
   position: absolute;
   top:0px;
-  left:10px;
+  left:15px;
 }
 .ranking_line>div:nth-child(2){
   /*margin-left:20px;*/
@@ -94,7 +94,7 @@
 .ranking_line>div:nth-child(3){
   position: absolute;
   top:0px;
-  right:30px;
+  right:20px;
 }
 </style>
 <script>
