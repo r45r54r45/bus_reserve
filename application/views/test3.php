@@ -25,6 +25,18 @@
       <span style="font-size:11px;">GORILLA</span>
     </div>
   </div>
+  <div class="row center-align" id="home-top-button">
+    <div id="home" class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary active" style="border-bottom-left-radius: 16px;
+      border-top-left-radius: 16px;" id="option1">
+      <input type="radio" name="options"  autocomplete="off"> 전체
+    </label>
+    <label class="btn btn-primary"  style="border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;" id="option2" >
+      <input type="radio" name="options"  autocomplete="off"> 학과
+    </label>
+</div>
+</div>
   <div class="row" style="margin-top:20px; border-top:1px solid #D3D3D3;">
     <? for($i=0; $i<5; $i++){ ?>
     <div class="col-xs-12 ranking_line">
@@ -104,6 +116,12 @@ $(function(){
     }
       $("#banana_"+i).text(json[i]['banana']);
     }
+  });
+  $("#option1").on("click",function(){
+
+  });
+  $("#option2").on("click",function(){
+    alert("준비중입니다!");
   });
 });
 </script>
