@@ -78,11 +78,13 @@
 // search everytime?
 (function(){
   $.get("/data/personalInformation/7",function(data){
+    console.log(data);
     var json=JSON.parse(data);
     var rank=json['rank'];
     var name=json['name'];
     var banana=json['banana'];
     var level=json['level'];
+    $("#myRank").text(rank);
     $("#myName").text(name);
     $("#myBanana").text(banana);
   });
