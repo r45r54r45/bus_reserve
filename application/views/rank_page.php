@@ -79,16 +79,22 @@
 .ranking_line>div>span{
   line-height:40px;
 }
+.ranking_line>div:nth-child(1){
+  /*margin-left:20px;*/
+  position: absolute;
+  top:0px;
+  left:10px;
+}
 .ranking_line>div:nth-child(2){
   /*margin-left:20px;*/
   position: absolute;
   top:0px;
-  left:20px;
+  left:40px;
 }
 .ranking_line>div:nth-child(3){
   position: absolute;
   top:0px;
-  right:0px;
+  right:30px;
 }
 </style>
 <script>
