@@ -6,18 +6,18 @@
       </div>
     </div>
     <div class="col-xs-12" style="margin-top:10px; text-align:center;">
-      <span style="font-size:14px; font-weight:700;">이재하</span><br>
-      <span style="font-size:11px;" id="user_level">원숭이</span>
+      <span style="font-size:14px; font-weight:700;" id="myName"></span><br>
+      <span style="font-size:11px;" id="myLevel"></span>
       <span style="font-size:11px;"> 회원</span>
     </div>
   </div>
   <div class="row" style="margin-top:20px;">
     <div class="col-xs-4" style="text-align:center;">
-      <span style="font-size:18px;font-weight: 700; color:#FBD734;">281</span><br>
+      <span style="font-size:18px;font-weight: 700; color:#FBD734;" id="myRankTop"></span><br>
       <span style="font-size:11px;">RANK</span>
     </div>
     <div class="col-xs-4" style="text-align:center;">
-      <span style="font-size:18px;font-weight: 700; color:#FBD734;">3245</span><br>
+      <span style="font-size:18px;font-weight: 700; color:#FBD734;" id="myBananaTop"></span><br>
       <span style="font-size:11px;">BANANA</span>
     </div>
     <div class="col-xs-4" style="text-align:center;">
@@ -36,7 +36,7 @@
       </div>
       <div>
         <img src="/src/img/banana.png" style="height:20px;">
-        <span id="banana_<?=$i?>"></span>
+        <span id="banana_<?=$i?>" style="font-size:9px;"></span>
       </div>
     </div>
     <? }?>
@@ -49,7 +49,7 @@
       </div>
       <div>
         <img src="/src/img/banana.png" style="height:20px;">
-        <span id="myBanana"></span>
+        <span id="myBanana" style="font-size:9px;"></span>
       </div>
     </div>
     <!-- TODO 내가 순위권에 포함 되어있을 때와 아닐때- 상관없이 일단 ㄱ-->
@@ -87,6 +87,9 @@ $(function(){
     $("#myRank").text(rank);
     $("#myName").text(name);
     $("#myBanana").text(banana);
+    $("#myLevel").text(level);
+    $("#myRankTop").text(rank);
+    $("#myNameTop").text(name);
   });
   $.get("/data/rank_page",function(data){
     var json=JSON.parse(data);
