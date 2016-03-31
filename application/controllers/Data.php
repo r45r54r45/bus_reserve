@@ -349,9 +349,9 @@ class Data extends CI_Controller {
 		$banana=$this->data_model->getUserBanana($user)->row()->banana;
 		$auth=$this->data_model->get_auth($user)->row()->auth;
 		if($auth=="1")
-			$auth="원숭이";
-		else if($auth=="2")
 			$auth="고릴라";
+		else if($auth=="2")
+			$auth="원숭이";
 		else $auth="아기원숭이";
 		$result['rank']=$rank;
 		$result['name']=$name;
