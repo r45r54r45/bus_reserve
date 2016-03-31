@@ -70,19 +70,25 @@
 <style>
 .ranking_line{
   height:40px; border-bottom: 1px solid #D3D3D3;
+  position: relative;
 }
 .ranking_line>div{
   display: inline-block;
-  display: inline;
+
 }
 .ranking_line>div>span{
   line-height:40px;
 }
 .ranking_line>div:nth-child(2){
-  margin-left:20px;
+  /*margin-left:20px;*/
+  position: absolute;
+  top:0px;
+  left:20px;
 }
 .ranking_line>div:nth-child(3){
-  float:right;
+  position: absolute;
+  top:0px;
+  right:0px;
 }
 </style>
 <script>
