@@ -29,10 +29,10 @@
     <? for($i=0; $i<5; $i++){ ?>
     <div class="col-xs-12 ranking_line">
       <div>
-        <span><?=$i+1?></span>
+        <span  style="font-size:9px;"><?=$i+1?></span>
       </div>
       <div>
-        <span id="name_<?=$i?>"></span>
+        <span id="name_<?=$i?>"  style="font-size:10px;"></span>
       </div>
       <div>
         <img src="/src/img/banana.png" style="height:20px;">
@@ -42,10 +42,10 @@
     <? }?>
     <div class="col-xs-12 ranking_line">
       <div>
-        <span id="myRank"></span>
+        <span style="font-size:9px;" id="myRank"></span>
       </div>
       <div>
-        <span>ME</span>
+        <span style="font-size:10px;">ME</span>
       </div>
       <div>
         <img src="/src/img/banana.png" style="height:20px;">
