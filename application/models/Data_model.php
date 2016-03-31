@@ -80,4 +80,7 @@ class Data_model extends CI_Model{
 	public function getUserBanana($user){
 		return $this->db->query("select banana from cookie_user where idx='$user'");
 	}
+	public function getAllRankResult(){
+		return $this->db->query("select name, banana from cookie_user  order by banana desc");
+	}
 }

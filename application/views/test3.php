@@ -26,26 +26,33 @@
     </div>
   </div>
   <div class="row" style="margin-top:20px; border-top:1px solid #D3D3D3;">
-    <?
-    $arr=array("김우현","김우현","김우현","4","5","6");
-    // $arr=array(
-      // {'name':'김우현','banana':23425},{'name':'김우현','banana':23425},{'name':'김우현','banana':23425},{'name':'김우현','banana':23425},{'name':'김우현','banana':23425},{'name':'김우현','banana':'23425'});
-     ?>
-    <? for($i=0; $i<6; $i++){ ?>
+    <? for($i=0; $i<5; $i++){ ?>
     <div class="col-xs-12 ranking_line">
       <div>
         <span><?=$i+1?></span>
       </div>
       <div>
-        <span><?=$arr[$i]?></span>
+        <span id="name_<?=$i+1?>"></span>
       </div>
       <div>
         <img src="/src/img/banana.png" style="height:20px;">
-        <span><?=$arr[$i]?></span>
+        <span id="banana_<?=$i+1?>"></span>
       </div>
     </div>
     <? }?>
-    <!-- TODO 내가 순위권에 포함 되어있을 때와 아닐때-->
+    <div class="col-xs-12 ranking_line">
+      <div>
+        <span id="myRank"></span>
+      </div>
+      <div>
+        <span>ME</span>
+      </div>
+      <div>
+        <img src="/src/img/banana.png" style="height:20px;">
+        <span id="myBanana"></span>
+      </div>
+    </div>
+    <!-- TODO 내가 순위권에 포함 되어있을 때와 아닐때- 상관없이 일단 ㄱ-->
   </div>
 </div>
 <style>
@@ -65,3 +72,11 @@
   float:right;
 }
 </style>
+<script>
+//TODO name, level, rank, banana, gorilla
+// 1~5 my level
+// search everytime?
+(function(){
+  $.get("/data/personalInformation/7")
+});
+</script>
