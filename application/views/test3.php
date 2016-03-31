@@ -88,8 +88,9 @@
 //TODO name, level, rank, banana, gorilla
 // 1~5 my level
 // search everytime?
+var user=getCookie("final_userIdx");
 $(function(){
-  $.get("/data/personalInformation/7",function(data){
+  $.get("/data/personalInformation/"+user,function(data){
     console.log(data);
     var json=JSON.parse(data);
     var rank=json['rank'];
