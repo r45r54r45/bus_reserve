@@ -345,6 +345,6 @@ class Data extends CI_Controller {
 		$this->load->model("data_model");
 		$result=$this->data_model->getUserRank($user);
 		$row=$result->row();
-		echo $row[0];
+		echo $row['rank'];
 	}
 }
