@@ -73,6 +73,7 @@
 }
 .ranking_line>div{
   display: inline-block;
+  display: inline;
 }
 .ranking_line>div>span{
   line-height:40px;
