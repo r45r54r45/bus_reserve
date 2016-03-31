@@ -94,7 +94,7 @@
 .ranking_line>div:nth-child(3){
   position: absolute;
   top:0px;
-  right:20px;
+  right:15px;
 }
 </style>
 <script>
