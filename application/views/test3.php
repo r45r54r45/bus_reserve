@@ -95,6 +95,7 @@ $(function(){
     var json=JSON.parse(data);
     var rank=json['rank'];
     var name=json['name'];
+    if(name=="")name="ME";
     var banana=json['banana'];
     var level=json['level'];
     $("#myRank").text(rank);
