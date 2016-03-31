@@ -9,9 +9,9 @@ class Admin extends CI_Controller {
 	}
 	public function notification()
 	{
-		$this->load->view('header');
+		$this->load->view('temp/header');
 		$this->load->view('admin_noti');
-		$this->load->view('footer');
+		$this->load->view('temp/footer');
 	}
 	public function noti_upload()
 	{
