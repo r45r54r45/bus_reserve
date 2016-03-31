@@ -77,4 +77,7 @@ class Data_model extends CI_Model{
 	public function getUserName($user){
 		return $this->db->query("select name from cookie_user where idx='$user'");
 	}
+	public function getUserBanana($user){
+		return $this->db->query("select banana from cookie_user where idx='$user'");
+	}
 }

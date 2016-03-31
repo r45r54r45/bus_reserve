@@ -346,6 +346,17 @@ class Data extends CI_Controller {
 		$this->load->model("data_model");
 		$rank=$this->data_model->getUserRank($user)->row()->rank;
 		$name=$this->data_model->getUserName($user)->row()->name;
-		echo $rank." ".$name;
+		$banana=$this->data_model->getUserBanana($user)->row()->banana;
+		$auth=$this->data_model->get_auth($user)->row()->auth;
+		if($auth=="1")
+			$auth="원숭이";
+		else if($auth=="2")
+			$auth="고릴라";
+		else $auth="아기원숭이";
+		$result['rank']=$rank;
+		$result['name']=$name;
+		$result['banana']=$banana;
+		$result['level']=$auth;
+		echo json_encode($result);
 	}
 }
