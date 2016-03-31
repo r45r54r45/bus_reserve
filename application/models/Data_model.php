@@ -68,4 +68,7 @@ class Data_model extends CI_Model{
 	public function auto_login_getUser($code){
 		return $this->db->query("select id,pw from cookie_user c join auto_login a on c.idx=a.user where a.code='$code'");
 	}
+	public function getUserRank($user){
+		return $this->db->query("select count(*)+1 as rank from cookie_user cuser where (select banana from cookie_user where idx='$user') < cuser.banana");
+	}
 }

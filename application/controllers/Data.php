@@ -341,4 +341,10 @@ class Data extends CI_Controller {
 		  "9201":{"count":"'.$b9201[0].'","time":"'.$b9201[1].'"}
 		}';
 	}
+	public function personalInformation($user){
+		$this->load->model("data_model");
+		$result=$this->data_model->getUserRank($user);
+		$row=$result->row();
+		echo $row[0];
+	}
 }

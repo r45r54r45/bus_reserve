@@ -25,7 +25,7 @@
       <span style="font-size:11px;">GORILLA</span>
     </div>
   </div>
-  <div class="row" style="margin-top:20px; border-top:1px solid black;">
+  <div class="row" style="margin-top:20px; border-top:1px solid #D3D3D3;">
     <?
     $arr=array("김우현","김우현","김우현","4","5","6");
     // $arr=array(
@@ -40,6 +40,7 @@
         <span><?=$arr[$i]?></span>
       </div>
       <div>
+        <img src="/src/img/banana.png" style="height:20px;">
         <span><?=$arr[$i]?></span>
       </div>
     </div>
@@ -49,7 +50,7 @@
 </div>
 <style>
 .ranking_line{
-  height:40px; border-bottom: 1px solid black;
+  height:40px; border-bottom: 1px solid #D3D3D3;
 }
 .ranking_line>div{
   display: inline-block;
