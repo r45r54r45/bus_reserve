@@ -32,11 +32,11 @@
         <span><?=$i+1?></span>
       </div>
       <div>
-        <span id="name_<?=$i+1?>"></span>
+        <span id="name_<?=$i?>"></span>
       </div>
       <div>
         <img src="/src/img/banana.png" style="height:20px;">
-        <span id="banana_<?=$i+1?>"></span>
+        <span id="banana_<?=$i?>"></span>
       </div>
     </div>
     <? }?>
@@ -91,8 +91,8 @@ $(function(){
   $.get("/data/rank_page",function(data){
     var json=JSON.parse(data);
     for(var i=0; i<json.length; i++){
-      $("#name_"+i+1).text(json[i]['name']);
-      $("#banana_"+i+1).text(json[i]['banana']);
+      $("#name_"+i).text(json[i]['name']);
+      $("#banana_"+i).text(json[i]['banana']);
     }
   });
 });
