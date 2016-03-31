@@ -344,7 +344,7 @@ class Data extends CI_Controller {
 	public function personalInformation($user){
 		$this->load->model("data_model");
 		$result=$this->data_model->getUserRank($user);
-		$row=$result->row();
-		echo $row->rank;
+		$row=$result->row()->rank;
+		echo $row;
 	}
 }
