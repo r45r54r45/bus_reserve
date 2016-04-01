@@ -14,15 +14,15 @@
   <div class="row" style="margin-top:10px;">
     <div class="col-xs-4" style="text-align:center;">
       <span style="font-size:18px;font-weight: 700; color:#FBD734;" id="myRankTop"></span><br>
-      <span style="font-size:11px;">RANK</span>
+      <span style="font-size:10px;">RANK</span>
     </div>
     <div class="col-xs-4" style="text-align:center;">
       <span style="font-size:18px;font-weight: 700; color:#FBD734;" id="myBananaTop"></span><br>
-      <span style="font-size:11px;">BANANA</span>
+      <span style="font-size:10px;">BANANA</span>
     </div>
     <div class="col-xs-4" style="text-align:center;">
       <span style="font-size:18px; font-weight: 700; color:#FBD734;">0</span><br>
-      <span style="font-size:11px;">GORILLA</span>
+      <span style="font-size:10px;">GORILLA</span>
     </div>
   </div>
   <div class="row center-align" id="home-top-button">
@@ -52,7 +52,7 @@
       </div>
     </div>
     <? }?>
-    <div class="col-xs-12 ranking_line">
+    <div class="col-xs-12 ranking_line" style="background-color: #fef6d1;">
       <div>
         <span style="font-size:9px;" id="myRank"></span>
       </div>
