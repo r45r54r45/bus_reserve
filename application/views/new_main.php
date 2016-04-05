@@ -109,7 +109,7 @@ body {
   </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('popup_1','true');ga('send', 'event', 'popup', '다시보지않기', 'popup_1');">다시보지않기</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('popup_1','true',100);ga('send', 'event', 'popup', '다시보지않기', 'popup_1');">다시보지않기</button>
       </div>
     </div>
 
