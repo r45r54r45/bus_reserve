@@ -92,10 +92,10 @@ body {
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">4월 6일 수요일 13시~15시 서비스 점검 안내</h4>
+        <!--<button type="button" class="close" data-dismiss="modal" style="background-color:#ffffff;border:0px;">&times;</button>-->
+        <h4 class="modal-title" style="text-align:center;font-size:14px;">4월 6일 수요일 13시~15시 <br/> 서비스 점검 안내</h4>
       </div>
-      <div class="modal-body" style="font-size:11px;">
+      <div class="modal-body" style="font-size:11px;padding-bottom:5px;">
         <p>안녕하세요 바나나입니다<br>
   4월 5일 화요일 오후 2시경 서버에 장애가 발생했습니다.<br>
   이렇게 많은 분들이 동시에 접속할 줄은 꿈에도 몰라 소위 말해 서버가 터졌습니다ㅠ흑ㅠ<br>
@@ -105,11 +105,11 @@ body {
 
   <p>중간고사와 과제에 등골이 휘어지는 바나나 성애자 올림.</p>
 
-  <p>p.s. 고릴라 로그인에 대해 물어보시는 분들이 많았는데요, 아직 개발중이고 테스트하고있는 서비스로 바나나를 열렬히 이용해주시는 우수 회원분들 중 관리자가 추첨을 통해 드리는 특별 서비스입니다!<br>
+  <p>p.s. 고릴라 로그인에 대해 물어보시는 분들이 많았는데요, 아직 개발중이고 테스트하고있는 서비스로 바나나를 열렬히 이용해주시는 우수 회원분들 중 관리자가 추첨을 통해 드리는 특별 서비스입니다!
   </p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('popup_1','true',100);ga('send', 'event', 'popup', '다시보지않기', 'popup_1');">다시보지않기</button>
+      <div class="modal-footer" style="border:0px; padding-top:0px; padding-bottom:20px;">
+        <button style="font-size:11px;border: 0px; padding:0px;box-shadow: 0px 0px 0px; background-color:#ffffff;" type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('popup_1','true',100);ga('send', 'event', 'popup', '다시보지않기', 'popup_1');"><a href="#"> 다시보지않기</a></button>
       </div>
     </div>
 
