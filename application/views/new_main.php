@@ -87,7 +87,7 @@ body {
 </div>
 
 <div id="popup" class="modal fade" role="dialog" style="    margin-top: 50px;">
-  <div class="modal-dialog">
+  <div class="modal-dialog" style="padding-top:12px;">
 
     <!-- Modal content-->
     <div class="modal-content">
