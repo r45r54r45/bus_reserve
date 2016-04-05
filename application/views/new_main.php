@@ -155,7 +155,7 @@ body {
   ga('create', 'UA-73228564-1', 'auto');
   ga('set', 'userId', getCookie("id"));
 
-  $(function(){
+  $(window).on("load",function(){
     if(getCookie("popup_1")!="true"){
     $("#popup").modal('show');
   }
