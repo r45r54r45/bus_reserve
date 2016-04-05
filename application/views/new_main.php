@@ -69,7 +69,7 @@ body {
     <span class="nav-font-color nav-font-valign" id="page_title" style="font-family:'Montserrat'; color:white;text-shadow: 0 0px 0 #eee !important; font-weight:100"></span>
   </div>
   <!-- notification -->
-  
+
   <div class="modal fade" id="noti_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="bottom: 50px; margin-top: 53px;margin-left:0">
   <div class="noti_tri"></div>
   <div class="modal-dialog" style="width: 96vw;margin: 11px 2vw;" role="document">
@@ -86,7 +86,7 @@ body {
   </div>
 </div>
 
-<div id="popup" class="modal fade" role="dialog">
+<div id="popup" class="modal fade" role="dialog" style="    margin-top: 50px;">
   <div class="modal-dialog">
 
     <!-- Modal content-->
