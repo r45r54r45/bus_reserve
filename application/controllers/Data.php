@@ -184,9 +184,13 @@ class Data extends CI_Controller {
 			$boolResult=$kk->{'result'};
 			if(!$boolResult){
 				$failCount[$data]++;
-				if($failCount)
+				// if($failCount)
+				if($failCount[$data]<20){
 				$q->enqueue($data);
 				$str.= $failCount[$data]."번째 실패 목록에 들어감: ".$data."\n";
+			}else{
+				$str.= $failCount[$data]."번째에 포기함: ".$data."\n";
+			}
 			}else{
 				$str.= $failCount[$data]."번 시도 후 성공: ".$data."\n";
 			}
