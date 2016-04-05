@@ -171,9 +171,9 @@ class Data extends CI_Controller {
 			if(!$boolResult){
 				$q->enqueue(http_build_query($arr));
 				$failCount[http_build_query($arr)]=1;
-				$str.= "실패 목록에 들어감: ".http_build_query($arr)."\n";
+				// $str.= "실패 목록에 들어감: ".http_build_query($arr)."\n";
 			}else{
-				$str.= "성공: ".http_build_query($arr)."\n";
+				$str.= "성공: ".http_build_query($arr)."<br>";
 			}
 		}
 		while(!($q->isEmpty())){
