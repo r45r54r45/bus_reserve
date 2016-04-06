@@ -20,7 +20,7 @@
     <div class="col-xs-12 center form-group" style="padding-top:10px;">
       <div class="alert alert-success" role="alert">
 <!-- onclick="parent.moveto('/#more#notice#3');" -->
-      <a  onclick="alert('기존의 셔틀예약 사이트를 이용해주세요');" class="alert-link">점검중입니다</a>
+      <a  onclick="alert('기존의 셔틀예약 사이트를 이용해주세요');" class="alert-link">점검중입니다 (6일 13시~ 15시)</a>
     </div>
       <div class="full-width input-group">
         <input style="border-radius: 3px;background-color: white;font-size:12px;border: 1px solid rgba(70, 41, 43, .5); box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);" id="sid" name="id" class="full-width form-control" type="text" placeholder="학번" >
