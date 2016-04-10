@@ -100,4 +100,7 @@ span{
 .item{
   max-height:280px;
 }
+.item>img{
+  width:100%;
+}
 </style>
