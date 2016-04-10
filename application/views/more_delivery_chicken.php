@@ -86,11 +86,22 @@
         <div style="float: right;line-height: 40px;padding-left:20px;">
           <span> <a href="tel:0328589200"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
-        <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
-          <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+        <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;z-index:2;">
+          <span><img class="img img-responsive" src="/src/img/BBQmenu.png" onclick="$('#BBQMenuModal').modal('show');"></span>
         </div>
       </div>
     </div>
+    <!-- modal for menu -->
+    <div class="modal fade" id="BBQMenuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width:90%;margin:20px auto">
+          <div class="modal-body" style="padding:0;">
+            <img  style="    width: 100%;" src="/src/img/BBQmenu.png" onclick="$('#BBQMenuModal').modal('hide')">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal for menu end -->
 
     <!-- 깻잎치킨-->
     <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
@@ -122,11 +133,23 @@
         <div style="float: right;line-height: 40px;padding-left:20px;">
           <span> <a href="tel:0328580060"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
-        <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;">
-          <!--<span><img class="img img-responsive" src="/src/img/menu.png"></span>-->
+        <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d; z-indx:2;">
+          <span><img class="img img-responsive" src="/src/img/menu.png" onclick="$('#KCMenuModal').modal('show');"></span>
         </div>
       </div>
     </div>
+    <!-- modal for menu -->
+    <div class="modal fade" id="KCMenuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width:90%;margin:20px auto">
+          <div class="modal-body" style="padding:0;">
+            <img  style="    width: 100%;" src="/src/img/KCmenu.jpeg" onclick="$('#KCMenuModal').modal('hide')">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal for menu end -->
+
 
     <!-- 굽네치킨-->
     <div class="card" style="height:50px; margin-bottom:6px; position:relative;">
