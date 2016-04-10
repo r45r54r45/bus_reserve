@@ -59,7 +59,7 @@ $(function(){
     $("#makelong").scrollTop(0);
     content_manager();
     $(".noti").css("display","none");
-    $(".help_button").css("display","none");
+    // $(".help_button").css("display","none");
     $(".more_page_btn").css("display","");
   });
   $(".back_arrow").on("click",function(){
@@ -67,7 +67,7 @@ $(function(){
     document.getElementById("makelong").style.height="0px";
     content_manager();
     $(".noti").css("display","none");
-    $(".help_button").css("display","none");
+    // $(".help_button").css("display","none");
     $(".more_page_btn").css("display","");
   });
   $(".help_button").on("click",function(){
