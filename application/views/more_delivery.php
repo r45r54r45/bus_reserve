@@ -52,19 +52,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="#" alt="Chania">
+      <img src="#">
     </div>
 
     <div class="item">
-      <img src="#" alt="Chania">
+      <img src="#">
     </div>
 
     <div class="item">
-      <img src="#" alt="Flower">
+      <img src="#">
     </div>
 
     <div class="item">
-      <img src="#" alt="Flower">
+      <img src="#">
     </div>
   </div>
 
