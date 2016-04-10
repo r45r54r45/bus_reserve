@@ -22,19 +22,19 @@
   <div class="row" style="margin-top:20px;">
     <div class="col-xs-4">
       <div class="deli_circle">
-        <img src="/src/img/food-1.svg" class="img img-responsive">
+        <img src="/src/img/splash2.png" class="img img-responsive">
         <span>피자</span>
       </div>
     </div>
     <div class="col-xs-4">
       <div class="deli_circle">
-        <img src="/src/img/food.svg" class="img img-responsive">
+        <img src="/src/img/splash2.png" class="img img-responsive">
         <span>중국집</span>
       </div>
     </div>
     <div class="col-xs-4">
       <div class="deli_circle">
-        <img src="/src/img/animal.svg" class="img img-responsive">
+        <img src="/src/img/splash2.png" class="img img-responsive">
         <span>오리</span>
       </div>
     </div>
