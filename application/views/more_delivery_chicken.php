@@ -87,7 +87,7 @@
           <span> <a href="tel:0328589200"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
         <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;z-index:2;">
-          <span><img class="img img-responsive" src="/src/img/BBQmenu.png" onclick="$('#BBQMenuModal').modal('show');"></span>
+          <span><img class="img img-responsive" src="/src/img/menu.png" onclick="$('#BBQMenuModal').modal('show');"></span>
         </div>
       </div>
     </div>
