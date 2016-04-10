@@ -164,6 +164,9 @@ function content_manager(){
     }).modal('hide');
 }
 var UserData;
+function set_page_title(str){
+  $("#page_title").text(str);
+}
 function statusGet(){
   //1. 현재 접속자의 쿠키확인 -
   // sid 쿠키가 있는지 확인후 있다면 로그인한 적이 있다는 거니깐, 계정을 합쳐줄 필요가 있음.-TODO
