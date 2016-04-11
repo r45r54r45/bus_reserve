@@ -99,7 +99,7 @@ body {
         <p>
           안녕하세요 바나나입니다<br>
           오늘은 학교 셔틀예약 서버가 다운되면서 <br>바나나 뿐만 아니라 학교 사이트에서도 예약이 안됬습니다.<br>
-          이거는 저희 서버가 아닌 학교 서버라<br> 학교 측에서 해결을 해주어야 하는 문제입니다.
+          이것는 저희 서버가 아닌 학교 서버라<br> 학교 측에서 해결을 해주어야 하는 문제입니다.
         </p>
       </div>
       <div class="modal-footer" style="border:0px; padding-top:0px; padding-bottom:20px;">
