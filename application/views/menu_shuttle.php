@@ -20,7 +20,7 @@
     <div class="col-xs-12 center form-group" style="padding-top:10px;">
       <div class="alert alert-success" role="alert">
 <!-- onclick="parent.moveto('/#more#notice#3');" -->
-      <a  onclick="alert('말그대로 입니다 ㅠㅠ ');" class="alert-link" style="font-size: 12px;font-weight: 100;text-decoration: none;">학교의 셔틀예약 페이지가 터졌습니다</a>
+      <a  onclick="alert('말그대로 입니다 ㅠㅠ ');" class="alert-link" style="font-size: 12px;font-weight: 100;text-decoration: none;">학교의 셔틀예약 서버가 터졌습니다</a>
     </div>
       <div class="full-width input-group">
         <input style="border-radius: 3px;background-color: white;font-size:12px;border: 1px solid rgba(70, 41, 43, .5); box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);" id="sid" name="id" class="full-width form-control" type="text" placeholder="학번" >
