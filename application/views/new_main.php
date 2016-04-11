@@ -96,12 +96,10 @@ body {
         <h4 class="modal-title" style="text-align:center;font-size:14px;">11일 학교 셔틀예약 서버 다운으로 인한 셔틀예약 불가 안내</h4>
       </div>
       <div class="modal-body" style="font-size:11px;padding-bottom:5px;">
-        <p>안녕하세요 바나나입니다<br>
-          오늘은 학교의 셔틀예약 서버가 터졌습니다 ㅠㅠ<br>
-          아무도 예약을 못했을 텐데요 ㅠㅠ<br>
-          학교에서 해결을 해주어야 될 문제입니다......<br>
-          죄송합니다..ㅜ<br>
-          이런..<br>
+        <p>
+          안녕하세요 바나나입니다<br>
+          오늘은 학교 셔틀예약 서버가 다운되면서 <br>바나나 뿐만 아니라 학교 사이트에서도 예약이 안됬습니다.<br>
+          이거는 저희 서버가 아닌 학교 서버라<br> 학교 측에서 해결을 해주어야 하는 문제입니다.
         </p>
       </div>
       <div class="modal-footer" style="border:0px; padding-top:0px; padding-bottom:20px;">
