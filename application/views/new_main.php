@@ -93,23 +93,18 @@ body {
     <div class="modal-content">
       <div class="modal-header">
         <!--<button type="button" class="close" data-dismiss="modal" style="background-color:#ffffff;border:0px;">&times;</button>-->
-        <h4 class="modal-title" style="text-align:center;font-size:14px;">4월 6일 수요일 13시~15시 <br/> 서비스 점검 안내</h4>
+        <h4 class="modal-title" style="text-align:center;font-size:14px;">11일 학교 셔틀예약 서버 다운으로 인한 셔틀예약 불가 안내</h4>
       </div>
       <div class="modal-body" style="font-size:11px;padding-bottom:5px;">
         <p>안녕하세요 바나나입니다<br>
-  4월 5일 화요일 오후 2시경 서버에 장애가 발생했습니다.<br>
-  이렇게 많은 분들이 동시에 접속할 줄은 꿈에도 몰라 소위 말해 서버가 터졌습니다ㅠ흑ㅠ<br>
-  이에따라 앞으로 믿음직스럽고 원활한 서비스를 제공하기위해 4월 6일 수요일 1시부터 3시까지 2시간 동안, 즉 금요일 셔틀버스를 예약하는 날에 서비스 점검을 하고자 합니다. <b>금요일 셔틀을 예약하시는 분들은 수요일 하루만ㅠ 기존의 셔틀예약사이트를 이용해주시면 정말 감사하겠습니다.</b> </p>
-
-  <p><i>이후 다음주 월요일과 화요일 셔틀을 예약하는 토요일과 일요일에는 서비스가 정상화될 예정이니</i> 앞으로도 많은 이용 부탁드리겠습니다.</p>
-
-  <p>중간고사와 과제에 등골이 휘어지는 바나나 성애자 올림.</p>
-
-  <p>p.s. 고릴라 로그인에 대해 물어보시는 분들이 많았는데요, 아직 개발중이고 테스트하고있는 서비스로 바나나를 열렬히 이용해주시는 우수 회원분들 중 관리자가 추첨을 통해 드리는 특별 서비스입니다!
-  </p>
+          오늘은 학교의 셔틀예약 서버가 터졌습니다 ㅠㅠ<br>
+          아무도 예약을 못했을 텐데요 ㅠㅠ<br>
+          학교에서 해결을 해주어야 될 문제입니다......<br>
+          이런..<br>
+        </p>
       </div>
       <div class="modal-footer" style="border:0px; padding-top:0px; padding-bottom:20px;">
-        <button style="font-size:11px;border: 0px; padding:0px;box-shadow: 0px 0px 0px; background-color:#ffffff;" type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('popup_1','true',100);ga('send', 'event', 'popup', '다시보지않기', 'popup_1');"><a href="#"> 다시보지않기</a></button>
+        <button style="font-size:11px;border: 0px; padding:0px;box-shadow: 0px 0px 0px; background-color:#ffffff;" type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('popup_2','true',100);ga('send', 'event', 'popup', '다시보지않기', 'popup_2');"><a href="#"> 다시보지않기</a></button>
       </div>
     </div>
 
@@ -157,7 +152,7 @@ body {
   ga('set', 'userId', getCookie("id"));
 
   $(window).on("load",function(){
-    if(getCookie("popup_1")!="true"){
+    if(getCookie("popup_2")!="true"){
     $("#popup").modal('show');
   }
   });
