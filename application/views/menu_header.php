@@ -38,11 +38,11 @@
     }
     // var order={'menu':[{'a':[]},{'b':['옵션1','옵션2']}],'price':54000}
     function pushOrder(companyName, order){
-      var total=0;
+      var totalPrice=0;
       for(var i in order){
-        total+=order[i].price;
+        totalPrice+=order[i].price;
       }
-      var data=$.extend(order,{"totalPrice":total},{"time":Firebase.ServerValue.TIMESTAMP});
+      var data=$.extend($.extend(order,{"totalPrice":totalPrice}),{"time":Firebase.ServerValue.TIMESTAMP});
       ref.child("advertisement").child(companyName).child("order").push(data);
     }
   </script>
