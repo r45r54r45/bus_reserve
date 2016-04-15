@@ -52,12 +52,12 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="/src/img/BBQbanner.jpeg" onclick="banner.click();">
       <script type="text/javascript">
         $(function(){
           var banner=new Banner("BBQ");
         });
       </script>
+      <img src="/src/img/BBQbanner.jpeg" onclick="banner.click();">
     </div>
   </div>
 

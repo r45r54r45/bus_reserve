@@ -28,8 +28,8 @@ var Banner=function(companyName){
   if(!companyName)throw new Error("plz fill in company name");
   this.companyName=companyName;
   //seen plus
-  var data={"time":Firebase.ServerValue.TIMESTAMP};
-  ref.child("advertisement").child(this.companyName).child("banner").child("seen").push(data);
+  var seen_time={"time":Firebase.ServerValue.TIMESTAMP};
+  ref.child("advertisement").child(this.companyName).child("banner").child("seen").push(seen_time);
   Banner.prototype.click=function(){
     var data={"time":Firebase.ServerValue.TIMESTAMP};
     ref.child("advertisement").child(this.companyName).child("banner").child("click").push(data);
