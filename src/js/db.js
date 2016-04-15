@@ -27,12 +27,12 @@ var Order=function(companyName){
 var Banner=function(companyName){
   if(!companyName)throw new Error("plz fill in company name");
   this.companyName=companyName;
-  function(this.companyName){
+  function(){
     var data={"time":Firebase.ServerValue.TIMESTAMP};
-    ref.child("advertisement").child(companyName).child("banner").child("seen").push(data);
+    ref.child("advertisement").child(this.companyName).child("banner").child("seen").push(data);
   }
   Banner.prototype.click=function(){
     var data={"time":Firebase.ServerValue.TIMESTAMP};
-    ref.child("advertisement").child(companyName).child("banner").child("click").push(data);
+    ref.child("advertisement").child(this.companyName).child("banner").child("click").push(data);
   }
 }
