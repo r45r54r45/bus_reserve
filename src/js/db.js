@@ -24,7 +24,7 @@ var Order=function(companyName){
     ref.child("advertisement").child(this.companyName).child("order").push(data);
   }
 }
-var Banner=function(comp)anyName){
+var Banner=function(companyName){
   if(!companyName)throw new Error("plz fill in company name");
   this.companyName=companyName;
   function(this.companyName){
