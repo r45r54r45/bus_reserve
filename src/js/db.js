@@ -30,8 +30,8 @@ var Banner=function(companyName){
   //seen plus
   var seen_time={"time":Firebase.ServerValue.TIMESTAMP};
   ref.child("advertisement").child(this.companyName).child("banner").child("seen").push(seen_time);
-  Banner.prototype.click=function(){
+  $(".banner").on("click",function(){
     var data={"time":Firebase.ServerValue.TIMESTAMP};
     ref.child("advertisement").child(this.companyName).child("banner").child("click").push(data);
-  }
+  });
 }
