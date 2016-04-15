@@ -30,8 +30,8 @@ var Banner=function(companyName){
   //seen plus
   var seen_time={"time":Firebase.ServerValue.TIMESTAMP};
   ref.child("advertisement").child(this.companyName).child("banner").child("seen").push(seen_time);
-  $(".banner").on("click",function(){
+  $(".banner").bind("click",{company: this.companyName},function(event){
     var data={"time":Firebase.ServerValue.TIMESTAMP};
-    ref.child("advertisement").child(this.companyName).child("banner").child("click").push(data);
+    ref.child("advertisement").child(event.data.company).child("banner").child("click").push(data);
   });
 }
