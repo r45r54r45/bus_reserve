@@ -22,41 +22,6 @@
   <script src="/src/js/bootstrap.min.js"></script>
   <script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js"></script>
   <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-  <script type="text/javascript">
-    var ref = new Firebase("https://sizzling-inferno-3457.firebaseio.com/");
-    // order class
-    var Order=function(companyName){
-      if(!companyName)throw new Error("plz fill in company name");
-      this.companyName=companyName;
-      this.order=[];
-      this.dest;
-      Order.prototype.addOrder= function(menuName,option,price){
-        var menuData={name:menuName,option:option,price:price};
-        this.order.push(menuData);
-      }
-      Order.prototype.setDest= function(dest){
-        this.dest=dest;
-      }
-      Order.prototype.sendOrder = function (){
-        var totalPrice=0;
-        for(var i in this.order){
-          totalPrice+=this.order[i].price;
-        }
-        var data=$.extend(
-          $.extend(
-            $.extend(this.order,{"totalPrice":totalPrice})
-            ,{"time":Firebase.ServerValue.TIMESTAMP}),{dest:this.dest});
-        ref.child("advertisement").child(this.companyName).child("order").push(data);
-      }
-    }
-    function pushCPS(companyName){
-      var data={"time":Firebase.ServerValue.TIMESTAMP};
-      ref.child("advertisement").child(companyName).child("cps").push(data);
-    }
-    // var order={'menu':[{'a':[]},{'b':['옵션1','옵션2']}],'price':54000}
-
-  </script>
-
-
+  <script src="/src/js/db.js"></script>
 </head>
 <body style="font-family: 'Open Sans', sans-serif;">
