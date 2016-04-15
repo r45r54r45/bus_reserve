@@ -54,7 +54,7 @@
     <div class="item active">
       <script type="text/javascript">
         $(function(){
-          new Banner("NeNe");
+          new Banner("네네치킨");
         });
       </script>
       <img class="banner" src="/src/img/NeNe_banner.jpeg">
