@@ -28,9 +28,19 @@
       var data={"time":Firebase.ServerValue.TIMESTAMP};
       ref.child("advertisement").child(companyName).child("cps").push(data);
     }
+    // var order={'menu':[{'a':[]},{'b':['옵션1','옵션2']}],'price':54000}
     function pushOrder(companyName, order){
       var data=$.extend(order,{"time":Firebase.ServerValue.TIMESTAMP});
       ref.child("advertisement").child(companyName).child("order").push(data);
+    }
+    function initOrder(){
+      var order={};
+      return order;
+    }
+    function makeOrder(order,menuName,option){
+      var menuData={menuName:option};
+      $.extend(order,menuData);
+      return order;
     }
   </script>
 
