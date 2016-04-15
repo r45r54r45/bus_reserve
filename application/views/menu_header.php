@@ -25,19 +25,20 @@
   <script type="text/javascript">
     var ref = new Firebase("https://sizzling-inferno-3457.firebaseio.com/");
     // order class
-    var Order=function(){
+    var Order=function(companyName){
+      this.companyName=companyName;
       this.order=[];
       Order.prototype.makeOrder= function(menuName,option,price){
         var menuData={name:menuName,option:option,price:price};
         this.order.push(menuData);
       }
-      Order.prototype.pushOrder = function (companyName){
+      Order.prototype.pushOrder = function (){
         var totalPrice=0;
         for(var i in this.order){
           totalPrice+=this.order[i].price;
         }
         var data=$.extend($.extend(this.order,{"totalPrice":totalPrice}),{"time":Firebase.ServerValue.TIMESTAMP});
-        ref.child("advertisement").child(companyName).child("order").push(data);
+        ref.child("advertisement").child(this.companyName).child("order").push(data);
       }
 
     }
