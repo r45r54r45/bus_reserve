@@ -35,3 +35,8 @@ var Banner=function(companyName){
     ref.child("advertisement").child(event.data.company).child("banner").child("click").push(data);
   });
 }
+//
+// var Stat=function(company){
+//   this.company=company;
+//   var getBanner
+// }

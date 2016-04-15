@@ -54,10 +54,10 @@
     <div class="item active">
       <script type="text/javascript">
         $(function(){
-          new Banner("BBQ");
+          new Banner("NeNe");
         });
       </script>
-      <img class="banner" src="/src/img/BBQbanner.jpeg">
+      <img class="banner" src="/src/img/NeNe_banner.jpeg">
     </div>
   </div>
 
