@@ -20,7 +20,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/css/bootstrap-select.min.css">
   <script src="/src/js/jquery.js"></script>
   <script src="/src/js/bootstrap.min.js"></script>
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js"></script>
+  <script  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/js/bootstrap-select.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <script type="text/javascript">
+    var ref = new Firebase("https://sizzling-inferno-3457.firebaseio.com/");
+    function addCPS(companyName){
+      var data={"time",Firebase.ServerValue.TIMESTAMP};
+      ref.child("advertisement").child(companyName).child("CPS").push(data);
+    }
+  </script>
+
 
 </head>
 <body style="font-family: 'Open Sans', sans-serif;">
