@@ -53,19 +53,12 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="/src/img/BBQbanner.jpeg">
+      <script type="text/javascript">
+        $(function(){
+          sendCPS("BBQ");
+        });
+      </script>
     </div>
-
-    <!-- <div class="item">
-      <img src="#">
-    </div>
-
-    <div class="item">
-      <img src="#">
-    </div>
-
-    <div class="item">
-      <img src="#">
-    </div> -->
   </div>
 
   <!-- Left and right controls -->
