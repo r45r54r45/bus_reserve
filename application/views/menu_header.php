@@ -24,9 +24,13 @@
   <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
   <script type="text/javascript">
     var ref = new Firebase("https://sizzling-inferno-3457.firebaseio.com/");
-    function addCPS(companyName){
+    function pushCPS(companyName){
       var data={"time":Firebase.ServerValue.TIMESTAMP};
-      ref.child("advertisement").child(companyName).child("CPS").push(data);
+      ref.child("advertisement").child(companyName).child("cps").push(data);
+    }
+    function pushOrder(companyName, order){
+      var data={order, "time":Firebase.ServerValue.TIMESTAMP};
+      ref.child("advertisement").child(companyName).child("order").push(data);
     }
   </script>
 
