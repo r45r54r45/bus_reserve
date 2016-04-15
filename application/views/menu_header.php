@@ -24,23 +24,26 @@
   <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
   <script type="text/javascript">
     var ref = new Firebase("https://sizzling-inferno-3457.firebaseio.com/");
+    // order class
+    var Order=function(){
+      this.order=[];
+      Order.prototype.makeOrder= function(menuName,option,price){
+        var menuData={name:menuName,option:option,price:price};
+        this.order.push(menuData);
+      }
+    }
     function pushCPS(companyName){
       var data={"time":Firebase.ServerValue.TIMESTAMP};
       ref.child("advertisement").child(companyName).child("cps").push(data);
     }
     // var order={'menu':[{'a':[]},{'b':['옵션1','옵션2']}],'price':54000}
     function pushOrder(companyName, order){
-      var data=$.extend(order,{"time":Firebase.ServerValue.TIMESTAMP});
+      var total=0;
+      for(var i in order){
+        total+=order[i].price;
+      }
+      var data=$.extend(order,{"totalPrice":total},{"time":Firebase.ServerValue.TIMESTAMP});
       ref.child("advertisement").child(companyName).child("order").push(data);
-    }
-    function initOrder(){
-      var order={};
-      return order;
-    }
-    function makeOrder(order,menuName,option){
-      var menuData={menuName:option};
-      $.extend(order,menuData);
-      return order;
     }
   </script>
 
