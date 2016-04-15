@@ -31,20 +31,22 @@
         var menuData={name:menuName,option:option,price:price};
         this.order.push(menuData);
       }
+      Order.prototype.pushOrder = function (companyName){
+        var totalPrice=0;
+        for(var i in this.order){
+          totalPrice+=this.order[i].price;
+        }
+        var data=$.extend($.extend(this.order,{"totalPrice":totalPrice}),{"time":Firebase.ServerValue.TIMESTAMP});
+        ref.child("advertisement").child(companyName).child("order").push(data);
+      }
+
     }
     function pushCPS(companyName){
       var data={"time":Firebase.ServerValue.TIMESTAMP};
       ref.child("advertisement").child(companyName).child("cps").push(data);
     }
     // var order={'menu':[{'a':[]},{'b':['옵션1','옵션2']}],'price':54000}
-    function pushOrder(companyName, order){
-      var totalPrice=0;
-      for(var i in order){
-        totalPrice+=order[i].price;
-      }
-      var data=$.extend($.extend(order,{"totalPrice":totalPrice}),{"time":Firebase.ServerValue.TIMESTAMP});
-      ref.child("advertisement").child(companyName).child("order").push(data);
-    }
+
   </script>
 
 
