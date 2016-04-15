@@ -24,7 +24,15 @@ var Order=function(companyName){
     ref.child("advertisement").child(this.companyName).child("order").push(data);
   }
 }
-function sendCPS(companyName){
-  var data={"time":Firebase.ServerValue.TIMESTAMP};
-  ref.child("advertisement").child(companyName).child("cps").push(data);
+var Banner=function(comp)anyName){
+  if(!companyName)throw new Error("plz fill in company name");
+  this.companyName=companyName;
+  function(this.companyName){
+    var data={"time":Firebase.ServerValue.TIMESTAMP};
+    ref.child("advertisement").child(companyName).child("banner").child("seen").push(data);
+  }
+  Banner.prototype.click=function(){
+    var data={"time":Firebase.ServerValue.TIMESTAMP};
+    ref.child("advertisement").child(companyName).child("banner").child("click").push(data);
+  }
 }
