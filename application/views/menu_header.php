@@ -29,7 +29,7 @@
       ref.child("advertisement").child(companyName).child("cps").push(data);
     }
     function pushOrder(companyName, order){
-      var data={order, "time":Firebase.ServerValue.TIMESTAMP};
+      var data=$.extend(order,{"time":Firebase.ServerValue.TIMESTAMP});
       ref.child("advertisement").child(companyName).child("order").push(data);
     }
   </script>
