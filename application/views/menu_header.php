@@ -25,7 +25,7 @@
   <script type="text/javascript">
     var ref = new Firebase("https://sizzling-inferno-3457.firebaseio.com/");
     function addCPS(companyName){
-      var data={"time",Firebase.ServerValue.TIMESTAMP};
+      var data={"time":Firebase.ServerValue.TIMESTAMP};
       ref.child("advertisement").child(companyName).child("CPS").push(data);
     }
   </script>
