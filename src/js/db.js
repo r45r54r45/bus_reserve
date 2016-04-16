@@ -24,8 +24,8 @@ var Order=function(companyName){
         var to="01071097327";
         // snap.val().phone;
         var body="";
-        console.log(this.order);
-        (this.order).forEach(function(element, index, array){
+        console.log(this.order.order);
+        (this.order.order).forEach(function(element, index, array){
           body+=element.name+" ("+element.option+")%0d";
         });
         body+="장소: "+this.dest+"%0d";
