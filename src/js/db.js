@@ -37,7 +37,7 @@ var Order=function(companyName){
         body+="총 금액: "+totalPrice+"원%0d";
         body+="결제: "+this.order.order.pay+"%0d";
         body+="주문자: "+this.order.order.sender;
-        $.get("http://api.coolsms.co.kr/sendmsg?user=r45r54r45&password=e34e43e34&from=01071097327&to="+to+"&text="+body);
+        $.get("http://api.coolsms.co.kr/sendmsg?user=r45r54r45&password=e34e43e34&type=LMS&from=01071097327&to="+to+"&text="+body);
       });
     });
   }
