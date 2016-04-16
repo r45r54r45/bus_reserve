@@ -17,13 +17,20 @@ var Order=function(companyName){
     for(var i in this.order){
       totalPrice+=this.order[i].price;
     }
-    var data=$.extend(
-      $.extend(
-        $.extend(this.order,{"totalPrice":totalPrice})
-        ,{"time":Firebase.ServerValue.TIMESTAMP}),{dest:this.dest});
+    var data=$.extend($.extend($.extend(this.order,{"totalPrice":totalPrice}),{"time":Firebase.ServerValue.TIMESTAMP}),{dest:this.dest});
     ref.child("advertisement").child(this.companyName).child("order").push(data);
     ref.child("user/company").orderByChild("store").equalTo(this.companyName).once("value",function(snapshot){
-      console.log(snapshot.val().phone);
+      snapshot.forEach(function(snap){
+        var to="01071097327";
+        // snap.val().phone;
+        var body="";
+        this.order.foreach(function(element, index, array){
+          body+=element.name+" ("+element.option+")%0d";
+        });
+        body+="장소: "+this.dest+"%0d";
+        body+="총 금액: "+totalPrice+"원";
+        $.get("http://api.coolsms.co.kr/sendmsg?user=r45r54r45&password=e34e43e34&to="+to+"&text="+body);
+      });
     });
     // TODO 문자 보내는거
     // company 전화번호를 받아와야함
