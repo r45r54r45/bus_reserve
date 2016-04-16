@@ -12,6 +12,9 @@ var Order=function(companyName){
   Order.prototype.setDest= function(dest){
     this.dest=dest;
   }
+  Order.prototype.setSender= function(sender){
+    this.sender=sender;
+  }
   Order.prototype.sendOrder = function (){
     var totalPrice=0;
     for(var i in this.order){
@@ -28,8 +31,9 @@ var Order=function(companyName){
         (this.order.order).forEach(function(element, index, array){
           body+=element.name+" ("+element.option+")%0d";
         });
-        body+="장소: "+this.dest+"%0d";
-        body+="총 금액: "+totalPrice+"원";
+        body+="장소: "+this.dest.dest+"%0d";
+        body+="총 금액: "+totalPrice+"원%0d";
+        body+="주문자: "+this.sender.sender+"원";
         $.get("http://api.coolsms.co.kr/sendmsg?user=r45r54r45&password=e34e43e34&from=01071097327&to="+to+"&text="+body);
       });
     });
