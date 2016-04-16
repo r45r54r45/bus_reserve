@@ -30,7 +30,7 @@ var Order=function(companyName){
         });
         body+="장소: "+this.dest+"%0d";
         body+="총 금액: "+totalPrice+"원";
-        $.get("http://api.coolsms.co.kr/sendmsg?user=r45r54r45&password=e34e43e34&to="+to+"&text="+body);
+        $.get("http://api.coolsms.co.kr/sendmsg?user=r45r54r45&password=e34e43e34&from=01071097327&to="+to+"&text="+body);
       });
     });
     // TODO 문자 보내는거
