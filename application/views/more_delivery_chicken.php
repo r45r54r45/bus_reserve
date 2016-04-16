@@ -25,7 +25,7 @@
           <span> <a href="tel:0328357441"><img class="img img-responsive" src="/src/img/call.png"></a></span>
         </div>
         <div style="float: right;line-height: 40px;padding-right:20px;border-right:2px solid #fcd90d;z-index: 2;">
-          <span><img class="img img-responsive" src="/src/img/menu.png" onclick="$('#NeNeMenuModal').modal('show');"></span>
+          <span><img class="img img-responsive" src="/src/img/menu.png" onclick="new Menu("네네치킨"); $('#NeNeMenuModal').modal('show');"></span>
         </div>
       </div>
     </div>

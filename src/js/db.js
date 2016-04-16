@@ -22,6 +22,8 @@ var Order=function(companyName){
         $.extend(this.order,{"totalPrice":totalPrice})
         ,{"time":Firebase.ServerValue.TIMESTAMP}),{dest:this.dest});
     ref.child("advertisement").child(this.companyName).child("order").push(data);
+    // TODO 문자 보내는거
+    // company 전화번호를 받아와야함
   }
 }
 var Banner=function(companyName){
@@ -33,6 +35,15 @@ var Banner=function(companyName){
   $(".banner").bind("click",{company: this.companyName},function(event){
     var data={"time":Firebase.ServerValue.TIMESTAMP};
     ref.child("advertisement").child(event.data.company).child("banner").child("click").push(data);
+  });
+}
+var Menu=function(companyName){
+  if(!companyName)throw new Error("plz fill in company name");
+  this.companyName=companyName;
+  //seen plus
+  $(".menu").bind("click",{company: this.companyName},function(event){
+    var data={"time":Firebase.ServerValue.TIMESTAMP};
+    ref.child("advertisement").child(event.data.company).child("menu").child("click").push(data);
   });
 }
 //
