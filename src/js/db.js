@@ -22,6 +22,9 @@ var Order=function(companyName){
         $.extend(this.order,{"totalPrice":totalPrice})
         ,{"time":Firebase.ServerValue.TIMESTAMP}),{dest:this.dest});
     ref.child("advertisement").child(this.companyName).child("order").push(data);
+    ref.child("user/company").orderByChild("store").equalTo(this.companyName).once("value",function(snapshot){
+      console.log(snapshot.val().phone);
+    });
     // TODO 문자 보내는거
     // company 전화번호를 받아와야함
   }
@@ -46,8 +49,3 @@ var Menu=function(companyName){
     ref.child("advertisement").child(event.data.company).child("menu").child("click").push(data);
   });
 }
-//
-// var Stat=function(company){
-//   this.company=company;
-//   var getBanner
-// }
