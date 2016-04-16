@@ -24,6 +24,7 @@ var Order=function(companyName){
         var to="01071097327";
         // snap.val().phone;
         var body="";
+        console.log(this.order);
         (this.order).forEach(function(element, index, array){
           body+=element.name+" ("+element.option+")%0d";
         });
