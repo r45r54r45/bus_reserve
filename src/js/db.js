@@ -65,6 +65,7 @@ var Menu=function(companyName){
 
 var BannerAdmin=function(){
   this.selectedBanner;
+  this.selectedBannerKey;
   ref.child("banner").orderByChild("time").startAt(new Date().getTime()).once("value",function(snapshot){
     var i = 0;
     var rand = Math.floor(Math.random() * snapshot.numChildren());
@@ -76,7 +77,7 @@ var BannerAdmin=function(){
     });
     console.log(this.selectedBanner);
   });
-  new Banner(this.selectedBanner.key());
+  new Banner(this.selectedBannerKey.key());
   var selectedBannerUrl=function(){
     return this.selectedBanner.url;
   }
