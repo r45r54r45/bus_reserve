@@ -23,8 +23,16 @@ app
 .controller("deliveryMain",function($scope){
   var BA=new BannerAdmin();
 })
-.controller("chicken",["$scope","Ref","$firebaseArray",function($scope,Ref,$firebaseArray){
-  $scope.stores=$firebaseArray(Ref.child("store").orderByChild("type").equalTo("치킨"));
+.controller("storeListPage",["$scope","Ref","$firebaseArray",function($scope,Ref,$firebaseArray){
+  var target_temp=$scope.target;
+  var target="";
+  switch (target_temp) {
+    case "chicken":
+      target="치킨";
+    break;
+
+  }
+  $scope.stores=$firebaseArray(Ref.child("store").orderByChild("type").equalTo(target));
   $scope.stores.$loaded(function(){
     $scope.afterPaid=true;
   });
