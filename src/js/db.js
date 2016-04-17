@@ -80,7 +80,7 @@ var BannerAdmin=function(){
     // scope_banner.url=this.selectedBanner.url;
   });
   BannerAdmin.prototype.selectedBannerUrl=function(){
-    while(!this.selectedBanner.url){
+    while(this.selectedBanner.url in window == false){
 
     }
     return this.selectedBanner.url;
