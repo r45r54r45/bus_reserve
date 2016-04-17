@@ -50,7 +50,7 @@
   <div class="row storeWrapper" ng-repeat="store in stores">
     <div class="black_circle one-line"></div>
     <span class="store-name">{{store.store}}</span>
-    <div class="one-line click-button menu"><img class="img" src="/src/img/menu.png" ng-click="openMenu(store.menu_img)"></div>
+    <div class="one-line click-button menu"><img class="img" src="/src/img/menu.png" ng-click="openMenu(store.menu_img,store.store)"></div>
     <div class="one-line click-button order">
       <img class="img" src="/src/img/banana.png" ng-click="moveToStore('{{store.store}}')">
     </div>

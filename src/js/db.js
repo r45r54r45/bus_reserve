@@ -53,15 +53,15 @@ var Banner=function(companyName){
     ref.child("advertisement").child(event.data.company).child("banner").child("click").push(data);
   });
 }
-var Menu=function(companyName){
-  if(!companyName)throw new Error("plz fill in company name");
-  this.companyName=companyName;
-  //seen plus
-  $(".menu").bind("click",{company: this.companyName},function(event){
-    var data={"time":Firebase.ServerValue.TIMESTAMP};
-    ref.child("advertisement").child(event.data.company).child("menu").child("click").push(data);
-  });
-}
+// var Menu=function(companyName){
+//   if(!companyName)throw new Error("plz fill in company name");
+//   this.companyName=companyName;
+//   //seen plus
+//   $(".menu").bind("click",{company: this.companyName},function(event){
+//     var data={"time":Firebase.ServerValue.TIMESTAMP};
+//     ref.child("advertisement").child(event.data.company).child("menu").child("click").push(data);
+//   });
+// }
 
 var BannerAdmin=function($scope){
   this.selectedBanner;
