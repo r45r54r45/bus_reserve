@@ -107,7 +107,7 @@
             </div>
             <div class="row" style="padding: 0 15px;">
               <div class="col-xs-6 center yel font-12" onclick="alert('본 업체는 원숭의민족 계약 준비중입니다.'); ">
-                <b>원숭이배달</b>
+                <b>원숭이배달</b> 
               </div>
               <a href="tel:{{store.tel}}">
               <div class="col-xs-6 center bla font-12">
