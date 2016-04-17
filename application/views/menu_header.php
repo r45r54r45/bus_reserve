@@ -25,7 +25,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
   <!-- AngularFire -->
 <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
-<script src="//ybanana.online/bower_components/angular-route/angular-route.js"></script>
+
   <script src="/src/js/db.js"></script>
   <script src="/src/js/app.js"></script>
 </head>

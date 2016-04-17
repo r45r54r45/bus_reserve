@@ -1,5 +1,5 @@
 "use strict"
-var app=angular.module("app",["firebase","ngRoute"]);
+var app=angular.module("app",["firebase"]);
 app.factory("Ref",
   function() {
     var ref = new Firebase("https://sizzling-inferno-3457.firebaseio.com");
@@ -23,10 +23,9 @@ app
 .controller("deliveryMain",function($scope){
   var BA=new BannerAdmin();
 })
-.controller("storeListPage",["$routeParams","$scope","Ref","$firebaseArray",function($routeParams,$scope,Ref,$firebaseArray){
-  console.log($routeParams);
+.controller("storeListPage",["$scope","Ref","$firebaseArray",function($scope,Ref,$firebaseArray){
   var target="";
-  switch ($routeParams.target) {
+  switch (location.search.split('target=')[1]) {
     case "chicken":
       target="치킨";
     break;
