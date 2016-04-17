@@ -77,8 +77,9 @@ var BannerAdmin=function(){
       i++;
     });
     console.log(this.selectedBanner);
+    console.log(this.selectedBannerKey);
+    new Banner(this.selectedBannerKey);
   });
-  new Banner(this.selectedBannerKey);
   var selectedBannerUrl=function(){
     return this.selectedBanner.url;
   }
