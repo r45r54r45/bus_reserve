@@ -28,8 +28,43 @@ app
   switch (location.search.split('target=')[1]) {
     case "chicken":
       target="치킨";
+      //아직 계약해야할 업체들
+      $scope.moreStores=[
+        {"store":"멕시카나","menu_img":"",
+      "tel":"0328319266"},
+        {"store":"강호동치킨","menu_img":"",
+      "tel":"0328146780"},
+      {"store":"호식이두마리치킨","menu_img":"",
+    "tel":"0328582332"},
+        {"store":"교촌치킨","menu_img":"/src/img/KCmenu.jpeg",
+      "tel":"0328580060"},
+        {"store":"깻잎치킨","menu_img":"",
+      "tel":"0328345466"},
+        {"store":"BBQ치킨","menu_img":"/src/img/BBQmenu.png",
+      "tel":"0328589200"},
+        {"store":"맛있는 파닭","menu_img":"",
+      "tel":"0328357441"},
+        {"store":"디디치킨","menu_img":"/src/img/DDChicken.png",
+      "tel":"0328588105"},
+      {"store":"굽네치킨","menu_img":"",
+    "tel":"0328338294"}
+      ];
     break;
-
+    case "fastfood":
+      target="패스트푸드";
+    break;
+    case "jokbal":
+      target="족발";
+    break;
+    case "pizza":
+      target="피자";
+    break;
+    case "chinese":
+      target="중국집";
+    break;
+    case "korean":
+      target="한식";
+    break;
   }
   $scope.stores=$firebaseArray(Ref.child("store").orderByChild("type").equalTo(target));
   $scope.stores.$loaded(function(){
@@ -52,25 +87,5 @@ app
     $('#menuModal').modal('show');
   }
 
-  //아직 계약해야할 업체들
-  $scope.moreStores=[
-    {"store":"멕시카나","menu_img":"",
-  "tel":"0328319266"},
-    {"store":"강호동치킨","menu_img":"",
-  "tel":"0328146780"},
-  {"store":"호식이두마리치킨","menu_img":"",
-"tel":"0328582332"},
-    {"store":"교촌치킨","menu_img":"/src/img/KCmenu.jpeg",
-  "tel":"0328580060"},
-    {"store":"깻잎치킨","menu_img":"",
-  "tel":"0328345466"},
-    {"store":"BBQ치킨","menu_img":"/src/img/BBQmenu.png",
-  "tel":"0328589200"},
-    {"store":"맛있는 파닭","menu_img":"",
-  "tel":"0328357441"},
-    {"store":"디디치킨","menu_img":"/src/img/DDChicken.png",
-  "tel":"0328588105"},
-  {"store":"굽네치킨","menu_img":"",
-"tel":"0328338294"}
-  ];
+
 }]);

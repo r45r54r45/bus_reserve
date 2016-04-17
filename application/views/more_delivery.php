@@ -8,13 +8,13 @@
       </div>
     </div>
     <div class="col-xs-4">
-      <div class="deli_circle">
+      <div class="deli_circle" onclick="parent.set_page_title('FASTFOOD');location.href='/main/storeList?target=fastfood';">
         <img src="/src/img/food-2.svg" class="img img-responsive">
         <span>패스트푸드</span>
       </div>
     </div>
     <div class="col-xs-4">
-      <div class="deli_circle">
+      <div class="deli_circle" onclick="parent.set_page_title('JOKBAL');location.href='/main/storeList?target=jokbal';">
         <img src="/src/img/food-3.svg" class="img img-responsive">
         <span>족발</span>
       </div>
@@ -22,19 +22,19 @@
   </div>
   <div class="row" style="margin-top:20px;">
     <div class="col-xs-4">
-      <div class="deli_circle">
+      <div class="deli_circle" onclick="parent.set_page_title('PIZZA');location.href='/main/storeList?target=pizza';">
         <img src="/src/img/food-1.svg" class="img img-responsive">
         <span>피자</span>
       </div>
     </div>
     <div class="col-xs-4">
-      <div class="deli_circle">
+      <div class="deli_circle" onclick="parent.set_page_title('CHINESE');location.href='/main/storeList?target=chinese';">
         <img src="/src/img/food.svg" class="img img-responsive">
         <span>중국집</span>
       </div>
     </div>
     <div class="col-xs-4">
-      <div class="deli_circle">
+      <div class="deli_circle" onclick="parent.set_page_title('KOREAN');location.href='/main/storeList?target=korean';">
         <img src="/src/img/animal.svg" class="img img-responsive">
         <span>한식</span>
       </div>
