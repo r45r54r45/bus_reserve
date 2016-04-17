@@ -1,9 +1,5 @@
-<script type="text/javascript">
-  $(function(){
-    var BA=new BannerAdmin();
-  });
-</script>
-<div class="container-fluid">
+
+<div class="container-fluid" ng-controller="deliveryMain">
   <div class="row" style="margin-top:20px;">
     <div class="col-xs-4">
       <div class="deli_circle" onclick="parent.set_page_title('CHICKEN');location.href='/main/more_delivery_chicken';">
@@ -46,19 +42,11 @@
   </div>
   <div class="row" style="margin-top:20px; height:300px; background:#D3D3D3; padding:10px;">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 
-      <img class="banner" src="{{BA.selectedBannerUrl()}}">
+      <img class="banner" src="{{bannerUrl}}">
     </div>
   </div>
 
