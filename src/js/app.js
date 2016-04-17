@@ -119,7 +119,7 @@ app
   $scope.openUnpaidModal=function(tg){
     $("#orderUnpaidModal_"+tg).modal('show');
   }
-  $scope.openpaidModal=function(tg){
+  $scope.openPaidModal=function(tg){
     $("#orderPaidModal_"+tg).modal('show');
   }
 }]);
