@@ -63,7 +63,7 @@ var Menu=function(companyName){
   });
 }
 
-var BannerAdmin=function(){
+var BannerAdmin=function($scope){
   this.selectedBanner;
   this.selectedBannerKey;
   ref.child("banner").orderByChild("time").startAt(new Date().getTime()).once("value",function(snapshot){
@@ -77,7 +77,7 @@ var BannerAdmin=function(){
       i++;
     });
     new Banner(this.selectedBannerKey);
-    // scope_banner.url=this.selectedBanner.url;
+    $scope.bannerUrl=this.selectedBanner.url;
   });
   BannerAdmin.prototype.selectedBannerUrl=function(){
     return this.selectedBanner.url;
