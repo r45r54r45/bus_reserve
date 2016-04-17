@@ -1,3 +1,8 @@
+<script type="text/javascript">
+  $(function(){
+    var BA=new BannerAdmin();
+  });
+</script>
 <div class="container-fluid">
   <div class="row" style="margin-top:20px;">
     <div class="col-xs-4">
@@ -52,12 +57,8 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <script type="text/javascript">
-        $(function(){
-          new Banner("네네치킨");
-        });
-      </script>
-      <img class="banner" src="/src/img/NeNe_banner.jpeg">
+
+      <img class="banner" src="{{BA.selectedBannerUrl()}}">
     </div>
   </div>
 

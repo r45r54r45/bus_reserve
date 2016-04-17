@@ -62,3 +62,21 @@ var Menu=function(companyName){
     ref.child("advertisement").child(event.data.company).child("menu").child("click").push(data);
   });
 }
+
+var BannerAdmin=function(){
+  this.selectedBanner;
+  ref.child("banner").orderByChild("time").startAt(Firebase.ServerValue.TIMESTAMP*1000).once("value",function(snapshot){
+    var i = 0;
+    var rand = Math.floor(Math.random() * snapshot.numChildren());
+    snapshot.forEach(function(snap){
+      if (i == rand) {
+        this.selectedBanner=snap;
+      }
+      i++;
+    });
+  });
+  new Banner(this.selectedBanner.key());
+  var selectedBannerUrl=function(){
+    return this.selectedBanner.url;
+  }
+}
