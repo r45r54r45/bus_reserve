@@ -30,6 +30,12 @@ class Main extends CI_Controller {
 		$this->load->view('more_delivery_chicken');
 		$this->load->view('menu_footer');
 	}
+	public function more_delivery_chicken2()
+	{
+		$this->load->view('menu_header');
+		$this->load->view('more_delivery_chicken2');
+		$this->load->view('menu_footer');
+	}
 	public function test3()
 	{
 		$this->load->view('menu_header');

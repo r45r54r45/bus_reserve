@@ -36,7 +36,7 @@
     <div class="col-xs-4">
       <div class="deli_circle">
         <img src="/src/img/animal.svg" class="img img-responsive">
-        <span>오리</span>
+        <span>한식</span>
       </div>
     </div>
   </div>
