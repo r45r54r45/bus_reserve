@@ -105,13 +105,13 @@
                 <div class="font-12 top-margin-10 li_g">원숭의민족은 전화할 필요없이 클릭 몇 번으로<br/>바로 주문하는 서비스 입니다. </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row" style="padding: 0 15px;">
               <div class="col-xs-6 center yel font-12" onclick="alert('본 업체는 원숭의민족 계약 준비중입니다.'); ">
-                원숭이배달
+                <b>원숭이배달</b>
               </div>
               <a href="tel:{{store.tel}}">
               <div class="col-xs-6 center bla font-12">
-                전화하기
+                <b>전화하기</b>
               </div>
               </a>
             </div>
@@ -144,12 +144,12 @@
               <div class="font-12 top-margin-10 li_g">원숭의민족은 전화할 필요없이 클릭 몇 번으로<br/>바로 주문하는 서비스 입니다. </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" style="padding: 0 15px;">
             <div class="col-xs-6 center yel font-12">
-              원숭이배달
+                <b>원숭이배달</b>
             </div>
             <div class="col-xs-6 center bla font-12">
-              전화하기
+                <b>전화하기</b>
             </div>
           </div>
         </div>
