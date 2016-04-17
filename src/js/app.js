@@ -37,8 +37,10 @@ app
       alert("본 업체는 메뉴 준비중입니다");
       return;
     }
-    var data={"time":Firebase.ServerValue.TIMESTAMP};
-    Ref.child("advertisement").child(store).child("menu").child("click").push(data);
+    if(store!==""){
+      var data={"time":Firebase.ServerValue.TIMESTAMP};
+      Ref.child("advertisement").child(store).child("menu").child("click").push(data);
+    }
     $scope.menuImg=menu_img1;
     $('#menuModal').modal('show');
   }
