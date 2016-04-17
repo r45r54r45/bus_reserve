@@ -30,7 +30,7 @@ app
   });
   $scope.moveToStore=function(store){
     parent.set_page_title(store);
-    location.href='/main/store_page?store='+store;
+    location.href='/main/store_page?store='+urlencode(store);
   }
   $scope.openMenu=function(menu_img1,store){
     if(menu_img1===""){
