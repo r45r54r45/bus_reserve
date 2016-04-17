@@ -46,7 +46,7 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 
-      <img class="banner" alt="인터넷이 느린걸까요?">
+      <img class="banner" alt="로딩중...">
     </div>
   </div>
 
