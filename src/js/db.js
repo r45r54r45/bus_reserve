@@ -63,8 +63,7 @@ var Menu=function(companyName){
   });
 }
 
-var BannerAdmin=function(scope_banner){
-  console.log(scope_banner);
+var BannerAdmin=function(){
   this.selectedBanner;
   this.selectedBannerKey;
   ref.child("banner").orderByChild("time").startAt(new Date().getTime()).once("value",function(snapshot){
@@ -80,7 +79,10 @@ var BannerAdmin=function(scope_banner){
     new Banner(this.selectedBannerKey);
     // scope_banner.url=this.selectedBanner.url;
   });
-  // BannerAdmin.prototype.selectedBannerUrl=function(){
-  //   return this.selectedBanner.url;
-  // }
+  BannerAdmin.prototype.selectedBannerUrl=function(){
+    while(!this.selectedBanner.url){
+
+    }
+    return this.selectedBanner.url;
+  }
 }

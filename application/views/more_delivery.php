@@ -46,7 +46,7 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 
-      <img class="banner" src="{{banner.url}}">
+      <img class="banner" src="{{bannerUrl}}">
     </div>
   </div>
 
