@@ -112,6 +112,9 @@ app
     $scope.menuImg=menu_img1;
     $('#menuModal').modal('show');
   }
-
+  $scope.phone=function(store){
+    var data={"time":Firebase.ServerValue.TIMESTAMP};
+    Ref.child("advertisement").child(store).child("phone").push(data);
+  }
 
 }]);

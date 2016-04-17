@@ -58,7 +58,7 @@
       <img class="img" src="/src/img/banana.png" ng-click="moveToStore(store.store,page)">
     </div>
     <div class="one-line click-button phone">
-      <a href="tel:{{store.tel}}"><img class="img" src="/src/img/call.png"></a>
+      <a ng-click="phone(store.store)" href="tel:{{store.tel}}"><img class="img" src="/src/img/call.png"></a>
     </div>
   </div>
   <!-- 앞으로 추가해야할 곳들 -->
@@ -80,6 +80,17 @@
       <div class="modal-content" style="width:90%;margin:20px auto">
         <div class="modal-body" style="padding:0;">
           <img style="width: 100%;" ng-src="{{menuImg}}" onclick="$('#menuModal').modal('hide')">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal for menu end -->
+  <!-- modal for menu -->
+  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="width:90%;margin:20px auto">
+        <div class="modal-body" style="padding:0;">
+
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@ body {
 <body style="font-family: 'Open Sans','Nanum Gothic', sans-serif;">
   <div data-role="header" class="container-fluid bam-background center-align" id="nav-top" style="padding:0;">
     <div id="back_arrow" class="back_arrow"><img src="/src/img/backbtn.png" style="height: 18px;" ></div>
-    <div id="back_arrow2" class="back_arrow"><img src="/src/img/backbtn.png" style="height: 18px;" ></div>
+    <!-- <div id="back_arrow2" class="back_arrow"><img src="/src/img/backbtn.png" style="height: 18px;" ></div> -->
     <!-- <div class="setting more_page_btn" style="display:none"><img src="/src/img/setting_btn.png" style="height: 25px;" ></div> -->
     <div class="notice more_page_btn" onclick="moveto('more_notice')" style="display:none"><img src="/src/img/notice_btn.png" style="height: 25px;" ></div>
 
