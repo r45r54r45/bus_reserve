@@ -116,5 +116,10 @@ app
     var data={"time":Firebase.ServerValue.TIMESTAMP};
     Ref.child("advertisement").child(store).child("phone").push(data);
   }
-
+  $scope.openUnpaidModal=function(tg){
+    $("#orderUnpaidModal_"+tg).modal('show');
+  }
+  $scope.openpaidModal=function(tg){
+    $("#orderPaidModal_"+tg).modal('show');
+  }
 }]);
