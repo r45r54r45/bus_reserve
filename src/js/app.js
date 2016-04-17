@@ -28,9 +28,9 @@ app
   $scope.stores.$loaded(function(){
     $scope.afterPaid=true;
   });
-  $scope.moveToStore=function(store){
+  $scope.moveToStore=function(store,backPage){
     parent.set_page_title(store);
-    location.href='/main/store_page?store='+encodeURI(store);
+    location.href='/main/store_page?store='+encodeURI(store)+'&backPage='+encodeURI(backPage);
   }
   $scope.openMenu=function(menu_img1,store){
     if(menu_img1===""){

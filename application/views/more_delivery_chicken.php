@@ -46,13 +46,13 @@
   }
 
 </style>
-<div class="container-fluid" ng-controller="chicken" ng-init="afterPaid=false">
+<div class="container-fluid" ng-controller="chicken" ng-init="afterPaid=false; page='/main/more_delivery_chicken'">
   <div class="row storeWrapper" ng-repeat="store in stores">
     <div class="black_circle one-line"></div>
     <span class="store-name">{{store.store}}</span>
     <div class="one-line click-button menu"><img class="img" src="/src/img/menu.png" ng-click="openMenu(store.menu_img,store.store)"></div>
     <div class="one-line click-button order">
-      <img class="img" src="/src/img/banana.png" ng-click="moveToStore(store.store)">
+      <img class="img" src="/src/img/banana.png" ng-click="moveToStore(store.store,page)">
     </div>
     <div class="one-line click-button phone">
       <a href="tel:{{store.tel}}"><img class="img" src="/src/img/call.png"></a>
