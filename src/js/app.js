@@ -24,7 +24,7 @@ app
   var BA=new BannerAdmin();
 })
 .controller("storeListPage",["$scope","Ref","$firebaseArray",function($scope,Ref,$firebaseArray){
-  var target_temp=$scope.target;
+  var target_temp=$scope.target1;
   console.log(target_temp);
   var target="";
   switch (target_temp) {
