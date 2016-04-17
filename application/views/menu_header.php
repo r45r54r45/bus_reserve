@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,4 +28,4 @@
   <script src="/src/js/db.js"></script>
   <script src="/src/js/app.js"></script>
 </head>
-<body style="font-family: 'Open Sans', sans-serif;" ng-app="app">
+<body style="font-family: 'Open Sans', sans-serif;" >
