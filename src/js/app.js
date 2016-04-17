@@ -32,7 +32,7 @@ app
     parent.set_page_title(store);
     location.href='/main/store_page?store='+encodeURI(store)+'&backPage='+encodeURI(backPage);
   }
-  $scope.openMenu=function(menu_img1,store=""){
+  $scope.openMenu=function(menu_img1,store){
     if(menu_img1===""){
       alert("본 업체는 메뉴 준비중입니다");
       return;
