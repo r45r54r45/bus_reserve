@@ -40,13 +40,13 @@
       </div>
     </div>
   </div>
-  <div class="row" style="margin-top:20px; height:300px; background:#D3D3D3; padding:10px;">
+  <div class="row" style="margin-top:20px;background:#D3D3D3; padding:10px;">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 
-      <img class="banner">
+      <img class="banner" alt="로딩중..">
     </div>
   </div>
 
