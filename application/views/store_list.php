@@ -46,7 +46,7 @@
   }
 
 </style>
-<div class="container-fluid" ng-controller="chicken" ng-init="afterPaid=false; page='/main/more_delivery_chicken'">
+<div class="container-fluid" ng-controller="<?=$_GET['target']?>" ng-init="afterPaid=false; page='/main/storeList?target='+<?=$_GET['target']?>">
   <div class="row storeWrapper" ng-repeat="store in stores">
     <div class="black_circle one-line"></div>
     <span class="store-name">{{store.store}}</span>

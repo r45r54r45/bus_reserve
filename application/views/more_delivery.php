@@ -2,7 +2,7 @@
 <div class="container-fluid" ng-controller="deliveryMain">
   <div class="row" style="margin-top:20px;">
     <div class="col-xs-4">
-      <div class="deli_circle" onclick="parent.set_page_title('CHICKEN');location.href='/main/more_delivery_chicken';">
+      <div class="deli_circle" onclick="parent.set_page_title('CHICKEN');location.href='/main/storeList?target=chicken';">
         <img src="/src/img/food-4.svg" class="img img-responsive">
         <span>치킨</span>
       </div>
