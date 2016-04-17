@@ -23,10 +23,10 @@ app
 .controller("deliveryMain",function($scope){
   var BA=new BannerAdmin();
 })
-.controller("storeListPage",["$scope","Ref","$firebaseArray",function($scope,Ref,$firebaseArray){
-  console.log($scope.target1);
+.controller("storeListPage",["$routeParams","$scope","Ref","$firebaseArray",function($routeParams,$scope,Ref,$firebaseArray){
+  console.log($routeParams.target);
   var target="";
-  switch ($scope.target1) {
+  switch ($routeParams.target) {
     case "chicken":
       target="치킨";
     break;
