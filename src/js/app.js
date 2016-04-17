@@ -97,8 +97,9 @@ app
     $scope.afterPaid=true;
   });
   $scope.moveToStore=function(store,backPage){
-    parent.set_page_title(store);
-    location.href='/main/store_page?store='+encodeURI(store)+'&backPage='+encodeURI(backPage);
+    alert("미안해요ㅠ 원숭의배달 서비스는 곧!! 완성됩니다. 아직은 전화로 주문해주세요");
+    // parent.set_page_title(store);
+    // location.href='/main/store_page?store='+encodeURI(store)+'&backPage='+encodeURI(backPage);
   }
   $scope.openMenu=function(menu_img1,store){
     if(menu_img1===""){
