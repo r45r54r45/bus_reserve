@@ -24,10 +24,9 @@ app
   var BA=new BannerAdmin();
 })
 .controller("storeListPage",["$scope","Ref","$firebaseArray",function($scope,Ref,$firebaseArray){
-  var target_temp=$scope.target1;
-  console.log(target_temp);
+  console.log($scope.target1);
   var target="";
-  switch (target_temp) {
+  switch ($scope.target1) {
     case "chicken":
       target="치킨";
     break;
