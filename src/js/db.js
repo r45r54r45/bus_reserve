@@ -81,7 +81,7 @@ var BannerAdmin=function(){
   });
   BannerAdmin.prototype.selectedBannerUrl=function(){
     console.log(this.selectedBanner);
-    while(this.selectedBanner.url in window == false){
+    while(this.selectedBanner in window == false){
 
     }
     return this.selectedBanner.url;
