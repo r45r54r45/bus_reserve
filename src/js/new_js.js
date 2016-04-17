@@ -62,7 +62,7 @@ $(function(){
     // $(".help_button").css("display","none");
     $(".more_page_btn").css("display","");
   });
-  $(".back_arrow").on("click",function(){
+  $("#back_arrow").on("click",function(){
     location.replace("#more");
     document.getElementById("makelong").style.height="0px";
     content_manager();
@@ -153,7 +153,7 @@ function content_manager(){
       $("#page_title").text(path.toUpperCase());
       $("#makelong").css("height",$(window).height()-114+"px");
       $("iframe#contents").attr("src","/new_ver/"+path);
-      $(".back_arrow").css("display","none");
+      $("#back_arrow").css("display","none");
       $(".noti").css("display","");
       $(".more_page_btn").css("display","none");
       $(".help_button").css("display","");
