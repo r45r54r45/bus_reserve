@@ -71,13 +71,14 @@ var BannerAdmin=function(){
     var rand = Math.floor(Math.random() * snapshot.numChildren());
     snapshot.forEach(function(snap){
       if (i == rand) {
-        this.selectedBanner=snap;
+        this.selectedBanner=snap.val();
+        this.selectedBannerKey=snap.key();
       }
       i++;
     });
     console.log(this.selectedBanner);
   });
-  new Banner(this.selectedBannerKey.key());
+  new Banner(this.selectedBannerKey);
   var selectedBannerUrl=function(){
     return this.selectedBanner.url;
   }
