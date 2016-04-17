@@ -77,9 +77,9 @@ var BannerAdmin=function($scope){
       i++;
     });
     new Banner(this.selectedBannerKey);
-    $scope.bannerUrl=this.selectedBanner.url;
+    $(".banner").attr("src",this.selectedBanner.url);
   });
-  BannerAdmin.prototype.selectedBannerUrl=function(){
-    return this.selectedBanner.url;
-  }
+  // BannerAdmin.prototype.selectedBannerUrl=function(){
+  //   return this.selectedBanner.url;
+  // }
 }

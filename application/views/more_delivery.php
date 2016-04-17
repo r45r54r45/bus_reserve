@@ -46,7 +46,7 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 
-      <img class="banner" ng-src="{{bannerUrl}}">
+      <img class="banner">
     </div>
   </div>
 
