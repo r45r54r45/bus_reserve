@@ -64,6 +64,7 @@ var Menu=function(companyName){
 }
 
 var BannerAdmin=function(scope_banner){
+  console.log(scope_banner);
   this.selectedBanner;
   this.selectedBannerKey;
   ref.child("banner").orderByChild("time").startAt(new Date().getTime()).once("value",function(snapshot){
@@ -77,7 +78,7 @@ var BannerAdmin=function(scope_banner){
       i++;
     });
     new Banner(this.selectedBannerKey);
-    scope_banner.url=this.selectedBanner.url;
+    // scope_banner.url=this.selectedBanner.url;
   });
   // BannerAdmin.prototype.selectedBannerUrl=function(){
   //   return this.selectedBanner.url;
