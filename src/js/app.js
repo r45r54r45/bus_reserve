@@ -1,5 +1,5 @@
 "use strict"
-var app=angular.module("app",["firebase"]);
+var app=angular.module("app",["firebase","ngRoute"]);
 app.factory("Ref",
   function() {
     var ref = new Firebase("https://sizzling-inferno-3457.firebaseio.com");
