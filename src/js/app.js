@@ -25,6 +25,7 @@ app
 })
 .controller("storeListPage",["$scope","Ref","$firebaseArray",function($scope,Ref,$firebaseArray){
   var target_temp=$scope.target;
+  console.log(target_temp);
   var target="";
   switch (target_temp) {
     case "chicken":
