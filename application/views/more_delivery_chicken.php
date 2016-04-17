@@ -62,7 +62,7 @@
   <div class="row storeWrapper" ng-show="afterPaid"  ng-repeat="store in moreStores">
     <div class="black_circle one-line"></div>
     <span class="store-name">{{store.store}}</span>
-    <div class="one-line click-button menu"><img class="img" src="/src/img/menu.png" ng-click="openMenu(store.menu_img)"></div>
+    <div class="one-line click-button menu"><img class="img" src="/src/img/menu.png" ng-click="openMenu(store.menu_img,'')"></div>
     <div class="one-line click-button order">
       <img class="img" src="/src/img/banana.png" onclick="alert('본 업체는 바나나퀵 계약 준비중입니다.')">
     </div>
