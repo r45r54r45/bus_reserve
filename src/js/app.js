@@ -24,7 +24,7 @@ app
   var BA=new BannerAdmin();
 })
 .controller("storeListPage",["$routeParams","$scope","Ref","$firebaseArray",function($routeParams,$scope,Ref,$firebaseArray){
-  console.log($routeParams.target);
+  console.log($routeParams);
   var target="";
   switch ($routeParams.target) {
     case "chicken":
