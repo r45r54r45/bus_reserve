@@ -80,7 +80,7 @@ var BannerAdmin=function(){
     console.log(this.selectedBannerKey);
     new Banner(this.selectedBannerKey);
   });
-  var selectedBannerUrl=function(){
+  BannerAdmin.prototype.selectedBannerUrl=function(){
     return this.selectedBanner.url;
   }
 
