@@ -22,7 +22,6 @@ app.factory("Ref",
 app
 .controller("deliveryMain",function($scope){
   var BA=new BannerAdmin();
-  // $scope.bannerUrl=BA.selectedBannerUrl();
 })
 .controller("chicken",["$scope","Ref","$firebaseArray",function($scope,Ref,$firebaseArray){
   $scope.stores=$firebaseArray(Ref.child("store").orderByChild("type").equalTo("치킨"));
