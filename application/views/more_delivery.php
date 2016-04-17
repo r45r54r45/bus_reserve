@@ -44,7 +44,7 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active" ng-init="bannerUrl='#''">
+    <div class="item active" ng-init="bannerUrl='http://i.imgur.com/EnXHw8a.jpg''">
 
       <img class="banner" src="{{bannerUrl}}">
     </div>
