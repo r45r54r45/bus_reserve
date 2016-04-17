@@ -74,9 +74,11 @@ var BannerAdmin=function(){
       }
       i++;
     });
+    console.log(this.selectedBanner);
   });
   new Banner(this.selectedBanner.key());
   var selectedBannerUrl=function(){
     return this.selectedBanner.url;
   }
+
 }
