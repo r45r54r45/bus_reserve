@@ -77,7 +77,7 @@ var BannerAdmin=function(scope_banner){
       i++;
     });
     new Banner(this.selectedBannerKey);
-    scope_banner=this.selectedBanner;
+    scope_banner.url=this.selectedBanner.url;
   });
   // BannerAdmin.prototype.selectedBannerUrl=function(){
   //   return this.selectedBanner.url;
