@@ -51,8 +51,9 @@ var Banner=function(companyName){
   $(".banner").bind("click",{company: this.companyName},function(event){
     var data={"time":Firebase.ServerValue.TIMESTAMP};
     ref.child("advertisement").child(event.data.company).child("banner").child("click").push(data);
-    parent.set_page_title(event.data.company);
-    location.href='/main/store_page?store='+encodeURI(event.data.company)+'&backPage='+encodeURI("/new_ver/delivery");
+    alert("미안해요ㅠ 원숭의배달 서비스는 곧!! 완성됩니다. 아직은 전화로 주문해주세요");
+    // parent.set_page_title(event.data.company);
+    // location.href='/main/store_page?store='+encodeURI(event.data.company)+'&backPage='+encodeURI("/new_ver/delivery");
   });
 }
 // var Menu=function(companyName){
