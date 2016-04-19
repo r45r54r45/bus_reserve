@@ -94,18 +94,16 @@ body {
     <div class="modal-content">
       <div class="modal-header">
         <!--<button type="button" class="close" data-dismiss="modal" style="background-color:#ffffff;border:0px;">&times;</button>-->
-        <h4 class="modal-title" style="text-align:center;font-size:14px;">4월 13일 수요일 서버 업그레이드로 인한 전체 서비스 중단 안내</h4>
+        <h4 class="modal-title" style="text-align:center;font-size:14px;">바나나 서포터즈 모집 안내</h4>
       </div>
       <div class="modal-body" style="font-size:11px;padding-bottom:5px;">
         <p>
-          4월 13일 수요일 (내일) 서버 업그레이드로 인하여 바나나 전체 서비스를 잠시 중단하며<br>
-          4월 13일은 수요일은 <b>바나나가 아닌 학교 사이트</b>를 통해 <b>셔틀 예약</b>을 해주시기 바랍니다.<br>
-          착오 없으시기 바랍니다.<br>
-          <i>모두들 중간고사 대박 나시길~!</i>
+          <b>(왼쪽 상단 알림을 확인해주세요!)</b><br>
+         <a href="/#more#notice#7"><img src="http://i.imgur.com/BAX8Om2.jpg" style="width:100%" ></a>
         </p>
       </div>
       <div class="modal-footer" style="border:0px; padding-top:0px; padding-bottom:20px;">
-        <button style="font-size:11px;border: 0px; padding:0px;box-shadow: 0px 0px 0px; background-color:#ffffff;" type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('popup_3','true',100);ga('send', 'event', 'popup', '다시보지않기', 'popup_3');"><a href="#"> 다시보지않기</a></button>
+        <button style="font-size:11px;border: 0px; padding:0px;box-shadow: 0px 0px 0px; background-color:#ffffff;" type="button" class="btn btn-default" data-dismiss="modal" onclick="setCookie('popup_4','true',100);ga('send', 'event', 'popup', '다시보지않기', 'popup_4');"><a href="#"> 다시보지않기</a></button>
       </div>
     </div>
 
@@ -153,7 +151,7 @@ body {
   ga('set', 'userId', getCookie("id"));
 
   $(window).on("load",function(){
-    if(getCookie("popup_3")!="true"){
+    if(getCookie("popup_4")!="true"){
     $("#popup").modal('show');
   }
   });
