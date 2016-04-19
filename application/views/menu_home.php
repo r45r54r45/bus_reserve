@@ -310,6 +310,9 @@ function time_format(data){
 </div>
 </div>
 <div id="temp"></div>
+<div class="hidden-xs">주소지: 인천광역시 연수구 센트럴로 160 102-4004<br>
+대표자: 김우현 Tel: 010-7109-7327 사업자등록번호: 303-14-60485 통신판매신고번호: 2016-인천연수구-0192<br>
+COPYRIGHT 2016 코코딩, ALL RIGHTS RESERVED.</div>
 <!-- <script src="/src/js/crossdomain.js"></script> -->
 <script>
  //  function setCurrentBus(){
