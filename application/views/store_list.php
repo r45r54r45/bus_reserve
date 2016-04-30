@@ -56,7 +56,7 @@
     <span class="store-name">{{store.store}}</span>
     <div class="one-line click-button menu"><img class="img" src="/src/img/menu.png" ng-click="openMenu(store.menu_img,store.store)"></div>
     <div class="one-line click-button order">
-      <img class="img" src="/src/img/banana.png" ng-click="openPaidModal($index)">
+      <img class="img" src="/src/img/call.png" ng-click="openPaidModal($index)">
     </div>
     <!-- <div class="one-line click-button phone">
       <a ng-click="phone(store.store);" href="tel:{{store.tel}}"><img class="img" src="/src/img/call.png"></a>
@@ -93,7 +93,7 @@
     <span class="store-name">{{store.store}}</span>
     <div class="one-line click-button menu"><img class="img" src="/src/img/menu.png" ng-click="openMenu(store.menu_img,'')"></div>
     <div class="one-line click-button order">
-      <img class="img" src="/src/img/banana.png" ng-click="openUnpaidModal($index)">
+      <img class="img" src="/src/img/call.png" ng-click="openUnpaidModal($index)">
     </div>
     <div class="modal fade" id="orderUnpaidModal_{{$index}}" style="width: 90%;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
@@ -107,7 +107,7 @@
             </div>
             <div class="row" style="padding: 0 15px;">
               <div class="col-xs-6 center yel font-12" onclick="alert('본 업체는 원숭의민족 계약 준비중입니다.'); ">
-                <b>원숭이배달</b> 
+                <b>원숭이배달</b>
               </div>
               <a href="tel:{{store.tel}}">
               <div class="col-xs-6 center bla font-12">
