@@ -99,7 +99,7 @@ body {
       <div class="modal-body" style="font-size:11px;padding-bottom:5px;">
         <p>
           <b>(왼쪽 상단 알림을 확인해주세요!)</b><br>
-         <img src="http://i.imgur.com/21PkKSl.jpg?1" style="width:100%" >
+         <img src="http://imgur.com/IMNlZBJ" style="width:100%" >
         </p>
       </div>
       <div class="modal-footer" style="border:0px; padding-top:0px; padding-bottom:20px;">
