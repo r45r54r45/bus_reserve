@@ -24,6 +24,12 @@
     font-family: sans-serif;">
     <img src="../src/img/main_logo.png" style="    width: 30%;
     margin-bottom: 10px;"><br>
-      <span style="">바나나가 9월 1일에 새롭게 태어납니다. ㅂㅂ</span> </div>
+      <span style="">바나나가 9월 1일에 새롭게 태어납니다. ㅂㅂ</span> </br>
+      banana is under renewall. September 1</br>
+      バナナが9月1日に新たに生まれます。 </br>
+      香蕉是一种新生9月1日。 </br>
+      केले एक नया 1 सितंबर को पैदा हुए हैं।</br>
+      Banány jsou nově narozené 1. září. </br>
+      </span></div>
   </body>
 </html>
