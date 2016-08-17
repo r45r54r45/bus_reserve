@@ -6,7 +6,7 @@ class Main extends CI_Controller {
 	public function index()
 	{
 		// $this->load->view('header');
-		$this->load->view('new_main');
+		$this->load->view('new_main_temp');
 		// $this->load->view('footer');
 	}
 	public function forIosChrome(){
